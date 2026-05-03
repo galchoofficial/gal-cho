@@ -87,7 +87,11 @@
   <div class="source">
     <div class="source-label">📎 元ネタ</div>
     {{ . | safeHTML }}
-    {{- with $.Params.source_url }} <a href="{{ . }}" target="_blank" rel="noopener">こちら</a> でチェックしてね。{{ end }}
+    {{- with $.Params.source_url }}
+      {{- if and . (ne . "#") }}
+    <br>▶ <a href="{{ . }}" target="_blank" rel="noopener">一次情報をチェック</a>
+      {{- end }}
+    {{- end }}
   </div>
   {{- end }}
 </div>
