@@ -2,7 +2,7 @@
 # ギャル庁 - Hugo 設定
 # =====================================================
 
-baseURL = 'https://gal-cho.example.com/'
+baseURL = 'https://gal-cho.pages.dev/'
 locale = 'ja'
 defaultContentLanguage = 'ja'
 title = 'ギャル庁'
