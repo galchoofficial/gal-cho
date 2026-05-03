@@ -15,7 +15,7 @@ hero_emoji: "💸"
 hero_bg: "lime"
 lead: "今年の国会で「奨学金の返済額を減税の対象にしてくれない？」って提案があったのに、高市総理がバッサリ却下。その理由が4つあるんだけど、ツッコミどころがけっこう光ってるのよ🔥"
 source: "国会会議録より。石垣のりこ参議院議員の質問および政府答弁。"
-source_url: "#"
+source_url: "https://www.tokyo-np.co.jp/article/471584"
 likes: 312
 shares: 89
 aashi: |

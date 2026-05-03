@@ -16,7 +16,7 @@ hero_emoji: "🚄"
 hero_bg: "lime"
 lead: "GW後半に突入したけど、今年の新幹線の予約状況がなかなかすごいのよ。前年比114%、しかも下りは5月2日時点でほぼ満席😳"
 source: "JR各社・国土交通省・各種旅行業界報道より。"
-source_url: "#"
+source_url: "https://www.westjr.co.jp/press/article/2026/04/10/items/260410_00_press_gw_shiteisekiyoyaku.pdf"
 likes: 142
 shares: 38
 aashi: |

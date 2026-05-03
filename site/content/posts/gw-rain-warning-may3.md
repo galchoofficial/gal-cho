@@ -16,7 +16,7 @@ hero_emoji: "⛈"
 hero_bg: "blue"
 lead: "今日5月3日の夕方から明日4日にかけて、関東〜九州で警報級の大雨になるかも⚠️ 特に神奈川県はヤバいって気象庁が言ってるからお出かけの人マジで確認して"
 source: "気象庁発表・各種報道より。"
-source_url: "#"
+source_url: "https://tenki.jp/forecaster/t_yoshida/2026/05/01/38762.html"
 likes: 187
 shares: 64
 aashi: |

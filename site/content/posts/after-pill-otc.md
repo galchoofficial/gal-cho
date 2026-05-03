@@ -15,7 +15,7 @@ hero_emoji: "💊"
 hero_bg: "pink"
 lead: "2026年2月2日から、アフターピル（緊急避妊薬）が薬局で買えるようになりました。処方箋なし。病院行かなくてOK。これ、日本初なのよ。全女子に知っておいてほしいやつ。"
 source: "厚生労働省・販売可能薬局リスト、報道資料より。"
-source_url: "#"
+source_url: "https://prtimes.jp/main/html/rd/p/000000224.000005551.html"
 likes: 538
 shares: 287
 aashi: |

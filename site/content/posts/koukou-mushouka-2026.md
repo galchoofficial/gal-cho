@@ -15,7 +15,7 @@ hero_emoji: "🏫"
 hero_bg: "blue"
 lead: "2026年4月から高等学校等就学支援金の所得制限が撤廃されて、全世帯に広がったの。でもこれ、予算の成立がギリギリで現場ヒヤヒヤだった裏話があって…👀"
 source: "文部科学省・国会会議録より。"
-source_url: "#"
+source_url: "https://www.nikkei.com/article/DGXZQOUD269RF0W6A220C2000000/"
 likes: 274
 shares: 67
 aashi: |

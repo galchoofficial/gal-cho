@@ -14,7 +14,7 @@ hero_emoji: "🎏"
 hero_bg: "pink"
 lead: "震災から2年経った石川県珠洲市で、約200匹の鯉のぼりが空泳いでるの！しかも今年は川の上にも復活してて、エモすぎん？？🥹"
 source: "石川県珠洲市の地域ニュース。大谷鯉のぼりフェスティバル実行委員会の発表より。"
-source_url: "#"
+source_url: "https://www.ishikawa-tv.com/news/itc/00007214"
 likes: 312
 shares: 84
 aashi: |

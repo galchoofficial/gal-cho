@@ -15,7 +15,7 @@ hero_emoji: "🔋"
 hero_bg: "orange"
 lead: "GW前にカバンの中、ガチで確認してほしい話。最近モバイルバッテリーの発火事故が地下鉄でも頻発してて、もう「いつ自分に起きてもおかしくない」レベルなの😱"
 source: "消費者庁・国土交通省・経済産業省の公開資料、報道各社の事故情報より。"
-source_url: "#"
+source_url: "https://news.yahoo.co.jp/articles/8d04757849262e5e31232fac34b5196b0ea7a4b5"
 likes: 421
 shares: 132
 aashi: |
