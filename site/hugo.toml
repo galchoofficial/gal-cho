@@ -29,7 +29,7 @@ summaryLength = 70
   description = 'お堅いニュースをギャル語で解説するまとめサイト。あーしが読んどいたよ。'
   tagline = 'あーしが読んどいたよ。'
   author = 'あーし'
-  twitter = 'gal_cho'
+  twitter = 'galcho_official'
   ogImage = '/images/og-default.png'
 
   # カテゴリ表示メタデータ（テーマ側で利用）
