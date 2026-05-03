@@ -1,0 +1,8 @@
+{{- /* ====================================================
+   Cloudflare Web Analytics
+   - Cookieless / privacy-friendly
+   - 本番ビルド (hugo.Environment == "production") のみ有効
+==================================================== */ -}}
+{{- if hugo.IsProduction }}
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a374023d6305412b8963faa16ef88209"}'></script><!-- End Cloudflare Web Analytics -->
+{{- end }}
