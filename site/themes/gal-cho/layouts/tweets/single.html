@@ -1,0 +1,177 @@
+{{ define "head" }}
+{{- if .Params.robotsNoIndex }}
+<meta name="robots" content="noindex,nofollow">
+{{- end }}
+<style>
+  .tw-page { max-width: 760px; margin: 0 auto; padding: 24px 28px 80px; }
+  .tw-intro { background: var(--line-soft); border-radius: 16px; padding: 20px 24px; margin-bottom: 32px; }
+  .tw-intro p { margin: 0 0 8px; font-size: 14px; color: var(--ink-soft); line-height: 1.7; }
+  .tw-intro p:last-child { margin: 0; }
+
+  .tw-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 22px 24px;
+    margin-bottom: 18px;
+  }
+  .tw-card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .tw-title { font-size: 16px; font-weight: 900; line-height: 1.45; }
+  .tw-meta { font-size: 11px; color: var(--muted); font-weight: 700; margin-top: 6px; }
+  .tw-meta a { color: var(--purple); text-decoration: underline; text-underline-offset: 2px; }
+
+  .tw-body {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: var(--ink);
+    margin: 0 0 12px;
+  }
+
+  .tw-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .tw-count {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .tw-count.over { color: #d94545; }
+  .tw-count.warn { color: var(--orange); }
+
+  .tw-actions { display: flex; gap: 8px; }
+  .tw-btn {
+    background: var(--ink);
+    color: var(--lime);
+    border: 0;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.05em;
+  }
+  .tw-btn.x { background: #000; color: #fff; }
+  .tw-btn:hover { filter: brightness(1.1); }
+  .tw-btn.copied { background: var(--lime); color: var(--ink); }
+
+  .tw-empty {
+    text-align: center;
+    color: var(--muted);
+    padding: 60px 0;
+  }
+</style>
+{{ end }}
+
+{{ define "main" }}
+<div class="wrap-narrow crumb">
+  <a href="{{ "/" | relURL }}">ホーム</a>
+  <span class="sep">›</span>
+  <strong>{{ .Title }}</strong>
+</div>
+
+<div class="tw-page">
+  <h1 class="art-title" style="font-size: 32px;">{{ .Title }}</h1>
+
+  <div class="tw-intro">
+    <p>記事ごとの X 投稿用ツイート下書き集です。<strong>「📋 コピー」</strong> ボタンで全文（URL・ハッシュタグ込み）をクリップボードに、<strong>「𝕏 投稿」</strong> ボタンで X の投稿画面が直接開きます。</p>
+    <p>右下の文字カウンタは X の上限（280字）を超えると赤くなります。</p>
+  </div>
+
+  {{- $posts := where (where site.RegularPages "Section" "posts") "Params.tweet" "!=" nil -}}
+  {{- $posts = $posts.ByDate.Reverse -}}
+
+  {{- if eq (len $posts) 0 }}
+  <p class="tw-empty">まだツイート下書きが登録された記事はありません。<br>記事の front matter に <code>tweet:</code> 欄を追加してください。</p>
+  {{- end }}
+
+  {{- range $posts }}
+    {{- $cat := "" -}}{{- with .Params.categories -}}{{- $cat = index . 0 -}}{{- end -}}
+    {{- $catTag := "" -}}
+    {{- with .Params.categories -}}
+      {{- $cat := index . 0 -}}
+      {{- if eq $cat "tame" }}{{- $catTag = "ためになる" -}}
+      {{- else if eq $cat "omo" }}{{- $catTag = "面白い" -}}
+      {{- else if eq $cat "emo" }}{{- $catTag = "エモい" -}}
+      {{- else if eq $cat "anime" }}{{- $catTag = "アニメ" -}}{{- end -}}
+    {{- end -}}
+    {{- $extraTag := "" -}}
+    {{- with .Params.tags }}{{- $extraTag = index . 0 -}}{{- end -}}
+
+    {{- /* Compose full tweet */ -}}
+    {{- $fullTweet := printf "%s\n\n%s\n#ギャル庁" .Params.tweet .Permalink -}}
+    {{- with $extraTag }}{{- $fullTweet = printf "%s #%s" $fullTweet . -}}{{- end -}}
+
+  <article class="tw-card">
+    <div class="tw-card-head">
+      <div>
+        <div class="tw-title">{{ .Title }}</div>
+        <div class="tw-meta">
+          {{ .Date.Format "2006-01-02" }} ·
+          {{ if $catTag }}<span class="pill pill-{{ $cat }}" style="font-size:10px; padding:2px 8px;">{{ $catTag }}</span>{{ end }} ·
+          <a href="{{ .RelPermalink }}">記事を見る</a>
+        </div>
+      </div>
+    </div>
+    <pre class="tw-body" id="tweet-{{ .File.BaseFileName }}">{{ $fullTweet }}</pre>
+    <div class="tw-foot">
+      <span class="tw-count" data-target="tweet-{{ .File.BaseFileName }}"></span>
+      <div class="tw-actions">
+        <a class="tw-btn x" href="https://twitter.com/intent/tweet?text={{ $fullTweet | urlquery }}" target="_blank" rel="noopener">𝕏 投稿</a>
+        <button class="tw-btn copy" onclick="copyTweet('tweet-{{ .File.BaseFileName }}', this)">📋 コピー</button>
+      </div>
+    </div>
+  </article>
+  {{- end }}
+</div>
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+  // Char count + threshold styling
+  document.querySelectorAll('.tw-count').forEach(span => {
+    const pre = document.getElementById(span.dataset.target);
+    if (!pre) return;
+    // X counts URLs as 23 chars regardless of actual length (t.co shortener)
+    const txt = pre.textContent;
+    // Replace URLs with 23-char placeholder for counting
+    const counted = txt.replace(/https?:\/\/\S+/g, 'x'.repeat(23));
+    const len = [...counted].length;  // proper char count incl emoji
+    const limit = 280;
+    span.textContent = `${len} / ${limit} 字`;
+    if (len > limit) span.classList.add('over');
+    else if (len > limit - 20) span.classList.add('warn');
+  });
+
+  // Copy button
+  function copyTweet(id, btn) {
+    const pre = document.getElementById(id);
+    if (!pre) return;
+    navigator.clipboard.writeText(pre.textContent).then(() => {
+      const original = btn.textContent;
+      btn.textContent = '✓ コピー済';
+      btn.classList.add('copied');
+      setTimeout(() => {
+        btn.textContent = original;
+        btn.classList.remove('copied');
+      }, 2000);
+    });
+  }
+</script>
+{{ end }}
