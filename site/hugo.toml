@@ -34,7 +34,7 @@ summaryLength = 70
 
   # 検索エンジン認証コード（Search Console / Bing Webmaster Tools）
   # コードを取得したら値を入れてください。空文字なら meta タグは出力されません
-  googleSiteVerification = ''
+  googleSiteVerification = 'ihtzFuk_GbVdKoUq9spAJ04EOFdLeAYTo5dZhPjOws0'
   bingSiteVerification = ''
 
   # カテゴリ表示メタデータ（テーマ側で利用）
