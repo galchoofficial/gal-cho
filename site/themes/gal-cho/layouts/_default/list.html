@@ -1,0 +1,45 @@
+{{ define "main" }}
+<!-- Crumb -->
+<div class="wrap crumb">
+  <a href="{{ "/" | relURL }}">ホーム</a>
+  <span class="sep">›</span>
+  <strong>{{ .Title | default "記事一覧" }}</strong>
+</div>
+
+<section class="wrap" style="padding: 24px 0 8px;">
+  <h1 class="sec-h2"><em>{{ .Title | default "記事一覧" }}</em></h1>
+  <p class="meta-text" style="margin-top: 8px;">{{ len .Pages }} 件の記事</p>
+</section>
+
+<!-- Article grid -->
+<section class="wrap section">
+  {{- $paginator := .Paginate .Pages.ByDate.Reverse }}
+  {{- if gt (len $paginator.Pages) 0 }}
+  <div class="grid">
+    {{- range $i, $p := $paginator.Pages }}
+      {{ partial "article-card.html" (dict "page" $p "index" (add $i 1)) }}
+    {{- end }}
+  </div>
+
+  {{- if gt $paginator.TotalPages 1 }}
+  <nav class="pagi">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL }}">← 前へ</a>
+    {{- end }}
+    {{- range $paginator.Pagers }}
+      {{- if eq . $paginator }}
+      <span class="current">{{ .PageNumber }}</span>
+      {{- else }}
+      <a href="{{ .URL }}">{{ .PageNumber }}</a>
+      {{- end }}
+    {{- end }}
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL }}">次へ →</a>
+    {{- end }}
+  </nav>
+  {{- end }}
+  {{- else }}
+  <p class="meta-text" style="text-align:center; padding: 60px 0;">記事はまだないよ〜🫥</p>
+  {{- end }}
+</section>
+{{ end }}

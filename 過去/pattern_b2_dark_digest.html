@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ギャル庁 - あーしが読んどいたよ。</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #14171f;
+    --panel: #1d2230;
+    --panel-soft: #252b3c;
+    --ink: #ece4d0;          /* warm cream — 目に優しい */
+    --ink-soft: #c5beac;
+    --muted: #8b8678;
+    --line: #2d3346;
+    --line-soft: #232a3a;
+    --accent: #d4a949;       /* mustard */
+    --accent-deep: #b8862a;
+    --hot: #e85a5a;          /* breaking red */
+    --tame: #5a9bd4;
+    --omo: #d4a949;
+    --emo: #d47070;
+    --anime: #9d8bd4;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 15px;
+    font-feature-settings: "palt" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  .wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ===== Top ribbon ===== */
+  .ribbon {
+    background: #0a0c12;
+    color: var(--muted);
+    padding: 8px 0;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid var(--line);
+  }
+  .ribbon-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ribbon strong { color: var(--accent); }
+  .ribbon .pulse {
+    display: inline-block;
+    width: 6px; height: 6px;
+    background: var(--hot);
+    border-radius: 50%;
+    margin-right: 6px;
+    animation: pulse 1.5s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  /* ===== Header ===== */
+  .header {
+    background: var(--panel);
+    border-bottom: 4px double var(--accent);
+    padding: 24px 0 16px;
+  }
+  .header-inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .brand {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+  }
+  .seal {
+    width: 64px; height: 64px;
+    border: 3px solid var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.2;
+    color: var(--bg);
+    background: var(--accent);
+    transform: rotate(-8deg);
+    flex-shrink: 0;
+    letter-spacing: 0.05em;
+  }
+  .brand-text {
+    line-height: 1;
+  }
+  .logo {
+    font-size: 52px;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+  }
+  .tagline {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-top: 8px;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+  }
+  .header-meta {
+    text-align: right;
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+  }
+  .header-meta strong {
+    color: var(--accent);
+    font-size: 16px;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  /* ===== Nav ===== */
+  .nav {
+    background: #0a0c12;
+    color: var(--ink);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: stretch;
+  }
+  .nav a {
+    padding: 14px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    border-right: 1px solid var(--line-soft);
+    transition: background .15s, color .15s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .nav a:first-child { border-left: 1px solid var(--line-soft); }
+  .nav a:hover {
+    background: var(--panel);
+    color: var(--accent);
+  }
+  .nav .nav-spacer { flex: 1; }
+  .nav .search {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    color: var(--accent);
+    font-size: 12px;
+    letter-spacing: 0.15em;
+  }
+
+  /* ===== Breaking ===== */
+  .breaking {
+    background: var(--panel);
+    border-bottom: 1px solid var(--line);
+    padding: 12px 0;
+  }
+  .breaking-inner {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 13px;
+  }
+  .breaking-tag {
+    background: var(--hot);
+    color: #fff;
+    font-weight: 900;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    padding: 4px 12px;
+    flex-shrink: 0;
+    box-shadow: 0 0 12px rgba(232,90,90,0.4);
+  }
+  .breaking-text {
+    color: var(--ink);
+    font-weight: 700;
+  }
+
+  /* ===== Layout ===== */
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 36px;
+    padding: 36px 0;
+  }
+
+  /* ===== Top ranking ===== */
+  .ranking {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    margin-bottom: 32px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .ranking-head {
+    background: linear-gradient(90deg, #0a0c12 0%, var(--panel-soft) 100%);
+    color: var(--ink);
+    padding: 14px 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+  }
+  .ranking-head h2 {
+    font-size: 17px;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+  }
+  .ranking-head h2::before {
+    content: "📊 ";
+  }
+  .ranking-head small {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.2em;
+  }
+  .rank-list { list-style: none; }
+  .rank-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    border-bottom: 1px dashed var(--line);
+    transition: background .15s;
+    cursor: pointer;
+  }
+  .rank-item:hover { background: var(--panel-soft); }
+  .rank-item:last-child { border-bottom: none; }
+  .rank-num {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--accent);
+    line-height: 1;
+    width: 36px;
+    flex-shrink: 0;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+  .rank-num.top {
+    background: var(--accent);
+    color: var(--bg);
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    box-shadow: 0 0 16px rgba(212,169,73,0.35);
+  }
+  .rank-num.no2 { color: var(--accent-deep); }
+  .rank-num.no3 { color: var(--ink-soft); }
+  .rank-content { flex: 1; min-width: 0; }
+  .rank-meta {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 4px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .cat-tag {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    color: #fff;
+    letter-spacing: 0.05em;
+    border-radius: 2px;
+  }
+  .ct-tame  { background: var(--tame); }
+  .ct-omo   { background: var(--omo); color: var(--bg); }
+  .ct-emo   { background: var(--emo); }
+  .ct-anime { background: var(--anime); }
+
+  .rank-title {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  .rank-comment {
+    font-size: 12px;
+    color: var(--accent);
+    margin-top: 4px;
+    font-weight: 700;
+  }
+
+  /* ===== Section ===== */
+  .sec-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--accent);
+  }
+  .sec-head h2 {
+    font-size: 19px;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    color: var(--ink);
+  }
+  .sec-head h2::before {
+    content: "▎";
+    color: var(--accent);
+    margin-right: 4px;
+  }
+  .sec-head small {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.2em;
+  }
+  .sec-head .more {
+    margin-left: auto;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  /* ===== Article list ===== */
+  .article-list {
+    display: flex;
+    flex-direction: column;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    margin-bottom: 32px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .art-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 16px;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--line);
+    cursor: pointer;
+    transition: background .15s;
+  }
+  .art-row:hover { background: var(--panel-soft); }
+  .art-row:last-child { border-bottom: none; }
+  .art-thumb {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: var(--bg);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+  .art-thumb::before {
+    content: "📄";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    opacity: 0.65;
+    filter: saturate(0.8);
+  }
+  .art-thumb.t1::before { content: "🐶"; }
+  .art-thumb.t2::before { content: "💰"; }
+  .art-thumb.t3::before { content: "⚔️"; }
+  .art-thumb.t4::before { content: "📱"; }
+  .art-thumb.t5::before { content: "🎏"; }
+  .art-thumb.t6::before { content: "💅"; }
+
+  .art-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .art-meta {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .art-title {
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.5;
+    margin-bottom: 6px;
+    color: var(--ink);
+  }
+  .art-excerpt {
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.7;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* ===== Sidebar ===== */
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .side-block {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .side-block-head {
+    background: #0a0c12;
+    color: var(--accent);
+    padding: 10px 16px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    border-bottom: 1px solid var(--line);
+  }
+  .side-block-body { padding: 16px; }
+
+  /* Aashi profile card */
+  .profile {
+    text-align: center;
+    padding: 20px 16px;
+  }
+  .profile-avatar {
+    width: 72px; height: 72px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--bg);
+    font-size: 28px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    border: 3px solid var(--bg);
+    box-shadow: 0 0 0 1px var(--accent), 0 0 20px rgba(212,169,73,0.3);
+  }
+  .profile-name {
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--ink);
+  }
+  .profile-bio {
+    font-size: 12px;
+    color: var(--ink-soft);
+    margin-top: 6px;
+    line-height: 1.6;
+  }
+  .profile-stats {
+    display: flex;
+    border-top: 1px solid var(--line);
+    margin-top: 14px;
+    padding-top: 12px;
+  }
+  .profile-stats div { flex: 1; }
+  .profile-stats strong {
+    display: block;
+    font-size: 16px;
+    color: var(--accent);
+  }
+  .profile-stats span {
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+
+  .cat-list { list-style: none; }
+  .cat-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--line);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .cat-list li:last-child { border-bottom: none; }
+  .cat-list li::before {
+    content: "▸ ";
+    color: var(--accent);
+    margin-right: 6px;
+  }
+  .cat-list li span {
+    background: var(--bg);
+    color: var(--muted);
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+
+  /* Live ticker */
+  .ticker {
+    padding: 14px 16px;
+  }
+  .ticker-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 12px;
+    border-bottom: 1px dotted var(--line);
+  }
+  .ticker-row:last-child { border-bottom: none; }
+  .ticker-label { color: var(--ink-soft); }
+  .ticker-val { color: var(--accent); font-weight: 700; }
+  .ticker-up::after { content: " ▲"; color: #6ed47a; }
+  .ticker-down::after { content: " ▼"; color: var(--hot); }
+
+  /* Aashi banner */
+  .aashi-banner {
+    background: linear-gradient(180deg, #0a0c12 0%, var(--panel) 100%);
+    color: var(--ink);
+    padding: 36px 0;
+    border-top: 4px double var(--accent);
+    border-bottom: 4px double var(--accent);
+  }
+  .aashi-banner-inner {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .aashi-quote-mark {
+    font-size: 80px;
+    line-height: 1;
+    color: var(--accent);
+    font-weight: 900;
+    text-shadow: 0 0 30px rgba(212,169,73,0.5);
+  }
+  .aashi-banner-text {
+    font-size: 17px;
+    line-height: 1.85;
+    flex: 1;
+    font-weight: 500;
+  }
+  .aashi-banner-text small {
+    display: block;
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.3em;
+    margin-bottom: 6px;
+  }
+
+  /* ===== Footer ===== */
+  .footer {
+    background: #0a0c12;
+    border-top: 1px solid var(--line);
+    padding: 36px 0 24px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .foot-inner {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 24px;
+  }
+  .foot-logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .foot h4 {
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+  }
+  .foot ul { list-style: none; }
+  .foot li {
+    padding: 4px 0;
+    color: var(--ink-soft);
+  }
+  .copyright {
+    border-top: 1px dashed var(--line);
+    padding-top: 16px;
+    text-align: center;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+
+  @media (max-width: 900px) {
+    .main { grid-template-columns: 1fr; }
+    .nav-inner { flex-wrap: wrap; }
+    .nav a { padding: 10px 14px; font-size: 12px; }
+    .header-inner { gap: 14px; }
+    .logo { font-size: 36px; }
+    .seal { width: 52px; height: 52px; font-size: 9px; }
+    .header-meta { font-size: 11px; text-align: left; width: 100%; }
+    .art-row { grid-template-columns: 100px 1fr; padding: 12px; }
+    .art-title { font-size: 15px; }
+    .foot-inner { grid-template-columns: 1fr 1fr; }
+    .breaking-inner { flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Top ribbon -->
+<div class="ribbon">
+  <div class="wrap ribbon-inner">
+    <span><span class="pulse"></span>2026年5月3日(日) 23:42 JST <strong>第142号</strong></span>
+    <span>本日2本更新 / X @gal_cho</span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <div class="seal">あーし<br>編集長</div>
+      <div class="brand-text">
+        <div class="logo">ギャル庁</div>
+        <div class="tagline">あーしが読んどいたよ。</div>
+      </div>
+    </div>
+    <div class="header-meta">
+      <strong>夜のニュース ☾</strong>
+      渋谷 18℃ / 答弁ナイト<br>
+      累計記事 142 / 月間 PV 約 2.3万
+    </div>
+  </div>
+</header>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a href="#">🏠 TOP</a>
+    <a href="#">🛡 ためになる</a>
+    <a href="#">🎉 面白い</a>
+    <a href="#">😭 エモい</a>
+    <a href="#">🎮 アニメ・ゲーム</a>
+    <a href="#">📜 国会答弁</a>
+    <span class="nav-spacer"></span>
+    <a href="#" class="search">🔍 SEARCH</a>
+  </div>
+</nav>
+
+<!-- Breaking -->
+<div class="breaking">
+  <div class="wrap breaking-inner">
+    <span class="breaking-tag">速報</span>
+    <span class="breaking-text">消費者庁が新たなリコール発表 — 人気スマホ機種が対象、型番チェック推奨</span>
+  </div>
+</div>
+
+<!-- Main grid -->
+<div class="wrap main">
+
+  <main class="content">
+
+    <!-- Today's Top -->
+    <div class="ranking">
+      <div class="ranking-head">
+        <h2>今日のTOP5</h2>
+        <small>UPDATED 23:30</small>
+      </div>
+      <ol class="rank-list">
+        <li class="rank-item">
+          <div class="rank-num top">1</div>
+          <div class="rank-content">
+            <div class="rank-meta"><span class="cat-tag ct-emo">エモい</span><span>5/3</span></div>
+            <div class="rank-title">能登の鯉のぼり200匹が復活してる話🎏✨ 川の上にもロープ渡したらしい</div>
+            <div class="rank-comment">▸ 泣くが？？ 今日いちばん沁みた</div>
+          </div>
+        </li>
+        <li class="rank-item">
+          <div class="rank-num no2">2</div>
+          <div class="rank-content">
+            <div class="rank-meta"><span class="cat-tag ct-omo">面白い</span><span>5/3</span></div>
+            <div class="rank-title">制服ってオフの日も着なきゃダメなの？問題💅 国会答弁が結構おもろい</div>
+          </div>
+        </li>
+        <li class="rank-item">
+          <div class="rank-num no3">3</div>
+          <div class="rank-content">
+            <div class="rank-meta"><span class="cat-tag ct-tame">ためになる</span><span>5/2</span></div>
+            <div class="rank-title">あの人気スマホ、発火リコールきてるって知ってた？型番マジ要チェック</div>
+          </div>
+        </li>
+        <li class="rank-item">
+          <div class="rank-num">4</div>
+          <div class="rank-content">
+            <div class="rank-meta"><span class="cat-tag ct-anime">アニメ</span><span>5/2</span></div>
+            <div class="rank-title">鬼滅最終章のキービジュ来たんだけど…ヤバい</div>
+          </div>
+        </li>
+        <li class="rank-item">
+          <div class="rank-num">5</div>
+          <div class="rank-content">
+            <div class="rank-meta"><span class="cat-tag ct-tame">ためになる</span><span>5/1</span></div>
+            <div class="rank-title">【最新】NISA改正、簡単にまとめたよ💰</div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Latest -->
+    <div class="sec-head">
+      <h2>新着記事</h2>
+      <small>LATEST</small>
+      <a class="more" href="#">もっと見る →</a>
+    </div>
+    <div class="article-list">
+      <a class="art-row" href="#">
+        <div class="art-thumb t6"></div>
+        <div class="art-body">
+          <div class="art-meta"><span class="cat-tag ct-omo">面白い</span><span>5/3</span><span>国会答弁</span></div>
+          <div class="art-title">制服ってオフの日も着なきゃダメなの？問題💅</div>
+          <p class="art-excerpt">石垣のりこ議員が「警察官と自衛官で制服ルール違くない？」って国会で質問したやつ、答弁が結構おもろい…</p>
+        </div>
+      </a>
+      <a class="art-row" href="#">
+        <div class="art-thumb t5"></div>
+        <div class="art-body">
+          <div class="art-meta"><span class="cat-tag ct-emo">エモい</span><span>5/3</span><span>復興</span></div>
+          <div class="art-title">能登の鯉のぼり200匹が復活してる話🎏✨</div>
+          <p class="art-excerpt">震災から2年経った石川県珠洲市で、約200匹の鯉のぼりが空泳いでるの！しかも今年は川の上にも復活してて…</p>
+        </div>
+      </a>
+      <a class="art-row" href="#">
+        <div class="art-thumb t4"></div>
+        <div class="art-body">
+          <div class="art-meta"><span class="cat-tag ct-tame">ためになる</span><span>5/2</span><span>消費者庁</span></div>
+          <div class="art-title">あの人気スマホ、発火リコールきてるって知ってた？</div>
+          <p class="art-excerpt">消費者庁から発表きたやつ、対象機種マジで身近すぎて怖い。型番要チェック…</p>
+        </div>
+      </a>
+      <a class="art-row" href="#">
+        <div class="art-thumb t3"></div>
+        <div class="art-body">
+          <div class="art-meta"><span class="cat-tag ct-anime">アニメ</span><span>5/2</span><span>新作</span></div>
+          <div class="art-title">鬼滅最終章のキービジュ来たんだけど…ヤバい</div>
+          <p class="art-excerpt">無限城編キービジュアル公開！背景に映ってる「あの人」のシルエットが鳥肌モンなんだけど…</p>
+        </div>
+      </a>
+      <a class="art-row" href="#">
+        <div class="art-thumb t2"></div>
+        <div class="art-body">
+          <div class="art-meta"><span class="cat-tag ct-tame">ためになる</span><span>5/1</span><span>金融庁</span></div>
+          <div class="art-title">【最新】NISA改正、簡単にまとめたよ💰</div>
+          <p class="art-excerpt">金融庁が出した新ルール、ぶっちゃけ何が変わるのか3行でまとめると…</p>
+        </div>
+      </a>
+      <a class="art-row" href="#">
+        <div class="art-thumb t1"></div>
+        <div class="art-body">
+          <div class="art-meta"><span class="cat-tag ct-emo">エモい</span><span>5/1</span><span>動物</span></div>
+          <div class="art-title">保護犬カフェの「ひまわり」がついに卒業した話🐶</div>
+          <p class="art-excerpt">SNSで人気だったあの子、ついに新しい家族のもとへ…エピソードが泣ける😭</p>
+        </div>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="side-block">
+      <div class="side-block-head">▶ 編集長プロフィール</div>
+      <div class="profile">
+        <div class="profile-avatar">あ</div>
+        <div class="profile-name">あーし（17）</div>
+        <div class="profile-bio">渋谷系JK・推し活と国会答弁が趣味。難しい話を簡単にするのが得意。</div>
+        <div class="profile-stats">
+          <div><strong>142</strong><span>記事</span></div>
+          <div><strong>2.3万</strong><span>月PV</span></div>
+          <div><strong>1.5K</strong><span>X</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-block">
+      <div class="side-block-head">▶ 注目度ライブ</div>
+      <div class="ticker">
+        <div class="ticker-row"><span class="ticker-label">マイナ保険証</span><span class="ticker-val ticker-up">+312</span></div>
+        <div class="ticker-row"><span class="ticker-label">給付金もらい方</span><span class="ticker-val ticker-up">+184</span></div>
+        <div class="ticker-row"><span class="ticker-label">特殊詐欺手口</span><span class="ticker-val ticker-down">-42</span></div>
+        <div class="ticker-row"><span class="ticker-label">NISA改正</span><span class="ticker-val ticker-up">+98</span></div>
+      </div>
+    </div>
+
+    <div class="side-block">
+      <div class="side-block-head">▶ カテゴリ</div>
+      <div class="side-block-body">
+        <ul class="cat-list">
+          <li>ためになる<span>52</span></li>
+          <li>面白い<span>38</span></li>
+          <li>エモい<span>27</span></li>
+          <li>アニメ・ゲーム<span>25</span></li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<!-- Aashi banner -->
+<section class="aashi-banner">
+  <div class="wrap aashi-banner-inner">
+    <div class="aashi-quote-mark">"</div>
+    <div class="aashi-banner-text">
+      <small>あーし的にはさぁ、</small>
+      最近のニュースさぁ、ちゃんと読むと意外とおもろいんだよね。あーし、推しのために税金調べ始めたら止まんなくなった系だから、みんなも気軽に覗いてって🫶
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap foot">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-logo">ギャル庁</div>
+        <p>あーしが読んどいたよ。<br>お堅いニュースをギャル語で解説するまとめサイト。</p>
+      </div>
+      <div>
+        <h4>カテゴリ</h4>
+        <ul>
+          <li>ためになる</li>
+          <li>面白い</li>
+          <li>エモい</li>
+          <li>アニメ・ゲーム</li>
+        </ul>
+      </div>
+      <div>
+        <h4>サイト</h4>
+        <ul>
+          <li>運営者情報</li>
+          <li>プライバシーポリシー</li>
+          <li>お問い合わせ</li>
+        </ul>
+      </div>
+      <div>
+        <h4>SNS</h4>
+        <ul>
+          <li>X (@gal_cho)</li>
+          <li>RSS</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© 2026 ギャル庁 / GAL-CHO</div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+# =====================================================
+# ギャル庁 - Hugo 設定
+# =====================================================
+
+baseURL = 'https://gal-cho.example.com/'
+locale = 'ja'
+defaultContentLanguage = 'ja'
+title = 'ギャル庁'
+theme = 'gal-cho'
+timeZone = 'Asia/Tokyo'
+
+enableRobotsTXT = true
+enableEmoji = true
+
+# Build
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+# 概要文の自動生成（記事一覧で使用）
+summaryLength = 70
+
+# ページネーション（Hugo 0.128+ 形式）
+[pagination]
+  pagerSize = 12
+
+# サイト全体で使うパラメータ
+[params]
+  description = 'お堅いニュースをギャル語で解説するまとめサイト。あーしが読んどいたよ。'
+  tagline = 'あーしが読んどいたよ。'
+  author = 'あーし'
+  twitter = 'gal_cho'
+  ogImage = '/images/og-default.png'
+
+  # カテゴリ表示メタデータ（テーマ側で利用）
+  [params.categoryMeta]
+    [params.categoryMeta.tame]
+      label = 'ためになる系'
+      emoji = '🛡'
+      tagline = 'あーしが教えてあげる'
+      color = '#6b5bff'
+    [params.categoryMeta.omo]
+      label = '面白い系'
+      emoji = '💅'
+      tagline = '「まじ？」って言いたくなる'
+      color = '#ff8c42'
+    [params.categoryMeta.emo]
+      label = 'エモい系'
+      emoji = '😭'
+      tagline = 'ガチで泣くが？？'
+      color = '#ff7589'
+    [params.categoryMeta.anime]
+      label = 'アニメ・ゲーム系'
+      emoji = '🎮'
+      tagline = '推しの きたぁぁ！'
+      color = '#5cc63d'
+
+# パーマリンク（URL構造）
+# Hugo のデフォルト挙動でファイル名 (e.g. seifuku-off-day.md → /posts/seifuku-off-day/)
+# を使うため、明示設定はしない
+
+# タクソノミー
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+# Markdown レンダリング設定
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true   # 記事内 HTML 許可（mark タグなどで使用）
+  [markup.highlight]
+    style = 'monokai'
+    lineNos = false
+    codeFences = true
+
+# 出力フォーマット
+[outputs]
+  home = ['HTML', 'RSS']
+  section = ['HTML', 'RSS']
+  taxonomy = ['HTML', 'RSS']
+  term = ['HTML', 'RSS']
+
+# メインメニュー
+[menu]
+  [[menu.main]]
+    name = 'ホーム'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = 'ためになる'
+    url = '/categories/tame/'
+    weight = 2
+  [[menu.main]]
+    name = '面白い'
+    url = '/categories/omo/'
+    weight = 3
+  [[menu.main]]
+    name = 'エモい'
+    url = '/categories/emo/'
+    weight = 4
+  [[menu.main]]
+    name = 'アニメ'
+    url = '/categories/anime/'
+    weight = 5

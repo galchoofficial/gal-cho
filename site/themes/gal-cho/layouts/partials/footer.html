@@ -1,0 +1,36 @@
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div class="foot-grid">
+      <div>
+        <a href="{{ "/" | relURL }}" class="logo-badge">{{ site.Title }}</a>
+        <p class="foot-tag">{{ site.Params.tagline }}<br>{{ site.Params.description }}</p>
+      </div>
+      <div>
+        <h4>カテゴリ</h4>
+        <ul>
+          {{- range $key, $meta := site.Params.categoryMeta }}
+          <li><a href="{{ printf "/categories/%s/" $key | relURL }}">{{ $meta.emoji }} {{ $meta.label }}</a></li>
+          {{- end }}
+        </ul>
+      </div>
+      <div>
+        <h4>サイト</h4>
+        <ul>
+          <li><a href="{{ "/about/" | relURL }}">運営者情報</a></li>
+          <li><a href="{{ "/privacy/" | relURL }}">プライバシーポリシー</a></li>
+          <li><a href="{{ "/contact/" | relURL }}">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>SNS</h4>
+        <ul>
+          {{- with site.Params.twitter }}
+          <li><a href="https://x.com/{{ . }}" target="_blank" rel="noopener">X (@{{ . }})</a></li>
+          {{- end }}
+          <li><a href="{{ "/index.xml" | relURL }}">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© {{ now.Year }} <span>{{ site.Title }}</span> / GAL-CHO · made with ♡</div>
+  </div>
+</footer>

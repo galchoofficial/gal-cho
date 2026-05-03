@@ -1,0 +1,28 @@
+# ===== Hugo =====
+site/public/
+site/resources/
+site/.hugo_build.lock
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Editor =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== Node (将来 npm を使う場合) =====
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# ===== Logs =====
+*.log
+
+# ===== Env =====
+.env
+.env.local

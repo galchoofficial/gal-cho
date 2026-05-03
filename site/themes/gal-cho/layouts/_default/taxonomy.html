@@ -1,0 +1,73 @@
+{{ define "main" }}
+{{- $isCategory := eq .Data.Plural "categories" -}}
+
+<div class="wrap crumb">
+  <a href="{{ "/" | relURL }}">ホーム</a>
+  <span class="sep">›</span>
+  <strong>{{ if $isCategory }}カテゴリ{{ else }}タグ{{ end }}から探す</strong>
+</div>
+
+<section class="wrap" style="padding: 40px 0 24px;">
+  <h1 class="hero-h1"><mark>{{ if $isCategory }}カテゴリ{{ else }}タグ{{ end }}</mark> から探す</h1>
+  <p class="hero-sub">{{ if $isCategory }}気分で選んでね🫶 4カテゴリ展開中{{ else }}{{ len .Pages }}個のタグから探せるよ{{ end }}</p>
+
+  {{- if $isCategory }}
+  <div class="quick-nav" style="margin: 24px 0 0; display:flex; gap:10px; flex-wrap:wrap;">
+    {{- range $key, $meta := site.Params.categoryMeta }}
+    <a href="#{{ $key }}" class="chip"><span class="chip-emoji">{{ $meta.emoji }}</span>{{ $meta.label }}</a>
+    {{- end }}
+  </div>
+  {{- end }}
+</section>
+
+{{- if $isCategory }}
+{{- /* Category landing: render each category as a hero section + 3 latest articles */ -}}
+{{- range $key, $meta := site.Params.categoryMeta }}
+  {{- $catPages := where (where site.RegularPages "Section" "posts") "Params.categories" "intersect" (slice $key) -}}
+  {{- $latest3 := first 3 $catPages.ByDate.Reverse }}
+
+<section id="{{ $key }}" class="cat-{{ $key }} cat-section">
+  <div class="wrap">
+    <div class="cat-hero">
+      <div class="cat-pill">{{ upper $key }} / {{ $meta.label }}</div>
+      <h2 class="cat-h2"><span class="em">{{ $meta.emoji }}</span>{{ $meta.label }}</h2>
+      <p class="cat-tagline">{{ $meta.tagline | safeHTML }}</p>
+      <div class="cat-stats">
+        <div class="stat"><strong>{{ len $catPages }}</strong><small>ARTICLES</small></div>
+        {{- with first 1 $catPages.ByDate.Reverse }}
+          {{- range . }}
+          <div class="stat"><strong>{{ .Date.Format "1/2" }}</strong><small>LATEST</small></div>
+          {{- end }}
+        {{- end }}
+      </div>
+      <span class="cat-hero-bg-emoji">{{ $meta.emoji }}</span>
+    </div>
+
+    {{- if gt (len $latest3) 0 }}
+    <div class="grid">
+      {{- range $i, $p := $latest3 }}
+        {{ partial "article-card.html" (dict "page" $p "index" (add $i 1)) }}
+      {{- end }}
+      <a class="more-card" href="{{ printf "/categories/%s/" $key | relURL }}">
+        <div class="arrow">→</div>
+        <div class="label">もっと見る</div>
+        <div class="count">+{{ sub (len $catPages) 3 | default 0 }} 記事</div>
+      </a>
+    </div>
+    {{- else }}
+    <p class="meta-text" style="padding: 24px 0;">このカテゴリの記事はまだないよ〜🫥</p>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+{{- else }}
+{{- /* Tags page: simple chip cloud */ -}}
+<section class="wrap section">
+  <div class="chips-bar" style="flex-wrap: wrap; gap: 8px;">
+    {{- range .Data.Terms.Alphabetical }}
+    <a href="{{ .Page.RelPermalink }}" class="chip"><span class="chip-emoji">#</span>{{ .Name }} <small style="opacity:0.6">({{ .Count }})</small></a>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+{{ end }}

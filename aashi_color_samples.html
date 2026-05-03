@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>「あーし的には」ピンク5案サンプル</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf8f2;
+    --ink: #16161e;
+    --ink-soft: #4a4a55;
+    --muted: #8b8b94;
+    --line: #ececea;
+    --lime: #b5f03a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    padding: 40px 0 80px;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  .page-head {
+    margin-bottom: 36px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed var(--line);
+  }
+  .page-head h1 {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+  }
+  .page-head h1 em {
+    font-style: normal;
+    background: var(--lime);
+    padding: 0 8px;
+    border-radius: 8px;
+  }
+  .page-head p {
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  /* Sample wrapper */
+  .sample {
+    margin-bottom: 48px;
+  }
+  .sample-meta {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  .sample-no {
+    background: var(--ink);
+    color: var(--lime);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+  .sample-name {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--ink);
+  }
+  .sample-name small {
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 700;
+    margin-left: 8px;
+    letter-spacing: 0.05em;
+  }
+  .sample-hex {
+    margin-left: auto;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 12px;
+    background: var(--line);
+    color: var(--ink-soft);
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+  }
+  .sample-note {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /* === aashi base === */
+  .aashi {
+    border-radius: 28px;
+    padding: 40px 36px;
+    position: relative;
+    overflow: hidden;
+  }
+  .aashi::before {
+    content: "♡";
+    position: absolute;
+    top: -40px; right: -10px;
+    font-size: 200px;
+    line-height: 1;
+    transform: rotate(15deg);
+  }
+  .aashi-tag {
+    background: var(--lime);
+    color: var(--ink);
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    margin-bottom: 16px;
+    transform: rotate(-2deg);
+    position: relative;
+    z-index: 1;
+  }
+  .aashi-text {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.75;
+    max-width: 640px;
+    position: relative;
+    z-index: 1;
+  }
+  .aashi-text mark {
+    background: var(--lime);
+    color: var(--ink);
+    padding: 0 6px;
+    border-radius: 4px;
+  }
+  .aashi-by {
+    margin-top: 18px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* === Variants === */
+  /* 1. Coral */
+  .v-coral {
+    background: #ff7589;
+    color: #fff;
+    box-shadow: 0 14px 36px rgba(255,117,137,0.25);
+  }
+  .v-coral::before { color: #fff; opacity: 0.32; }
+  .v-coral .aashi-by { color: var(--lime); }
+
+  /* 2. Dusty Rose */
+  .v-dusty {
+    background: #c97389;
+    color: #fff;
+    box-shadow: 0 14px 36px rgba(201,115,137,0.22);
+  }
+  .v-dusty::before { color: #fff; opacity: 0.3; }
+  .v-dusty .aashi-by { color: var(--lime); }
+
+  /* 3. Sakura Pastel */
+  .v-sakura {
+    background: #ffb8c9;
+    color: var(--ink);
+    box-shadow: 0 14px 36px rgba(255,184,201,0.45);
+  }
+  .v-sakura::before { color: var(--ink); opacity: 0.13; }
+  .v-sakura .aashi-by { color: var(--ink); }
+  .v-sakura .aashi-text mark { background: var(--ink); color: var(--lime); }
+
+  /* 4. Salmon Coral */
+  .v-salmon {
+    background: #ee8a7c;
+    color: #fff;
+    box-shadow: 0 14px 36px rgba(238,138,124,0.25);
+  }
+  .v-salmon::before { color: #fff; opacity: 0.32; }
+  .v-salmon .aashi-by { color: var(--lime); }
+
+  /* 5. Berry Wine */
+  .v-berry {
+    background: #a8456b;
+    color: #fff;
+    box-shadow: 0 14px 36px rgba(168,69,107,0.28);
+  }
+  .v-berry::before { color: var(--lime); opacity: 0.42; }
+  .v-berry .aashi-by { color: var(--lime); }
+
+  /* Reference: original hot pink */
+  .v-hot {
+    background: #ff3d7f;
+    color: #fff;
+    box-shadow: 0 14px 36px rgba(255,61,127,0.28);
+    opacity: 0.6;
+  }
+  .v-hot::before { color: #fff; opacity: 0.35; }
+  .v-hot .aashi-by { color: var(--lime); }
+
+  .ref-tag {
+    display: inline-block;
+    background: var(--muted);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-left: 8px;
+  }
+
+  @media (max-width: 600px) {
+    .aashi { padding: 30px 24px; }
+    .aashi-text { font-size: 17px; }
+    .sample-meta { flex-wrap: wrap; }
+    .sample-hex { margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+
+<main class="wrap">
+
+  <div class="page-head">
+    <h1><em>「あーし的には」</em> ピンク色 5案サンプル</h1>
+    <p>同じ内容で背景色だけ変えています。ライム + 内容は固定。気に入ったものの番号を教えてください。</p>
+  </div>
+
+  <!-- 1. Coral -->
+  <section class="sample">
+    <div class="sample-meta">
+      <span class="sample-no">案 1</span>
+      <span class="sample-name">Coral / コーラル<small>暖かい・親しみやすい</small></span>
+      <span class="sample-hex">#ff7589</span>
+    </div>
+    <div class="aashi v-coral">
+      <div class="aashi-tag">あーし的にはさぁ、</div>
+      <p class="aashi-text">制服ってさぁ、あーしは実は<mark>けっこう好き</mark>なのよね♡ あれ着てると「あ、この人お仕事してるんだ」ってわかるじゃん？自衛官さんがオフでも制服着てたら普通にカッコいいと思うけどね！💅</p>
+      <div class="aashi-by">— あーし（JK・17 / 渋谷系）</div>
+    </div>
+    <p class="sample-note">スイカっぽい爽やかなコーラル。元気だけどキツくない。</p>
+  </section>
+
+  <!-- 2. Dusty Rose -->
+  <section class="sample">
+    <div class="sample-meta">
+      <span class="sample-no">案 2</span>
+      <span class="sample-name">Dusty Rose / くすみローズ<small>大人っぽい・落ち着き</small></span>
+      <span class="sample-hex">#c97389</span>
+    </div>
+    <div class="aashi v-dusty">
+      <div class="aashi-tag">あーし的にはさぁ、</div>
+      <p class="aashi-text">制服ってさぁ、あーしは実は<mark>けっこう好き</mark>なのよね♡ あれ着てると「あ、この人お仕事してるんだ」ってわかるじゃん？自衛官さんがオフでも制服着てたら普通にカッコいいと思うけどね！💅</p>
+      <div class="aashi-by">— あーし（JK・17 / 渋谷系</div>
+    </div>
+    <p class="sample-note">くすみ系で外で読んでも気にならない、一番"大人ギャル"寄り。</p>
+  </section>
+
+  <!-- 3. Sakura Pastel -->
+  <section class="sample">
+    <div class="sample-meta">
+      <span class="sample-no">案 3</span>
+      <span class="sample-name">Sakura Pastel / 桜パステル<small>淡い・目に優しい</small></span>
+      <span class="sample-hex">#ffb8c9</span>
+    </div>
+    <div class="aashi v-sakura">
+      <div class="aashi-tag">あーし的にはさぁ、</div>
+      <p class="aashi-text">制服ってさぁ、あーしは実は<mark>けっこう好き</mark>なのよね♡ あれ着てると「あ、この人お仕事してるんだ」ってわかるじゃん？自衛官さんがオフでも制服着てたら普通にカッコいいと思うけどね！💅</p>
+      <div class="aashi-by">— あーし（JK・17 / 渋谷系）</div>
+    </div>
+    <p class="sample-note">パステルなので文字色は黒。最もソフト、長文を読むのに優しい。</p>
+  </section>
+
+  <!-- 4. Salmon -->
+  <section class="sample">
+    <div class="sample-meta">
+      <span class="sample-no">案 4</span>
+      <span class="sample-name">Salmon Coral / サーモン<small>オレンジ寄り・ジューシー</small></span>
+      <span class="sample-hex">#ee8a7c</span>
+    </div>
+    <div class="aashi v-salmon">
+      <div class="aashi-tag">あーし的にはさぁ、</div>
+      <p class="aashi-text">制服ってさぁ、あーしは実は<mark>けっこう好き</mark>なのよね♡ あれ着てると「あ、この人お仕事してるんだ」ってわかるじゃん？自衛官さんがオフでも制服着てたら普通にカッコいいと思うけどね！💅</p>
+      <div class="aashi-by">— あーし（JK・17 / 渋谷系）</div>
+    </div>
+    <p class="sample-note">ピンクとオレンジの間。あまり"ガーリー"感を出したくないならこの辺。</p>
+  </section>
+
+  <!-- 5. Berry -->
+  <section class="sample">
+    <div class="sample-meta">
+      <span class="sample-no">案 5</span>
+      <span class="sample-name">Berry Wine / ベリーワイン<small>深め・シック</small></span>
+      <span class="sample-hex">#a8456b</span>
+    </div>
+    <div class="aashi v-berry">
+      <div class="aashi-tag">あーし的にはさぁ、</div>
+      <p class="aashi-text">制服ってさぁ、あーしは実は<mark>けっこう好き</mark>なのよね♡ あれ着てると「あ、この人お仕事してるんだ」ってわかるじゃん？自衛官さんがオフでも制服着てたら普通にカッコいいと思うけどね！💅</p>
+      <div class="aashi-by">— あーし（JK・17 / 渋谷系）</div>
+    </div>
+    <p class="sample-note">深めの彩度低い赤紫。まとめサイト系の中では珍しい色で個性◎。</p>
+  </section>
+
+  <!-- Reference: original -->
+  <section class="sample">
+    <div class="sample-meta">
+      <span class="sample-no" style="background:var(--muted)">参考</span>
+      <span class="sample-name">現状<span class="ref-tag">REFERENCE</span></span>
+      <span class="sample-hex">#ff3d7f</span>
+    </div>
+    <div class="aashi v-hot">
+      <div class="aashi-tag">あーし的にはさぁ、</div>
+      <p class="aashi-text">制服ってさぁ、あーしは実は<mark>けっこう好き</mark>なのよね♡ あれ着てると「あ、この人お仕事してるんだ」ってわかるじゃん？自衛官さんがオフでも制服着てたら普通にカッコいいと思うけどね！💅</p>
+      <div class="aashi-by">— あーし（JK・17 / 渋谷系）</div>
+    </div>
+    <p class="sample-note">参考：今この色になっています（透明度落としています）。</p>
+  </section>
+
+</main>
+
+</body>
+</html>

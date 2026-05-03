@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ギャル庁 企画書</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink-main: #FF1493;
+    --pink-light: #FF69B4;
+    --pink-bg: #FFF0F5;
+    --pink-pale: #FFF8FA;
+    --dark: #1a1a1a;
+    --gray: #555;
+    --gray-light: #999;
+    --border: #f0d4e0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    color: var(--dark);
+    background: #fefefe;
+    line-height: 1.85;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  /* ===== HEADER ===== */
+  .header {
+    text-align: center;
+    padding: 60px 0 40px;
+    border-bottom: 3px solid var(--pink-main);
+    margin-bottom: 48px;
+  }
+  .header h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--pink-main);
+    letter-spacing: 0.08em;
+  }
+  .header .subtitle {
+    font-size: 20px;
+    color: var(--pink-light);
+    margin-top: 4px;
+  }
+  .header .doc-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 24px;
+    color: var(--dark);
+  }
+  .header .date {
+    font-size: 14px;
+    color: var(--gray-light);
+    margin-top: 8px;
+  }
+
+  /* ===== SECTIONS ===== */
+  .section {
+    margin-bottom: 48px;
+  }
+  .section-number {
+    display: inline-block;
+    background: var(--pink-main);
+    color: #fff;
+    font-weight: 900;
+    font-size: 13px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--pink-main);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border);
+  }
+  h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--dark);
+    margin: 24px 0 10px;
+  }
+  h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--gray);
+    margin: 18px 0 8px;
+  }
+  p {
+    margin-bottom: 10px;
+    color: var(--dark);
+  }
+  .note {
+    font-size: 13px;
+    color: var(--gray-light);
+  }
+  .important-tag {
+    display: inline-block;
+    background: #ff0844;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+
+  /* ===== TABLES ===== */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    font-size: 14px;
+  }
+  th {
+    background: var(--pink-main);
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 14px;
+    text-align: left;
+  }
+  td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  .label-cell {
+    background: var(--pink-bg);
+    font-weight: 700;
+    width: 160px;
+    white-space: nowrap;
+  }
+
+  /* ===== LISTS ===== */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 16px;
+  }
+  ul li {
+    padding: 4px 0 4px 20px;
+    position: relative;
+  }
+  ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--pink-main);
+    font-weight: 700;
+  }
+  ol {
+    padding-left: 24px;
+    margin: 8px 0 16px;
+  }
+  ol li {
+    padding: 4px 0;
+  }
+  ol li::marker {
+    color: var(--pink-main);
+    font-weight: 700;
+  }
+
+  /* ===== SAMPLE ARTICLE BOX ===== */
+  .sample-box {
+    background: var(--pink-pale);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin: 16px 0 24px;
+  }
+  .sample-box .label {
+    display: inline-block;
+    background: var(--pink-main);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+  }
+  .sample-box .article-title {
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--dark);
+    margin-bottom: 12px;
+  }
+  .sample-box h5 {
+    font-weight: 700;
+    font-size: 15px;
+    margin: 16px 0 6px;
+    color: var(--dark);
+  }
+  .sample-box p {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+  .sample-box .hitokoto {
+    background: #fff;
+    border-left: 4px solid var(--pink-light);
+    padding: 12px 16px;
+    margin-top: 16px;
+    border-radius: 0 8px 8px 0;
+  }
+  .sample-box .hitokoto strong {
+    color: var(--pink-main);
+  }
+
+  /* ===== TIER BADGES ===== */
+  .tier {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 4px;
+    margin-right: 6px;
+  }
+  .tier-1 { background: var(--pink-main); color: #fff; }
+  .tier-2 { background: var(--pink-light); color: #fff; }
+  .tier-3 { background: #ddd; color: #666; }
+
+  /* ===== WORKFLOW ===== */
+  .workflow {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 16px 0;
+  }
+  .workflow-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .workflow-num {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    background: var(--pink-main);
+    color: #fff;
+    font-weight: 900;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .workflow-text {
+    padding: 6px 0 18px;
+    font-size: 14px;
+  }
+  .workflow-arrow {
+    width: 32px;
+    text-align: center;
+    color: var(--pink-light);
+    font-size: 16px;
+    line-height: 1;
+    padding: 0 0 4px;
+  }
+
+  /* ===== DIVIDER ===== */
+  .divider {
+    border: none;
+    border-top: 2px solid var(--border);
+    margin: 48px 0;
+  }
+
+  /* ===== CATEGORY TABLE ===== */
+  .cat-tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  .cat-tame { background: #2196F3; }
+  .cat-omo { background: #FF9800; }
+  .cat-emo { background: #E91E63; }
+  .cat-anime { background: #9C27B0; }
+
+  @media (max-width: 600px) {
+    .container { padding: 24px 16px 60px; }
+    .header h1 { font-size: 36px; }
+    .header .doc-title { font-size: 20px; }
+    h2 { font-size: 19px; }
+    table { font-size: 13px; }
+    td, th { padding: 8px 10px; }
+    .label-cell { width: 120px; }
+    .sample-box { padding: 18px 20px; }
+  }
+
+  @media print {
+    .container { max-width: 100%; }
+    .sample-box { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- ===== HEADER ===== -->
+<div class="header">
+  <h1>ギャル庁</h1>
+  <div class="subtitle">〜あーしが読んどいたよ。〜</div>
+  <div class="doc-title">プロジェクト企画書</div>
+  <div class="date">2026年5月3日 作成</div>
+</div>
+
+<!-- ===== ① コンセプト ===== -->
+<div class="section">
+  <h2><span class="section-number">1</span>コンセプト</h2>
+  <p>お堅い公式文書・生活情報・ニュースをギャル語で解説するまとめサイト。</p>
+  <p>暇人速報・VIPPERまとめのような「タイトルだけで笑える・サクサク読める」テイストを目指す。</p>
+  <p>政治系には寄りすぎず、生活に直結する情報をメインネタにする。</p>
+  <p class="note">競合状況：「ギャル語でニュース解説するブログ」はほぼ存在しない（ブルーオーシャン確認済み）</p>
+</div>
+
+<!-- ===== ② サイト情報 ===== -->
+<div class="section">
+  <h2><span class="section-number">2</span>サイト情報</h2>
+  <table>
+    <tr><td class="label-cell">サイト名</td><td>ギャル庁</td></tr>
+    <tr><td class="label-cell">キャッチコピー</td><td>あーしが読んどいたよ。</td></tr>
+    <tr><td class="label-cell">記事の語り手</td><td>あーし（キャラクター）※詳細は下記「キャラ設定」参照</td></tr>
+    <tr><td class="label-cell">ターゲット読者</td><td>20〜30代、SNSをよく見る層。ギャル語を面白がれる一般層。</td></tr>
+  </table>
+</div>
+
+<!-- ===== ②-2 キャラ設定 ===== -->
+<div class="section">
+  <h2><span class="section-number">2</span>キャラ設定：あーし</h2>
+  <table>
+    <tr><td class="label-cell">年齢</td><td>JK（高校2年生、17歳）</td></tr>
+    <tr><td class="label-cell">タイプ</td><td>渋谷系ギャルだけどオタク入ってる</td></tr>
+    <tr><td class="label-cell">住んでるところ</td><td>都内（詳しくは不明）</td></tr>
+    <tr><td class="label-cell">彼氏</td><td>いない（「今はコンテンツが恋人」的なスタンス）</td></tr>
+    <tr><td class="label-cell">趣味</td><td>アニメ・ゲーム・推し活・ニュースサイト巡回</td></tr>
+    <tr><td class="label-cell">性格</td><td>好奇心旺盛、正義感強め、難しいことを簡単に言い換える天才。ただしテストの点は普通</td></tr>
+    <tr><td class="label-cell">一人称</td><td>あーし</td></tr>
+    <tr><td class="label-cell">口調</td><td>「〜じゃん？」「まじ？」「ヤバくない？？」「〜なのよね」</td></tr>
+    <tr><td class="label-cell">弱点</td><td>エモい話に弱い、推しの話になると止まらない</td></tr>
+    <tr><td class="label-cell">友達キャラ</td><td>たまに登場する友達がいる（名前・設定は今後決定）</td></tr>
+  </table>
+  <p><strong>なぜニュースに詳しいのか：</strong>推しが税金で困ってた→調べ始めたらハマった。テスト勉強より答弁読む方が楽しくなった系。</p>
+</div>
+
+<!-- ===== ③ 技術構成 ===== -->
+<div class="section">
+  <h2><span class="section-number">3</span>技術構成</h2>
+  <table>
+    <tr><td class="label-cell">サイトジェネレーター</td><td>Hugo（高速ビルド、Markdownで執筆）</td></tr>
+    <tr><td class="label-cell">ホスティング</td><td>Cloudflare Pages（無料、CDNで高速、バズに強い）</td></tr>
+    <tr><td class="label-cell">ソース管理</td><td>GitHub（リポジトリと連携して自動デプロイ）</td></tr>
+    <tr><td class="label-cell">運用コスト</td><td>基本無料（ドメイン代のみ）</td></tr>
+  </table>
+</div>
+
+<!-- ===== ④ 半自動化ワークフロー ===== -->
+<div class="section">
+  <h2><span class="section-number">4</span>半自動化ワークフロー</h2>
+  <p>毎朝の運用フロー：</p>
+  <div class="workflow">
+    <div class="workflow-step"><div class="workflow-num">1</div><div class="workflow-text">Claudeがウェブ検索で今日のニュース・トレンドを調べる</div></div>
+    <div class="workflow-arrow">↓</div>
+    <div class="workflow-step"><div class="workflow-num">2</div><div class="workflow-text">「ギャル庁向きのネタ」を6〜10本ピックアップして提案</div></div>
+    <div class="workflow-arrow">↓</div>
+    <div class="workflow-step"><div class="workflow-num">3</div><div class="workflow-text">オーナーが4本を選ぶ</div></div>
+    <div class="workflow-arrow">↓</div>
+    <div class="workflow-step"><div class="workflow-num">4</div><div class="workflow-text">Claudeがギャル語記事を執筆</div></div>
+    <div class="workflow-arrow">↓</div>
+    <div class="workflow-step"><div class="workflow-num">5</div><div class="workflow-text">Claudeが選ばれた記事をGitHubにpush</div></div>
+    <div class="workflow-arrow">↓</div>
+    <div class="workflow-step"><div class="workflow-num">6</div><div class="workflow-text">Cloudflare Pagesが自動ビルド＆デプロイ → 記事公開</div></div>
+  </div>
+</div>
+
+<!-- ===== ⑤ 記事カテゴリ ===== -->
+<div class="section">
+  <h2><span class="section-number">5</span>記事カテゴリ（4本柱）</h2>
+  <table>
+    <thead><tr><th>カテゴリ</th><th>内容</th><th>読者の反応</th></tr></thead>
+    <tbody>
+      <tr><td><span class="cat-tag cat-tame">ためになる系</span></td><td>注意喚起・リコール・詐欺警告・制度変更</td><td>「知らなかった！」「怖…」</td></tr>
+      <tr><td><span class="cat-tag cat-omo">面白い系</span></td><td>意外な制度・答弁解説・知的好奇心ネタ</td><td>「まじ？！」「おもろ」</td></tr>
+      <tr><td><span class="cat-tag cat-emo">エモい系</span></td><td>復興・挑戦・動物・季節・地域</td><td>「泣くが？？」</td></tr>
+      <tr><td><span class="cat-tag cat-anime">アニメ・ゲーム系</span></td><td>新作発表・業界ニュース・コラボ・ランキング</td><td>「きたぁぁ！」</td></tr>
+    </tbody>
+  </table>
+  <p>立ち上げ期は毎日2本投稿。品質が安定し、フォロワーが増えてきたら4本に増やす。日によってカテゴリのバランスを変える。</p>
+  <p class="note">※カテゴリの分類に迷ったら、読者の反応で判断する。「まじ？」→面白い系、「怖…」→ためになる系。</p>
+</div>
+
+<!-- ===== ⑥ ネタ選定基準 ===== -->
+<div class="section">
+  <h2><span class="section-number">6</span>ネタ選定基準</h2>
+
+  <h3>採用基準（いずれかに該当すればネタ候補）</h3>
+  <ul>
+    <li>「えっ怖…」系 — 知らないと損する・危ない情報</li>
+    <li>「知らなかった！」系 — 意外な事実・制度</li>
+    <li>「エモい…」系 — 感情が動くストーリー</li>
+    <li>「まじ？」系 — 驚きのあるニュース全般</li>
+  </ul>
+
+  <h3>NGネタ（絶対に避ける）</h3>
+  <ul>
+    <li>政治の対立・政党批判</li>
+    <li>芸能ゴシップ・不倫・スキャンダル</li>
+    <li>個人攻撃・炎上便乗</li>
+    <li>宗教・差別に関わるもの</li>
+    <li>デマ・未確認情報</li>
+    <li>死亡事故・災害の犠牲者・慰霊系など「死」が直接関わるテーマ（防災・安全情報として扱う場合でも、犠牲者をネタにする形にならないよう慎重に判断する）</li>
+  </ul>
+
+  <h3>グレーゾーン（慎重に扱う）</h3>
+  <ul>
+    <li>企業の不祥事 → 消費者目線の注意喚起ならOK、叩き目的はNG</li>
+    <li>事件・事故 → 防犯・安全情報としてならOK、煽りはNG</li>
+    <li>健康情報 → 公的機関ソースありならOK、民間療法推しはNG</li>
+    <li>アニメ・ゲーム → ニュースとしてならOK、ネタバレ・転載はNG</li>
+  </ul>
+</div>
+
+<!-- ===== ⑦ ネタソース ===== -->
+<div class="section">
+  <h2><span class="section-number">7</span>ネタソース（省庁別優先度）</h2>
+  <p class="note">※優先度は今後調整の可能性あり</p>
+
+  <h4><span class="tier tier-1">Tier 1</span>メインネタ源 — 毎日チェック</h4>
+  <ul>
+    <li>消費者庁 — リコール・詐欺・景品表示法違反</li>
+    <li>厚生労働省 — 感染症・食品安全・労働法・給付金</li>
+    <li>国税庁 — 確定申告・税制変更</li>
+    <li>金融庁 — 投資詐欺・NISA・金融商品ルール</li>
+    <li>デジタル庁 — マイナンバー・行政オンライン化</li>
+  </ul>
+
+  <h4><span class="tier tier-2">Tier 2</span>週1〜2回チェック</h4>
+  <ul>
+    <li>総務省 — スマホ・通信・NHK</li>
+    <li>国土交通省 — 住宅・交通ルール</li>
+    <li>文部科学省 — 奨学金・教育制度</li>
+    <li>環境省 — ゴミ・リサイクル</li>
+  </ul>
+
+  <h4><span class="tier tier-3">Tier 3</span>ネタがあれば拾う</h4>
+  <ul>
+    <li>警察庁 — 防犯・特殊詐欺</li>
+    <li>農林水産省 — 食品豆知識・食料価格</li>
+    <li>気象庁 — 大きな災害時のみ</li>
+  </ul>
+  <p class="note">※国会答弁も独立したネタソースとして活用する</p>
+</div>
+
+<!-- ===== ⑧ 収益モデル ===== -->
+<div class="section">
+  <h2><span class="section-number">8</span>収益モデル</h2>
+
+  <h3>メイン：Google AdSense</h3>
+  <ul>
+    <li>表示課金 + クリック課金で収益発生</li>
+    <li>RPM目安：ニュース系 100〜200円 / 生活情報系 200〜400円</li>
+    <li>自己クリック・誘導はアカウントBAN対象</li>
+  </ul>
+
+  <h3>サブ：アフィリエイト</h3>
+  <ul>
+    <li>月１〜２本の高単価記事（美容・サブスク・ライフスタイル系）</li>
+    <li>フォロワーの信頼が積み上がってから投稿</li>
+    <li>ギャル語トーンは維持（キャラをぶらさない）</li>
+  </ul>
+</div>
+
+<!-- ===== ⑨ 集客戦略 ===== -->
+<div class="section">
+  <h2><span class="section-number">9</span>集客戦略</h2>
+  <ul>
+    <li>立ち上げ期はX（Twitter）に集中。記事の一番キャッチーな1〜2行を抜き出して投稿し、リンクは最後に添える</li>
+    <li>#ギャル庁 を固定ハッシュタグとして使用</li>
+    <li>TikTok等の他SNSはフォロワーが育ってから展開</li>
+    <li>SEOより「バズ・拡散」を重視</li>
+    <li>検索ボリュームより独自キャラクターで差別化</li>
+    <li>初収益までは3〜12ヶ月が目安</li>
+  </ul>
+</div>
+
+<!-- ===== ⑩ 著作権ポリシー ===== -->
+<div class="section">
+  <h2><span class="section-number">10</span>著作権ポリシー</h2>
+  <p>元ネタの事実情報を使って、ギャル庁オリジナルの切り口で書き直す。</p>
+  <ul>
+    <li>元記事のそのままの要約・転載はしない</li>
+    <li>事実情報をベースに独自の観点でリライト</li>
+    <li>「ぶっちゃけポイント」でオリジナルの切り口を入れる</li>
+  </ul>
+</div>
+
+<!-- ===== ⑪ フォント・日本語表示ポリシー ===== -->
+<div class="section">
+  <h2><span class="section-number">11</span>フォント・日本語表示ポリシー<span class="important-tag">重要</span></h2>
+  <p>中華フォント（中国語字形）へのフォールバックを絶対に防止する。</p>
+  <p>「化」「直」「骨」などの漢字が中国語の字形で表示されると、読者からの信頼を大きく損なうリスクがある。日本語コンテンツを扱うサイトとして、フォント表示は最優先で対策する。</p>
+
+  <h3>必須対策</h3>
+  <ul>
+    <li>HTMLにlang属性を必ず指定：<code>&lt;html lang="ja"&gt;</code></li>
+    <li>Google FontsからNoto Sans JPを読み込んでWebフォントとして使用する。ユーザーのPC環境に依存しないため、中華フォント問題を100%防止できる</li>
+    <li>CSS指定例：<code>font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;</code></li>
+    <li>デプロイ後に必ず実機（PC・スマホ）で漢字の字形を目視確認する</li>
+  </ul>
+</div>
+
+<!-- ===== ⑫ 記事スタイルガイド ===== -->
+<div class="section">
+  <h2><span class="section-number">12</span>記事スタイルガイド</h2>
+  <p>テスト記事2本から抽出した「ギャル庁スタイル」：</p>
+  <ul>
+    <li>タイトルで興味を引く（まとめサイト風も可）</li>
+    <li>冒頭1〜2行で「何の話か」を伝える</li>
+    <li>見出しで構造化（ざっくり説明→深掘り→独自視点）</li>
+    <li>「ぶっちゃけポイント」でオリジナルの切り口を入れる</li>
+    <li>絵文字は控えめ〜適度</li>
+    <li>ギャル語は自然に、無理した感じを出さない</li>
+    <li>一人称は「あーし」で統一</li>
+    <li>人名は男性は「くん」、女性は「ちゃん」付けで呼ぶ（ギャルっぽさを出す）</li>
+    <li><strong>【必須】</strong>記事の最初または最後に「あーし的にはさぁ、」コーナーを入れる。ニュースの内容に対するあーし個人の感想・つぶやき・ギャルらしい一言。情報だけじゃなく「人」が見える記事にするためのこだわりポイント。</li>
+  </ul>
+</div>
+
+<hr class="divider">
+
+<!-- ===== ⑬ サンプル記事 ===== -->
+<div class="section">
+  <h2><span class="section-number">13</span>サンプル記事（品質基準）</h2>
+  <p>以下の2本はテスト生成した記事。このクオリティを基準とする。</p>
+
+  <!-- サンプル①：能登 -->
+  <h3>サンプル①：エモい系</h3>
+  <p><strong>カテゴリ：エモい系　｜　元ネタ：能登半島地震からの復興ニュース</strong></p>
+
+  <div class="sample-box">
+    <div class="label">■ 記事タイトル</div>
+    <div class="article-title">能登の鯉のぼり200匹が復活してる話🎏✨</div>
+
+    <div class="label">■ 記事本文</div>
+    <p>震災から2年経った石川県珠洲市で、約200匹の鯉のぼりが空泳いでるの！！しかも今年は川の上にも復活してて、エモすぎん？？🥹</p>
+
+    <h5>【どういうこと？】</h5>
+    <p>もともと40年前から「大谷鯉のぼりフェスティバル」ってまちおこしイベントがあったんだけど、2024年の能登半島地震で川が被災して中止に。去年は空き地に場所移して復活、そして今年はついに川の上にも3列だけロープ渡したの！少しずつ元に戻ってきてるのがもう泣ける😭</p>
+
+    <h5>【実行委員長が24歳の漁師！】</h5>
+    <p>酒谷空（そら）くん、名前からしてもう主人公じゃん。地元生まれで、震災後に「大好きな海で漁師になろう」って戻ってきた子。「外に出ちゃった人も帰ってきて再会できる機会にしたい」って言っててさ…泣くが？？😭😭</p>
+
+    <h5>【ぶっちゃけポイント】</h5>
+    <p>震災ボランティアがきっかけで移住してきた若者たちと、昔からいる地元の人たちが一緒に鯉のぼり揚げてるのがアツいのよ。新しい人と元からいる人がつながって地域が動いてるの、まさに復興のリアルって感じ。５月４日にはミニフェスもあって、獅子舞とか太鼓とか地域の伝統芸能も披露されるらしい🫶</p>
+    <p>鯉のぼりが少しずつ川に戻ってくるの、まちが少しずつ戻ってくるのと重なってガチで沁みる🎏🌊</p>
+
+    <div class="hitokoto">
+      <strong>【あーし的にはさぁ、】</strong><br>
+      こういう「地元の人が地元を好きでい続ける」系の話、あーし弱いのよね…。珠洲行ったことないけど、この鯉のぼりはいつかガチで見に行きたい🎏✨
+    </div>
+  </div>
+
+  <!-- サンプル②：制服問題 -->
+  <h3>サンプル②：面白い系</h3>
+  <p><strong>カテゴリ：面白い系　｜　元ネタ：国会答弁（警察官・自衛官の制服着用義務）</strong></p>
+
+  <div class="sample-box">
+    <div class="label">■ 元ネタ（入力）</div>
+    <p>Jディフェンスニュース掲載の国会答弁記事。石垣のりこ議員が「警察官と自衛官で勤務時間外の制服着用ルールが違うのはおかしいのでは」と質問主意書を提出。政府がそれに対して答弁した内容。</p>
+
+    <div class="label" style="margin-top: 16px;">■ 生成された記事（出力）</div>
+
+    <div class="article-title">制服ってオフの日も着なきゃダメなの？問題💅</div>
+    <p>えーこれマジおもろいんだけど、石垣のりこちゃんが「警察官と自衛官で制服ルール違くない？？おかしくない？？」って国会で質問したやつね！😂</p>
+
+    <h5>【ざっくり何が問題かっていうと】</h5>
+    <p>警察官は「勤務中は制服着てね」ってルールなの。つまりオフの日は別に着なくてOK。てか都道府県によっては「オフは着ないで」って制限してるとこもあるらしい👀</p>
+    <p>一方、自衛官は「常に制服着なさい」がデフォなの！！休みの日とか基地の外にいるときは「着なくてもいいよ」って例外はあるんだけど、基本は"常時着用"。ヤバくない？？😳</p>
+
+    <h5>【石垣ちゃんの主張】</h5>
+    <p>「いやいや、両方とも公権力の象徴でしょ？？なんで自衛官だけオフでも制服縛りあるの？？揃えた方がよくない？？」ってめっちゃ正論ぶつけてるの🔥</p>
+
+    <h5>【政府の返し】</h5>
+    <p>政府の答弁がまた渋いんだけど、要するに：</p>
+    <p>警察官 → 職務中に実力行使する特殊な権限があるから、勤務中は身分がわかるように制服着てね。オフは想定してないよ。</p>
+    <p>自衛官 → 自衛隊法で「常に品位を重んじなさい」「制服着て身なり整えなさい」って決まってるから、常時着用がルールなの。これには合理性あるよ。</p>
+    <p>で、最後に「改正する気ありません」ってバッサリ🫠</p>
+
+    <h5>【ぶっちゃけポイント】</h5>
+    <p>この答弁よく読むと、警察と自衛隊で法律の作りが根本的に違うのよね。警察は「勤務中の話」として制服を規定してるけど、自衛隊法は「隊員としての品位」っていう24時間の人格的な義務として制服を位置づけてるの。だから単純に「揃えろ」って話でもないんだけど、石垣ちゃんの「それって本当に合理的？」っていう問題提起自体はけっこう鋭いと思う！🤔</p>
+    <p>まあ実際は例外規定で自衛官もオフは私服OKだから、実態としてはそこまで差はないんだけど、法律の建付けとしての不均衡を突いてるのがこの質問のミソね✨</p>
+
+    <div class="hitokoto">
+      <strong>【あーし的にはさぁ、】</strong><br>
+      制服ってさぁ、あーしは実はけっこう好きなのよね♡　あれ着てると「あ、この人お仕事してるんだ」ってわかるじゃん？自衛官さんがオフでも制服着てたら普通にカッコいいと思うけどね！💅
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ===== ⑭ 次のステップ ===== -->
+<div class="section">
+  <h2><span class="section-number">14</span>次のステップ</h2>
+  <ol>
+    <li>Hugoブログテンプレートの構築</li>
+    <li>GitHubリポジトリのセットアップ</li>
+    <li>Cloudflare Pagesとの連携</li>
+    <li>サンプル記事を入れて動作確認</li>
+    <li>プライバシーポリシー・お問い合わせ・運営者情報ページを作成</li>
+    <li>ドメイン取得・設定</li>
+    <li>10〜20記事を公開した段階でAdSense申請</li>
+  </ol>
+</div>
+
+</div>
+</body>
+</html>

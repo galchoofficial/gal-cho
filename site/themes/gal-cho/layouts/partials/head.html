@@ -1,0 +1,55 @@
+{{- /* ===== Meta ===== */ -}}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#faf8f2">
+
+{{- /* ===== Title ===== */ -}}
+{{- $title := .Title -}}
+{{- if .IsHome -}}
+  <title>{{ site.Title }} - {{ site.Params.tagline }}</title>
+{{- else -}}
+  <title>{{ $title }} | {{ site.Title }}</title>
+{{- end }}
+
+{{- /* ===== Description ===== */ -}}
+{{- $desc := .Description | default site.Params.description -}}
+{{- if and (not .IsHome) .Summary -}}
+  {{- $desc = .Summary | plainify | truncate 140 -}}
+{{- end }}
+<meta name="description" content="{{ $desc }}">
+
+{{- /* ===== Open Graph ===== */ -}}
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ $title }}{{ end }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:locale" content="ja_JP">
+{{- with site.Params.ogImage }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{- end }}
+
+{{- /* ===== Twitter Card ===== */ -}}
+<meta name="twitter:card" content="summary_large_image">
+{{- with site.Params.twitter }}
+<meta name="twitter:site" content="@{{ . }}">
+{{- end }}
+
+{{- /* ===== Canonical ===== */ -}}
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{- /* ===== Favicon ===== */ -}}
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2316161e'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' fill='%23b5f03a' font-family='sans-serif' font-weight='900'%3Eギ%3C/text%3E%3C/svg%3E">
+
+{{- /* ===== Fonts: Noto Sans JP（中華フォント対策） ===== */ -}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+{{- /* ===== CSS ===== */ -}}
+<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+
+{{- /* ===== RSS ===== */ -}}
+{{ range .AlternativeOutputFormats -}}
+  {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink (printf "%s | %s" $.Site.Title .Name) | safeHTML }}
+{{ end -}}

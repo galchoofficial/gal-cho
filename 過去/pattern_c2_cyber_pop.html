@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ギャル庁 - あーしが読んどいたよ。</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0e15;
+    --bg-grad-1: #11131f;
+    --bg-grad-2: #0a0b12;
+    --panel: #181a26;
+    --panel-soft: #20232f;
+    --ink: #f4f2ec;
+    --ink-soft: #b4b2ad;
+    --muted: #6f6e75;
+    --line: #262838;
+    --cyan: #00e7ff;
+    --lime: #b5f03a;
+    --purple: #8b7bff;
+    --coral: #ff7560;
+    --tame: #8b7bff;
+    --omo: #ffae42;
+    --emo: #ff7589;
+    --anime: #b5f03a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    background:
+      radial-gradient(circle at 15% 0%, rgba(139,123,255,0.15) 0%, transparent 50%),
+      radial-gradient(circle at 90% 25%, rgba(0,231,255,0.12) 0%, transparent 50%),
+      var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 15px;
+    font-feature-settings: "palt" 1;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* ===== Header ===== */
+  .header {
+    padding: 24px 0 20px;
+    position: sticky;
+    top: 0;
+    background: rgba(13,14,21,0.78);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    z-index: 50;
+    border-bottom: 1px solid var(--line);
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .logo-badge {
+    background: var(--ink);
+    color: var(--bg);
+    padding: 8px 14px;
+    border-radius: 14px;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    transform: rotate(-3deg);
+    display: inline-block;
+    box-shadow: 4px 4px 0 var(--cyan);
+  }
+  .brand-tag {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--ink-soft);
+    letter-spacing: 0.08em;
+  }
+  .brand-tag span {
+    background: var(--cyan);
+    color: var(--bg);
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 900;
+    margin-right: 6px;
+    box-shadow: 0 0 12px rgba(0,231,255,0.5);
+  }
+
+  .nav {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .nav a {
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 800;
+    border-radius: 999px;
+    transition: all .2s;
+    color: var(--ink-soft);
+  }
+  .nav a:hover {
+    background: var(--cyan);
+    color: var(--bg);
+    box-shadow: 0 0 16px rgba(0,231,255,0.5);
+  }
+  .nav a.active {
+    background: var(--ink);
+    color: var(--bg);
+  }
+  .nav .sub {
+    background: var(--purple);
+    color: #fff;
+    padding: 8px 16px;
+    box-shadow: 0 0 12px rgba(139,123,255,0.4);
+  }
+  .nav .sub:hover {
+    background: var(--cyan);
+    color: var(--bg);
+  }
+
+  /* ===== Hero ===== */
+  .hero {
+    padding: 40px 0 24px;
+    position: relative;
+  }
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0,231,255,0.12);
+    color: var(--cyan);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    margin-bottom: 18px;
+    border: 1px solid rgba(0,231,255,0.3);
+  }
+  .hero-tag .pulse {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--cyan);
+    animation: pulse 1.5s infinite;
+    box-shadow: 0 0 8px var(--cyan);
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.8); }
+  }
+  .hero-h1 {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 14px;
+    color: var(--ink);
+  }
+  .hero-h1 mark {
+    background: var(--cyan);
+    color: var(--bg);
+    padding: 0 6px;
+    border-radius: 6px;
+    text-shadow: none;
+  }
+  .hero-h1 .twist {
+    display: inline-block;
+    transform: rotate(-2deg);
+    background: var(--purple);
+    color: #fff;
+    padding: 0 12px;
+    border-radius: 10px;
+    box-shadow: 0 0 24px rgba(139,123,255,0.45);
+  }
+  .hero-sub {
+    font-size: 17px;
+    color: var(--ink-soft);
+    max-width: 720px;
+    line-height: 1.8;
+  }
+
+  /* ===== Featured ===== */
+  .featured {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 24px;
+    padding: 24px 0 48px;
+  }
+  .feat-main {
+    background: linear-gradient(180deg, var(--panel) 0%, var(--bg-grad-2) 100%);
+    border-radius: 24px;
+    padding: 28px;
+    border: 1px solid var(--line);
+    cursor: pointer;
+    transition: transform .2s, box-shadow .2s, border-color .2s;
+    position: relative;
+    overflow: hidden;
+  }
+  .feat-main:hover {
+    transform: translateY(-3px);
+    border-color: var(--cyan);
+    box-shadow: 0 16px 40px rgba(0,231,255,0.15), 0 0 0 1px var(--cyan);
+  }
+  .feat-main::before {
+    content: "🎏";
+    position: absolute;
+    right: -10px;
+    bottom: -20px;
+    font-size: 180px;
+    opacity: 0.18;
+    line-height: 1;
+  }
+  .feat-meta {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .pill {
+    font-size: 11px;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 999px;
+    color: var(--bg);
+    letter-spacing: 0.05em;
+  }
+  .pill-emo   { background: var(--emo); color: var(--bg); }
+  .pill-omo   { background: var(--omo); color: var(--bg); }
+  .pill-tame  { background: var(--tame); color: var(--bg); }
+  .pill-anime { background: var(--anime); color: var(--bg); }
+  .pill-out {
+    border: 1.5px solid var(--ink-soft);
+    background: transparent;
+    color: var(--ink);
+  }
+
+  .feat-title {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.35;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+    color: var(--ink);
+  }
+  .feat-excerpt {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.85;
+    position: relative;
+    z-index: 1;
+  }
+  .feat-foot {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+  }
+  .read-btn {
+    background: var(--cyan);
+    color: var(--bg);
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    box-shadow: 0 0 16px rgba(0,231,255,0.4);
+  }
+
+  .feat-side {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .feat-mini {
+    background: var(--panel);
+    border-radius: 18px;
+    padding: 18px;
+    border: 1px solid var(--line);
+    cursor: pointer;
+    transition: transform .15s, border-color .15s, box-shadow .15s;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .feat-mini:hover {
+    transform: translateY(-2px);
+    border-color: var(--cyan);
+  }
+  .feat-mini.purple {
+    background: linear-gradient(135deg, var(--purple) 0%, #6b5bff 100%);
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 8px 24px rgba(139,123,255,0.3);
+  }
+  .feat-mini.purple .mini-title { color: #fff; }
+  .feat-mini.purple .mini-meta { color: rgba(255,255,255,0.75); }
+  .feat-mini.cyan {
+    background: linear-gradient(135deg, var(--cyan) 0%, #00b8cc 100%);
+    color: var(--bg);
+    border-color: transparent;
+    box-shadow: 0 8px 24px rgba(0,231,255,0.3);
+  }
+  .feat-mini.cyan .mini-title { color: var(--bg); }
+  .feat-mini.cyan .mini-meta { color: rgba(13,14,21,0.7); }
+  .mini-meta {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 11px;
+    color: var(--muted);
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .mini-title {
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.45;
+    color: var(--ink);
+  }
+  .mini-emoji {
+    font-size: 32px;
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+
+  /* ===== Category chips ===== */
+  .chips { padding: 16px 0 32px; }
+  .chips-bar {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+  .chips-bar::-webkit-scrollbar { display: none; }
+  .chip {
+    flex-shrink: 0;
+    background: var(--panel);
+    border: 2px solid var(--line);
+    border-radius: 999px;
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all .15s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--ink);
+    font-family: inherit;
+  }
+  .chip:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+  }
+  .chip.is-on {
+    background: var(--cyan);
+    color: var(--bg);
+    border-color: var(--cyan);
+    box-shadow: 0 0 16px rgba(0,231,255,0.4);
+  }
+  .chip-emoji { font-size: 16px; }
+
+  /* ===== Section ===== */
+  .section { padding: 24px 0 56px; }
+  .sec-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .sec-h2 {
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .sec-h2 em {
+    font-style: normal;
+    background: var(--cyan);
+    color: var(--bg);
+    padding: 0 8px;
+    border-radius: 8px;
+  }
+  .sec-more {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--purple);
+  }
+
+  /* ===== Card grid ===== */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .card {
+    background: var(--panel);
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform .2s, box-shadow .2s, border-color .2s;
+    border: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    border-color: var(--cyan);
+    box-shadow: 0 12px 28px rgba(0,231,255,0.12);
+  }
+  .card-thumb {
+    aspect-ratio: 16/10;
+    position: relative;
+    overflow: hidden;
+  }
+  .card-thumb::before {
+    content: "📰";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    opacity: 0.85;
+    filter: drop-shadow(0 4px 16px rgba(0,0,0,0.4));
+  }
+  .card.c1 .card-thumb { background: linear-gradient(135deg, #2a1f2e 0%, #4a2c3f 100%); }
+  .card.c1 .card-thumb::before { content: "🐶"; }
+  .card.c2 .card-thumb { background: linear-gradient(135deg, #1f2447 0%, #2c3460 100%); }
+  .card.c2 .card-thumb::before { content: "💰"; }
+  .card.c3 .card-thumb { background: linear-gradient(135deg, #1f3322 0%, #2c5034 100%); }
+  .card.c3 .card-thumb::before { content: "⚔️"; }
+  .card.c4 .card-thumb { background: linear-gradient(135deg, #3a2a1f 0%, #563f2c 100%); }
+  .card.c4 .card-thumb::before { content: "📱"; }
+  .card.c5 .card-thumb { background: linear-gradient(135deg, #3a1f2e 0%, #5a2c44 100%); }
+  .card.c5 .card-thumb::before { content: "🎏"; }
+  .card.c6 .card-thumb { background: linear-gradient(135deg, #1a2c3a 0%, #284558 100%); }
+  .card.c6 .card-thumb::before { content: "💅"; }
+
+  .card-body {
+    padding: 18px 20px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-meta {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .card-title {
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.5;
+    margin-bottom: 6px;
+    color: var(--ink);
+  }
+  .card-excerpt {
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.7;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-foot {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+
+  /* ===== Aashi sticker ===== */
+  .aashi {
+    background: linear-gradient(135deg, var(--purple) 0%, #4d3fb3 100%);
+    color: #fff;
+    border-radius: 28px;
+    padding: 40px 36px;
+    margin: 24px 0 56px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(139,123,255,0.25);
+  }
+  .aashi::before {
+    content: "♡";
+    position: absolute;
+    top: -40px; right: -10px;
+    font-size: 200px;
+    color: var(--cyan);
+    opacity: 0.45;
+    line-height: 1;
+    transform: rotate(15deg);
+    text-shadow: 0 0 60px rgba(0,231,255,0.5);
+  }
+  .aashi-tag {
+    background: var(--cyan);
+    color: var(--bg);
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    margin-bottom: 16px;
+    transform: rotate(-2deg);
+    box-shadow: 0 0 16px rgba(0,231,255,0.4);
+  }
+  .aashi-text {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.65;
+    max-width: 720px;
+    position: relative;
+    z-index: 1;
+  }
+  .aashi-text mark {
+    background: var(--cyan);
+    color: var(--bg);
+    padding: 0 6px;
+    border-radius: 4px;
+  }
+  .aashi-by {
+    margin-top: 18px;
+    font-size: 13px;
+    color: var(--cyan);
+    font-weight: 800;
+    letter-spacing: 0.1em;
+  }
+
+  /* ===== Footer ===== */
+  .footer {
+    padding: 48px 0 32px;
+    border-top: 1px solid var(--line);
+    margin-top: 32px;
+  }
+  .foot-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 28px;
+  }
+  .foot-logo-wrap { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .foot-tag {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+  .foot h4 {
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    color: var(--cyan);
+    margin-bottom: 12px;
+  }
+  .foot ul { list-style: none; }
+  .foot li {
+    padding: 4px 0;
+    font-size: 13px;
+    color: var(--ink-soft);
+    font-weight: 500;
+  }
+  .copyright {
+    border-top: 1px solid var(--line);
+    padding-top: 18px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+  .copyright span {
+    background: var(--cyan);
+    color: var(--bg);
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-weight: 800;
+    margin: 0 4px;
+  }
+
+  @media (max-width: 900px) {
+    .hero-h1 { font-size: 32px; }
+    .featured { grid-template-columns: 1fr; }
+    .feat-title { font-size: 22px; }
+    .grid { grid-template-columns: 1fr; }
+    .foot-grid { grid-template-columns: 1fr 1fr; }
+    .nav { display: none; }
+    .sec-h2 { font-size: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <div class="logo-badge">ギャル庁</div>
+      <div class="brand-tag"><span>NEW</span>本日2本</div>
+    </div>
+    <nav class="nav">
+      <a href="#" class="active">ホーム</a>
+      <a href="#">ためになる</a>
+      <a href="#">面白い</a>
+      <a href="#">エモい</a>
+      <a href="#">アニメ</a>
+      <a href="#" class="sub">Xでフォロー</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="wrap hero">
+  <span class="hero-tag"><span class="pulse"></span>2026.05.03 / 本日 2本更新</span>
+  <h1 class="hero-h1">お堅いニュース、<mark>あーし</mark>が<span class="twist">読んどいたよ</span>。</h1>
+  <p class="hero-sub">官公庁の発表・国会答弁・生活情報を、ギャル目線でサクッと解説するまとめサイト。タイトルだけで笑えて、読み終わったら詳しくなってる、そんなテイスト🫶</p>
+</section>
+
+<!-- Featured -->
+<section class="wrap featured">
+  <article class="feat-main">
+    <div class="feat-meta">
+      <span class="pill pill-emo">エモい系</span>
+      <span class="pill pill-out">復興</span>
+      <span style="font-size:11px;color:var(--muted);font-weight:700">5/3 · 8min read</span>
+    </div>
+    <h2 class="feat-title">能登の鯉のぼり200匹が復活してる話🎏✨ 川の上にもロープ渡したらしい</h2>
+    <p class="feat-excerpt">震災から2年経った石川県珠洲市で、約200匹の鯉のぼりが空泳いでるの。しかも今年は川の上にも復活してて、エモすぎん？？実行委員長は24歳の漁師くん…</p>
+    <div class="feat-foot">
+      <span>♡ 312 · 共有 84</span>
+      <span class="read-btn">読む →</span>
+    </div>
+  </article>
+
+  <div class="feat-side">
+    <article class="feat-mini purple">
+      <div>
+        <div class="mini-emoji">💅</div>
+        <div class="mini-meta" style="color:rgba(255,255,255,0.85)">
+          <span class="pill pill-omo">面白い系</span>
+          <span>5/3</span>
+        </div>
+        <div class="mini-title">制服ってオフの日も着なきゃダメなの？問題</div>
+      </div>
+    </article>
+    <article class="feat-mini cyan">
+      <div>
+        <div class="mini-emoji">⚔️</div>
+        <div class="mini-meta" style="color:rgba(13,14,21,0.7)">
+          <span class="pill pill-anime">アニメ系</span>
+          <span>5/2</span>
+        </div>
+        <div class="mini-title">鬼滅最終章のキービジュ、ヤバい</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Category chips -->
+<section class="wrap chips">
+  <div class="chips-bar">
+    <button class="chip is-on"><span class="chip-emoji">🌟</span>すべて</button>
+    <button class="chip"><span class="chip-emoji">🛡</span>ためになる</button>
+    <button class="chip"><span class="chip-emoji">🎉</span>面白い</button>
+    <button class="chip"><span class="chip-emoji">😭</span>エモい</button>
+    <button class="chip"><span class="chip-emoji">🎮</span>アニメ・ゲーム</button>
+    <button class="chip"><span class="chip-emoji">📜</span>国会答弁</button>
+    <button class="chip"><span class="chip-emoji">⚠️</span>リコール</button>
+  </div>
+</section>
+
+<!-- Latest grid -->
+<section class="wrap section">
+  <div class="sec-head">
+    <h2 class="sec-h2"><em>新着</em> 記事</h2>
+    <a href="#" class="sec-more">すべて見る →</a>
+  </div>
+  <div class="grid">
+    <article class="card c5">
+      <div class="card-thumb"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="pill pill-emo">エモい</span><span>5/3</span></div>
+        <div class="card-title">能登の鯉のぼり200匹が復活してる話🎏✨</div>
+        <p class="card-excerpt">震災から2年経った石川県珠洲市で、約200匹の鯉のぼりが空泳いでるの。エモすぎん？？</p>
+        <div class="card-foot"><span>♡ 312</span><span>復興</span></div>
+      </div>
+    </article>
+    <article class="card c6">
+      <div class="card-thumb"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="pill pill-omo">面白い</span><span>5/3</span></div>
+        <div class="card-title">制服ってオフの日も着なきゃダメなの？問題💅</div>
+        <p class="card-excerpt">石垣のりこ議員が「警察官と自衛官で制服ルール違くない？」って国会で質問したやつ…</p>
+        <div class="card-foot"><span>♡ 198</span><span>国会答弁</span></div>
+      </div>
+    </article>
+    <article class="card c4">
+      <div class="card-thumb"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="pill pill-tame">ためになる</span><span>5/2</span></div>
+        <div class="card-title">あの人気スマホ、発火リコールきてるって知ってた？</div>
+        <p class="card-excerpt">消費者庁から発表きたやつ、対象機種マジで身近すぎて怖い。型番要チェック…</p>
+        <div class="card-foot"><span>♡ 421</span><span>リコール</span></div>
+      </div>
+    </article>
+    <article class="card c3">
+      <div class="card-thumb"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="pill pill-anime">アニメ</span><span>5/2</span></div>
+        <div class="card-title">鬼滅最終章のキービジュ来たんだけど…ヤバい</div>
+        <p class="card-excerpt">無限城編キービジュアル公開！背景に映ってる「あの人」のシルエットが鳥肌モンなんだけど…</p>
+        <div class="card-foot"><span>♡ 567</span><span>新作</span></div>
+      </div>
+    </article>
+    <article class="card c2">
+      <div class="card-thumb"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="pill pill-tame">ためになる</span><span>5/1</span></div>
+        <div class="card-title">【最新】NISA改正、簡単にまとめたよ💰</div>
+        <p class="card-excerpt">金融庁が出した新ルール、ぶっちゃけ何が変わるのか3行でまとめると…</p>
+        <div class="card-foot"><span>♡ 234</span><span>金融庁</span></div>
+      </div>
+    </article>
+    <article class="card c1">
+      <div class="card-thumb"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="pill pill-emo">エモい</span><span>5/1</span></div>
+        <div class="card-title">保護犬カフェの「ひまわり」がついに卒業した話🐶</div>
+        <p class="card-excerpt">SNSで人気だったあの子、ついに新しい家族のもとへ…エピソードが泣ける😭</p>
+        <div class="card-foot"><span>♡ 489</span><span>動物</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Aashi -->
+<section class="wrap">
+  <div class="aashi">
+    <div class="aashi-tag">あーし的にはさぁ、</div>
+    <p class="aashi-text">最近のニュースさぁ、ちゃんと読むと意外と<mark>おもろい</mark>んだよね。あーし、推しのために税金調べ始めたら止まんなくなった系だから、みんなも気軽に覗いてって🫶</p>
+    <div class="aashi-by">— あーし（JK・17 / 渋谷系）</div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap foot">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo-wrap">
+          <div class="logo-badge">ギャル庁</div>
+        </div>
+        <p class="foot-tag">あーしが読んどいたよ。<br>お堅いニュースをギャル語で解説するまとめサイト。</p>
+      </div>
+      <div>
+        <h4>カテゴリ</h4>
+        <ul>
+          <li>ためになる</li>
+          <li>面白い</li>
+          <li>エモい</li>
+          <li>アニメ・ゲーム</li>
+        </ul>
+      </div>
+      <div>
+        <h4>サイト</h4>
+        <ul>
+          <li>運営者情報</li>
+          <li>プライバシーポリシー</li>
+          <li>お問い合わせ</li>
+        </ul>
+      </div>
+      <div>
+        <h4>SNS</h4>
+        <ul>
+          <li>X (@gal_cho)</li>
+          <li>RSS</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© 2026 <span>ギャル庁</span> / GAL-CHO · made with ♡</div>
+  </div>
+</footer>
+
+</body>
+</html>

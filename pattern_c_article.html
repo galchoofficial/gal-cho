@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>制服ってオフの日も着なきゃダメなの？問題💅 | ギャル庁</title>
+<meta name="description" content="石垣のりこ議員が「警察官と自衛官で制服ルール違くない？」って国会で質問したやつ、答弁が結構おもろい話。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf8f2;
+    --card: #ffffff;
+    --ink: #16161e;
+    --ink-soft: #4a4a55;
+    --muted: #8b8b94;
+    --line: #ececea;
+    --line-soft: #f4f2ec;
+    --lime: #b5f03a;
+    --purple: #6b5bff;
+    --coral: #ff7560;
+    --tame: #6b5bff;
+    --omo: #ff8c42;
+    --emo: #ff5777;
+    --anime: #b5f03a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 15px;
+    font-feature-settings: "palt" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+  .wrap-narrow {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* ===== Reading progress ===== */
+  .progress-bar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 3px;
+    background: var(--lime);
+    z-index: 100;
+    width: 0;
+    transition: width .1s;
+  }
+
+  /* ===== Header ===== */
+  .header {
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    background: rgba(250,248,242,0.92);
+    backdrop-filter: blur(12px);
+    z-index: 50;
+    border-bottom: 1px solid var(--line);
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .logo-badge {
+    background: var(--ink);
+    color: var(--lime);
+    padding: 8px 14px;
+    border-radius: 14px;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    transform: rotate(-3deg);
+    display: inline-block;
+    box-shadow: 4px 4px 0 var(--purple);
+  }
+  .brand-tag {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--ink-soft);
+    letter-spacing: 0.08em;
+  }
+  .brand-tag span {
+    background: var(--lime);
+    color: var(--ink);
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 900;
+    margin-right: 6px;
+  }
+  .nav {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .nav a {
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 800;
+    border-radius: 999px;
+    transition: all .2s;
+  }
+  .nav a:hover {
+    background: var(--ink);
+    color: var(--lime);
+  }
+  .nav .sub {
+    background: var(--purple);
+    color: #fff;
+    padding: 8px 16px;
+  }
+
+  /* ===== Breadcrumb ===== */
+  .crumb {
+    padding: 18px 0 0;
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+  .crumb a:hover { color: var(--purple); }
+  .crumb .sep {
+    margin: 0 8px;
+    color: var(--line);
+  }
+  .crumb strong {
+    color: var(--ink);
+    font-weight: 700;
+  }
+
+  /* ===== Article header ===== */
+  .art-head {
+    padding: 24px 0 32px;
+  }
+  .art-meta-top {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .pill {
+    font-size: 11px;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 999px;
+    color: #fff;
+    letter-spacing: 0.05em;
+  }
+  .pill-omo { background: var(--omo); }
+  .pill-emo { background: var(--emo); }
+  .pill-tame { background: var(--tame); }
+  .pill-anime { background: var(--anime); color: var(--ink); }
+  .pill-out {
+    border: 1.5px solid var(--ink);
+    background: transparent;
+    color: var(--ink);
+  }
+  .meta-text {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+
+  .art-title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin-bottom: 18px;
+  }
+  .art-title mark {
+    background: var(--lime);
+    color: var(--ink);
+    padding: 0 6px;
+    border-radius: 6px;
+  }
+  .art-lead {
+    font-size: 18px;
+    color: var(--ink-soft);
+    line-height: 1.85;
+    font-weight: 500;
+  }
+
+  /* ===== Hero visual ===== */
+  .art-hero {
+    background: linear-gradient(135deg, #d4f0ff 0%, #b6e3ff 100%);
+    border-radius: 24px;
+    aspect-ratio: 16/8;
+    margin: 28px 0 24px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .art-hero::before {
+    content: "💅";
+    font-size: 180px;
+    line-height: 1;
+    filter: drop-shadow(0 12px 24px rgba(0,0,0,0.15));
+  }
+  .art-hero::after {
+    content: "👮👨‍✈️";
+    position: absolute;
+    bottom: 20px; right: 24px;
+    font-size: 48px;
+    transform: rotate(-6deg);
+  }
+  .hero-sticker {
+    position: absolute;
+    top: 20px; left: 20px;
+    background: var(--ink);
+    color: var(--lime);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    transform: rotate(-3deg);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  /* ===== Author / Share ===== */
+  .art-byline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 36px;
+  }
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .avatar {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--ink);
+    color: var(--lime);
+    font-size: 18px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .author-info { line-height: 1.4; }
+  .author-name {
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .author-role {
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .share {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .share-btn {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--card);
+    border: 1.5px solid var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all .15s;
+  }
+  .share-btn:hover {
+    background: var(--ink);
+    color: var(--lime);
+  }
+  .share-count {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 700;
+    margin-right: 4px;
+  }
+
+  /* ===== Article body ===== */
+  .art-body {
+    font-size: 17px;
+    line-height: 2.0;
+    color: var(--ink);
+  }
+  .art-body p {
+    margin-bottom: 1.4em;
+  }
+  .art-body p:first-of-type::first-letter {
+    font-size: 1.4em;
+    font-weight: 900;
+  }
+
+  .art-body h2 {
+    margin: 56px 0 20px;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 10px;
+    position: relative;
+  }
+  .art-body h2 .mk {
+    background: var(--lime);
+    padding: 0 10px;
+    border-radius: 8px;
+  }
+  .art-body h2::before {
+    content: "▍";
+    color: var(--purple);
+    font-weight: 900;
+    margin-right: 2px;
+  }
+
+  .art-body em.kw {
+    font-style: normal;
+    background: linear-gradient(transparent 60%, var(--lime) 60%);
+    padding: 0 2px;
+    font-weight: 700;
+  }
+  .art-body strong {
+    background: linear-gradient(transparent 60%, rgba(255,117,96,0.35) 60%);
+    font-weight: 700;
+    padding: 0 2px;
+  }
+
+  /* Comparison block (警察 vs 自衛隊) */
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 32px 0;
+  }
+  .compare-card {
+    background: var(--card);
+    border: 1.5px solid var(--ink);
+    border-radius: 18px;
+    padding: 22px;
+    position: relative;
+  }
+  .compare-card.left {
+    background: linear-gradient(135deg, #fff5e6 0%, #ffeacc 100%);
+  }
+  .compare-card.right {
+    background: linear-gradient(135deg, #e8e3ff 0%, #d4ceff 100%);
+  }
+  .compare-emoji {
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .compare-label {
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    color: var(--ink);
+    margin-bottom: 6px;
+    background: var(--ink);
+    color: var(--lime);
+    padding: 3px 10px;
+    border-radius: 999px;
+    display: inline-block;
+  }
+  .compare-name {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 12px;
+  }
+  .compare-rule {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+  }
+  .compare-rule strong {
+    background: rgba(255,255,255,0.7);
+    padding: 1px 6px;
+    border-radius: 4px;
+    color: var(--ink);
+  }
+  .vs-mark {
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    transform: translateY(-50%) rotate(-8deg);
+    background: var(--ink);
+    color: var(--lime);
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 13px;
+    z-index: 2;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  /* Quote block (議員の主張) */
+  .quote-card {
+    background: var(--ink);
+    color: #fff;
+    border-radius: 24px;
+    padding: 32px 36px;
+    margin: 32px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .quote-card::before {
+    content: "“";
+    position: absolute;
+    top: -24px; right: 12px;
+    font-size: 200px;
+    color: var(--lime);
+    font-weight: 900;
+    line-height: 1;
+    opacity: 0.4;
+  }
+  .quote-text {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.65;
+    position: relative;
+    z-index: 1;
+  }
+  .quote-text mark {
+    background: var(--lime);
+    color: var(--ink);
+    padding: 0 6px;
+    border-radius: 6px;
+  }
+  .quote-by {
+    margin-top: 16px;
+    font-size: 13px;
+    color: var(--lime);
+    font-weight: 800;
+    letter-spacing: 0.05em;
+  }
+
+  /* Government answer block (政府の返し) */
+  .gov-block {
+    background: var(--card);
+    border: 2px dashed var(--muted);
+    border-radius: 18px;
+    padding: 24px 28px;
+    margin: 24px 0;
+  }
+  .gov-block h3 {
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+  .gov-block h3::before {
+    content: "📜 ";
+  }
+  .gov-row {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--line);
+    align-items: start;
+  }
+  .gov-row:last-child { border-bottom: none; }
+  .gov-who {
+    font-weight: 900;
+    color: var(--ink);
+    font-size: 14px;
+  }
+  .gov-who small {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+  .gov-text {
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--ink-soft);
+  }
+  .gov-conclusion {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--line);
+    text-align: center;
+    font-weight: 900;
+    color: var(--coral);
+    font-size: 16px;
+  }
+
+  /* ぶっちゃけポイント box */
+  .insight {
+    background: var(--card);
+    border: 2px solid var(--ink);
+    border-radius: 22px;
+    padding: 28px 32px;
+    margin: 36px 0;
+    position: relative;
+    box-shadow: 6px 6px 0 var(--lime);
+  }
+  .insight-tag {
+    position: absolute;
+    top: -16px; left: 24px;
+    background: var(--lime);
+    color: var(--ink);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    transform: rotate(-2deg);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .insight p {
+    font-size: 16px;
+    line-height: 1.95;
+    margin-bottom: 1em;
+  }
+  .insight p:last-child { margin-bottom: 0; }
+  .insight em.kw {
+    font-style: normal;
+    background: linear-gradient(transparent 60%, var(--lime) 60%);
+    padding: 0 2px;
+    font-weight: 700;
+  }
+
+  /* ===== Tags / Source ===== */
+  .art-tags {
+    margin: 36px 0 24px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .tag-chip {
+    background: var(--card);
+    border: 1.5px solid var(--ink);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 800;
+  }
+  .tag-chip:hover {
+    background: var(--ink);
+    color: var(--lime);
+  }
+
+  .source {
+    background: var(--line-soft);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 24px 0 36px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+  }
+  .source-label {
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .source a {
+    color: var(--purple);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: rgba(107,91,255,0.3);
+    text-underline-offset: 3px;
+  }
+
+  /* ===== あーし sticker ===== */
+  .aashi {
+    background: #ff7589;
+    color: #fff;
+    border-radius: 28px;
+    padding: 40px 36px;
+    margin: 32px 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 14px 36px rgba(255, 117, 137, 0.25);
+  }
+  .aashi::before {
+    content: "♡";
+    position: absolute;
+    top: -40px; right: -10px;
+    font-size: 200px;
+    color: #fff;
+    opacity: 0.32;
+    line-height: 1;
+    transform: rotate(15deg);
+  }
+  .aashi-tag {
+    background: var(--lime);
+    color: var(--ink);
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    margin-bottom: 16px;
+    transform: rotate(-2deg);
+  }
+  .aashi-text {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.75;
+    max-width: 640px;
+    position: relative;
+    z-index: 1;
+  }
+  .aashi-text mark {
+    background: var(--lime);
+    color: var(--ink);
+    padding: 0 6px;
+    border-radius: 4px;
+  }
+  .aashi-by {
+    margin-top: 18px;
+    font-size: 13px;
+    color: var(--lime);
+    font-weight: 800;
+    letter-spacing: 0.1em;
+  }
+
+  /* ===== Bottom share ===== */
+  .bottom-share {
+    text-align: center;
+    margin: 32px 0 24px;
+  }
+  .bottom-share h3 {
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 14px;
+    letter-spacing: 0.05em;
+  }
+  .bottom-share .row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .bs-btn {
+    background: var(--ink);
+    color: var(--lime);
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+  }
+  .bs-btn.purple {
+    background: var(--purple);
+    color: #fff;
+  }
+
+  /* ===== Related ===== */
+  .related {
+    background: var(--line-soft);
+    margin-top: 56px;
+    padding: 56px 0;
+  }
+  .related-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  .related h2 {
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+  }
+  .related h2 em {
+    font-style: normal;
+    background: var(--lime);
+    padding: 0 8px;
+    border-radius: 8px;
+  }
+  .related-more {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--purple);
+  }
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .related-card {
+    background: var(--card);
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform .2s, box-shadow .2s;
+    border: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+  }
+  .related-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(22,22,30,0.08);
+  }
+  .related-thumb {
+    aspect-ratio: 16/10;
+    position: relative;
+  }
+  .related-thumb::before {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 56px;
+    opacity: 0.65;
+  }
+  .rt1 { background: linear-gradient(135deg, #ffd9e0 0%, #ffbecf 100%); }
+  .rt1::before { content: "🎏"; }
+  .rt2 { background: linear-gradient(135deg, #e7e3ff 0%, #d4ceff 100%); }
+  .rt2::before { content: "💰"; }
+  .rt3 { background: linear-gradient(135deg, #fff1d4 0%, #ffe2a8 100%); }
+  .rt3::before { content: "📱"; }
+  .related-body {
+    padding: 16px 18px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .related-meta {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .related-title {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1.5;
+  }
+
+  /* ===== Footer ===== */
+  .footer {
+    padding: 48px 0 32px;
+    border-top: 1px solid var(--line);
+    background: var(--bg);
+  }
+  .foot-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 28px;
+  }
+  .foot-tag {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-top: 10px;
+  }
+  .foot h4 {
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .foot ul { list-style: none; }
+  .foot li {
+    padding: 4px 0;
+    font-size: 13px;
+    color: var(--ink-soft);
+    font-weight: 500;
+  }
+  .copyright {
+    border-top: 1px solid var(--line);
+    padding-top: 18px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+  .copyright span {
+    background: var(--lime);
+    color: var(--ink);
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-weight: 800;
+    margin: 0 4px;
+  }
+
+  @media (max-width: 768px) {
+    .nav { display: none; }
+    .art-title { font-size: 28px; }
+    .art-lead { font-size: 16px; }
+    .art-body { font-size: 16px; }
+    .art-body h2 { font-size: 22px; }
+    .art-hero::before { font-size: 120px; }
+    .compare { grid-template-columns: 1fr; }
+    .vs-mark { display: none; }
+    .quote-text { font-size: 18px; }
+    .insight p { font-size: 15px; }
+    .aashi-text { font-size: 17px; }
+    .related-grid { grid-template-columns: 1fr; }
+    .foot-grid { grid-template-columns: 1fr 1fr; }
+    .gov-row { grid-template-columns: 1fr; gap: 6px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progress"></div>
+
+<!-- Header -->
+<header class="header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <a href="pattern_c_pop.html" class="logo-badge">ギャル庁</a>
+      <div class="brand-tag"><span>NEW</span>本日2本</div>
+    </div>
+    <nav class="nav">
+      <a href="pattern_c_pop.html">ホーム</a>
+      <a href="#">ためになる</a>
+      <a href="#">面白い</a>
+      <a href="#">エモい</a>
+      <a href="#">アニメ</a>
+      <a href="#" class="sub">Xでフォロー</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Breadcrumb -->
+<div class="wrap-narrow crumb">
+  <a href="pattern_c_pop.html">ホーム</a>
+  <span class="sep">›</span>
+  <a href="#">面白い系</a>
+  <span class="sep">›</span>
+  <strong>制服ってオフの日も着なきゃダメなの？問題</strong>
+</div>
+
+<!-- Article header -->
+<article>
+<div class="wrap-narrow art-head">
+
+  <div class="art-meta-top">
+    <span class="pill pill-omo">面白い系</span>
+    <span class="pill pill-out">国会答弁</span>
+    <span class="meta-text">2026.05.03 公開 · 読了 約4分</span>
+  </div>
+
+  <h1 class="art-title">制服ってオフの日も<mark>着なきゃダメ</mark>なの？問題💅</h1>
+
+  <p class="art-lead">
+    石垣のりこ議員が「警察官と自衛官で制服ルール違くない？」って国会で質問したやつ、政府の答弁が結構おもろかったから、ざっくりまとめたよ🫶
+  </p>
+
+  <!-- Hero visual -->
+  <div class="art-hero">
+    <div class="hero-sticker">あーしが読んどいたよ。</div>
+  </div>
+
+  <!-- Author / share -->
+  <div class="art-byline">
+    <div class="author">
+      <div class="avatar">あ</div>
+      <div class="author-info">
+        <div class="author-name">あーし（編集長）</div>
+        <div class="author-role">JK・17 / 渋谷系</div>
+      </div>
+    </div>
+    <div class="share">
+      <span class="share-count">♡ 198 · 共有 42</span>
+      <a class="share-btn" href="#" title="X">𝕏</a>
+      <a class="share-btn" href="#" title="リンクコピー">🔗</a>
+      <a class="share-btn" href="#" title="ブクマ">☆</a>
+    </div>
+  </div>
+</div>
+
+<!-- Body -->
+<div class="wrap-narrow art-body">
+
+  <p>えーこれマジ<strong>おもろい</strong>んだけど、石垣のりこ議員が「警察官と自衛官で制服ルール違くない？？おかしくない？？」って国会で質問したやつね！😂 答弁を読んでみたら、政府の言い分も意外と筋が通ってて勉強になったから共有しとくね〜。</p>
+
+  <h2><span class="mk">ざっくり</span> 何が問題かっていうと</h2>
+
+  <p>そもそも警察官と自衛官って、制服ルールが<em class="kw">根本的に違う</em>のよ。これがどう違うのかっていうと…👇</p>
+
+  <div class="compare">
+    <div class="compare-card left">
+      <div class="compare-emoji">👮</div>
+      <div class="compare-label">CASE A</div>
+      <div class="compare-name">警察官</div>
+      <div class="compare-rule">
+        <strong>勤務中は制服着てね</strong>がルール。<br>
+        オフの日は別に着なくてOK。<br>
+        都道府県によっては「<strong>オフは着ないで</strong>」って制限してるとこもあるらしい👀
+      </div>
+    </div>
+    <div class="compare-card right">
+      <div class="vs-mark">VS</div>
+      <div class="compare-emoji">👨‍✈️</div>
+      <div class="compare-label">CASE B</div>
+      <div class="compare-name">自衛官</div>
+      <div class="compare-rule">
+        <strong>常に制服着なさい</strong>がデフォ！！<br>
+        休日や基地の外にいるときの「着なくてもいいよ」例外はあるけど、基本は<strong>"常時着用"</strong>。ヤバくない？？😳
+      </div>
+    </div>
+  </div>
+
+  <p>ね？？同じ「公権力の象徴」っぽい仕事なのに、ルールの作り方がぜんぜん違うのよ。これに対して石垣議員が「いやおかしくない？」って質問主意書を出したわけ。</p>
+
+  <h2>石垣議員の<span class="mk">主張</span></h2>
+
+  <div class="quote-card">
+    <p class="quote-text">「いやいや、両方とも公権力の象徴でしょ？？なんで自衛官だけオフでも制服縛りあるの？？<mark>揃えた方がよくない？？</mark>」</p>
+    <div class="quote-by">— 石垣のりこ参議院議員（質問主意書より要約）</div>
+  </div>
+
+  <p>って、めっちゃ正論ぶつけてるの🔥 「同じ公権力なのに不均衡じゃない？」っていう、シンプルだけど鋭い問題提起ね。</p>
+
+  <h2>政府の<span class="mk">返し</span></h2>
+
+  <p>で、これに対して政府の答弁がまた渋いんだけど、要するに：</p>
+
+  <div class="gov-block">
+    <h3>政府答弁書（要約）</h3>
+    <div class="gov-row">
+      <div class="gov-who"><small>👮</small>警察官</div>
+      <div class="gov-text">職務中に実力行使する特殊な権限があるから、勤務中は身分がわかるように制服着てね。オフは想定してないよ。</div>
+    </div>
+    <div class="gov-row">
+      <div class="gov-who"><small>👨‍✈️</small>自衛官</div>
+      <div class="gov-text">自衛隊法で「常に品位を重んじなさい」「制服着て身なり整えなさい」って決まってるから、常時着用がルールなの。これには合理性あるよ。</div>
+    </div>
+    <div class="gov-conclusion">→ 「改正する気ありません」ってバッサリ🫠</div>
+  </div>
+
+  <p>うん、まあバッサリ。でもよく読むと「揃えない理由」もちゃんと説明されてて、ただの面倒くさがりじゃないのが分かるんだよね。</p>
+
+  <!-- ぶっちゃけポイント -->
+  <div class="insight">
+    <span class="insight-tag">💎 ぶっちゃけポイント</span>
+    <p>この答弁よく読むと、警察と自衛隊で<em class="kw">法律の作りが根本的に違う</em>のよね。警察は「勤務中の話」として制服を規定してるけど、自衛隊法は「隊員としての品位」っていう<em class="kw">24時間の人格的な義務</em>として制服を位置づけてるの。だから単純に「揃えろ」って話でもないんだけど、石垣議員の「それって本当に合理的？」っていう問題提起自体はけっこう鋭いと思う！🤔</p>
+    <p>まあ実際は例外規定で自衛官もオフは私服OKだから、実態としてはそこまで差はないんだけど、<em class="kw">法律の建付けとしての不均衡</em>を突いてるのがこの質問のミソね✨</p>
+  </div>
+
+  <!-- Tags -->
+  <div class="art-tags">
+    <a class="tag-chip" href="#">#国会答弁</a>
+    <a class="tag-chip" href="#">#自衛隊</a>
+    <a class="tag-chip" href="#">#警察</a>
+    <a class="tag-chip" href="#">#質問主意書</a>
+    <a class="tag-chip" href="#">#制服</a>
+  </div>
+
+  <!-- Source -->
+  <div class="source">
+    <div class="source-label">📎 元ネタ</div>
+    Jディフェンスニュース掲載の国会答弁記事（石垣のりこ参議院議員 質問主意書／政府答弁書）。本記事はギャル庁が独自にリライトしたものです。一次情報は <a href="#">こちら</a> でチェックしてね。
+  </div>
+</div>
+
+<!-- あーし的にはさぁ -->
+<div class="wrap-narrow">
+  <div class="aashi">
+    <div class="aashi-tag">あーし的にはさぁ、</div>
+    <p class="aashi-text">制服ってさぁ、あーしは実は<mark>けっこう好き</mark>なのよね♡ あれ着てると「あ、この人お仕事してるんだ」ってわかるじゃん？自衛官さんがオフでも制服着てたら普通にカッコいいと思うけどね！💅</p>
+    <div class="aashi-by">— あーし（JK・17 / 渋谷系）</div>
+  </div>
+</div>
+
+<!-- Bottom share -->
+<div class="wrap-narrow bottom-share">
+  <h3>この記事おもろかった？シェアしてね🫶</h3>
+  <div class="row">
+    <a href="#" class="bs-btn">𝕏 でシェア</a>
+    <a href="#" class="bs-btn purple">リンクをコピー</a>
+  </div>
+</div>
+
+</article>
+
+<!-- Related -->
+<section class="related">
+  <div class="wrap">
+    <div class="related-head">
+      <h2><em>こっちも</em> 読んだら？</h2>
+      <a href="pattern_c_pop.html" class="related-more">記事一覧 →</a>
+    </div>
+    <div class="related-grid">
+      <a href="#" class="related-card">
+        <div class="related-thumb rt1"></div>
+        <div class="related-body">
+          <div class="related-meta"><span class="pill pill-emo">エモい</span><span>5/3</span></div>
+          <div class="related-title">能登の鯉のぼり200匹が復活してる話🎏✨</div>
+        </div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-thumb rt2"></div>
+        <div class="related-body">
+          <div class="related-meta"><span class="pill pill-tame">ためになる</span><span>5/1</span></div>
+          <div class="related-title">【最新】NISA改正、簡単にまとめたよ💰</div>
+        </div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-thumb rt3"></div>
+        <div class="related-body">
+          <div class="related-meta"><span class="pill pill-tame">ためになる</span><span>5/2</span></div>
+          <div class="related-title">あの人気スマホ、発火リコールきてるって知ってた？</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap foot">
+    <div class="foot-grid">
+      <div>
+        <div class="logo-badge">ギャル庁</div>
+        <p class="foot-tag">あーしが読んどいたよ。<br>お堅いニュースをギャル語で解説するまとめサイト。</p>
+      </div>
+      <div>
+        <h4>カテゴリ</h4>
+        <ul>
+          <li>ためになる</li>
+          <li>面白い</li>
+          <li>エモい</li>
+          <li>アニメ・ゲーム</li>
+        </ul>
+      </div>
+      <div>
+        <h4>サイト</h4>
+        <ul>
+          <li>運営者情報</li>
+          <li>プライバシーポリシー</li>
+          <li>お問い合わせ</li>
+        </ul>
+      </div>
+      <div>
+        <h4>SNS</h4>
+        <ul>
+          <li>X (@gal_cho)</li>
+          <li>RSS</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© 2026 <span>ギャル庁</span> / GAL-CHO · made with ♡</div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('progress');
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    bar.style.width = pct + '%';
+  });
+</script>
+
+</body>
+</html>

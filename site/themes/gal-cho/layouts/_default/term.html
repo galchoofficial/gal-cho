@@ -1,0 +1,89 @@
+{{ define "main" }}
+{{- $term := .Data.Term -}}
+{{- $catMeta := index site.Params.categoryMeta $term -}}
+{{- $isCategory := eq .Data.Plural "categories" -}}
+
+<!-- Crumb -->
+<div class="wrap crumb">
+  <a href="{{ "/" | relURL }}">ホーム</a>
+  <span class="sep">›</span>
+  <a href="{{ printf "/%s/" .Data.Plural | relURL }}">{{ if $isCategory }}カテゴリ{{ else }}タグ{{ end }}</a>
+  <span class="sep">›</span>
+  <strong>{{ if $catMeta }}{{ $catMeta.label }}{{ else }}{{ $term }}{{ end }}</strong>
+</div>
+
+{{- if and $isCategory $catMeta }}
+<!-- Big Category Hero -->
+<section class="wrap cat-{{ $term }}">
+  <div class="cat-hero" style="margin-top: 24px; padding: 56px 56px 48px;">
+    <div class="cat-pill">CATEGORY / {{ upper $term }}</div>
+    <h1 class="cat-h2"><span class="em">{{ $catMeta.emoji }}</span>{{ $catMeta.label }}</h1>
+    <p class="cat-tagline">{{ $catMeta.tagline | safeHTML }}</p>
+    <p class="cat-desc">{{ site.Params.description }}</p>
+    <div class="cat-stats">
+      <div class="stat"><strong>{{ len .Pages }}</strong><small>ARTICLES</small></div>
+      {{- with first 1 .Pages.ByDate.Reverse }}
+        {{- range . }}
+        <div class="stat"><strong>{{ .Date.Format "1/2" }}</strong><small>LATEST</small></div>
+        {{- end }}
+      {{- end }}
+    </div>
+    <span class="cat-hero-bg-emoji">{{ $catMeta.emoji }}</span>
+  </div>
+</section>
+{{- else }}
+<!-- Tag header (シンプル) -->
+<section class="wrap" style="padding: 24px 0 8px;">
+  <h1 class="sec-h2"><em>#{{ $term }}</em></h1>
+  <p class="meta-text" style="margin-top: 8px;">{{ len .Pages }} 件の記事</p>
+</section>
+{{- end }}
+
+<!-- Filter bar -->
+<section class="wrap">
+  <div class="filter-bar">
+    <div class="fb-left">
+      <strong>{{ len .Pages }}</strong> 件の記事 · 並び順
+    </div>
+    <div class="fb-right">
+      <div class="sort">
+        <button class="is-on">新着</button>
+        <button>人気</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Article grid -->
+<section class="wrap section">
+  {{- $paginator := .Paginate .Pages.ByDate.Reverse }}
+  {{- if gt (len $paginator.Pages) 0 }}
+  <div class="grid">
+    {{- range $i, $p := $paginator.Pages }}
+      {{ partial "article-card.html" (dict "page" $p "index" (add $i 1)) }}
+    {{- end }}
+  </div>
+
+  <!-- Pagination -->
+  {{- if gt $paginator.TotalPages 1 }}
+  <nav class="pagi">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL }}">← 前へ</a>
+    {{- end }}
+    {{- range $paginator.Pagers }}
+      {{- if eq . $paginator }}
+      <span class="current">{{ .PageNumber }}</span>
+      {{- else }}
+      <a href="{{ .URL }}">{{ .PageNumber }}</a>
+      {{- end }}
+    {{- end }}
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL }}">次へ →</a>
+    {{- end }}
+  </nav>
+  {{- end }}
+  {{- else }}
+  <p class="meta-text" style="text-align:center; padding: 60px 0;">記事はまだないよ〜🫥</p>
+  {{- end }}
+</section>
+{{ end }}

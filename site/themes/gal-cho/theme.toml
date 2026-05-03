@@ -1,0 +1,12 @@
+name = "gal-cho"
+license = "MIT"
+licenselink = ""
+description = "ギャル庁カスタムテーマ。Pop Modern (C-1) デザインベース"
+homepage = ""
+tags = ["news", "magazine", "japanese"]
+features = ["responsive", "noto-sans-jp"]
+min_version = "0.128.0"
+
+[author]
+  name = "ギャル庁"
+  homepage = ""

@@ -1,0 +1,13 @@
+{{- /* ====================================================
+   aashi-block.html
+   「あーし的にはさぁ、」コメントブロック
+   引数: dict "text" string "by" string (option)
+==================================================== */ -}}
+{{- $text := .text -}}
+{{- $by := .by | default "あーし（JK・17 / 渋谷系）" -}}
+
+<div class="aashi">
+  <div class="aashi-tag">あーし的にはさぁ、</div>
+  <p class="aashi-text">{{ $text | safeHTML }}</p>
+  <div class="aashi-by">— {{ $by }}</div>
+</div>

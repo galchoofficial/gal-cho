@@ -1,0 +1,43 @@
+{{- /* ====================================================
+   article-card.html
+   引数: dict "page" Page "index" int (option)
+   記事カードを描画する。インデックスでサムネイル色を回転。
+==================================================== */ -}}
+
+{{- $page := .page -}}
+{{- $idx := .index | default 1 -}}
+{{- $colorN := add 1 (mod $idx 8) -}}
+
+{{- /* 主カテゴリを取得（front matter の categories[0]） */ -}}
+{{- $cat := "" -}}
+{{- with $page.Params.categories -}}{{- $cat = index . 0 -}}{{- end -}}
+
+{{- $catMeta := index site.Params.categoryMeta $cat -}}
+{{- if not $catMeta -}}
+  {{- $catMeta = dict "label" $cat "emoji" "📰" -}}
+{{- end -}}
+
+{{- /* サムネイル絵文字: front matterで指定があれば優先、なければカテゴリ絵文字 */ -}}
+{{- $thumbEmoji := $page.Params.thumb_emoji | default $catMeta.emoji -}}
+
+<a href="{{ $page.RelPermalink }}" class="card">
+  <div class="card-thumb thumb-{{ $colorN }}">
+    <div class="card-thumb-emoji">{{ $thumbEmoji }}</div>
+  </div>
+  <div class="card-body">
+    <div class="card-meta">
+      {{- if $cat }}
+      <span class="pill pill-{{ $cat }}">{{ $catMeta.label }}</span>
+      {{- end }}
+      <span>{{ $page.Date.Format "1/2" }}</span>
+    </div>
+    <div class="card-title">{{ $page.Title }}</div>
+    <p class="card-excerpt">{{ $page.Summary | plainify | truncate 80 }}</p>
+    <div class="card-foot">
+      <span>♡ {{ $page.Params.likes | default 0 }}</span>
+      {{- with $page.Params.tags -}}
+      <span>{{ index . 0 }}</span>
+      {{- end }}
+    </div>
+  </div>
+</a>

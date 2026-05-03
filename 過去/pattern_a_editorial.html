@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ギャル庁 - あーしが読んどいたよ。</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #0f1b2d;
+    --ink-soft: #2a3548;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --line-soft: #f1f3f5;
+    --accent: #e5527a;
+    --tame: #2563eb;
+    --omo: #f59e0b;
+    --emo: #e5527a;
+    --anime: #7c3aed;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 15px;
+    font-feature-settings: "palt" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  .wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ===== Top utility bar ===== */
+  .util-bar {
+    border-bottom: 1px solid var(--line);
+    font-size: 12px;
+    color: var(--muted);
+    padding: 8px 0;
+    letter-spacing: 0.06em;
+  }
+  .util-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .util-bar .right span + span::before {
+    content: "·";
+    margin: 0 8px;
+    color: var(--line);
+  }
+
+  /* ===== Header ===== */
+  .header {
+    text-align: center;
+    padding: 36px 0 24px;
+    border-bottom: 1px solid var(--ink);
+  }
+  .logo {
+    font-size: 56px;
+    font-weight: 900;
+    letter-spacing: 0.16em;
+    line-height: 1;
+    color: var(--ink);
+    display: inline-block;
+    position: relative;
+  }
+  .logo::after {
+    content: "";
+    position: absolute;
+    width: 8px; height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    right: -14px; top: 4px;
+  }
+  .tagline {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 14px;
+    letter-spacing: 0.3em;
+  }
+  .nav {
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+  }
+  .nav a {
+    position: relative;
+    padding-bottom: 4px;
+    transition: color .2s;
+  }
+  .nav a:hover { color: var(--accent); }
+
+  /* ===== Hero ===== */
+  .hero {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 48px;
+    padding: 56px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-main {
+    cursor: pointer;
+  }
+  .hero-img {
+    width: 100%;
+    aspect-ratio: 16/10;
+    background: linear-gradient(135deg, #f1f3f5 0%, #e5e7eb 100%);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  .hero-img::before {
+    content: "🎏";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 96px;
+    opacity: 0.55;
+  }
+  .hero-img.alt::before { content: "💅"; }
+  .hero-img.alt2::before { content: "📱"; }
+  .hero-img.alt3::before { content: "⚔️"; }
+  .hero-img.alt4::before { content: "💰"; }
+  .hero-img.alt5::before { content: "🐶"; }
+
+  .hero-meta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+  .cat-pill {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    padding: 4px 10px;
+    border: 1px solid currentColor;
+    border-radius: 0;
+    text-transform: uppercase;
+  }
+  .cat-tame { color: var(--tame); }
+  .cat-omo  { color: var(--omo); }
+  .cat-emo  { color: var(--emo); }
+  .cat-anime{ color: var(--anime); }
+
+  .hero-title {
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 1.35;
+    letter-spacing: 0.01em;
+    margin-bottom: 14px;
+  }
+  .hero-excerpt {
+    color: var(--ink-soft);
+    line-height: 1.85;
+    font-size: 15px;
+  }
+
+  .hero-side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .hero-side h3 {
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.3em;
+    color: var(--accent);
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 10px;
+    margin-bottom: 6px;
+  }
+  .side-item {
+    display: flex;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  .side-num {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--accent);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    width: 32px;
+    flex-shrink: 0;
+  }
+  .side-num.muted { color: var(--line); }
+  .side-content {
+    flex: 1;
+  }
+  .side-cat {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 4px;
+  }
+  .side-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  /* ===== Section heading ===== */
+  .section {
+    padding: 64px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .sec-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 16px;
+  }
+  .sec-title {
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+  }
+  .sec-title small {
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  .sec-more {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+  }
+  .sec-more::after {
+    content: " →";
+  }
+
+  /* ===== Article grid ===== */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px 28px;
+  }
+  .card {
+    cursor: pointer;
+  }
+  .card-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: var(--line-soft);
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card-img::before {
+    content: "📰";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 56px;
+    opacity: 0.5;
+  }
+  .card-img.i1::before { content: "🐶"; }
+  .card-img.i2::before { content: "💰"; }
+  .card-img.i3::before { content: "⚔️"; }
+  .card-img.i4::before { content: "📱"; }
+  .card-img.i5::before { content: "🎏"; }
+  .card-img.i6::before { content: "💅"; }
+
+  .card-meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+  }
+  .card-title {
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  .card-excerpt {
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+
+  /* ===== Category strip ===== */
+  .cat-strip {
+    background: var(--ink);
+    color: #fff;
+    padding: 28px 0;
+    text-align: center;
+  }
+  .cat-strip-inner {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+  .cat-strip a {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .dot {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+  }
+
+  /* ===== Aashi note ===== */
+  .aashi {
+    background: var(--line-soft);
+    padding: 48px 0;
+    margin-top: 0;
+  }
+  .aashi-box {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 32px;
+  }
+  .aashi-label {
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.3em;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+  .aashi-text {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.85;
+    color: var(--ink);
+  }
+  .aashi-name {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 16px;
+    letter-spacing: 0.15em;
+  }
+
+  /* ===== Footer ===== */
+  .footer {
+    border-top: 2px solid var(--ink);
+    padding: 48px 0 32px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .foot-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 32px;
+  }
+  .foot-logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--ink);
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+  }
+  .foot-h {
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .foot ul {
+    list-style: none;
+  }
+  .foot li {
+    padding: 4px 0;
+  }
+  .copyright {
+    border-top: 1px solid var(--line);
+    padding-top: 20px;
+    text-align: center;
+    letter-spacing: 0.1em;
+  }
+
+  @media (max-width: 768px) {
+    .wrap { padding: 0 20px; }
+    .logo { font-size: 40px; }
+    .nav { gap: 18px; font-size: 12px; }
+    .hero {
+      grid-template-columns: 1fr;
+      gap: 32px;
+      padding: 36px 0;
+    }
+    .hero-title { font-size: 24px; }
+    .grid { grid-template-columns: 1fr; gap: 28px; }
+    .foot-grid { grid-template-columns: 1fr; gap: 24px; }
+    .cat-strip-inner { gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Utility bar -->
+<div class="util-bar">
+  <div class="wrap util-inner">
+    <span>2026.05.03 SUN</span>
+    <div class="right">
+      <span>本日 2本更新</span><span>累計 142本</span><span>X @gal_cho</span>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header">
+  <div class="wrap">
+    <div class="logo">ギャル庁</div>
+    <div class="tagline">あーしが読んどいたよ。</div>
+    <nav class="nav">
+      <a href="#">TOP</a>
+      <a href="#">ためになる</a>
+      <a href="#">面白い</a>
+      <a href="#">エモい</a>
+      <a href="#">アニメ・ゲーム</a>
+      <a href="#">ABOUT</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero wrap">
+  <article class="hero-main">
+    <div class="hero-img"></div>
+    <div class="hero-meta">
+      <span class="cat-pill cat-emo">EMO / エモい</span>
+      <span>2026.05.03</span>
+      <span>復興</span>
+    </div>
+    <h1 class="hero-title">能登の鯉のぼり200匹が復活してる話🎏✨ 川の上にもロープ渡したらしい</h1>
+    <p class="hero-excerpt">震災から2年経った石川県珠洲市で、約200匹の鯉のぼりが空泳いでるの。しかも今年は川の上にも復活してて、エモすぎん？？実行委員長は24歳の漁師くんで…</p>
+  </article>
+
+  <aside class="hero-side">
+    <h3>TODAY'S READ</h3>
+    <a class="side-item" href="#">
+      <div class="side-num">01</div>
+      <div class="side-content">
+        <div class="side-cat cat-omo">OMO / 面白い</div>
+        <div class="side-title">制服ってオフの日も着なきゃダメなの？問題💅 国会で正論ぶつけられた政府の返しが…</div>
+      </div>
+    </a>
+    <a class="side-item" href="#">
+      <div class="side-num">02</div>
+      <div class="side-content">
+        <div class="side-cat cat-tame">TAME / ためになる</div>
+        <div class="side-title">あの人気スマホ、発火リコールきてるって知ってた？型番マジ要チェック</div>
+      </div>
+    </a>
+    <a class="side-item" href="#">
+      <div class="side-num">03</div>
+      <div class="side-content">
+        <div class="side-cat cat-anime">ANIME / アニメ</div>
+        <div class="side-title">鬼滅最終章のキービジュ来たんだけど…ヤバい</div>
+      </div>
+    </a>
+    <a class="side-item" href="#">
+      <div class="side-num muted">04</div>
+      <div class="side-content">
+        <div class="side-cat cat-tame">TAME / ためになる</div>
+        <div class="side-title">NISA改正、3行でまとめたよ💰 結局なにが変わるの？</div>
+      </div>
+    </a>
+  </aside>
+</section>
+
+<!-- Latest -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-title">
+        <small>LATEST POSTS</small>
+        新着記事
+      </div>
+      <a href="#" class="sec-more">すべて見る</a>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="card-img i1"></div>
+        <div class="card-meta"><span class="cat-pill cat-emo">EMO</span><span>5/1</span></div>
+        <div class="card-title">保護犬カフェの「ひまわり」がついに卒業した話🐶</div>
+        <p class="card-excerpt">SNSで人気だったあの子、ついに新しい家族のもとへ…エピソードが泣ける😭</p>
+      </article>
+      <article class="card">
+        <div class="card-img i2"></div>
+        <div class="card-meta"><span class="cat-pill cat-tame">TAME</span><span>5/1</span></div>
+        <div class="card-title">【最新】NISA改正、簡単にまとめたよ💰</div>
+        <p class="card-excerpt">金融庁が出した新ルール、ぶっちゃけ何が変わるのか3行でまとめると…</p>
+      </article>
+      <article class="card">
+        <div class="card-img i3"></div>
+        <div class="card-meta"><span class="cat-pill cat-anime">ANIME</span><span>5/2</span></div>
+        <div class="card-title">鬼滅最終章のキービジュ来たんだけど…ヤバい</div>
+        <p class="card-excerpt">無限城編キービジュアル公開！背景に映ってる「あの人」のシルエットが鳥肌モン…</p>
+      </article>
+      <article class="card">
+        <div class="card-img i4"></div>
+        <div class="card-meta"><span class="cat-pill cat-tame">TAME</span><span>5/2</span></div>
+        <div class="card-title">あの人気スマホ、発火リコールきてるって知ってた？</div>
+        <p class="card-excerpt">消費者庁から発表きたやつ、対象機種マジで身近すぎて怖い。型番要チェック…</p>
+      </article>
+      <article class="card">
+        <div class="card-img i5"></div>
+        <div class="card-meta"><span class="cat-pill cat-emo">EMO</span><span>5/3</span></div>
+        <div class="card-title">能登の鯉のぼり200匹が復活してる話🎏✨</div>
+        <p class="card-excerpt">震災から2年経った石川県珠洲市で、約200匹の鯉のぼりが空泳いでるの！！しかも今年は川の上にも復活してて…</p>
+      </article>
+      <article class="card">
+        <div class="card-img i6"></div>
+        <div class="card-meta"><span class="cat-pill cat-omo">OMO</span><span>5/3</span></div>
+        <div class="card-title">制服ってオフの日も着なきゃダメなの？問題💅</div>
+        <p class="card-excerpt">石垣のりこ議員が「警察官と自衛官で制服ルール違くない？」って国会で質問したやつ…</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Aashi note -->
+<section class="aashi">
+  <div class="aashi-box">
+    <div class="aashi-label">あーし的にはさぁ、</div>
+    <p class="aashi-text">最近のニュースさぁ、ちゃんと読むと意外とおもろいんだよね。あーし、推しのために税金調べ始めたら止まんなくなった系だから、みんなも気軽に覗いてって🫶</p>
+    <div class="aashi-name">— あーし（JK・17）</div>
+  </div>
+</section>
+
+<!-- Category strip -->
+<div class="cat-strip">
+  <div class="wrap cat-strip-inner">
+    <a href="#"><span class="dot" style="background:var(--tame)"></span>ためになる系</a>
+    <a href="#"><span class="dot" style="background:var(--omo)"></span>面白い系</a>
+    <a href="#"><span class="dot" style="background:var(--emo)"></span>エモい系</a>
+    <a href="#"><span class="dot" style="background:var(--anime)"></span>アニメ・ゲーム系</a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap foot">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">ギャル庁</div>
+        <p>あーしが読んどいたよ。<br>お堅いニュースをギャル語で解説するまとめサイト。</p>
+      </div>
+      <div>
+        <div class="foot-h">CATEGORY</div>
+        <ul>
+          <li>ためになる</li>
+          <li>面白い</li>
+          <li>エモい</li>
+          <li>アニメ・ゲーム</li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-h">ABOUT</div>
+        <ul>
+          <li>運営者情報</li>
+          <li>プライバシーポリシー</li>
+          <li>お問い合わせ</li>
+          <li>X (@gal_cho)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© 2026 ギャル庁 / GAL-CHO</div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+{{ define "main" }}
+{{- $latest := first 9 (where site.RegularPages "Section" "posts").ByDate.Reverse -}}
+
+<!-- ===== Hero ===== -->
+<section class="wrap hero">
+  <span class="hero-tag"><span class="pulse"></span>{{ now.Format "2006.01.02" }} / 累計 {{ len (where site.RegularPages "Section" "posts") }}本</span>
+  <h1 class="hero-h1">お堅いニュース、<mark>あーし</mark>が<span class="twist">読んどいたよ</span>。</h1>
+  <p class="hero-sub">{{ site.Params.description }}</p>
+</section>
+
+{{- if gt (len $latest) 0 }}
+  {{- $featured := index $latest 0 -}}
+  {{- $minis := slice -}}
+  {{- if gt (len $latest) 1 }}{{- $minis = first 2 (after 1 $latest) -}}{{- end -}}
+
+<!-- ===== Featured ===== -->
+<section class="wrap featured">
+  {{- /* Featured main */ -}}
+  {{- $cat := "" -}}{{- with $featured.Params.categories -}}{{- $cat = index . 0 -}}{{- end -}}
+  {{- $catMeta := index site.Params.categoryMeta $cat -}}
+  {{- if not $catMeta -}}{{- $catMeta = dict "label" $cat "emoji" "📰" -}}{{- end -}}
+
+  <a class="feat-main" href="{{ $featured.RelPermalink }}">
+    <span class="feat-bg-emoji">{{ $featured.Params.thumb_emoji | default $catMeta.emoji }}</span>
+    <div class="feat-meta">
+      {{- if $cat }}<span class="pill pill-{{ $cat }}">{{ $catMeta.label }}</span>{{ end }}
+      {{- with $featured.Params.tags }}<span class="pill pill-out">{{ index . 0 }}</span>{{ end }}
+      <span class="meta-text">{{ $featured.Date.Format "1/2" }} · 読了 約{{ $featured.ReadingTime }}分</span>
+    </div>
+    <h2 class="feat-title">{{ $featured.Title }}</h2>
+    <p class="feat-excerpt">{{ $featured.Summary | plainify | truncate 120 }}</p>
+    <div class="feat-foot">
+      <span>♡ {{ $featured.Params.likes | default 0 }}</span>
+      <span class="read-btn">読む →</span>
+    </div>
+  </a>
+
+  {{- if gt (len $minis) 0 }}
+  <div class="feat-side">
+    {{- range $i, $p := $minis }}
+      {{- $mcat := "" -}}{{- with $p.Params.categories -}}{{- $mcat = index . 0 -}}{{- end -}}
+      {{- $mmeta := index site.Params.categoryMeta $mcat -}}
+      {{- if not $mmeta -}}{{- $mmeta = dict "label" $mcat "emoji" "📰" -}}{{- end -}}
+      <a class="feat-mini {{ if eq $i 0 }}purple{{ else }}lime{{ end }}" href="{{ $p.RelPermalink }}">
+        <div>
+          <div class="mini-emoji">{{ $p.Params.thumb_emoji | default $mmeta.emoji }}</div>
+          <div class="mini-meta">
+            {{- if $mcat }}<span class="pill pill-{{ $mcat }}">{{ $mmeta.label }}</span>{{ end }}
+            <span>{{ $p.Date.Format "1/2" }}</span>
+          </div>
+          <div class="mini-title">{{ $p.Title }}</div>
+        </div>
+      </a>
+    {{- end }}
+  </div>
+  {{- end }}
+</section>
+{{- end }}
+
+<!-- ===== Category chips ===== -->
+<section class="wrap chips">
+  <div class="chips-bar">
+    <a href="{{ "/posts/" | relURL }}" class="chip is-on"><span class="chip-emoji">🌟</span>すべて</a>
+    {{- range $key, $meta := site.Params.categoryMeta }}
+    <a href="{{ printf "/categories/%s/" $key | relURL }}" class="chip"><span class="chip-emoji">{{ $meta.emoji }}</span>{{ $meta.label }}</a>
+    {{- end }}
+  </div>
+</section>
+
+<!-- ===== Latest grid ===== -->
+{{- if gt (len $latest) 3 }}
+{{- $rest := after 3 $latest }}
+<section class="wrap section">
+  <div class="sec-head">
+    <h2 class="sec-h2"><em>新着</em> 記事</h2>
+    <a href="{{ "/posts/" | relURL }}" class="sec-more">すべて見る →</a>
+  </div>
+  <div class="grid">
+    {{- range $i, $p := $rest }}
+      {{ partial "article-card.html" (dict "page" $p "index" (add $i 1)) }}
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+<!-- ===== Aashi ===== -->
+<section class="wrap">
+  {{ partial "aashi-block.html" (dict "text" `最近のニュースさぁ、ちゃんと読むと意外と<mark>おもろい</mark>んだよね。あーし、推しのために税金調べ始めたら止まんなくなった系だから、みんなも気軽に覗いてって🫶`) }}
+</section>
+{{ end }}

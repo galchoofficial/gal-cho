@@ -1,0 +1,146 @@
+{{ define "head" }}
+<style>
+  /* Hero background variants per article */
+  .art-hero-visual.bg-blue   { background: linear-gradient(135deg, #d4f0ff 0%, #b6e3ff 100%); }
+  .art-hero-visual.bg-pink   { background: linear-gradient(135deg, #ffd9e0 0%, #ffbecf 100%); }
+  .art-hero-visual.bg-lime   { background: linear-gradient(135deg, #e6f8c8 0%, #d2efaa 100%); }
+  .art-hero-visual.bg-purple { background: linear-gradient(135deg, #e7e3ff 0%, #d4ceff 100%); }
+  .art-hero-visual.bg-orange { background: linear-gradient(135deg, #fff1d4 0%, #ffe2a8 100%); }
+  .art-hero-visual.bg-peach  { background: linear-gradient(135deg, #ffe4dd 0%, #ffd1c4 100%); }
+</style>
+{{ end }}
+
+{{ define "main" }}
+{{- $cat := "" -}}{{- with .Params.categories -}}{{- $cat = index . 0 -}}{{- end -}}
+{{- $catMeta := index site.Params.categoryMeta $cat -}}
+{{- if not $catMeta -}}{{- $catMeta = dict "label" $cat "emoji" "📰" -}}{{- end -}}
+{{- $heroEmoji := .Params.hero_emoji | default $catMeta.emoji -}}
+{{- $heroBg := .Params.hero_bg | default "blue" -}}
+
+<div class="progress-bar" id="progress"></div>
+
+<!-- Breadcrumb -->
+<div class="wrap-narrow crumb">
+  <a href="{{ "/" | relURL }}">ホーム</a>
+  <span class="sep">›</span>
+  {{- if $cat }}
+  <a href="{{ printf "/categories/%s/" $cat | relURL }}">{{ $catMeta.label }}</a>
+  <span class="sep">›</span>
+  {{- end }}
+  <strong>{{ .Title }}</strong>
+</div>
+
+<article>
+<!-- Article header -->
+<div class="wrap-narrow art-head">
+  <div class="art-meta-top">
+    {{- if $cat }}<span class="pill pill-{{ $cat }}">{{ $catMeta.label }}</span>{{ end }}
+    {{- with .Params.tags }}<span class="pill pill-out">{{ index . 0 }}</span>{{ end }}
+    <span class="meta-text">{{ .Date.Format "2006.01.02" }} 公開 · 読了 約{{ .ReadingTime }}分</span>
+  </div>
+
+  <h1 class="art-title">{{ .Title | safeHTML }}</h1>
+
+  {{- with .Params.lead }}
+  <p class="art-lead">{{ . | safeHTML }}</p>
+  {{- end }}
+
+  <!-- Hero visual -->
+  <div class="art-hero-visual bg-{{ $heroBg }}">
+    <div class="hero-sticker">あーしが読んどいたよ。</div>
+    <div class="art-hero-emoji">{{ $heroEmoji }}</div>
+  </div>
+
+  <!-- Author / share -->
+  <div class="art-byline">
+    <div class="author">
+      <div class="avatar">あ</div>
+      <div class="author-info">
+        <div class="author-name">あーし（編集長）</div>
+        <div class="author-role">JK・17 / 渋谷系</div>
+      </div>
+    </div>
+    <div class="share">
+      <span class="share-count">♡ {{ .Params.likes | default 0 }} · 共有 {{ .Params.shares | default 0 }}</span>
+      <a class="share-btn" href="https://x.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank" rel="noopener" title="X">𝕏</a>
+      <a class="share-btn" href="#" title="リンクコピー">🔗</a>
+      <a class="share-btn" href="#" title="ブクマ">☆</a>
+    </div>
+  </div>
+</div>
+
+<!-- Body -->
+<div class="wrap-narrow art-body">
+  {{ .Content }}
+
+  <!-- Tags -->
+  {{- with .Params.tags }}
+  <div class="art-tags">
+    {{- range . }}
+    <a class="tag-chip" href="{{ printf "/tags/%s/" (urlize .) | relURL }}">#{{ . }}</a>
+    {{- end }}
+  </div>
+  {{- end }}
+
+  <!-- Source -->
+  {{- with .Params.source }}
+  <div class="source">
+    <div class="source-label">📎 元ネタ</div>
+    {{ . | safeHTML }}
+    {{- with $.Params.source_url }} <a href="{{ . }}" target="_blank" rel="noopener">こちら</a> でチェックしてね。{{ end }}
+  </div>
+  {{- end }}
+</div>
+
+<!-- あーし的にはさぁ -->
+{{- with .Params.aashi }}
+<div class="wrap-narrow">
+  {{ partial "aashi-block.html" (dict "text" .) }}
+</div>
+{{- end }}
+
+<!-- Bottom share -->
+<div class="wrap-narrow bottom-share">
+  <h3>この記事おもろかった？シェアしてね🫶</h3>
+  <div class="row">
+    <a href="https://x.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank" rel="noopener" class="bs-btn">𝕏 でシェア</a>
+    <a href="#" class="bs-btn purple">リンクをコピー</a>
+  </div>
+</div>
+</article>
+
+<!-- Related -->
+{{- $related := first 3 (where (where site.RegularPages "Section" "posts") "Permalink" "!=" .Permalink).ByDate.Reverse -}}
+{{- if and $cat (gt (len $related) 0) }}
+{{- $catRelated := where $related "Params.categories" "intersect" (slice $cat) -}}
+{{- if gt (len $catRelated) 0 }}{{- $related = first 3 (union $catRelated $related) -}}{{- end -}}
+
+<section class="related">
+  <div class="wrap">
+    <div class="related-head">
+      <h2><em>こっちも</em> 読んだら？</h2>
+      <a href="{{ "/posts/" | relURL }}" class="related-more">記事一覧 →</a>
+    </div>
+    <div class="related-grid">
+      {{- range $i, $p := $related }}
+        {{ partial "article-card.html" (dict "page" $p "index" (add $i 1)) }}
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+  (function() {
+    const bar = document.getElementById('progress');
+    if (!bar) return;
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+      bar.style.width = pct + '%';
+    });
+  })();
+</script>
+{{ end }}

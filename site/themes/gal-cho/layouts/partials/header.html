@@ -1,0 +1,19 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <a href="{{ "/" | relURL }}" class="logo-badge">{{ site.Title }}</a>
+      {{ with site.Params.tagline }}
+      <div class="brand-tag"><span>NEW</span>{{ . }}</div>
+      {{ end }}
+    </div>
+    <nav class="nav">
+      {{- range site.Menus.main }}
+        {{- $isActive := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
+        <a href="{{ .URL | relURL }}"{{ if $isActive }} class="active"{{ end }}>{{ .Name }}</a>
+      {{- end }}
+      {{- with site.Params.twitter }}
+      <a href="https://x.com/{{ . }}" class="sub" target="_blank" rel="noopener">Xでフォロー</a>
+      {{- end }}
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>面白い系 💅 | ギャル庁</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf8f2;
+    --card: #ffffff;
+    --ink: #16161e;
+    --ink-soft: #4a4a55;
+    --muted: #8b8b94;
+    --line: #ececea;
+    --line-soft: #f4f2ec;
+    --lime: #b5f03a;
+    --purple: #6b5bff;
+    --orange: #ff8c42;
+    --orange-deep: #e8782a;
+    --coral: #ff7589;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 15px;
+    font-feature-settings: "palt" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* ===== Header ===== */
+  .header {
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    background: rgba(250,248,242,0.92);
+    backdrop-filter: blur(12px);
+    z-index: 50;
+    border-bottom: 1px solid var(--line);
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .logo-badge {
+    background: var(--ink);
+    color: var(--lime);
+    padding: 8px 14px;
+    border-radius: 14px;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    transform: rotate(-3deg);
+    display: inline-block;
+    box-shadow: 4px 4px 0 var(--purple);
+  }
+  .brand-tag {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--ink-soft);
+    letter-spacing: 0.08em;
+  }
+  .brand-tag span {
+    background: var(--lime);
+    color: var(--ink);
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 900;
+    margin-right: 6px;
+  }
+  .nav { display: flex; gap: 6px; align-items: center; }
+  .nav a {
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 800;
+    border-radius: 999px;
+    transition: all .2s;
+  }
+  .nav a:hover { background: var(--ink); color: var(--lime); }
+  .nav .sub {
+    background: var(--purple);
+    color: #fff;
+    padding: 8px 16px;
+  }
+
+  /* ===== Crumb ===== */
+  .crumb {
+    padding: 18px 0 0;
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+  .crumb .sep { margin: 0 8px; color: var(--line); }
+  .crumb strong { color: var(--ink); font-weight: 700; }
+
+  /* ===== Category Hero (BIG) ===== */
+  .cat-hero {
+    margin-top: 24px;
+    padding: 56px 56px 48px;
+    border-radius: 36px;
+    background: linear-gradient(135deg, #fff3d9 0%, #ffe0a8 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .cat-hero::before {
+    content: "💅";
+    position: absolute;
+    right: -20px; bottom: -60px;
+    font-size: 360px;
+    line-height: 1;
+    transform: rotate(-12deg);
+    opacity: 0.85;
+    filter: drop-shadow(0 12px 24px rgba(0,0,0,0.1));
+    pointer-events: none;
+  }
+  .cat-hero::after {
+    content: "🎉";
+    position: absolute;
+    right: 280px; top: 40px;
+    font-size: 64px;
+    transform: rotate(15deg);
+    opacity: 0.85;
+    pointer-events: none;
+  }
+  .cat-decor-1 {
+    position: absolute;
+    left: 60%; bottom: 36px;
+    font-size: 40px;
+    transform: rotate(-20deg);
+    opacity: 0.65;
+    pointer-events: none;
+  }
+  .cat-decor-2 {
+    position: absolute;
+    right: 360px; bottom: 24px;
+    font-size: 32px;
+    transform: rotate(8deg);
+    opacity: 0.65;
+    pointer-events: none;
+  }
+
+  .cat-pill {
+    background: var(--orange);
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 1;
+  }
+  .cat-h1 {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin-bottom: 14px;
+    position: relative;
+    z-index: 1;
+  }
+  .cat-h1 .em {
+    font-size: 76px;
+    margin-right: 12px;
+    display: inline-block;
+    transform: rotate(-8deg) translateY(-6px);
+    filter: drop-shadow(0 6px 12px rgba(0,0,0,0.12));
+  }
+  .cat-tagline {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 1;
+  }
+  .cat-tagline mark {
+    background: var(--ink);
+    color: #fff;
+    padding: 2px 12px;
+    border-radius: 10px;
+  }
+  .cat-desc {
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.85;
+    max-width: 540px;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 1;
+  }
+  .cat-stats {
+    display: flex;
+    gap: 36px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+  }
+  .stat {
+    display: flex;
+    flex-direction: column;
+  }
+  .stat strong {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1;
+    color: var(--ink);
+  }
+  .stat small {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ink-soft);
+    letter-spacing: 0.12em;
+    margin-top: 4px;
+  }
+
+  /* ===== Sub-tag chips ===== */
+  .sub-tags-row {
+    margin: 32px 0 0;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+  .sub-tags-row::-webkit-scrollbar { display: none; }
+  .stag {
+    flex-shrink: 0;
+    background: var(--card);
+    border: 2px solid var(--ink);
+    border-radius: 999px;
+    padding: 9px 16px;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all .15s;
+    font-family: inherit;
+  }
+  .stag:hover { background: var(--ink); color: var(--lime); }
+  .stag.is-on {
+    background: var(--orange);
+    color: #fff;
+    border-color: var(--orange);
+  }
+  .stag .em { font-size: 16px; }
+  .stag .count {
+    background: rgba(0,0,0,0.08);
+    padding: 1px 7px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .stag.is-on .count { background: rgba(255,255,255,0.25); }
+
+  /* ===== Filter bar ===== */
+  .filter-bar {
+    margin: 36px 0 24px;
+    padding: 16px 22px;
+    background: var(--card);
+    border-radius: 16px;
+    border: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .fb-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--ink-soft);
+    font-weight: 700;
+  }
+  .fb-left strong { color: var(--ink); font-weight: 900; font-size: 15px; }
+  .fb-right {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .sort {
+    display: inline-flex;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 4px;
+    gap: 2px;
+  }
+  .sort button {
+    background: transparent;
+    border: 0;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    color: var(--muted);
+    font-family: inherit;
+  }
+  .sort button.is-on {
+    background: var(--ink);
+    color: var(--lime);
+  }
+  .search {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 16px 8px 36px;
+    font-size: 13px;
+    color: var(--ink);
+    font-family: inherit;
+    width: 220px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%238b8b94' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.3-4.3'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 14px center;
+  }
+  .search:focus { outline: 2px solid var(--orange); outline-offset: 1px; }
+
+  /* ===== Article grid ===== */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 36px;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform .2s, box-shadow .2s;
+    border: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(22,22,30,0.08);
+  }
+  .card-thumb {
+    aspect-ratio: 16/10;
+    position: relative;
+  }
+  .card-thumb::before {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    opacity: 0.7;
+  }
+  .ct1 { background: linear-gradient(135deg, #d4f0ff 0%, #b6e3ff 100%); }
+  .ct1::before { content: "💅"; }
+  .ct2 { background: linear-gradient(135deg, #fff5e6 0%, #ffe0c2 100%); }
+  .ct2::before { content: "🚦"; }
+  .ct3 { background: linear-gradient(135deg, #f0e7ff 0%, #d8c8ff 100%); }
+  .ct3::before { content: "🚽"; }
+  .ct4 { background: linear-gradient(135deg, #fff1d4 0%, #ffe2a8 100%); }
+  .ct4::before { content: "📅"; }
+  .ct5 { background: linear-gradient(135deg, #e6f8c8 0%, #d2efaa 100%); }
+  .ct5::before { content: "💰"; }
+  .ct6 { background: linear-gradient(135deg, #ffd9e0 0%, #ffbecf 100%); }
+  .ct6::before { content: "🥤"; }
+  .ct7 { background: linear-gradient(135deg, #d6f0e2 0%, #b8dfc7 100%); }
+  .ct7::before { content: "🚉"; }
+  .ct8 { background: linear-gradient(135deg, #ffe4dd 0%, #ffd1c4 100%); }
+  .ct8::before { content: "🌀"; }
+  .ct9 { background: linear-gradient(135deg, #e7e3ff 0%, #d4ceff 100%); }
+  .ct9::before { content: "🎤"; }
+
+  .card-body {
+    padding: 18px 20px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-meta {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .pill {
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 9px;
+    border-radius: 999px;
+    color: #fff;
+    letter-spacing: 0.05em;
+    background: var(--orange);
+  }
+  .card-title {
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+  .card-excerpt {
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.7;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-foot {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+
+  /* ===== Pagination ===== */
+  .pagi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin: 36px 0 24px;
+  }
+  .pagi a, .pagi span {
+    width: 40px; height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 14px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    color: var(--ink);
+  }
+  .pagi a:hover {
+    background: var(--ink);
+    color: var(--lime);
+    border-color: var(--ink);
+  }
+  .pagi .current {
+    background: var(--orange);
+    color: #fff;
+    border-color: var(--orange);
+  }
+  .pagi .next {
+    width: auto;
+    padding: 0 18px;
+    background: var(--ink);
+    color: var(--lime);
+    border-color: var(--ink);
+  }
+
+  /* ===== Aashi mini banner ===== */
+  .aashi-mini {
+    background: var(--ink);
+    color: #fff;
+    border-radius: 22px;
+    padding: 28px 32px;
+    margin: 32px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .aashi-mini::before {
+    content: "💅";
+    position: absolute;
+    right: -10px; bottom: -30px;
+    font-size: 160px;
+    opacity: 0.18;
+    transform: rotate(-12deg);
+  }
+  .aashi-avatar {
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    background: var(--orange);
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 900;
+    flex-shrink: 0;
+    border: 3px solid var(--lime);
+  }
+  .aashi-mini-text {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.6;
+    flex: 1;
+    position: relative;
+    z-index: 1;
+  }
+  .aashi-mini-text small {
+    display: block;
+    font-size: 11px;
+    color: var(--lime);
+    letter-spacing: 0.2em;
+    font-weight: 900;
+    margin-bottom: 4px;
+  }
+  .aashi-mini-text mark {
+    background: var(--lime);
+    color: var(--ink);
+    padding: 0 6px;
+    border-radius: 4px;
+  }
+
+  /* ===== Footer ===== */
+  .footer {
+    padding: 56px 0 32px;
+    border-top: 1px solid var(--line);
+    margin-top: 24px;
+  }
+  .foot-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 28px;
+  }
+  .foot-tag {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-top: 10px;
+  }
+  .foot h4 {
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .foot ul { list-style: none; }
+  .foot li {
+    padding: 4px 0;
+    font-size: 13px;
+    color: var(--ink-soft);
+    font-weight: 500;
+  }
+  .copyright {
+    border-top: 1px solid var(--line);
+    padding-top: 18px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+  .copyright span {
+    background: var(--lime);
+    color: var(--ink);
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-weight: 800;
+    margin: 0 4px;
+  }
+
+  @media (max-width: 900px) {
+    .nav { display: none; }
+    .cat-hero { padding: 36px 28px; border-radius: 24px; }
+    .cat-hero::before { font-size: 220px; right: -30px; bottom: -40px; }
+    .cat-hero::after { display: none; }
+    .cat-decor-1, .cat-decor-2 { display: none; }
+    .cat-h1 { font-size: 40px; }
+    .cat-h1 .em { font-size: 48px; }
+    .cat-tagline { font-size: 19px; }
+    .filter-bar { flex-direction: column; align-items: stretch; }
+    .search { width: 100%; }
+    .grid { grid-template-columns: 1fr; }
+    .foot-grid { grid-template-columns: 1fr 1fr; }
+    .stat strong { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <a href="pattern_c_pop.html" class="logo-badge">ギャル庁</a>
+      <div class="brand-tag"><span>NEW</span>本日2本</div>
+    </div>
+    <nav class="nav">
+      <a href="pattern_c_pop.html">ホーム</a>
+      <a href="pattern_c_categories_index.html">カテゴリ</a>
+      <a href="#">タグ</a>
+      <a href="#">運営</a>
+      <a href="#" class="sub">Xでフォロー</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Crumb -->
+<div class="wrap crumb">
+  <a href="pattern_c_pop.html">ホーム</a>
+  <span class="sep">›</span>
+  <a href="pattern_c_categories_index.html">カテゴリ</a>
+  <span class="sep">›</span>
+  <strong>面白い系</strong>
+</div>
+
+<!-- Category Hero -->
+<section class="wrap">
+  <div class="cat-hero">
+    <span class="cat-decor-1">✨</span>
+    <span class="cat-decor-2">💖</span>
+
+    <div class="cat-pill">CATEGORY 02 / OMOSHIROI</div>
+    <h1 class="cat-h1"><span class="em">💅</span>面白い系</h1>
+    <p class="cat-tagline">「<mark>まじ？</mark>」って言いたくなるネタ集</p>
+    <p class="cat-desc">国会答弁・意外な制度・知的好奇心ネタを、ギャル目線でツッコミ入れながら解説。読者の反応「まじ？！」「おもろ」がこのカテゴリ💅 雑学から制度の小話まで幅広くお届け。</p>
+    <div class="cat-stats">
+      <div class="stat"><strong>38</strong><small>ARTICLES</small></div>
+      <div class="stat"><strong>5/3</strong><small>LATEST</small></div>
+      <div class="stat"><strong>0.8万</strong><small>MONTHLY PV</small></div>
+      <div class="stat"><strong>+5</strong><small>THIS WEEK</small></div>
+    </div>
+  </div>
+
+  <!-- Sub-tags -->
+  <div class="sub-tags-row">
+    <button class="stag is-on"><span class="em">🌟</span>すべて<span class="count">38</span></button>
+    <button class="stag"><span class="em">📜</span>国会答弁<span class="count">12</span></button>
+    <button class="stag"><span class="em">🧠</span>雑学<span class="count">10</span></button>
+    <button class="stag"><span class="em">🏛</span>制度<span class="count">8</span></button>
+    <button class="stag"><span class="em">💭</span>ぶっちゃけ<span class="count">5</span></button>
+    <button class="stag"><span class="em">🔥</span>政治の小話<span class="count">3</span></button>
+  </div>
+
+  <!-- Filter bar -->
+  <div class="filter-bar">
+    <div class="fb-left">
+      <strong>38</strong> 件の記事 · 並び順
+    </div>
+    <div class="fb-right">
+      <div class="sort">
+        <button class="is-on">新着</button>
+        <button>人気</button>
+        <button>コメント数</button>
+      </div>
+      <input type="search" class="search" placeholder="記事を検索…">
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="grid">
+
+    <a href="pattern_c_article.html" class="card">
+      <div class="card-thumb ct1"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="pill">面白い</span><span>5/3</span><span>📜 国会答弁</span></div>
+        <div class="card-title">制服ってオフの日も着なきゃダメなの？問題💅</div>
+        <p class="card-excerpt">石垣のりこ議員が「警察官と自衛官で制服ルール違くない？」って国会で質問したやつ、答弁が結構おもろい…</p>
+        <div class="card-foot"><span>♡ 198</span><span>💬 24</span></div>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="card-thumb ct2"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="pill">面白い</span><span>5/1</span><span>🧠 雑学</span></div>
+        <div class="card-title">信号機の色、実は世界共通じゃないって知ってた？🚦</div>
+        <p class="card-excerpt">日本は青緑だけど、世界には紫の信号もあるらしい。ヨーロッパ某国の謎ルール…</p>
+        <div class="card-foot"><span>♡ 142</span><span>💬 18</span></div>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="card-thumb ct3"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="pill">面白い</span><span>4/30</span><span>🏛 制度</span></div>
+        <div class="card-title">公衆トイレの「TOTO率」が異常に高い理由🚽</div>
+        <p class="card-excerpt">国交省の入札データ見てたら、TOTOがめちゃくちゃ強かったんだけどなんで？</p>
+        <div class="card-foot"><span>♡ 287</span><span>💬 41</span></div>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="card-thumb ct4"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="pill">面白い</span><span>4/28</span><span>🏛 制度</span></div>
+        <div class="card-title">国民の祝日、こうやって決まってるらしい📅</div>
+        <p class="card-excerpt">ハッピーマンデー、勝手に決まってるわけじゃなかった！意外と合議制で…</p>
+        <div class="card-foot"><span>♡ 98</span><span>💬 8</span></div>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="card-thumb ct5"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="pill">面白い</span><span>4/26</span><span>💭 ぶっちゃけ</span></div>
+        <div class="card-title">お年玉って税金かかるって聞いたんだけど…？💰</div>
+        <p class="card-excerpt">国税庁にちゃんと答弁あったんよ！110万までの非課税ライン、どう判定するか…</p>
+        <div class="card-foot"><span>♡ 312</span><span>💬 56</span></div>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="card-thumb ct6"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="pill">面白い</span><span>4/24</span><span>🧠 雑学</span></div>
+        <div class="card-title">自販機が日本にだけ多い理由、答弁にあった🥤</div>
+        <p class="card-excerpt">経産省の答弁が地味におもろい。治安・電気代・人口密度の話に着地して…</p>
+        <div class="card-foot"><span>♡ 178</span><span>💬 22</span></div>
+      </div>
+    </a>
+
+    <!-- Aashi mini banner inserted -->
+    <div class="aashi-mini" style="grid-column: span 3;">
+      <div class="aashi-avatar">あ</div>
+      <div class="aashi-mini-text">
+        <small>あーし的にはさぁ、</small>
+        面白い系って <mark>「ぶっちゃけポイント」</mark> がガチで楽しいんだよね。答弁の建前と本音がズレてるとこ見つけるとテンション爆上がり🫶
+      </div>
+    </div>
+
+    <a href="#" class="card">
+      <div class="card-thumb ct7"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="pill">面白い</span><span>4/22</span><span>🏛 制度</span></div>
+        <div class="card-title">駅ナカが税金優遇されてるってマジ？🚉</div>
+        <p class="card-excerpt">線路の中なら固定資産税が安くなるって聞いてビビった。これJR各社が…</p>
+        <div class="card-foot"><span>♡ 145</span><span>💬 12</span></div>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="card-thumb ct8"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="pill">面白い</span><span>4/20</span><span>🧠 雑学</span></div>
+        <div class="card-title">印鑑って実はアレだったらしい🌀</div>
+        <p class="card-excerpt">デジタル庁が出した「ハンコ廃止状況」のデータ、思ったより進んでなかった件…</p>
+        <div class="card-foot"><span>♡ 89</span><span>💬 14</span></div>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <div class="card-thumb ct9"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="pill">面白い</span><span>4/18</span><span>📜 国会答弁</span></div>
+        <div class="card-title">「カラオケで歌うと著作権どうなる」答弁が地味におもろい🎤</div>
+        <p class="card-excerpt">文化庁の答弁、めっちゃ細かいルールあるらしくて…YouTubeに上げると別途…</p>
+        <div class="card-foot"><span>♡ 234</span><span>💬 31</span></div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagi">
+    <span class="current">1</span>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">…</a>
+    <a href="#">7</a>
+    <a href="#" class="next">次へ →</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap foot">
+    <div class="foot-grid">
+      <div>
+        <div class="logo-badge">ギャル庁</div>
+        <p class="foot-tag">あーしが読んどいたよ。<br>お堅いニュースをギャル語で解説するまとめサイト。</p>
+      </div>
+      <div>
+        <h4>カテゴリ</h4>
+        <ul>
+          <li>🛡 ためになる</li>
+          <li>💅 面白い</li>
+          <li>😭 エモい</li>
+          <li>🎮 アニメ・ゲーム</li>
+        </ul>
+      </div>
+      <div>
+        <h4>サイト</h4>
+        <ul>
+          <li>運営者情報</li>
+          <li>プライバシーポリシー</li>
+          <li>お問い合わせ</li>
+        </ul>
+      </div>
+      <div>
+        <h4>SNS</h4>
+        <ul>
+          <li>X (@gal_cho)</li>
+          <li>RSS</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© 2026 <span>ギャル庁</span> / GAL-CHO · made with ♡</div>
+  </div>
+</footer>
+
+</body>
+</html>
