@@ -2,7 +2,7 @@
 title: "運営者情報"
 date: 2026-05-03
 draft: false
-layout: "page"
+layout: "static-page"
 lead: "ギャル庁にようこそ🫶 サイトの方針と運営者についてまとめてます。"
 ---
 

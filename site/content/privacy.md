@@ -2,7 +2,7 @@
 title: "プライバシーポリシー"
 date: 2026-05-03
 draft: false
-layout: "page"
+layout: "static-page"
 lead: "「ギャル庁」（以下「当サイト」）における個人情報の取り扱いについて定めています。"
 ---
 

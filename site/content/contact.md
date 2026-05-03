@@ -2,7 +2,7 @@
 title: "お問い合わせ"
 date: 2026-05-03
 draft: false
-layout: "page"
+layout: "static-page"
 lead: "ギャル庁へのご連絡はメールにてお願いします📧"
 ---
 
