@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# 投稿用ダッシュボード（管理画面）はクロール対象外
+Disallow: /tweets/
+
+Sitemap: {{ "sitemap.xml" | absURL }}
