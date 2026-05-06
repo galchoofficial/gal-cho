@@ -37,6 +37,10 @@ summaryLength = 70
   googleSiteVerification = 'ihtzFuk_GbVdKoUq9spAJ04EOFdLeAYTo5dZhPjOws0'
   bingSiteVerification = ''
 
+  # Google Analytics 4 Measurement ID (G-XXXXXXXXXX 形式)
+  # 本番ビルドかつIDが設定されているときのみ tag が出力される
+  googleAnalyticsId = ''
+
   # カテゴリ表示メタデータ（テーマ側で利用）
   [params.categoryMeta]
     [params.categoryMeta.tame]
