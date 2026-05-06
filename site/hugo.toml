@@ -39,7 +39,7 @@ summaryLength = 70
 
   # Google Analytics 4 Measurement ID (G-XXXXXXXXXX 形式)
   # 本番ビルドかつIDが設定されているときのみ tag が出力される
-  googleAnalyticsId = ''
+  googleAnalyticsId = 'G-ZYSVDH6857'
 
   # カテゴリ表示メタデータ（テーマ側で利用）
   [params.categoryMeta]
