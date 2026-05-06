@@ -69,6 +69,12 @@ summaryLength = 70
   category = 'categories'
   tag = 'tags'
 
+# サイトマップ（ニュース系なので daily 更新を明示）
+[sitemap]
+  changefreq = 'daily'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
 # Markdown レンダリング設定
 [markup]
   [markup.goldmark]
