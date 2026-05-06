@@ -16,7 +16,7 @@ hero_emoji: "🏢"
 hero_bg: "blue"
 lead: "東京・中央区の晴海フラッグ、子ども増えすぎて入学式を午前と午後の2回に分けて開催したんだって🤯 少子化なのにタワマン密集地だけ教室パンパンっていう謎現象、解説するね。"
 source: "報道各社（朝日新聞・NHK・東京新聞ほか）の晴海フラッグ周辺学校キャパ問題報道、中央区公開資料より。"
-source_url: "https://www.asahi.com/articles/AST432QXRT43OXIE013M.html"
+source_url: "https://www.tokyo-np.co.jp/article/480560"
 likes: 287
 shares: 84
 aashi: |

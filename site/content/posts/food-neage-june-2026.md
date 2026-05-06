@@ -16,7 +16,7 @@ hero_emoji: "🍟"
 hero_bg: "orange"
 lead: "2026年6月、食品559品目が一斉値上げ📈 5月の61品目から一気に9倍以上に跳ね上がるの。じゃがビーが30%アップとかもうご褒美レベルじゃん😱 6月前にチェックしといて。"
 source: "帝国データバンク「食品主要195社の価格改定動向調査（2026年6月）」、報道各社（日経・NHK・時事通信ほか）より。"
-source_url: "https://www.tdb.co.jp/report/economic/20260507-foodprices/"
+source_url: "https://www.tdb.co.jp/report/economic/20251226-neage25y12/"
 likes: 421
 shares: 132
 aashi: |
