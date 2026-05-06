@@ -25,14 +25,25 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ site.Title }}">
 <meta property="og:locale" content="ja_JP">
-{{- with site.Params.ogImage }}
+
+{{- /* og:image: 記事個別 (.Params.og_image) があれば優先、なければサイト全体のデフォルト */ -}}
+{{- $ogImage := .Params.og_image | default site.Params.ogImage -}}
+{{- with $ogImage }}
 <meta property="og:image" content="{{ . | absURL }}">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ if $.IsHome }}{{ site.Title }} - {{ site.Params.tagline }}{{ else }}{{ $title }}{{ end }}">
 {{- end }}
 
 {{- /* ===== Twitter Card ===== */ -}}
 <meta name="twitter:card" content="summary_large_image">
 {{- with site.Params.twitter }}
 <meta name="twitter:site" content="@{{ . }}">
+<meta name="twitter:creator" content="@{{ . }}">
+{{- end }}
+{{- with $ogImage }}
+<meta name="twitter:image" content="{{ . | absURL }}">
 {{- end }}
 
 {{- /* ===== Canonical ===== */ -}}
