@@ -1,0 +1,11 @@
+# =====================================================
+# Cloudflare Pages リダイレクト設定
+# =====================================================
+# 旧 pages.dev サブドメイン・www ありを apex (gal-cho.com) に301リダイレクト
+# =====================================================
+
+# www を apex にリダイレクト（SEO評価を1ドメインに集約）
+https://www.gal-cho.com/* https://gal-cho.com/:splat 301!
+
+# 旧 .pages.dev URL を新ドメインへ（SEO評価引き継ぎ）
+https://gal-cho.pages.dev/* https://gal-cho.com/:splat 301!
