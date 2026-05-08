@@ -45,6 +45,9 @@
   <p class="art-lead">{{ . | safeHTML }}</p>
   {{- end }}
 
+  {{- /* 1次ソースのツイート埋め込み (front matter: source_tweet) */ -}}
+  {{ partial "source-tweet.html" . }}
+
   <!-- Hero visual -->
   <div class="art-hero-visual bg-{{ $heroBg }}">
     <div class="hero-sticker">あーしが読んどいたよ。</div>
@@ -145,6 +148,43 @@
       const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
       bar.style.width = pct + '%';
     });
+  })();
+
+  /* ===== Source tweet lazy loader (hybrid: IntersectionObserver + rootMargin 500px) =====
+     画面に入る500px手前で widgets.js を1回だけロード。
+     記事冒頭のツイは即発火、記事末のツイはスクロール途中で先読み。 */
+  (function() {
+    const targets = document.querySelectorAll('[data-source-tweet]');
+    if (!targets.length) return;
+
+    let loaded = false;
+    const loadWidgets = function() {
+      if (loaded) return;
+      loaded = true;
+      const s = document.createElement('script');
+      s.src = 'https://platform.twitter.com/widgets.js';
+      s.async = true;
+      s.charset = 'utf-8';
+      document.body.appendChild(s);
+    };
+
+    if (!('IntersectionObserver' in window)) {
+      // フォールバック：古いブラウザは即ロード
+      window.addEventListener('load', loadWidgets);
+      return;
+    }
+
+    const observer = new IntersectionObserver(function(entries) {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          loadWidgets();
+          observer.disconnect();
+          break;
+        }
+      }
+    }, { rootMargin: '500px' });
+
+    targets.forEach(function(el) { observer.observe(el); });
   })();
 </script>
 {{ end }}

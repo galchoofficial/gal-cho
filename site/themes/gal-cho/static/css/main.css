@@ -885,6 +885,56 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.7;
   color: var(--ink-soft);
 }
+
+/* ===== Source tweet (1次ソース埋め込みブロック) ===== */
+.source-tweet {
+  margin: 20px 0 28px;
+  padding: 16px 18px 18px;
+  background: var(--line-soft);
+  border-radius: 16px;
+  border-left: 4px solid var(--purple);
+  position: relative;
+  min-height: 180px; /* placeholder min-height to suppress CLS */
+}
+.source-tweet-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: var(--purple);
+  background: rgba(107, 91, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+/* Plain blockquote shown until widgets.js renders */
+.source-tweet blockquote.twitter-tweet {
+  margin: 0 !important;
+  padding: 12px 14px;
+  background: #fff;
+  border-radius: 12px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  border: 1px dashed rgba(0,0,0,0.08);
+}
+.source-tweet blockquote.twitter-tweet p {
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+.source-tweet blockquote.twitter-tweet a {
+  color: var(--purple);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(107, 91, 255, 0.3);
+  text-underline-offset: 3px;
+}
+/* Once Twitter widget hydrates it adds class .twitter-tweet-rendered: clean placeholder styles */
+.source-tweet blockquote.twitter-tweet.twitter-tweet-rendered {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
 .source-label {
   font-size: 11px;
   font-weight: 900;

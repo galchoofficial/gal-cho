@@ -1,0 +1,25 @@
+{{- /*
+  Source tweet embed partial.
+  Reads .Params.source_tweet (URL like https://x.com/USER/status/ID)
+  and renders a placeholder + Twitter blockquote.
+  Twitter widgets.js is loaded lazily via IntersectionObserver
+  (see partials/footer.html or baseof.html scripts block).
+*/ -}}
+{{- with .Params.source_tweet -}}
+{{- $url := . -}}
+{{- $matches := findRESubmatch `https?://(?:x\.com|twitter\.com)/([^/]+)/status/(\d+)` $url -}}
+{{- if $matches -}}
+{{- $user := index (index $matches 0) 1 -}}
+{{- $id := index (index $matches 0) 2 -}}
+<div class="source-tweet" data-source-tweet>
+  <div class="source-tweet-label">📌 1次ソース</div>
+  <blockquote class="twitter-tweet" data-lang="ja" data-dnt="true" data-conversation="none">
+    <p>@{{ $user }} のツイートを読み込み中…</p>
+    <a href="https://twitter.com/{{ $user }}/status/{{ $id }}">Xで見る</a>
+  </blockquote>
+  <noscript>
+    <a href="{{ $url }}" target="_blank" rel="noopener">@{{ $user }} のツイートをXで開く →</a>
+  </noscript>
+</div>
+{{- end -}}
+{{- end -}}
