@@ -14,7 +14,7 @@ lead: "ギャル庁にようこそ🫶 サイトの方針と運営者につい�
 |---|---|
 | サイト名 | **ギャル庁** |
 | キャッチコピー | あーしが読んどいたよ。 |
-| URL | https://gal-cho.pages.dev/ |
+| URL | https://gal-cho.com/ |
 | 開設 | 2026年5月 |
 | X | [@galcho_official](https://x.com/galcho_official) |
 
