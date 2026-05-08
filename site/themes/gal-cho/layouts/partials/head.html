@@ -67,8 +67,75 @@
 {{- /* ===== Google Analytics 4 (本番のみ) ===== */ -}}
 {{ partial "ga4.html" . }}
 
-{{- /* ===== Favicon ===== */ -}}
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2316161e'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' fill='%23b5f03a' font-family='sans-serif' font-weight='900'%3Eギ%3C/text%3E%3C/svg%3E">
+{{- /* ===== Favicon (Google検索結果・Apple端末・Android端末すべて対応) ===== */ -}}
+<link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="192x192" href="{{ "favicon-192.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="512x512" href="{{ "favicon-512.png" | relURL }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
+<link rel="manifest" href="{{ "manifest.webmanifest" | relURL }}">
+
+{{- /* ===== JSON-LD 構造化データ (Organization / WebSite + 記事の Article) ===== */ -}}
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ site.Title }}",
+  "url": "{{ site.BaseURL }}",
+  "logo": "{{ "favicon-512.png" | absURL }}",
+  "description": "{{ site.Params.description }}",
+  "sameAs": [
+    {{- with site.Params.twitter }}"https://twitter.com/{{ . }}"{{- end }}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.Title }}",
+  "url": "{{ site.BaseURL }}",
+  "description": "{{ site.Params.description }}",
+  "inLanguage": "ja",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ site.BaseURL }}?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{{- else if and .IsPage (eq .Section "posts") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ $title | jsonify }},
+  "description": {{ $desc | jsonify }},
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.Params.author | default "あーし" }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.Title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ "favicon-512.png" | absURL }}"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+  {{- with $ogImage }},
+  "image": "{{ . | absURL }}"
+  {{- end }}
+}
+</script>
+{{- end }}
 
 {{- /* ===== Fonts: Noto Sans JP（中華フォント対策 + 軽量化） ===== */ -}}
 {{- /* ウェイトを 5→3 に削減（500/800 はブラウザが 400/900 から補間） */ -}}
