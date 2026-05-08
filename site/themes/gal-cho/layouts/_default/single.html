@@ -45,9 +45,6 @@
   <p class="art-lead">{{ . | safeHTML }}</p>
   {{- end }}
 
-  {{- /* 1次ソースのツイート埋め込み (front matter: source_tweet) */ -}}
-  {{ partial "source-tweet.html" . }}
-
   <!-- Hero visual -->
   <div class="art-hero-visual bg-{{ $heroBg }}">
     <div class="hero-sticker">あーしが読んどいたよ。</div>
@@ -74,6 +71,9 @@
 
 <!-- Body -->
 <div class="wrap-narrow art-body">
+  {{- /* 1次ソースのツイート埋め込み (front matter: source_tweet) - 本文直上に配置 */ -}}
+  {{ partial "source-tweet.html" . }}
+
   {{ .Content }}
 
   <!-- Tags -->
