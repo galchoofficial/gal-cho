@@ -73,12 +73,14 @@
 <section class="wrap section">
   <div class="sec-head">
     <h2 class="sec-h2"><em>新着</em> 記事</h2>
-    <a href="{{ "/posts/" | relURL }}" class="sec-more">すべて見る →</a>
   </div>
   <div class="grid">
     {{- range $i, $p := $rest }}
       {{ partial "article-card.html" (dict "page" $p "index" (add $i 1)) }}
     {{- end }}
+  </div>
+  <div class="sec-foot">
+    <a href="{{ "/posts/" | relURL }}" class="sec-more">すべて見る →</a>
   </div>
 </section>
 {{- end }}
