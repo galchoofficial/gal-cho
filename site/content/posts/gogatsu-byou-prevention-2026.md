@@ -84,6 +84,23 @@ GW最終日に絶望しないために、今日から意識しとくといいこ
   </div>
 </div>
 
+## もっと知りたい子は<span class="mk">本</span>もアリ📚
+
+「自律神経整える」系の本、女子のメンタル不調に効くやつ多いの。1冊あると不調期にめくれて安心。GW明けの守り神📖✨
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"オトナ女子の不調をなくす自律神経整え方BOOK ココロとカラダをお手入れする100のコツ [ 小林弘幸 ]","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/book\/cabinet\/0638","p":["\/9784815630638_1_10.jpg","\/9784815630638_2_9.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/book\/18048498\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/book\/18048498\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"99JNo","s":"s"});
+</script>
+<div id="msmaflink-99JNo">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>5月病ってさ、「<em class="kw">甘え</em>」とか「<em class="kw">気合いが足りない</em>」とかじゃないのよ😤 環境の変化に対する体と心の正常な反応。だから「自分はダメだ…」って思わなくていいの✨</p>

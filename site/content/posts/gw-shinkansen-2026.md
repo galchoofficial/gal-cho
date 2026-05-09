@@ -88,6 +88,23 @@ GW後半に突入したけど、今年の新幹線の予約状況がなかなか
 - **帰りは5日中に帰る** or **7日にずらす**のが賢い
 - 6日の午後〜夕方は上り方面が地獄になるから覚悟してね…
 
+## 移動のお供に<span class="mk">モババ</span>🔋
+
+新幹線も渋滞中の車も、長時間移動だとスマホの電池がガッと減る😇 大容量モバイルバッテリー1個カバンに入れとくだけで安心感が違うよ✨
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"Anker PowerCore Slim 10000（モバイルバッテリー 大容量 薄型 10000mAh）【USB-C入力ポート\/PSE技術基準適合\/PowerIQ ＆ VoltageBoost\/低電流モード搭載】iPhone ＆ Android 各種対応","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/anker\/cabinet","p":["\/images\/anker_2\/a1229_normal.jpg","\/images\/09779934\/imgrc0082517628.jpg","\/05328369\/07095317\/imgrc0072590937.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/anker\/a1229\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/anker\/a1229\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"Ggr4b","s":"s"});
+</script>
+<div id="msmaflink-Ggr4b">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>予約114%ってことは、去年より明らかに移動する人が増えてるのよね。でも使う金額は控えめ。つまり「<em class="kw">お出かけはしたいけどお金はセーブしたい</em>」っていう、なんとも令和っぽいGWの過ごし方が見えてくる。</p>

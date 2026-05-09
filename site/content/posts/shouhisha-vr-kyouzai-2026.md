@@ -58,6 +58,23 @@ tweet: |-
 
 「今日契約したら半額！」とか「モニター価格で！」って言われて、よく考えずにローン組んじゃうパターン。これもVRで疑似体験できるの。冷静な時に見とくと、実際にその場面になった時「**あ、これ消費者庁のVRで見たやつだ！**」ってなれるかも💡
 
+## ガチ没入したい人は<span class="mk">VRゴーグル</span>🥽
+
+スマホでも見れるけど、ゴーグル使うと臨場感ぜんぜん違う。詐欺の疑似体験は「ヤバい」って肌で感じてこそ意味あるから、安いやつ1個持っておくと推し活のVR動画にも使えるよ✨
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"＼楽天1位獲得／ VRゴーグル スマホ 【最強配送対応】 VR ゴーグル iPhone バーチャル vrゴーグル 一体型 3D VR 映像 用 メガネ 眼鏡 動画 ゲーム vrゴーグルスマホ","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/relief10\/cabinet","p":["\/251219_b0bsf34r5r.jpg","\/10023451\/532.jpg","\/09303876\/b0bsf34r5r_award01.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/relief10\/b0bsf34r5r\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/relief10\/b0bsf34r5r\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"3XNwg","s":"s"});
+</script>
+<div id="msmaflink-3XNwg">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>この教材、正式名称が「鍛えよう、消費者力 気づく・断る・相談する」なんだけど、この<em class="kw">「断る」が入ってるのがポイント</em>なのよ。だって詐欺とかトラブルって、情報を知ってても断れなくて引っかかるパターンが多いのよね。VRで「断る練習」ができるのマジで画期的だと思う👏</p>

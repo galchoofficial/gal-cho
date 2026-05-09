@@ -43,6 +43,23 @@ tweet: |-
 
 って言っててさ…**泣くが？？**😭😭
 
+## 能登行けない人も<span class="mk">ベランダ</span>で🎏
+
+能登まで行けない子も、自宅のベランダに小さい鯉のぼり飾るだけで気持ちが乗るのよ。50cmサイズなら集合住宅でも余裕、男の子の節句にも🌸
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"鯉のぼり べランダ用 室内用 ポール 矢車付き こいのぼり セット青鯉50cm 赤鯉50cm 吹き流し こいのぼりセット ポール付き 矢車付き こどもの日 お祝い 立身出世 端午の節句 日本土産 室内飾り 赤ちゃんアート インスタ 男の子 誕生祝 5月節句 手持ち鯉のぼり ベランダ","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/giftjapan\/cabinet","p":["\/toy\/carpz1.jpg","\/mingei\/carp.jpg","\/mingei\/carp0505baby.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/giftjapan\/carp\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/giftjapan\/carp\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"XZxZg","s":"s"});
+</script>
+<div id="msmaflink-XZxZg">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>震災ボランティアがきっかけで移住してきた若者たちと、昔からいる地元の人たちが一緒に鯉のぼり揚げてるのがアツいのよ。<em class="kw">新しい人と元からいる人がつながって地域が動いてる</em>の、まさに復興のリアルって感じ。</p>

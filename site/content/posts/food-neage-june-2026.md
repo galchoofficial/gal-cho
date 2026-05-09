@@ -112,3 +112,20 @@ tweet: |-
   <p>「値上げが落ち着いた」って言葉に騙されちゃダメ。<em class="kw">"月1000品目ペース"が新しい当たり前</em>になってるだけで、財布の中身は全然落ち着いてないのよ💸</p>
   <p>ちなみに買いだめ作戦も賞味期限あるから限界あるし、結局はお気に入りブランドを見つめ直すしかないのかもね…セール時に多めに買うとか、PB（プライベートブランド）に乗り換えるとか、地味な工夫が効いてくるよ🫶</p>
 </div>
+
+## ザバスは<span class="mk">6月前に</span>ストック？💪
+
+ザバスは6〜28%アップって地味にデカい。筋トレ勢・推し活で体力使う勢は値上げ前に1袋買っておくのもアリ✨
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"ザバス ホエイプロテイン100 リッチショコラ味(980g)【sav03】【meijiAU04】【ザバス(SAVAS)】[インフォームドプロテイン認証]","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/rakuten24\/cabinet\/102","p":["\/4902777302102.jpg","\/4902777302102-2.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/rakuten24\/e535922h\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/rakuten24\/e535922h\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"Qur4D","s":"s"});
+</script>
+<div id="msmaflink-Qur4D">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
