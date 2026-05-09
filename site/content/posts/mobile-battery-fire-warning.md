@@ -47,6 +47,23 @@ tweet: |-
 - **落としたことがある・水に濡れた** → 内部がダメージ受けてるかも
 - **PSEマークがない** → そもそも安全基準満たしてない製品。論外
 
+## 買い替え検討中の人へ：<span class="mk">PSE認証品</span>の定番✨
+
+「とりあえず安全な新しいの欲しい」って人には、PSE技術基準適合の Anker PowerCore Slim 10000 が定番。10,000mAh あればスマホ2回フル充電できて、薄型で持ち運びラク🔋
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"Anker PowerCore Slim 10000（モバイルバッテリー 大容量 薄型 10000mAh）【USB-C入力ポート\/PSE技術基準適合\/PowerIQ ＆ VoltageBoost\/低電流モード搭載】iPhone ＆ Android 各種対応","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/anker\/cabinet","p":["\/images\/anker_2\/a1229_normal.jpg","\/images\/09779934\/imgrc0082517628.jpg","\/05328369\/07095317\/imgrc0072590937.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/anker\/a1229\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/anker\/a1229\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"w89jW","s":"s"});
+</script>
+<div id="msmaflink-w89jW">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
 ## 飛行機はもう<span class="mk">規制強化</span>してる
 
 国土交通省が今年4月からモバイルバッテリーの飛行機への持ち込みルールをさらに厳しくしたの知ってた？使用禁止＋持ち込み制限がかかってるのよ👀

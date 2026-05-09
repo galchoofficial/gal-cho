@@ -58,6 +58,23 @@ tweet: |-
 
 実用グッズ系の充実度がエグい…キッチンがカービィに侵食される未来が見える😇
 
+## 当たらなくても<span class="mk">推せる</span>定番ぬいぐるみ🌟
+
+くじ引いて外しても、定番のカービィぬいぐるみは普通に欲しくなるやつなのよ。日本中のカービィファンが持ってる「ALL STAR COLLECTION」シリーズの M サイズ（高さ23cm）はちょうど抱きしめサイズ✨
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"星のカービィ ALL STAR COLLECTION カービィ (M) スタンダード ぬいぐるみ 高さ23cm グッズ おもちゃ 新品 *","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/hobisuto\/cabinet","p":["\/sanei\/4905330122872.jpg","\/yahoo18\/20250823-3.jpg","\/yahoo18\/20250823-4.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/hobisuto\/sanei-4905330122872\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/hobisuto\/sanei-4905330122872\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"zAifM","s":"s"});
+</script>
+<div id="msmaflink-zAifM">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
 ## 一番くじ<span class="mk">初心者</span>へ🔰
 
 「一番くじって何？」って人のために👇

@@ -48,6 +48,23 @@ tweet: |-
 
 収録されてるマシンが**550種類以上**！！トヨタのGRとか日産GTRとか、日本車もガッツリ入ってるの✨ 日本の道を日本車で走れるとか、もう最高じゃん？？🔥🔥
 
+## 本体まだの人は<span class="mk">Xbox Series X</span>から🎮
+
+Forza は最新世代機向けで、Series X は4K対応・SSD爆速で日本の街並みもサクサク表示。コントローラーも Elite シリーズ2 がセットになってるやつなら、レースゲームでの操作精度バツグン👇
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"【セット商品】Microsoft Xbox Series X 1TB ディスクモデル ブラック EP2-63835 ゲーム機本体 ＋ Xbox Elite ワイヤレス コントローラー シリーズ 2 【おひとり様1台限り】","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/superdeal\/cabinet","p":["\/deal_megadeal\/imgrc0327800871.jpg","\/09061004\/09970951\/imgrc0256772501.jpg","\/09061004\/09970951\/imgrc0256772502.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/superdeal\/16764xboxseriesxelite22602\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/superdeal\/16764xboxseriesxelite22602\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"766t2","s":"s"});
+</script>
+<div id="msmaflink-766t2">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>正直ね、海外のスタジオが日本を舞台にするって聞いた時は「変な日本になってないかな…」って心配だったの😅 でも先行レビュー見る限り、かなり丁寧に作り込まれてるっぽい！！「テーマパークみたい」って表現してるレビュアーもいたけど、それって<em class="kw">褒め言葉</em>よね👀</p>

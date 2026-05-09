@@ -59,6 +59,23 @@ tweet: |-
 - **Netflix実写版が世界的大ヒット** → 実写から入った海外ファンに「次はアニメも見て！」って流れ🌍
 - **原作が最終章に突入** → 最初からの再アニメ化で全体を振り返るタイミングとしてベスト📖
 
+## 配信前に<span class="mk">原作</span>読んどく？📚
+
+東の海編、原作だと1巻〜12巻くらい。全巻揃えたら1100話分が手元にくるから、配信待ちながら読み返すのアツくない？？✨
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"[新品]ワンピース ONE PIECE (1-114巻 最新刊) 全巻セット","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"","p":["\/@0_mall\/mangazenkan\/cabinet\/syncip_0020\/wa-01_01.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/mangazenkan\/10001107\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/mangazenkan\/10001107\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"AKvxX","s":"s"});
+</script>
+<div id="msmaflink-AKvxX">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>全7話で東の海編をやるってことは、テンポがめっちゃ良くなるはずなのよ👀✨ 今のアニメ版は原作に追いつかないように引き伸ばしてた部分もあったから、再アニメ化版はそれがなくなって<em class="kw">サクサク進む</em>と思う。Netflix独占ってことは一気見もできるし、週1で待たなくていいのも最高よね😂🍿</p>

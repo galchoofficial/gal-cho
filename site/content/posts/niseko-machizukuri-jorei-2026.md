@@ -62,6 +62,23 @@ tweet: |-
 
 でもその小さな街が「住民が主役のまちづくり」の先駆者になって、全国のお手本になった。しかも25年前にやり始めたことが今も続いてるの。**継続は力**って、まさにこのことよね✨💪
 
+## 実際に<span class="mk">行ってみる</span>のもアリ✈️
+
+ニセコ町への**ふるさと納税で楽天トラベルクーポン**もらえるって知ってた？ 寄付額10万円で3万円分のクーポン → 実際に泊まりに行って、住民参加型まちづくりの空気感じてくるの粋じゃん？🏔️
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"【ふるさと納税】北海道ニセコ町の対象施設で使える 楽天トラベルクーポン 寄付額100,000円(クーポン30,000円)【99014】","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"","p":["\/@0_mall\/f013951-niseko\/cabinet\/09716674\/10923024\/99014_1.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/f013951-niseko\/99014\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/f013951-niseko\/99014\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"uOO8n","s":"s"});
+</script>
+<div id="msmaflink-uOO8n">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>大きな予算をかけた派手な事業じゃなくて、「住民と一緒にまちを考える」っていう<em class="kw">地味だけど本質的な取り組み</em>を25年続けてるところがすごい🏆</p>
