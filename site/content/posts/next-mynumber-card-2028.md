@@ -64,6 +64,23 @@ tweet: |-
 
 全国民に届くまでには時間がかかると思う。今のカードもすぐ使えなくなるわけじゃないから、焦らなくて大丈夫よ👍✨ 切り替え案内は自治体から届くはずだから、届いたら対応すればOK📋
 
+## 今のカード持ってる人は<span class="mk">スキミング対策</span>もしてる？🛡️
+
+新カードまだまだ先だし、今持ってるマイナカードはICチップ入りだからスキミングされる可能性ゼロじゃないのよ。財布に1枚入れとくだけで電波遮断してくれる「**スキミング防止カード**」が1,000円で買える時代✊
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"楽天1位受賞！スキミング防止カード 磁気防止カード 電磁波干渉防止 RFID カード型 薄型 カードサイズ お財布 カード入れ 定期 通勤 磁気遮断 電波遮断 スキミング防止 個人情報保護","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/bestday\/cabinet\/09044458\/12011995","p":["\/040559-top.jpg","\/040559-1.jpg","\/imgrc0109407669.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/bestday\/040559-tbd\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/bestday\/040559-tbd\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"JUCiM","s":"s"});
+</script>
+<div id="msmaflink-JUCiM">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>暗証番号4つ問題、マジでずっと言われてたのよね😂 役所の窓口で<em class="kw">「署名用のパスワードと利用者証明用のパスワードは別です」</em>って言われて「は？？」ってなった人、日本中にいると思う🫠</p>

@@ -60,6 +60,23 @@ tweet: |-
 
 今まで「103万超えたら親の扶養から外れちゃう…」って心配してたじゃん？？特定扶養控除の年収要件も150万円に引き上げられたから、今までよりだいぶ余裕を持ってバイトできるようになったの✨
 
+## バイトする前に<span class="mk">税金の基礎</span>サクッと知っとこ📚
+
+「年収の壁」「扶養」「控除」とか、ニュースで聞くけど結局よくわからないって人多いと思うのよ。**イラスト多めでサクッと読める入門書**1冊持っとくと、シフト調整のとき詰まらない👇
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"イラストでサクッとわかる　日本一たのしい税金の授業 [ 稲垣 啓 ]","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"","p":["\/@0_mall\/book\/cabinet\/0884\/9784534060884_1_3.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/book\/17734457\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/book\/17734457\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"Y6KVh","s":"s"});
+</script>
+<div id="msmaflink-Y6KVh">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>この改正、実は2024年の選挙で<em class="kw">国民民主党の玉木くんが「103万の壁を178万に！」</em>って主張してバズったのがきっかけなのよね🗳️ そこから与野党の協議が始まって、まず160万円でスタート、段階的に178万円まで上げるって形に落ち着いたの。</p>
