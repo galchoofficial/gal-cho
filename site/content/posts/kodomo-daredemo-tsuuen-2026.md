@@ -1,0 +1,165 @@
+---
+title: "「こども誰でも通園制度」って何？？働いてなくても保育園に預けられるようになったらしい👶✨"
+date: 2026-05-10T09:00:00+09:00
+publishDate: 2026-05-10T09:00:00+09:00
+draft: false
+categories:
+  - tame
+tags:
+  - こども誰でも通園制度
+  - 保育
+  - 子育て
+  - 乳児
+  - 育児支援
+thumb_emoji: "👶"
+hero_emoji: "🍼"
+hero_bg: "pink"
+lead: "2026年4月から「こども誰でも通園制度」が全国で始まった！「親が働いてないと保育園預けられない」が変わったの。専業主婦・育休中でも月10時間OK👶✨"
+source: "こども家庭庁公式発表、報道各社（NHK・朝日・毎日ほか）の こども誰でも通園制度報道より。"
+source_url: "https://www.cfa.go.jp/policies/hoiku/kodomo-daredemo-tsuuen"
+likes: 358
+shares: 124
+aashi: |
+  あーし的にはさぁ、これマジで救世主じゃない？？😭✨ 友達のお姉ちゃんが「専業主婦は預ける場所ない」って泣いてた話聞いてたから、<mark>「働いてなくても1人になれる時間がある」</mark>ってだけでお母さんの心が救われると思うのよ🥺 月10時間って少なく見えるけど、美容院行ったり病院行ったりするのにマジで助かるはず。お母さんたち、これ知ってほしい！！🫶
+tweet: |-
+  これお母さんに教えたい〜！！🥺👶
+
+  2026年4月から「こども誰でも通園制度」全国スタート✨
+
+  ・専業主婦・育休中でもOK
+  ・生後6ヶ月〜満3歳未満
+  ・月10時間まで利用可
+  ・1時間あたり約300円
+  ・所得制限なし
+  ・「つうえんポータル」で予約
+
+  「働いてないと預けられない」が
+  ついに変わったの🍼💕
+---
+
+はい今日はめっちゃ大事なニュース持ってきた〜！！👶✨
+
+子育て中のお母さん、おばあちゃん、お姉ちゃんに**マジで教えたい**やつ。
+
+**2026年4月から「こども誰でも通園制度」が全国で本格スタート**したの🎉 通称「**だれつう**」、正式名称は「**乳児等通園支援事業**」って言うんだけど…
+
+これ何がスゴいかって、「**親が働いてなくても保育園に預けられる**」ようになったってこと。専業主婦も育休中のママも、月10時間まで使えるのよ🍼
+
+## そもそも<span class="mk">だれつう</span>って何？🤔
+
+ざっくり言うと、「**保育園に通ってない子も、ちょこっと預けていいよ制度**」👶
+
+今まで保育園って、**「親が働いてる証明」がないと預けられなかった**じゃん？？でもこの制度、それが**いらない**の。専業主婦でも、育休中でも、「ちょっと美容院行きたいから預けたい」「病院行きたい」「マジでしんどいから1人になりたい」でOKなのよ🥺✨
+
+<div class="gov-block">
+  <h3>👶 こども誰でも通園制度の概要</h3>
+  <div class="gov-row">
+    <div class="gov-who"><small>📅</small>開始時期</div>
+    <div class="gov-text"><strong>2026年4月から全国で本格実施</strong>。それまではモデル事業として一部自治体だけだったのが、<strong>ついに全国どこでも使えるように</strong>なった🎉</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>👶</small>対象年齢</div>
+    <div class="gov-text"><strong>生後6ヶ月〜満3歳未満</strong>のお子さん。ただし<strong>保育園・認定こども園に通園してない子限定</strong>（すでに通ってる子は対象外）</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>💰</small>所得制限</div>
+    <div class="gov-text"><strong>なし！！</strong>世帯年収関係なく誰でも使えるのが神ポイント✨</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>⏰</small>利用時間</div>
+    <div class="gov-text"><strong>月10時間が上限</strong>。1時間単位で利用OKだから、「2時間だけ」「半日だけ」みたいな使い方もできる⏱️</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>💴</small>利用料</div>
+    <div class="gov-text"><strong>1時間あたり約300円</strong>。生活保護世帯・住民税非課税世帯は<strong>減額または無料</strong>になる場合あり💸</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>📱</small>予約方法</div>
+    <div class="gov-text">こども家庭庁の「<strong>つうえんポータル</strong>」で施設検索＆予約できる。スマホから24時間OK📱</div>
+  </div>
+</div>
+
+## 今までの保育園と<span class="mk">何が違う</span>の？📊
+
+これマジでガラッと変わったから比較表見て👇
+
+<div class="compare">
+  <div class="compare-card left">
+    <div class="compare-emoji">😩</div>
+    <div class="compare-label">今までの保育園</div>
+    <div class="compare-name">"働いてないとムリ"</div>
+    <div class="compare-rule">
+      親の就労証明が<strong>必須</strong><br>
+      専業主婦・育休中はNG<br>
+      フルタイム前提で月数万円<br>
+      待機児童問題もキビしい
+    </div>
+  </div>
+  <div class="compare-card right">
+    <div class="vs-mark">VS</div>
+    <div class="compare-emoji">🥹</div>
+    <div class="compare-label">だれつう（2026〜）</div>
+    <div class="compare-name">"誰でもOK"</div>
+    <div class="compare-rule">
+      就労証明<strong>いらない</strong><br>
+      専業主婦・育休中もOK<br>
+      月10時間で約3000円〜<br>
+      所得制限なしで誰でも
+    </div>
+  </div>
+</div>
+
+「**ちょっとだけ預けたい**」が今までできなかったの、よく考えるとおかしくない？？🤔 子育てって24時間365日休みナシなのに、「働いてないなら自分で全部見ろ」ってあまりにも酷すぎたのよ…😭
+
+## なんでこの制度<span class="mk">できた</span>の？🧐
+
+背景がね、けっこう深刻なのよ👇
+
+> **0〜2歳の子の約6割が「未就園児」**＝保育園にも幼稚園にも通ってない子なの。家でお母さん（お父さん）と2人きり。
+
+これって「**ワンオペ育児の孤立**」に直結してるって、ずっと問題視されてたの🫠
+
+- お母さんが**美容院・病院・歯医者**にすら行けない
+- **誰とも話さない日**が続いてメンタル削れる
+- **子どもも家族以外と関わる機会がない**
+- **虐待や産後うつのリスク**にもなりうる
+
+こども家庭庁としては「**親が働いてようがいまいが、子育てって支援が必要だよね**」っていう、けっこう革命的な発想転換なのよ✨
+
+## 「つうえんポータル」って<span class="mk">どうやって</span>使うの？📱
+
+使い方ざっくり👇
+
+1. **スマホで「つうえんポータル」にアクセス**（こども家庭庁の公式サイトから）
+2. **マイナンバーカードでログイン**（子の情報を登録）
+3. **近くの実施施設を検索**（保育園・認定こども園・地域型保育所など）
+4. **空いてる時間枠を予約**
+5. **当日、子を連れて施設へ**👶
+
+予約はスマホから24時間できるし、キャンセルもOK。**美容院の予約感覚で保育園が予約できる時代**なのよ…！！すごくない？？😳
+
+<div class="insight">
+  <span class="insight-tag">💎 ぶっちゃけポイント</span>
+  <p>正直この制度、<em class="kw">「もっと早く欲しかった」</em>っていうお母さん多いと思う🥲 月10時間って一見少ないけど、<em class="kw">美容院2回＋病院1回</em>って考えるとちょうどいい量。「ちょっとだけ自分時間が欲しい」っていうリアルなニーズに刺さってるのよ✨</p>
+  <p>ただ問題もあって、<em class="kw">地域による施設数のバラつき</em>がエグい。都市部は選択肢いっぱいあるけど、<em class="kw">地方は実施施設が少なすぎ</em>て予約取れないって声もチラホラ🫠 自治体によって体制バラバラだから、<em class="kw">「住んでる場所で使い勝手が全然違う」</em>のが今後の課題ね💦</p>
+  <p>あと「子どもが慣れない場所で泣くんじゃ…」って心配する声もあるけど、<em class="kw">最初は短時間から慣らすのもアリ</em>。30分だけ預けて様子見るとかね。子どもにとっても<em class="kw">家族以外と関わる経験</em>って大事だから、罪悪感持たずに使ってほしい🫶</p>
+</div>
+
+## 子育て本も<span class="mk">1冊</span>あると安心📚
+
+預け始めとか「ちょっと不安…」って時は、定番の育児本が1冊あると心強いよ。先輩ママたちが太鼓判押してるやつ📖✨
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"育児本","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"","p":[],"u":{"u":"https:\/\/search.rakuten.co.jp\/search\/mall\/育児本\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/search.rakuten.co.jp\/search\/mall\/育児本\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"KdTsU","s":"s"});
+</script>
+<div id="msmaflink-KdTsU">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
+子育てしてるお母さん、お父さん、ほんと毎日おつかれさま🥲💕 「自分が休んでいいのかな…」って罪悪感持っちゃう人も多いと思うけど、**お母さんが元気じゃないと子どもも元気になれない**のよ。だれつう、使えるなら遠慮せず使お👶✨
