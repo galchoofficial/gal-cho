@@ -74,6 +74,23 @@ tweet: |-
 
 「なんか体調悪いな…」って人、それ天気のせいかもしれないから無理しないでね。特に今日と明日は気圧がガクッと下がるタイミングだから要注意👀
 
+## <span class="mk">壊れない傘</span>持ってる？☔
+
+GWのメイストームは風も強いから、コンビニの100円ビニ傘は1日でゴワッてなる😇 16本骨の耐風傘は風吹いても折れないし、撥水で乾きも早いから1本持っとくと一生もの🌂
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"超耐風傘16本骨メンズレディースかさカサ雨傘軽量丈夫黒ブラック紺ネイビー軽い撥水無地強風風に強い長傘雨具かさ","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/mina-shop\/cabinet\/image1","p":["\/minas146696.jpg","\/minas146696_1.jpg","\/minas146696_2.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/mina-shop\/minas146696\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/mina-shop\/minas146696\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"U4uGb","s":"s"});
+</script>
+<div id="msmaflink-U4uGb">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>今年のGW、正直<em class="kw">お天気に恵まれなかった</em>よね…。前半も1日に荒天、後半も3〜4日に大雨。でも5日（こどもの日）と6日（振替休日）は晴れる見込みだから、お出かけはそっちに回すのが正解かも！</p>

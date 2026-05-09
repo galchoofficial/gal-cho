@@ -108,6 +108,23 @@ tweet: |-
   </div>
 </div>
 
+## 映画前に<span class="mk">予習</span>するなら📺
+
+「初めて時かけ見る」って人は、4K上映行く前に**通常版で1回見ておく**と、映像のすごさが2倍わかる🌸 中古DVDなら千円切るから手軽✨
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"【中古】 時をかける少女／細田守（監督）,筒井康隆（原作）,貞本義行（キャラクターデザイン）,仲里依紗（紺野真琴）,石田卓也（間宮千昭）","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"","p":["\/@0_mall\/bookoffonline\/cabinet\/2264\/0015134595l.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/bookoffonline\/0015134595\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/bookoffonline\/0015134595\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"Nm3U8","s":"s"});
+</script>
+<div id="msmaflink-Nm3U8">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>4K版は映像を最新技術でリマスターしてるから、<em class="kw">あの夏の空の青さ</em>とか、<em class="kw">夕焼けのグラデーション</em>とか、もう映画館で見たら泣くに決まってるのよ😭✨</p>

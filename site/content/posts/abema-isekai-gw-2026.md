@@ -91,6 +91,23 @@ ABEMAが**「アニメ300作品以上無料大放出祭」**ってGW特別企画
 
 つまり「途中から見始めても追いつける」設計になってる。神企画かよ。
 
+## アニメで<span class="mk">ハマったら</span>原作も📚
+
+異世界アニメでドハマりしたら原作の漫画もアツい。特に**「とんでもスキルで異世界放浪メシ」全巻セット**は飯テロ系で読みやすい入門編。アニメと原作で世界観2倍楽しめる🍳✨
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"[新品]とんでもスキルで異世界放浪メシ (1-11巻 最新刊) 全巻セット","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"","p":["\/@0_mall\/mangazenkan\/cabinet\/syncip_0015\/m5568447924_01.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/mangazenkan\/m5568447924\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/mangazenkan\/m5568447924\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"0bZut","s":"s"});
+</script>
+<div id="msmaflink-0bZut">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>ABEMAって最近「アニメに本気」って姿勢が強くて、無料配信の規模が他社を圧倒してるのよね。普通こんだけのラインナップ、有料動画サービスでも全部揃わないことがある。</p>

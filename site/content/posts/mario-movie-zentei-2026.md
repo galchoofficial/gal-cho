@@ -88,6 +88,23 @@ GW中に映画見に行った人も多いと思うけど、**『ザ・スーパ�
 
 前作が世界中で大ヒットしたから、今回も**期待大**よね🔥🔥
 
+## 映画見て<span class="mk">マリオ熱</span>再燃した人へ🎮
+
+ゲームの方の最新作『**スーパーマリオブラザーズ ワンダー**』もマジで神ゲーよ。映画でマリオの世界感に浸ったあと、ゲームで自分が冒険する流れがアツい🍄✨
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"任天堂 スーパーマリオブラザーズ　ワンダー【Switch】 （Super Mario Bros． Wonder） HACPAQMXA [HACPAQMXA]【MAYP】","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/edion\/cabinet\/goods\/ll","p":["\/img_278\/4902370551587_ll.jpg","\/e_img_081\/4902370551587_2.jpg","\/e_img_081\/4902370551587_3.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/edion\/4902370551587\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/edion\/4902370551587\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"OybmD","s":"s"});
+</script>
+<div id="msmaflink-OybmD">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>入場特典って映画のリピート戦略として定番になってるけど、<em class="kw">第1弾→第2弾→第3弾…って変えていくこと</em>で「もう1回見に行こ」ってなるのよね🤔</p>
