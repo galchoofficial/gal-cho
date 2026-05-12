@@ -132,4 +132,7 @@ msmaflink({"n":"[新品]逃げ上手の若君 (1-25巻 最新刊) 全巻セッ�
 <div id="msmaflink-J0MZU">リンク</div>
 <!-- MoshimoAffiliateEasyLink END -->
 
+<p>📺 1期見逃した子は<strong>Amazonプライム・ビデオ</strong>で一気見もアリ📺 7月の2期スタート前に時行くんの逃走劇を予習しよ⚔️<br>
+<a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Famazonprime" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>▶ Amazonプライム30日無料体験はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy"></p>
+
 夏まであと少し。**1期再放送 + 原作予習**で完璧な準備整えて、7月の2期開幕を迎えようね⚔️✨

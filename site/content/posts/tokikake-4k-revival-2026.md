@@ -125,6 +125,9 @@ msmaflink({"n":"【中古】 時をかける少女／細田守（監督）,筒�
 <div id="msmaflink-Nm3U8">リンク</div>
 <!-- MoshimoAffiliateEasyLink END -->
 
+<p>📺 細田守監督の他作品（サマウォ、おおかみこども、未来のミライ等）も<strong>Amazonプライム・ビデオ</strong>でチェック📺 4K上映行く前後に世界観を浴びるのもアリ✨<br>
+<a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Famazonprime" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>▶ Amazonプライム30日無料体験はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy"></p>
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>4K版は映像を最新技術でリマスターしてるから、<em class="kw">あの夏の空の青さ</em>とか、<em class="kw">夕焼けのグラデーション</em>とか、もう映画館で見たら泣くに決まってるのよ😭✨</p>

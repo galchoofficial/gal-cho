@@ -105,6 +105,9 @@ msmaflink({"n":"任天堂 スーパーマリオブラザーズ　ワンダー【
 <div id="msmaflink-OybmD">リンク</div>
 <!-- MoshimoAffiliateEasyLink END -->
 
+<p>📺 マリオ映画の前作も<strong>Amazonプライム・ビデオ</strong>で予習しとこ📺 映画館行く前の30日無料体験コンボが最強✨<br>
+<a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Famazonprime" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>▶ Amazonプライム30日無料体験はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy"></p>
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>入場特典って映画のリピート戦略として定番になってるけど、<em class="kw">第1弾→第2弾→第3弾…って変えていくこと</em>で「もう1回見に行こ」ってなるのよね🤔</p>

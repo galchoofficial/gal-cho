@@ -143,6 +143,9 @@ msmaflink({"n":"フロム・ソフトウェア 【PS4】SEKIRO： SHADOWS DIE TW
 <div id="msmaflink-kXVD9">リンク</div>
 <!-- MoshimoAffiliateEasyLink END -->
 
+<p>📺 <strong>Amazonプライム</strong>会員ならフロム作品の関連ドキュメンタリーやアニメも見放題！30日無料体験で予習しよ✨<br>
+<a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Famazonprime" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>▶ Amazonプライム30日無料体験はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy"></p>
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>フロム・ソフトウェア初の劇場アニメ化って、これコア層には<em class="kw">爆弾レベルのニュース</em>なのよ⚔️ ソウルシリーズ・エルデンリング含めて今までゲームでしかフロム作品を体験できなかったから、スクリーンで動く狼くん見れるってもう特別な体験じゃん？？🥹</p>

@@ -146,4 +146,7 @@ msmaflink({"n":"GHOST IN THE SHELL\/攻殻機動隊【Blu-ray】 [ 田中敦子 
 <div id="msmaflink-uukUu">リンク</div>
 <!-- MoshimoAffiliateEasyLink END -->
 
+<p>📺 <strong>Amazonプライム・ビデオ</strong>でSAC、Innocence、SAC_2045全シリーズ見れる📺 7月の新作前に過去作で素子の世界観マスターしとこ✨<br>
+<a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Famazonprime" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>▶ Amazonプライム30日無料体験はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy"></p>
+
 七夕の夜、電脳の海にダイブしようね🌐🎋✨

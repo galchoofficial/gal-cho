@@ -165,6 +165,9 @@ msmaflink({"n":"[5月下旬より発送予定][新品]海が走るエンドロ�
 <div id="msmaflink-ZTH3I">リンク</div>
 <!-- MoshimoAffiliateEasyLink END -->
 
+<p>📺 京アニ過去作（ヴァイオレット・エヴァーガーデン、聲の形、ユーフォ等）も<strong>Amazonプライム・ビデオ</strong>で見れる📺 映画化前に京アニの作画美に浸ろ✨<br>
+<a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Famazonprime" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>▶ Amazonプライム30日無料体験はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy"></p>
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>この作品の凄いところはね、<em class="kw">「年齢関係なく挑戦していい」</em>っていうメッセージを説教くさくなく描くところなのよ📖 うみ子さんは別に「人生を取り戻すぞー！」みたいなギラギラした主人公じゃなくて、淡々と、でも本気で映画と向き合うの。この距離感の上手さがマンガ大賞2位の力🥹</p>
