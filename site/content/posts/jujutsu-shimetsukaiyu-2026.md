@@ -1,0 +1,151 @@
+---
+title: "『呪術廻戦 死滅回游』前編が1月から放送してたの見た？？乙骨くんがアツすぎる件🔥"
+date: 2026-05-13T18:00:00+09:00
+publishDate: 2026-05-13T18:00:00+09:00
+draft: false
+categories:
+  - anime
+tags:
+  - 呪術廻戦
+  - 死滅回游
+  - 乙骨憂太
+  - 芥見下々
+  - アニメ2026冬
+  - MAPPA
+thumb_emoji: "⚔️"
+hero_emoji: "🔥"
+hero_bg: "purple"
+lead: "『呪術廻戦 死滅回游』前編が2026年1月8日から全12話放送中⚔️ 偽夏油が仕掛けたバトルロイヤル、特級呪術師・乙骨憂太くんが「虎杖の死刑執行人」として登場🔥"
+source: "報道各社（コミックナタリー・アニメイトタイムズ・電撃オンラインほか）の『呪術廻戦 死滅回游』前編放送報道より。"
+source_url: "https://jujutsukaisen.jp/"
+likes: 523
+shares: 198
+aashi: |
+  あーし、乙骨くんガチで大好きで映画『呪術廻戦0』3回見に行ったタイプのオタクなんだけど😭 本編で動いてる乙骨くん見れるとか、もう推しが輝いてて泣きそうなのよ…⚔️ 配信もNetflix・Amazon Prime・ABEMAで全部追えるから、まだ見てない人も今からでも余裕で追いつけるよ🔥
+tweet: |-
+  『呪術廻戦 死滅回游』前編、2026年1月8日から放送中⚔️
+
+  ・全12話、スーパーアニメイズムTURBO枠
+  ・渋谷事変の後、偽夏油が仕掛けたバトルロイヤル
+  ・特級呪術師・乙骨憂太が「虎杖の死刑執行人」として登場
+  ・配信はNetflix・Amazon Prime・ABEMA等で全話可
+
+  乙骨くん推し、生きててよかった😭
+---
+
+呪術ファン全員起きてる？？？⚔️🔥
+
+**『呪術廻戦 死滅回游（しめつかいゆう）』前編が2026年1月8日から絶賛放送中**なのよ！！もう4ヶ月くらい走ってるけど、まだ見てない勢のために改めてまとめるね📖✨
+
+## <span class="mk">死滅回游</span>前編、ついに放送スタート
+
+渋谷事変からの続き、ガチで待ちすぎた展開やっと来た🥺
+
+<div class="gov-block">
+  <div class="gov-title">📺 放送情報まとめ</div>
+  <ul>
+    <li><strong>放送開始</strong>：2026年1月8日〜</li>
+    <li><strong>話数</strong>：前編 全12話</li>
+    <li><strong>原作</strong>：芥見下々『呪術廻戦』（2024年完結）</li>
+    <li><strong>アニメ制作</strong>：MAPPA（続投）</li>
+    <li><strong>放送枠</strong>：スーパーアニメイズムTURBO</li>
+    <li><strong>配信</strong>：Netflix・Amazon Prime Video・ABEMA ほか主要配信サービスで全話視聴可</li>
+  </ul>
+</div>
+
+これ「前編」って付いてるってコトはね……察しがつくと思うけど、**後編もちゃんと来る**から安心して⚔️ 原作完結済みだから、いつかは最後まで全部アニメで見れるはずなのよ🙏
+
+## え、<span class="mk">死滅回游</span>ってどんな話？🤔
+
+渋谷事変で東京がぐっちゃぐちゃになった後の話なんだけど、**偽夏油（羂索）が仕掛けたバトルロイヤル**が始まるのよ💀
+
+ざっくり言うと、**全国10ヶ所のコロニーに非術師も含めた泳者（プレイヤー）が配置されて、お互い殺し合う**っていう地獄ルール🔥 虎杖・伏黒・乙骨たちはバラバラのコロニーで戦うことになるの。
+
+<div class="gov-block">
+  <div class="gov-title">⚔️ 死滅回游のルール</div>
+  <ul>
+    <li><strong>泳者は呪力を与えられ、コロニー内で戦う</strong></li>
+    <li><strong>泳者を殺すと「100点」獲得（非術師なら術式付与も可）</strong></li>
+    <li><strong>泳者は「総則」と呼ばれるルールに縛られる</strong></li>
+    <li><strong>100点消費でルール追加・改変が可能</strong></li>
+    <li><strong>19日以内に呪力を使わないと死亡</strong></li>
+  </ul>
+</div>
+
+このルールが**めちゃくちゃ戦略性高くて**、ただの殺し合いじゃないのよ。ルール改変アリだから頭脳戦も入ってくるし、芥見先生の構成力ガチでバケモン😭
+
+## <span class="mk">乙骨憂太くん</span>が本編に登場するんよ！！🔥
+
+ここが一番アツいやつ……映画『**呪術廻戦0**』の主人公だった**乙骨憂太くん**が、ついに本編アニメに登場するの！！⚔️
+
+しかも肩書きがエグくて、**「虎杖悠仁の死刑執行人」**として現れるんよ💀 え、待って？？敵じゃん？？って思うやん？でも**真意は別にある**から、ここはアニメで確かめてほしい🙏✨
+
+<div class="compare">
+  <div class="compare-card left">
+    <div class="compare-emoji">🎬</div>
+    <div class="compare-label">映画『呪術廻戦0』</div>
+    <div class="compare-name">高校生の乙骨くん</div>
+    <div class="compare-rule">
+      里香ちゃんと一緒に戦う<br>
+      呪言師・狗巻先輩との絆<br>
+      まだ「弱い」乙骨くん<br>
+      アンタの全部が欲しい時代
+    </div>
+  </div>
+  <div class="compare-card right">
+    <div class="vs-mark">VS</div>
+    <div class="compare-emoji">⚔️</div>
+    <div class="compare-label">死滅回游編</div>
+    <div class="compare-name">特級呪術師・乙骨</div>
+    <div class="compare-rule">
+      里香ちゃん解呪後の完成形<br>
+      五条悟と並ぶ最強格<br>
+      虎杖の「死刑執行人」役<br>
+      模倣（コピー）術式エグすぎ
+    </div>
+  </div>
+</div>
+
+映画時点の乙骨くんと、死滅回游の乙骨くんは**完全に別格**なのよ。特級呪術師としての実力が解放されてて、五条先生と並ぶレベルの最強格に成長してる🔥
+
+## 渋谷事変からの<span class="mk">温度感</span>変わってる🥶
+
+渋谷事変ってマジで重すぎたじゃん？？七海さんとか、めっちゃ犠牲多くてファンの心ボッキボキだったのよ😭
+
+その後の死滅回游は、**バトルロイヤル形式で展開がスピーディー**だから、渋谷事変で疲れた人にも見やすい構成になってる⚔️ もちろん重いシーンもあるけど、新キャラ続々で「次誰来る？？」ってワクワクできる感じ✨
+
+<div class="insight">
+  <span class="insight-tag">💎 ぶっちゃけポイント</span>
+  <p>死滅回游編って原作読んでた時から「これアニメで動いたら絶対バケる」って言われてた章なのよ。<em class="kw">MAPPAの作画 × バトルロイヤルの戦闘密度 × スーパーアニメイズムTURBO枠</em>っていう三拍子揃ってて、第1話から「は？映画じゃん？？」レベルのクオリティで震えた🥶</p>
+  <p>あと死滅回游の面白さって、<em class="kw">「新キャラがマジで魅力的すぎる」</em>ところなのよ。秤金次（はかりきんじ）とか日車寛見（ひぐるまひろみ）とか、過去キャラに引けを取らないどころか主役級の濃さで来る。乙骨くんも本編登場で「映画3回見た勢」が完全に救われた件、これ呪術ファン全員の供養回でしょ😭🙏</p>
+  <p>スーパーアニメイズムTURBO枠って、<em class="kw">作画リソースを贅沢に使える特別枠</em>って言われてて、進撃の巨人ファイナルとかチェンソーマンとかもこの系列だったのよ。MAPPAがガチで気合い入れて作ってる証拠だから、毎週見逃せない案件⚔️✨</p>
+</div>
+
+## 今からでも<span class="mk">追いつける</span>から見て🙏
+
+「もう4ヶ月経ってるし今さら見るの遅くない？」って思う人もいるかもだけど、**全12話で前編完結**だから、Netflix・Amazon Prime・ABEMAで一気見すれば**1日で追いつける**のよ📺✨
+
+しかも放送枠の「スーパーアニメイズムTURBO」って**作画クオリティ重視の特別枠**で、毎週ヌルヌル動くから録画も大事📼 後編が来る前に前編コンプリートしておくのが最強プラン🔥
+
+## 原作漫画で予習しよ📖
+
+死滅回游編は原作だと**16巻あたりから始まる**から、アニメで気になったシーンを漫画で読み返すと「**ここ作画でこう動かしたんだ！**」って二度楽しめるのよ⚔️
+
+しかも**原作は2024年に完結済み**だから、全巻セットで揃えれば**最終章まで一気読み**できる🔥 アニメ後編・最終章のネタバレ覚悟で先取りするか、アニメ追いついた範囲だけ読み返すか、推し活スタイルは自由よ📖✨
+
+乙骨くん登場シーンとか、漫画で読んでからアニメ見ると**鳥肌の立ち方がレベチ**になるから、ガチでおすすめ🙏
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"[新品]呪術廻戦 (0-30巻 全巻) 全巻セット","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"","p":["\/@0_mall\/mangazenkan\/cabinet\/syncip_0024\/set-jyujyutsu_01.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/mangazenkan\/set-jyujyutsu\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/mangazenkan\/set-jyujyutsu\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"jqP51","s":"s"});
+</script>
+<div id="msmaflink-jqP51">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
+前編まだ完走してない人は今夜から一気見スタート、後編に向けて完璧な準備整えようね⚔️🔥
