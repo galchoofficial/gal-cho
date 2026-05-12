@@ -135,23 +135,7 @@ tweet: |-
 
 乙骨くん登場シーンとか、漫画で読んでからアニメ見ると**鳥肌の立ち方がレベチ**になるから、ガチでおすすめ🙏
 
-<div style="margin:1.5em 0;padding:1em 1.2em;background:#fff8e7;border:2px solid #ff9900;border-radius:8px;text-align:center;">
-  <strong>🛒 Amazonでも探す</strong><br>
-  <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%E5%91%AA%E8%A1%93%E5%BB%BB%E6%88%A6+%E5%85%A8%E5%B7%BB%E3%82%BB%E3%83%83%E3%83%88" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;margin-top:0.5em;padding:0.5em 2em;background:#ff9900;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">Amazonでチェック →</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy">
-</div>
-
-<!-- START MoshimoAffiliateEasyLink -->
-<script type="text/javascript">
-(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
-b[a]=b[a]||function(){arguments.currentScript=c.currentScript
-||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
-c.getElementById(a)||(d=c.createElement(f),d.src=g,
-d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
-(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
-msmaflink({"n":"[新品]呪術廻戦 (0-30巻 全巻) 全巻セット","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"","p":["\/@0_mall\/mangazenkan\/cabinet\/syncip_0024\/set-jyujyutsu_01.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/mangazenkan\/set-jyujyutsu\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/mangazenkan\/set-jyujyutsu\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"jqP51","s":"s"});
-</script>
-<div id="msmaflink-jqP51">リンク</div>
-<!-- MoshimoAffiliateEasyLink END -->
+{{< affi name="[新品]呪術廻戦 (0-30巻 全巻) 全巻セット" image="https://thumbnail.image.rakuten.co.jp/@0_mall/mangazenkan/cabinet/syncip_0024/set-jyujyutsu_01.jpg" amazon_url="https://www.amazon.co.jp/s?k=呪術廻戦 全巻セット" rakuten_url="https://item.rakuten.co.jp/mangazenkan/set-jyujyutsu/" >}}
 
 <p>📺 漫画派じゃない子は<strong>Amazonプライム・ビデオ</strong>で1期・渋谷事変まで一気見できるよ📺 死滅回游を最大限楽しむには予習必須🔥<br>
 <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Famazonprime" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>▶ Amazonプライム30日無料体験はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy"></p>

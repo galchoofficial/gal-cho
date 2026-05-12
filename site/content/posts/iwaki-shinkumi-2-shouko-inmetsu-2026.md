@@ -98,23 +98,7 @@ tweet: |-
 
 …まあ、いわしんの247億円証拠ノートPCと違って、ふつうの人のノートPCはハンマーで壊しちゃダメよ😂 仕事もレポートも推し活も詰まってる相棒なんだから、Office付き＆16GBメモリ以上の「いいやつ」選んで大事に使いたいじゃん💻✨
 
-<div style="margin:1.5em 0;padding:1em 1.2em;background:#fff8e7;border:2px solid #ff9900;border-radius:8px;text-align:center;">
-  <strong>🛒 Amazonでも探す</strong><br>
-  <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DAcer+%E3%83%8E%E3%83%BC%E3%83%88%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;margin-top:0.5em;padding:0.5em 2em;background:#ff9900;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">Amazonでチェック →</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy">
-</div>
-
-<!-- START MoshimoAffiliateEasyLink -->
-<script type="text/javascript">
-(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
-b[a]=b[a]||function(){arguments.currentScript=c.currentScript
-||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
-c.getElementById(a)||(d=c.createElement(f),d.src=g,
-d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
-(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
-msmaflink({"n":"Acer｜エイサー 15.6型 ノートパソコン Aspire Lite(Ryzen 7 7730U\/メモリ 16GB\/SSD 512GB\/Windows 11Home\/Office2024)ライトシルバー AL15-42P-H76Y\/JW-F","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/jism\/cabinet","p":["\/0025\/4515777651141.jpg","\/s_0057\/4515777651141a.jpg","\/s_0057\/4515777651141b.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/jism\/4515777651141-41-60156-n\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/jism\/4515777651141-41-60156-n\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"FOue4","s":"s"});
-</script>
-<div id="msmaflink-FOue4">リンク</div>
-<!-- MoshimoAffiliateEasyLink END -->
+{{< affi name="Acer｜エイサー 15.6型 ノートパソコン Aspire Lite(Ryzen 7 7730U\/メモリ 16GB\/SSD 512GB\/Windows 11Home\/Office2024)ライトシルバー AL15-42P-H76Y\/JW-F" image="https://thumbnail.image.rakuten.co.jp/@0_mall/jism/cabinet/0025/4515777651141.jpg" amazon_url="https://www.amazon.co.jp/s?k=Acer ノートパソコン" rakuten_url="https://item.rakuten.co.jp/jism/4515777651141-41-60156-n/" >}}
 
 ## 証拠隠滅②：手帳は<span class="mk">「ゴミとして捨てた」</span>🗑️
 

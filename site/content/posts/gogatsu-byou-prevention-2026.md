@@ -88,23 +88,7 @@ GW最終日に絶望しないために、今日から意識しとくといいこ
 
 「自律神経整える」系の本、女子のメンタル不調に効くやつ多いの。1冊あると不調期にめくれて安心。GW明けの守り神📖✨
 
-<div style="margin:1.5em 0;padding:1em 1.2em;background:#fff8e7;border:2px solid #ff9900;border-radius:8px;text-align:center;">
-  <strong>🛒 Amazonでも探す</strong><br>
-  <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%E8%87%AA%E5%BE%8B%E7%A5%9E%E7%B5%8C+%E6%95%B4%E3%81%88%E6%96%B9+%E6%9C%AC" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;margin-top:0.5em;padding:0.5em 2em;background:#ff9900;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">Amazonでチェック →</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy">
-</div>
-
-<!-- START MoshimoAffiliateEasyLink -->
-<script type="text/javascript">
-(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
-b[a]=b[a]||function(){arguments.currentScript=c.currentScript
-||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
-c.getElementById(a)||(d=c.createElement(f),d.src=g,
-d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
-(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
-msmaflink({"n":"オトナ女子の不調をなくす自律神経整え方BOOK ココロとカラダをお手入れする100のコツ [ 小林弘幸 ]","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/book\/cabinet\/0638","p":["\/9784815630638_1_10.jpg","\/9784815630638_2_9.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/book\/18048498\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/book\/18048498\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"99JNo","s":"s"});
-</script>
-<div id="msmaflink-99JNo">リンク</div>
-<!-- MoshimoAffiliateEasyLink END -->
+{{< affi name="オトナ女子の不調をなくす自律神経整え方BOOK ココロとカラダをお手入れする100のコツ [ 小林弘幸 ]" image="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0638/9784815630638_1_10.jpg" amazon_url="https://www.amazon.co.jp/s?k=自律神経 整え方 本" rakuten_url="https://item.rakuten.co.jp/book/18048498/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

@@ -62,23 +62,7 @@ tweet: |-
 
 くじ引いて外しても、定番のカービィぬいぐるみは普通に欲しくなるやつなのよ。日本中のカービィファンが持ってる「ALL STAR COLLECTION」シリーズの M サイズ（高さ23cm）はちょうど抱きしめサイズ✨
 
-<div style="margin:1.5em 0;padding:1em 1.2em;background:#fff8e7;border:2px solid #ff9900;border-radius:8px;text-align:center;">
-  <strong>🛒 Amazonでも探す</strong><br>
-  <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%E3%82%AB%E3%83%BC%E3%83%93%E3%82%A3+%E3%81%AC%E3%81%84%E3%81%90%E3%82%8B%E3%81%BF" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;margin-top:0.5em;padding:0.5em 2em;background:#ff9900;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">Amazonでチェック →</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy">
-</div>
-
-<!-- START MoshimoAffiliateEasyLink -->
-<script type="text/javascript">
-(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
-b[a]=b[a]||function(){arguments.currentScript=c.currentScript
-||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
-c.getElementById(a)||(d=c.createElement(f),d.src=g,
-d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
-(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
-msmaflink({"n":"星のカービィ ALL STAR COLLECTION カービィ (M) スタンダード ぬいぐるみ 高さ23cm グッズ おもちゃ 新品 *","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/hobisuto\/cabinet","p":["\/sanei\/4905330122872.jpg","\/yahoo18\/20250823-3.jpg","\/yahoo18\/20250823-4.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/hobisuto\/sanei-4905330122872\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/hobisuto\/sanei-4905330122872\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"zAifM","s":"s"});
-</script>
-<div id="msmaflink-zAifM">リンク</div>
-<!-- MoshimoAffiliateEasyLink END -->
+{{< affi name="星のカービィ ALL STAR COLLECTION カービィ (M) スタンダード ぬいぐるみ 高さ23cm グッズ おもちゃ 新品 *" image="https://thumbnail.image.rakuten.co.jp/@0_mall/hobisuto/cabinet/sanei/4905330122872.jpg" amazon_url="https://www.amazon.co.jp/s?k=カービィ ぬいぐるみ" rakuten_url="https://item.rakuten.co.jp/hobisuto/sanei-4905330122872/" >}}
 
 ## 一番くじ<span class="mk">初心者</span>へ🔰
 

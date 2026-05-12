@@ -152,23 +152,7 @@ tweet: |-
 
 たらちねジョン先生の繊細なタッチで描かれる老いと希望の物語、ぜひ読んでみて📚 「このマンガがすごい！」1位は伊達じゃないから保証する🏆
 
-<div style="margin:1.5em 0;padding:1em 1.2em;background:#fff8e7;border:2px solid #ff9900;border-radius:8px;text-align:center;">
-  <strong>🛒 Amazonでも探す</strong><br>
-  <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%E6%B5%B7%E3%81%8C%E8%B5%B0%E3%82%8B%E3%82%A8%E3%83%B3%E3%83%89%E3%83%AD%E3%83%BC%E3%83%AB+%E6%BC%AB%E7%94%BB" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;margin-top:0.5em;padding:0.5em 2em;background:#ff9900;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">Amazonでチェック →</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy">
-</div>
-
-<!-- START MoshimoAffiliateEasyLink -->
-<script type="text/javascript">
-(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
-b[a]=b[a]||function(){arguments.currentScript=c.currentScript
-||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
-c.getElementById(a)||(d=c.createElement(f),d.src=g,
-d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
-(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
-msmaflink({"n":"[5月下旬より発送予定][新品]海が走るエンドロール (1-8巻 最新刊) 全巻セット [入荷予約]","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"","p":["\/@0_mall\/mangazenkan\/cabinet\/syncip_0036\/m2352481256_01.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/mangazenkan\/m2352481256\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/mangazenkan\/m2352481256\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"ZTH3I","s":"s"});
-</script>
-<div id="msmaflink-ZTH3I">リンク</div>
-<!-- MoshimoAffiliateEasyLink END -->
+{{< affi name="[5月下旬より発送予定][新品]海が走るエンドロール (1-8巻 最新刊) 全巻セット [入荷予約]" image="https://thumbnail.image.rakuten.co.jp/@0_mall/mangazenkan/cabinet/syncip_0036/m2352481256_01.jpg" amazon_url="https://www.amazon.co.jp/s?k=海が走るエンドロール 漫画" rakuten_url="https://item.rakuten.co.jp/mangazenkan/m2352481256/" >}}
 
 <p>📺 京アニ過去作（ヴァイオレット・エヴァーガーデン、聲の形、ユーフォ等）も<strong>Amazonプライム・ビデオ</strong>で見れる📺 映画化前に京アニの作画美に浸ろ✨<br>
 <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Famazonprime" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>▶ Amazonプライム30日無料体験はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy"></p>

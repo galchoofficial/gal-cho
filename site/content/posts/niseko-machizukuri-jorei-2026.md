@@ -66,23 +66,7 @@ tweet: |-
 
 ニセコ町への**ふるさと納税で楽天トラベルクーポン**もらえるって知ってた？ 寄付額10万円で3万円分のクーポン → 実際に泊まりに行って、住民参加型まちづくりの空気感じてくるの粋じゃん？🏔️
 
-<div style="margin:1.5em 0;padding:1em 1.2em;background:#fff8e7;border:2px solid #ff9900;border-radius:8px;text-align:center;">
-  <strong>🛒 Amazonでも探す</strong><br>
-  <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%E3%83%8B%E3%82%BB%E3%82%B3+%E3%82%AC%E3%82%A4%E3%83%89%E3%83%96%E3%83%83%E3%82%AF" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;margin-top:0.5em;padding:0.5em 2em;background:#ff9900;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">Amazonでチェック →</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy">
-</div>
-
-<!-- START MoshimoAffiliateEasyLink -->
-<script type="text/javascript">
-(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
-b[a]=b[a]||function(){arguments.currentScript=c.currentScript
-||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
-c.getElementById(a)||(d=c.createElement(f),d.src=g,
-d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
-(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
-msmaflink({"n":"【ふるさと納税】北海道ニセコ町の対象施設で使える 楽天トラベルクーポン 寄付額100,000円(クーポン30,000円)【99014】","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"","p":["\/@0_mall\/f013951-niseko\/cabinet\/09716674\/10923024\/99014_1.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/f013951-niseko\/99014\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/f013951-niseko\/99014\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"uOO8n","s":"s"});
-</script>
-<div id="msmaflink-uOO8n">リンク</div>
-<!-- MoshimoAffiliateEasyLink END -->
+{{< affi name="【ふるさと納税】北海道ニセコ町の対象施設で使える 楽天トラベルクーポン 寄付額100,000円(クーポン30,000円)【99014】" image="https://thumbnail.image.rakuten.co.jp/@0_mall/f013951-niseko/cabinet/09716674/10923024/99014_1.jpg" amazon_url="https://www.amazon.co.jp/s?k=ニセコ ガイドブック" rakuten_url="https://item.rakuten.co.jp/f013951-niseko/99014/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

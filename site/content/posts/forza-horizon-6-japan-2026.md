@@ -52,23 +52,7 @@ tweet: |-
 
 Forza は最新世代機向けで、Series X は4K対応・SSD爆速で日本の街並みもサクサク表示。コントローラーも Elite シリーズ2 がセットになってるやつなら、レースゲームでの操作精度バツグン👇
 
-<div style="margin:1.5em 0;padding:1em 1.2em;background:#fff8e7;border:2px solid #ff9900;border-radius:8px;text-align:center;">
-  <strong>🛒 Amazonでも探す</strong><br>
-  <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DForza+Horizon+Xbox" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;margin-top:0.5em;padding:0.5em 2em;background:#ff9900;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">Amazonでチェック →</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy">
-</div>
-
-<!-- START MoshimoAffiliateEasyLink -->
-<script type="text/javascript">
-(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
-b[a]=b[a]||function(){arguments.currentScript=c.currentScript
-||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
-c.getElementById(a)||(d=c.createElement(f),d.src=g,
-d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
-(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
-msmaflink({"n":"【セット商品】Microsoft Xbox Series X 1TB ディスクモデル ブラック EP2-63835 ゲーム機本体 ＋ Xbox Elite ワイヤレス コントローラー シリーズ 2 【おひとり様1台限り】","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/superdeal\/cabinet","p":["\/deal_megadeal\/imgrc0327800871.jpg","\/09061004\/09970951\/imgrc0256772501.jpg","\/09061004\/09970951\/imgrc0256772502.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/superdeal\/16764xboxseriesxelite22602\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/superdeal\/16764xboxseriesxelite22602\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"766t2","s":"s"});
-</script>
-<div id="msmaflink-766t2">リンク</div>
-<!-- MoshimoAffiliateEasyLink END -->
+{{< affi name="【セット商品】Microsoft Xbox Series X 1TB ディスクモデル ブラック EP2-63835 ゲーム機本体 ＋ Xbox Elite ワイヤレス コントローラー シリーズ 2 【おひとり様1台限り】" image="https://thumbnail.image.rakuten.co.jp/@0_mall/superdeal/cabinet/deal_megadeal/imgrc0327800871.jpg" amazon_url="https://www.amazon.co.jp/s?k=Forza Horizon Xbox" rakuten_url="https://item.rakuten.co.jp/superdeal/16764xboxseriesxelite22602/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

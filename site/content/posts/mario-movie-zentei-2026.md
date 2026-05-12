@@ -92,23 +92,7 @@ GW中に映画見に行った人も多いと思うけど、**『ザ・スーパ�
 
 ゲームの方の最新作『**スーパーマリオブラザーズ ワンダー**』もマジで神ゲーよ。映画でマリオの世界感に浸ったあと、ゲームで自分が冒険する流れがアツい🍄✨
 
-<div style="margin:1.5em 0;padding:1em 1.2em;background:#fff8e7;border:2px solid #ff9900;border-radius:8px;text-align:center;">
-  <strong>🛒 Amazonでも探す</strong><br>
-  <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9E%E3%83%AA%E3%82%AA%E3%83%96%E3%83%A9%E3%82%B6%E3%83%BC%E3%82%BA+%E3%83%AF%E3%83%B3%E3%83%80%E3%83%BC+Switch" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;margin-top:0.5em;padding:0.5em 2em;background:#ff9900;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">Amazonでチェック →</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy">
-</div>
-
-<!-- START MoshimoAffiliateEasyLink -->
-<script type="text/javascript">
-(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
-b[a]=b[a]||function(){arguments.currentScript=c.currentScript
-||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
-c.getElementById(a)||(d=c.createElement(f),d.src=g,
-d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
-(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
-msmaflink({"n":"任天堂 スーパーマリオブラザーズ　ワンダー【Switch】 （Super Mario Bros． Wonder） HACPAQMXA [HACPAQMXA]【MAYP】","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/edion\/cabinet\/goods\/ll","p":["\/img_278\/4902370551587_ll.jpg","\/e_img_081\/4902370551587_2.jpg","\/e_img_081\/4902370551587_3.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/edion\/4902370551587\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/edion\/4902370551587\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"OybmD","s":"s"});
-</script>
-<div id="msmaflink-OybmD">リンク</div>
-<!-- MoshimoAffiliateEasyLink END -->
+{{< affi name="任天堂 スーパーマリオブラザーズ　ワンダー【Switch】 （Super Mario Bros． Wonder） HACPAQMXA [HACPAQMXA]【MAYP】" image="https://thumbnail.image.rakuten.co.jp/@0_mall/edion/cabinet/goods/ll/img_278/4902370551587_ll.jpg" amazon_url="https://www.amazon.co.jp/s?k=スーパーマリオブラザーズ ワンダー Switch" rakuten_url="https://item.rakuten.co.jp/edion/4902370551587/" >}}
 
 <p>📺 マリオ映画の前作も<strong>Amazonプライム・ビデオ</strong>で予習しとこ📺 映画館行く前の30日無料体験コンボが最強✨<br>
 <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Famazonprime" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>▶ Amazonプライム30日無料体験はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy"></p>

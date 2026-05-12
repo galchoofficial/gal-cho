@@ -170,23 +170,7 @@ tweet: |-
 
 2023年4月から自転車のヘルメット着用は**努力義務**になってるの知ってた？青切符は対象外でも、転倒した時の頭部損傷リスクが**ヘルメット無しだと約2.6倍**って警察庁データある。SG認証の自転車用ヘルメット、3千円台で買えるから持っとこ✨
 
-<div style="margin:1.5em 0;padding:1em 1.2em;background:#fff8e7;border:2px solid #ff9900;border-radius:8px;text-align:center;">
-  <strong>🛒 Amazonでも探す</strong><br>
-  <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%83%98%E3%83%AB%E3%83%A1%E3%83%83%E3%83%88+SG%E8%AA%8D%E8%A8%BC" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;margin-top:0.5em;padding:0.5em 2em;background:#ff9900;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">Amazonでチェック →</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy">
-</div>
-
-<!-- START MoshimoAffiliateEasyLink -->
-<script type="text/javascript">
-(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
-b[a]=b[a]||function(){arguments.currentScript=c.currentScript
-||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
-c.getElementById(a)||(d=c.createElement(f),d.src=g,
-d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
-(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
-msmaflink({"n":"【半額★200円OFF】9日20時～ 【2個300円OFF】【SG安全基準適合商品】 ヘルメット 自転車 レディース sg認証 sgメンズ 大人 高校生 中学生 子供 こども用 男女兼用 女性 男性 汎用 バイク 怪我 通勤 通学 オシャレ ブラックベージュ ネイビーカーキオリーブ キッズ こども","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/","p":["@0_mall\/souplesse\/cabinet\/12049061\/imgrc0120974182.jpg","@0_mall\/souplesse\/cabinet\/08681892\/12943394\/slyde_0509.jpg","@0_gold\/souplesse\/empo\/ranking\/souplesse-01376.png"],"u":{"u":"https:\/\/item.rakuten.co.jp\/souplesse\/souplesse-01376\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/souplesse\/souplesse-01376\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"f70hJ","s":"s"});
-</script>
-<div id="msmaflink-f70hJ">リンク</div>
-<!-- MoshimoAffiliateEasyLink END -->
+{{< affi name="【半額★200円OFF】9日20時～ 【2個300円OFF】【SG安全基準適合商品】 ヘルメット 自転車 レディース sg認証 sgメンズ 大人 高校生 中学生 子供 こども用 男女兼用 女性 男性 汎用 バイク 怪我 通勤 通学 オシャレ ブラックベージュ ネイビーカーキオリーブ キッズ こども" image="https://thumbnail.image.rakuten.co.jp/@0_mall/souplesse/cabinet/12049061/imgrc0120974182.jpg" amazon_url="https://www.amazon.co.jp/s?k=自転車ヘルメット SG認証" rakuten_url="https://item.rakuten.co.jp/souplesse/souplesse-01376/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

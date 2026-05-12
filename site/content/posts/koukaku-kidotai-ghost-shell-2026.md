@@ -133,23 +133,7 @@ tweet: |-
 
 7月7日まであと2ヶ月切ってるから、今のうちに原作漫画とか1995年劇場版を予習しておくと、新作100倍楽しめるよ✨ 特に原作漫画は新作のベースになってる可能性高いから読んどき📚
 
-<div style="margin:1.5em 0;padding:1em 1.2em;background:#fff8e7;border:2px solid #ff9900;border-radius:8px;text-align:center;">
-  <strong>🛒 Amazonでも探す</strong><br>
-  <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%E6%94%BB%E6%AE%BB%E6%A9%9F%E5%8B%95%E9%9A%8A+Blu-ray" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;margin-top:0.5em;padding:0.5em 2em;background:#ff9900;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">Amazonでチェック →</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy">
-</div>
-
-<!-- START MoshimoAffiliateEasyLink -->
-<script type="text/javascript">
-(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
-b[a]=b[a]||function(){arguments.currentScript=c.currentScript
-||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
-c.getElementById(a)||(d=c.createElement(f),d.src=g,
-d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
-(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
-msmaflink({"n":"GHOST IN THE SHELL\/攻殻機動隊【Blu-ray】 [ 田中敦子 ]","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/book\/cabinet\/2308","p":["\/4934569362308.jpg","\/4934569362308_2.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/book\/14657894\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/book\/14657894\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"uukUu","s":"s"});
-</script>
-<div id="msmaflink-uukUu">リンク</div>
-<!-- MoshimoAffiliateEasyLink END -->
+{{< affi name="GHOST IN THE SHELL\/攻殻機動隊【Blu-ray】 [ 田中敦子 ]" image="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2308/4934569362308.jpg" amazon_url="https://www.amazon.co.jp/s?k=攻殻機動隊 Blu-ray" rakuten_url="https://item.rakuten.co.jp/book/14657894/" >}}
 
 <p>📺 <strong>Amazonプライム・ビデオ</strong>でSAC、Innocence、SAC_2045全シリーズ見れる📺 7月の新作前に過去作で素子の世界観マスターしとこ✨<br>
 <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Famazonprime" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>▶ Amazonプライム30日無料体験はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy"></p>

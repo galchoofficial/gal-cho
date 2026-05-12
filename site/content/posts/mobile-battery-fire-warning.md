@@ -51,23 +51,7 @@ tweet: |-
 
 「とりあえず安全な新しいの欲しい」って人には、PSE技術基準適合の Anker PowerCore Slim 10000 が定番。10,000mAh あればスマホ2回フル充電できて、薄型で持ち運びラク🔋
 
-<div style="margin:1.5em 0;padding:1em 1.2em;background:#fff8e7;border:2px solid #ff9900;border-radius:8px;text-align:center;">
-  <strong>🛒 Amazonでも探す</strong><br>
-  <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC+PSE+%E5%A4%A7%E5%AE%B9%E9%87%8F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;margin-top:0.5em;padding:0.5em 2em;background:#ff9900;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">Amazonでチェック →</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy">
-</div>
-
-<!-- START MoshimoAffiliateEasyLink -->
-<script type="text/javascript">
-(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
-b[a]=b[a]||function(){arguments.currentScript=c.currentScript
-||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
-c.getElementById(a)||(d=c.createElement(f),d.src=g,
-d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
-(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
-msmaflink({"n":"Anker PowerCore Slim 10000（モバイルバッテリー 大容量 薄型 10000mAh）【USB-C入力ポート\/PSE技術基準適合\/PowerIQ ＆ VoltageBoost\/低電流モード搭載】iPhone ＆ Android 各種対応","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/anker\/cabinet","p":["\/images\/anker_2\/a1229_normal.jpg","\/images\/09779934\/imgrc0082517628.jpg","\/05328369\/07095317\/imgrc0072590937.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/anker\/a1229\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/anker\/a1229\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"w89jW","s":"s"});
-</script>
-<div id="msmaflink-w89jW">リンク</div>
-<!-- MoshimoAffiliateEasyLink END -->
+{{< affi name="Anker PowerCore Slim 10000（モバイルバッテリー 大容量 薄型 10000mAh）【USB-C入力ポート\/PSE技術基準適合\/PowerIQ ＆ VoltageBoost\/低電流モード搭載】iPhone ＆ Android 各種対応" image="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/images/anker_2/a1229_normal.jpg" amazon_url="https://www.amazon.co.jp/s?k=モバイルバッテリー PSE 大容量" rakuten_url="https://item.rakuten.co.jp/anker/a1229/" >}}
 
 ## 飛行機はもう<span class="mk">規制強化</span>してる
 

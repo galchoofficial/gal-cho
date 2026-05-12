@@ -124,23 +124,7 @@ PS5据え置きでSwitch2が値上げ…ってなると、価格競争的には�
 
 値上げの発表後、SNSでは「**買えるうちに在庫確保しとこ**」って動きが加速してるの。流通在庫の旧価格分はまだ残ってる店舗もあるみたいだから、欲しい子は早めに動くのが吉👀 ECサイトでも旧価格のまま売ってるショップがあるうちにチェックしとこ🔥
 
-<div style="margin:1.5em 0;padding:1em 1.2em;background:#fff8e7;border:2px solid #ff9900;border-radius:8px;text-align:center;">
-  <strong>🛒 Amazonでも探す</strong><br>
-  <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DNintendo+Switch+2+%E6%9C%AC%E4%BD%93" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;margin-top:0.5em;padding:0.5em 2em;background:#ff9900;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">Amazonでチェック →</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy">
-</div>
-
-<!-- START MoshimoAffiliateEasyLink -->
-<script type="text/javascript">
-(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
-b[a]=b[a]||function(){arguments.currentScript=c.currentScript
-||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
-c.getElementById(a)||(d=c.createElement(f),d.src=g,
-d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
-(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
-msmaflink({"n":"[新品] Nintendo Switch 2（日本語・国内専用） ★ご注文後のお届け先変更＆転送不可★4902370553024","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"","p":["\/@0_mall\/dandystore\/cabinet\/imgrc0110796331.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/dandystore\/4902370553024\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/dandystore\/4902370553024\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"5vbi3","s":"s"});
-</script>
-<div id="msmaflink-5vbi3">リンク</div>
-<!-- MoshimoAffiliateEasyLink END -->
+{{< affi name="[新品] Nintendo Switch 2（日本語・国内専用） ★ご注文後のお届け先変更＆転送不可★4902370553024" image="https://thumbnail.image.rakuten.co.jp/@0_mall/dandystore/cabinet/imgrc0110796331.jpg" amazon_url="https://www.amazon.co.jp/s?k=Nintendo Switch 2 本体" rakuten_url="https://item.rakuten.co.jp/dandystore/4902370553024/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
