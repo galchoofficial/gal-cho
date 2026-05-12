@@ -131,7 +131,18 @@ Cygamesから**『GRANBLUE FANTASY: Relink - Endless Ragnarok（グランブル�
 
 前作Relinkはガチで神ゲーだから、グラブル知らない子でもアクションRPGとして楽しめるレベル🔥 7月まで2ヶ月あるから、今からなら本編クリアして発売日に万全の状態で新作突入できるよ⚔️
 
-<!-- AFFILIATE_PLACEHOLDER_GBF_RELINK -->
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"【特典】GRANBLUE FANTASY: Relink - Endless Ragnarok　PS5版(【先着購入封入特典】GRANBLUE FANTASY: Relink - Endless Ragnarok　ガッツIII・自動復活IIIジーンセット)","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/book\/cabinet\/6499","p":["\/4570142016499.jpg","\/4570142016499_2.jpg","\/4570142016499_3.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/book\/18532574\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/book\/18532574\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"Oqiy3","s":"s"});
+</script>
+<div id="msmaflink-Oqiy3">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

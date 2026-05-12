@@ -119,6 +119,17 @@ CloverWorksの作画で**鎌倉攻略の戦闘シーン**が見れるとか…�
 
 中先代の乱までの流れ、漫画で先取りしておけば、CloverWorksの作画で「ここがアニメで動く！！」って瞬間にガチで震えられる🥶 1期再放送で復習しつつ、原作で2期の展開もチラ見しておくのが最強プランかも✨
 
-<!-- AFFILIATE_PLACEHOLDER_NIGEWAKA -->
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"[新品]逃げ上手の若君 (1-25巻 最新刊) 全巻セット","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"","p":["\/@0_mall\/mangazenkan\/cabinet\/syncip_0035\/m8880400172_01.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/mangazenkan\/m8880400172\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/mangazenkan\/m8880400172\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"J0MZU","s":"s"});
+</script>
+<div id="msmaflink-J0MZU">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
 
 夏まであと少し。**1期再放送 + 原作予習**で完璧な準備整えて、7月の2期開幕を迎えようね⚔️✨
