@@ -98,7 +98,7 @@ tweet: |-
 
 …まあ、いわしんの247億円証拠ノートPCと違って、ふつうの人のノートPCはハンマーで壊しちゃダメよ😂 仕事もレポートも推し活も詰まってる相棒なんだから、Office付き＆16GBメモリ以上の「いいやつ」選んで大事に使いたいじゃん💻✨
 
-{{< affi name="Acer｜エイサー 15.6型 ノートパソコン Aspire Lite(Ryzen 7 7730U\/メモリ 16GB\/SSD 512GB\/Windows 11Home\/Office2024)ライトシルバー AL15-42P-H76Y\/JW-F" image="https://thumbnail.image.rakuten.co.jp/@0_mall/jism/cabinet/0025/4515777651141.jpg" amazon_url="https://www.amazon.co.jp/s?k=Acer ノートパソコン" rakuten_url="https://item.rakuten.co.jp/jism/4515777651141-41-60156-n/" >}}
+{{< affi name="Acer｜エイサー 15.6型 ノートパソコン Aspire Lite(Ryzen 7 7730U\/メモリ 16GB\/SSD 512GB\/Windows 11Home\/Office2024)ライトシルバー AL15-42P-H76Y\/JW-F" image="https://thumbnail.image.rakuten.co.jp/@0_mall/jism/cabinet/0025/4515777651141.jpg" rakuten_url="https://item.rakuten.co.jp/jism/4515777651141-41-60156-n/" >}}
 
 ## 証拠隠滅②：手帳は<span class="mk">「ゴミとして捨てた」</span>🗑️
 

@@ -1572,3 +1572,17 @@ a { color: inherit; text-decoration: none; }
     flex: 0 0 auto;
   }
 }
+
+/* アフィカード価格表示 */
+.affi-card-price {
+  margin: 0 0 0.6em;
+  font-size: 1.05em;
+  color: #d70035;
+  font-weight: bold;
+}
+.affi-card-price-note {
+  font-size: 0.7em;
+  color: #888;
+  font-weight: normal;
+  margin-left: 0.3em;
+}

@@ -47,7 +47,7 @@ tweet: |-
 
 能登まで行けない子も、自宅のベランダに小さい鯉のぼり飾るだけで気持ちが乗るのよ。50cmサイズなら集合住宅でも余裕、男の子の節句にも🌸
 
-{{< affi name="鯉のぼり べランダ用 室内用 ポール 矢車付き こいのぼり セット青鯉50cm 赤鯉50cm 吹き流し こいのぼりセット ポール付き 矢車付き こどもの日 お祝い 立身出世 端午の節句 日本土産 室内飾り 赤ちゃんアート インスタ 男の子 誕生祝 5月節句 手持ち鯉のぼり ベランダ" image="https://thumbnail.image.rakuten.co.jp/@0_mall/giftjapan/cabinet/toy/carpz1.jpg" amazon_url="https://www.amazon.co.jp/s?k=鯉のぼり ベランダ用" rakuten_url="https://item.rakuten.co.jp/giftjapan/carp/" >}}
+{{< affi name="鯉のぼり べランダ用 室内用 ポール 矢車付き こいのぼり セット青鯉50cm 赤鯉50cm 吹き流し こいのぼりセット ポール付き 矢車付き こどもの日 お祝い 立身出世 端午の節句 日本土産 室内飾り 赤ちゃんアート インスタ 男の子 誕生祝 5月節句 手持ち鯉のぼり ベランダ" image="https://thumbnail.image.rakuten.co.jp/@0_mall/giftjapan/cabinet/toy/carpz1.jpg" rakuten_url="https://item.rakuten.co.jp/giftjapan/carp/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

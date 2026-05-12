@@ -95,7 +95,7 @@ ABEMAが**「アニメ300作品以上無料大放出祭」**ってGW特別企画
 
 異世界アニメでドハマりしたら原作の漫画もアツい。特に**「とんでもスキルで異世界放浪メシ」全巻セット**は飯テロ系で読みやすい入門編。アニメと原作で世界観2倍楽しめる🍳✨
 
-{{< affi name="[新品]とんでもスキルで異世界放浪メシ (1-11巻 最新刊) 全巻セット" image="https://thumbnail.image.rakuten.co.jp/@0_mall/mangazenkan/cabinet/syncip_0015/m5568447924_01.jpg" amazon_url="https://www.amazon.co.jp/s?k=異世界 ライトノベル" rakuten_url="https://item.rakuten.co.jp/mangazenkan/m5568447924/" >}}
+{{< affi name="[新品]とんでもスキルで異世界放浪メシ (1-11巻 最新刊) 全巻セット" image="https://thumbnail.image.rakuten.co.jp/@0_mall/mangazenkan/cabinet/syncip_0015/m5568447924_01.jpg" rakuten_url="https://item.rakuten.co.jp/mangazenkan/m5568447924/" >}}
 
 <p>📺 ABEMA期間終了後に異世界アニメ続き見たい子は<strong>Amazonプライム・ビデオ</strong>📺 異世界系のラインナップも神レベル✨<br>
 <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Famazonprime" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>▶ Amazonプライム30日無料体験はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy"></p>

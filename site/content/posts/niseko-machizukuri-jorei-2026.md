@@ -66,7 +66,7 @@ tweet: |-
 
 ニセコ町への**ふるさと納税で楽天トラベルクーポン**もらえるって知ってた？ 寄付額10万円で3万円分のクーポン → 実際に泊まりに行って、住民参加型まちづくりの空気感じてくるの粋じゃん？🏔️
 
-{{< affi name="【ふるさと納税】北海道ニセコ町の対象施設で使える 楽天トラベルクーポン 寄付額100,000円(クーポン30,000円)【99014】" image="https://thumbnail.image.rakuten.co.jp/@0_mall/f013951-niseko/cabinet/09716674/10923024/99014_1.jpg" amazon_url="https://www.amazon.co.jp/s?k=ニセコ ガイドブック" rakuten_url="https://item.rakuten.co.jp/f013951-niseko/99014/" >}}
+{{< affi name="【ふるさと納税】北海道ニセコ町の対象施設で使える 楽天トラベルクーポン 寄付額100,000円(クーポン30,000円)【99014】" image="https://thumbnail.image.rakuten.co.jp/@0_mall/f013951-niseko/cabinet/09716674/10923024/99014_1.jpg" rakuten_url="https://item.rakuten.co.jp/f013951-niseko/99014/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

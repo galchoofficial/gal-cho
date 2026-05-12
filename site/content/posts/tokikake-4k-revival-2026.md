@@ -112,7 +112,7 @@ tweet: |-
 
 「初めて時かけ見る」って人は、4K上映行く前に**通常版で1回見ておく**と、映像のすごさが2倍わかる🌸 中古DVDなら千円切るから手軽✨
 
-{{< affi name="【中古】 時をかける少女／細田守（監督）,筒井康隆（原作）,貞本義行（キャラクターデザイン）,仲里依紗（紺野真琴）,石田卓也（間宮千昭）" image="https://thumbnail.image.rakuten.co.jp/@0_mall/bookoffonline/cabinet/2264/0015134595l.jpg" amazon_url="https://www.amazon.co.jp/s?k=時をかける少女 Blu-ray" rakuten_url="https://item.rakuten.co.jp/bookoffonline/0015134595/" >}}
+{{< affi name="【中古】 時をかける少女／細田守（監督）,筒井康隆（原作）,貞本義行（キャラクターデザイン）,仲里依紗（紺野真琴）,石田卓也（間宮千昭）" image="https://thumbnail.image.rakuten.co.jp/@0_mall/bookoffonline/cabinet/2264/0015134595l.jpg" rakuten_url="https://item.rakuten.co.jp/bookoffonline/0015134595/" >}}
 
 <p>📺 細田守監督の他作品（サマウォ、おおかみこども、未来のミライ等）も<strong>Amazonプライム・ビデオ</strong>でチェック📺 4K上映行く前後に世界観を浴びるのもアリ✨<br>
 <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Famazonprime" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>▶ Amazonプライム30日無料体験はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy"></p>

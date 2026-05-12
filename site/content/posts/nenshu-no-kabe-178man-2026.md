@@ -64,7 +64,7 @@ tweet: |-
 
 「年収の壁」「扶養」「控除」とか、ニュースで聞くけど結局よくわからないって人多いと思うのよ。**イラスト多めでサクッと読める入門書**1冊持っとくと、シフト調整のとき詰まらない👇
 
-{{< affi name="イラストでサクッとわかる　日本一たのしい税金の授業 [ 稲垣 啓 ]" image="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0884/9784534060884_1_3.jpg" amazon_url="https://www.amazon.co.jp/s?k=税金 本 確定申告" rakuten_url="https://item.rakuten.co.jp/book/17734457/" >}}
+{{< affi name="イラストでサクッとわかる　日本一たのしい税金の授業 [ 稲垣 啓 ]" image="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0884/9784534060884_1_3.jpg" rakuten_url="https://item.rakuten.co.jp/book/17734457/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

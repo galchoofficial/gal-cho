@@ -170,7 +170,7 @@ tweet: |-
 
 2023年4月から自転車のヘルメット着用は**努力義務**になってるの知ってた？青切符は対象外でも、転倒した時の頭部損傷リスクが**ヘルメット無しだと約2.6倍**って警察庁データある。SG認証の自転車用ヘルメット、3千円台で買えるから持っとこ✨
 
-{{< affi name="【半額★200円OFF】9日20時～ 【2個300円OFF】【SG安全基準適合商品】 ヘルメット 自転車 レディース sg認証 sgメンズ 大人 高校生 中学生 子供 こども用 男女兼用 女性 男性 汎用 バイク 怪我 通勤 通学 オシャレ ブラックベージュ ネイビーカーキオリーブ キッズ こども" image="https://thumbnail.image.rakuten.co.jp/@0_mall/souplesse/cabinet/12049061/imgrc0120974182.jpg" amazon_url="https://www.amazon.co.jp/s?k=自転車ヘルメット SG認証" rakuten_url="https://item.rakuten.co.jp/souplesse/souplesse-01376/" >}}
+{{< affi name="【半額★200円OFF】9日20時～ 【2個300円OFF】【SG安全基準適合商品】 ヘルメット 自転車 レディース sg認証 sgメンズ 大人 高校生 中学生 子供 こども用 男女兼用 女性 男性 汎用 バイク 怪我 通勤 通学 オシャレ ブラックベージュ ネイビーカーキオリーブ キッズ こども" image="https://thumbnail.image.rakuten.co.jp/@0_mall/souplesse/cabinet/12049061/imgrc0120974182.jpg" rakuten_url="https://item.rakuten.co.jp/souplesse/souplesse-01376/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

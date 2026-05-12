@@ -131,7 +131,7 @@ tweet: |-
 
 2026年10月以降に基準が厳しくなる前に、今のうちにチェックしておきたい返礼品もあるよね💡 楽天ふるさと納税は使い慣れた楽天IDで申し込めて、寄付額に応じてSPU（楽天市場の通常ポイント）も貯まるから今でも使い勝手いいのよ👇
 
-{{< affi name="【ふるさと納税】総合1位 北海道産 牛肉 ふるさと納税 別海牛 焼肉" image="https://thumbnail.image.rakuten.co.jp/@0_mall/f016918-betsukai/cabinet/07065206/farmfoods/imgrc0107928280.jpg" amazon_url="https://www.amazon.co.jp/s?k=ふるさと納税 牛肉" rakuten_url="https://item.rakuten.co.jp/f016918-betsukai/be010-014a023/" >}}
+{{< affi name="【ふるさと納税】総合1位 北海道産 牛肉 ふるさと納税 別海牛 焼肉" image="https://thumbnail.image.rakuten.co.jp/@0_mall/f016918-betsukai/cabinet/07065206/farmfoods/imgrc0107928280.jpg" rakuten_url="https://item.rakuten.co.jp/f016918-betsukai/be010-014a023/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

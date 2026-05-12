@@ -143,7 +143,7 @@ Production I.Gって元々**布や肌の質感表現が異次元**で有名な�
 
 寝る前に抱っこすると睡眠の質爆上がりするから、リアルでも癒し環境作りオススメ✨ 部屋に1つあるだけで生活の幸福度が上がるやつね🛋️
 
-{{< affi name="リラックマ そばにいますよぬいぐるみ 雨のち晴れのリラックマ ぬいぐるみ 5110 サンエックス お座り 寄り添い かわいい MO98601" image="https://thumbnail.image.rakuten.co.jp/@0_mall/penport/cabinet/80/mo98601_1.jpg" amazon_url="https://www.amazon.co.jp/s?k=リラックマ ぬいぐるみ" rakuten_url="https://item.rakuten.co.jp/penport/mo98601/" >}}
+{{< affi name="リラックマ そばにいますよぬいぐるみ 雨のち晴れのリラックマ ぬいぐるみ 5110 サンエックス お座り 寄り添い かわいい MO98601" image="https://thumbnail.image.rakuten.co.jp/@0_mall/penport/cabinet/80/mo98601_1.jpg" rakuten_url="https://item.rakuten.co.jp/penport/mo98601/" >}}
 
 ## 攻殻見た後にリラックマ見ると<span class="mk">脳がバグる</span>🌀
 

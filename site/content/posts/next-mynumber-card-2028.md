@@ -68,7 +68,7 @@ tweet: |-
 
 新カードまだまだ先だし、今持ってるマイナカードはICチップ入りだからスキミングされる可能性ゼロじゃないのよ。財布に1枚入れとくだけで電波遮断してくれる「**スキミング防止カード**」が1,000円で買える時代✊
 
-{{< affi name="楽天1位受賞！スキミング防止カード 磁気防止カード 電磁波干渉防止 RFID カード型 薄型 カードサイズ お財布 カード入れ 定期 通勤 磁気遮断 電波遮断 スキミング防止 個人情報保護" image="https://thumbnail.image.rakuten.co.jp/@0_mall/bestday/cabinet/09044458/12011995/040559-top.jpg" amazon_url="https://www.amazon.co.jp/s?k=スキミング防止 カード" rakuten_url="https://item.rakuten.co.jp/bestday/040559-tbd/" >}}
+{{< affi name="楽天1位受賞！スキミング防止カード 磁気防止カード 電磁波干渉防止 RFID カード型 薄型 カードサイズ お財布 カード入れ 定期 通勤 磁気遮断 電波遮断 スキミング防止 個人情報保護" image="https://thumbnail.image.rakuten.co.jp/@0_mall/bestday/cabinet/09044458/12011995/040559-top.jpg" rakuten_url="https://item.rakuten.co.jp/bestday/040559-tbd/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

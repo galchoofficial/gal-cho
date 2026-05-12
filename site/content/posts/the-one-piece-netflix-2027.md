@@ -63,7 +63,7 @@ tweet: |-
 
 東の海編、原作だと1巻〜12巻くらい。全巻揃えたら1100話分が手元にくるから、配信待ちながら読み返すのアツくない？？✨
 
-{{< affi name="[新品]ワンピース ONE PIECE (1-114巻 最新刊) 全巻セット" image="https://thumbnail.image.rakuten.co.jp/@0_mall/mangazenkan/cabinet/syncip_0020/wa-01_01.jpg" amazon_url="https://www.amazon.co.jp/s?k=ONE PIECE 漫画" rakuten_url="https://item.rakuten.co.jp/mangazenkan/10001107/" >}}
+{{< affi name="[新品]ワンピース ONE PIECE (1-114巻 最新刊) 全巻セット" image="https://thumbnail.image.rakuten.co.jp/@0_mall/mangazenkan/cabinet/syncip_0020/wa-01_01.jpg" rakuten_url="https://item.rakuten.co.jp/mangazenkan/10001107/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

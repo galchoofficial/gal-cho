@@ -119,7 +119,7 @@ CloverWorksの作画で**鎌倉攻略の戦闘シーン**が見れるとか…�
 
 中先代の乱までの流れ、漫画で先取りしておけば、CloverWorksの作画で「ここがアニメで動く！！」って瞬間にガチで震えられる🥶 1期再放送で復習しつつ、原作で2期の展開もチラ見しておくのが最強プランかも✨
 
-{{< affi name="[新品]逃げ上手の若君 (1-25巻 最新刊) 全巻セット" image="https://thumbnail.image.rakuten.co.jp/@0_mall/mangazenkan/cabinet/syncip_0035/m8880400172_01.jpg" amazon_url="https://www.amazon.co.jp/s?k=逃げ上手の若君 コミック" rakuten_url="https://item.rakuten.co.jp/mangazenkan/m8880400172/" >}}
+{{< affi name="[新品]逃げ上手の若君 (1-25巻 最新刊) 全巻セット" image="https://thumbnail.image.rakuten.co.jp/@0_mall/mangazenkan/cabinet/syncip_0035/m8880400172_01.jpg" rakuten_url="https://item.rakuten.co.jp/mangazenkan/m8880400172/" >}}
 
 <p>📺 1期見逃した子は<strong>Amazonプライム・ビデオ</strong>で一気見もアリ📺 7月の2期スタート前に時行くんの逃走劇を予習しよ⚔️<br>
 <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Famazonprime" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>▶ Amazonプライム30日無料体験はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy"></p>

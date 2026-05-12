@@ -78,7 +78,7 @@ tweet: |-
 
 GWのメイストームは風も強いから、コンビニの100円ビニ傘は1日でゴワッてなる😇 16本骨の耐風傘は風吹いても折れないし、撥水で乾きも早いから1本持っとくと一生もの🌂
 
-{{< affi name="超耐風傘16本骨メンズレディースかさカサ雨傘軽量丈夫黒ブラック紺ネイビー軽い撥水無地強風風に強い長傘雨具かさ" image="https://thumbnail.image.rakuten.co.jp/@0_mall/mina-shop/cabinet/image1/minas146696.jpg" amazon_url="https://www.amazon.co.jp/s?k=折りたたみ傘 大きい 軽量" rakuten_url="https://item.rakuten.co.jp/mina-shop/minas146696/" >}}
+{{< affi name="超耐風傘16本骨メンズレディースかさカサ雨傘軽量丈夫黒ブラック紺ネイビー軽い撥水無地強風風に強い長傘雨具かさ" image="https://thumbnail.image.rakuten.co.jp/@0_mall/mina-shop/cabinet/image1/minas146696.jpg" rakuten_url="https://item.rakuten.co.jp/mina-shop/minas146696/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

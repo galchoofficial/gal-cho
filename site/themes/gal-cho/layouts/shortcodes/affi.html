@@ -4,17 +4,26 @@
     {{< affi
       name="商品名"
       image="https://thumbnail.image.rakuten.co.jp/..."
-      amazon_url="https://www.amazon.co.jp/s?k=KEYWORD"
+      price="1980"
+      amazon_url="https://www.amazon.co.jp/dp/ASIN"  ← 省略時は Prime無料体験URLに
       rakuten_url="https://item.rakuten.co.jp/.../" >}}
 
-  Amazon URL は amazon.co.jp/s?k=KEYWORD（検索）or amazon.co.jp/dp/ASIN（個別）
-  楽天 URL は楽天商品ページURL
-  両方とももしも経由のクリック計測URLで自動ラップされる
+  ▼Amazon URL の注意：
+    - もしも経由でアフィリンクとして有効なのは「Amazon商品ページ（dp/ASIN）」or
+      「Amazon Prime/Audible等の登録URL」のみ。
+    - amazon.co.jp/s?k=KEYWORD（検索URL）は「無効な広告リンク」エラーになる。
+    - amazon_url を省略すると Prime無料体験URLに自動フォールバック（450円報酬）。
+
+  ▼楽天 URL は楽天商品ページURLを指定。
+  両方とももしも経由のクリック計測URLで自動ラップされる。
 */ -}}
 {{- $name := .Get "name" -}}
 {{- $image := .Get "image" -}}
 {{- $desc := .Get "desc" -}}
-{{- $amazon_url := .Get "amazon_url" -}}
+{{- $price := .Get "price" -}}
+{{- $amazon_default := "https://www.amazon.co.jp/amazonprime" -}}
+{{- $amazon_url := (.Get "amazon_url") -}}
+{{- if not $amazon_url -}}{{- $amazon_url = $amazon_default -}}{{- end -}}
 {{- $rakuten_url := .Get "rakuten_url" -}}
 {{- $amazon_click := printf "//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=%s" ($amazon_url | urlquery) -}}
 {{- $rakuten_click := printf "//af.moshimo.com/af/c/click?a_id=5543180&p_id=54&pc_id=54&pl_id=27059&url=%s" ($rakuten_url | urlquery) -}}
@@ -27,15 +36,14 @@
   <div class="affi-card-content">
     <p class="affi-card-name">{{ $name }}</p>
     {{- with $desc }}<p class="affi-card-desc">{{ . }}</p>{{- end }}
+    {{- with $price }}<p class="affi-card-price">¥{{ . }}<span class="affi-card-price-note">（楽天市場時点）</span></p>{{- end }}
     <div class="affi-card-buttons">
-      {{- with $amazon_url }}
       <a href="{{ $amazon_click | safeURL }}" class="affi-card-btn affi-card-btn-amazon" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>🛒 Amazon</a>
-      {{- end }}
       {{- with $rakuten_url }}
       <a href="{{ $rakuten_click | safeURL }}" class="affi-card-btn affi-card-btn-rakuten" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>🛍 楽天市場</a>
       {{- end }}
     </div>
   </div>
 </div>
-{{- with $amazon_url }}<img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;display:none;" alt="" loading="lazy">{{- end -}}
+<img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;display:none;" alt="" loading="lazy">
 {{- with $rakuten_url }}<img src="//i.moshimo.com/af/i/impression?a_id=5543180&p_id=54&pc_id=54&pl_id=27059" width="1" height="1" style="border:none;display:none;" alt="" loading="lazy">{{- end -}}

@@ -62,7 +62,7 @@ tweet: |-
 
 スマホでも見れるけど、ゴーグル使うと臨場感ぜんぜん違う。詐欺の疑似体験は「ヤバい」って肌で感じてこそ意味あるから、安いやつ1個持っておくと推し活のVR動画にも使えるよ✨
 
-{{< affi name="＼楽天1位獲得／ VRゴーグル スマホ 【最強配送対応】 VR ゴーグル iPhone バーチャル vrゴーグル 一体型 3D VR 映像 用 メガネ 眼鏡 動画 ゲーム vrゴーグルスマホ" image="https://thumbnail.image.rakuten.co.jp/@0_mall/relief10/cabinet/251219_b0bsf34r5r.jpg" amazon_url="https://www.amazon.co.jp/s?k=VRゴーグル スマホ" rakuten_url="https://item.rakuten.co.jp/relief10/b0bsf34r5r/" >}}
+{{< affi name="＼楽天1位獲得／ VRゴーグル スマホ 【最強配送対応】 VR ゴーグル iPhone バーチャル vrゴーグル 一体型 3D VR 映像 用 メガネ 眼鏡 動画 ゲーム vrゴーグルスマホ" image="https://thumbnail.image.rakuten.co.jp/@0_mall/relief10/cabinet/251219_b0bsf34r5r.jpg" rakuten_url="https://item.rakuten.co.jp/relief10/b0bsf34r5r/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

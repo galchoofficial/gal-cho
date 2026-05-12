@@ -152,7 +152,7 @@ tweet: |-
 
 たらちねジョン先生の繊細なタッチで描かれる老いと希望の物語、ぜひ読んでみて📚 「このマンガがすごい！」1位は伊達じゃないから保証する🏆
 
-{{< affi name="[5月下旬より発送予定][新品]海が走るエンドロール (1-8巻 最新刊) 全巻セット [入荷予約]" image="https://thumbnail.image.rakuten.co.jp/@0_mall/mangazenkan/cabinet/syncip_0036/m2352481256_01.jpg" amazon_url="https://www.amazon.co.jp/s?k=海が走るエンドロール 漫画" rakuten_url="https://item.rakuten.co.jp/mangazenkan/m2352481256/" >}}
+{{< affi name="[5月下旬より発送予定][新品]海が走るエンドロール (1-8巻 最新刊) 全巻セット [入荷予約]" image="https://thumbnail.image.rakuten.co.jp/@0_mall/mangazenkan/cabinet/syncip_0036/m2352481256_01.jpg" rakuten_url="https://item.rakuten.co.jp/mangazenkan/m2352481256/" >}}
 
 <p>📺 京アニ過去作（ヴァイオレット・エヴァーガーデン、聲の形、ユーフォ等）も<strong>Amazonプライム・ビデオ</strong>で見れる📺 映画化前に京アニの作画美に浸ろ✨<br>
 <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Famazonprime" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>▶ Amazonプライム30日無料体験はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy"></p>

@@ -124,7 +124,7 @@ PS5据え置きでSwitch2が値上げ…ってなると、価格競争的には�
 
 値上げの発表後、SNSでは「**買えるうちに在庫確保しとこ**」って動きが加速してるの。流通在庫の旧価格分はまだ残ってる店舗もあるみたいだから、欲しい子は早めに動くのが吉👀 ECサイトでも旧価格のまま売ってるショップがあるうちにチェックしとこ🔥
 
-{{< affi name="[新品] Nintendo Switch 2（日本語・国内専用） ★ご注文後のお届け先変更＆転送不可★4902370553024" image="https://thumbnail.image.rakuten.co.jp/@0_mall/dandystore/cabinet/imgrc0110796331.jpg" amazon_url="https://www.amazon.co.jp/s?k=Nintendo Switch 2 本体" rakuten_url="https://item.rakuten.co.jp/dandystore/4902370553024/" >}}
+{{< affi name="[新品] Nintendo Switch 2（日本語・国内専用） ★ご注文後のお届け先変更＆転送不可★4902370553024" image="https://thumbnail.image.rakuten.co.jp/@0_mall/dandystore/cabinet/imgrc0110796331.jpg" rakuten_url="https://item.rakuten.co.jp/dandystore/4902370553024/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

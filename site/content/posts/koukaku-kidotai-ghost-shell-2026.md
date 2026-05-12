@@ -133,7 +133,7 @@ tweet: |-
 
 7月7日まであと2ヶ月切ってるから、今のうちに原作漫画とか1995年劇場版を予習しておくと、新作100倍楽しめるよ✨ 特に原作漫画は新作のベースになってる可能性高いから読んどき📚
 
-{{< affi name="GHOST IN THE SHELL\/攻殻機動隊【Blu-ray】 [ 田中敦子 ]" image="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2308/4934569362308.jpg" amazon_url="https://www.amazon.co.jp/s?k=攻殻機動隊 Blu-ray" rakuten_url="https://item.rakuten.co.jp/book/14657894/" >}}
+{{< affi name="GHOST IN THE SHELL\/攻殻機動隊【Blu-ray】 [ 田中敦子 ]" image="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2308/4934569362308.jpg" rakuten_url="https://item.rakuten.co.jp/book/14657894/" >}}
 
 <p>📺 <strong>Amazonプライム・ビデオ</strong>でSAC、Innocence、SAC_2045全シリーズ見れる📺 7月の新作前に過去作で素子の世界観マスターしとこ✨<br>
 <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Famazonprime" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>▶ Amazonプライム30日無料体験はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy"></p>

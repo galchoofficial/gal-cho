@@ -131,7 +131,7 @@ Cygamesから**『GRANBLUE FANTASY: Relink - Endless Ragnarok（グランブル�
 
 前作Relinkはガチで神ゲーだから、グラブル知らない子でもアクションRPGとして楽しめるレベル🔥 7月まで2ヶ月あるから、今からなら本編クリアして発売日に万全の状態で新作突入できるよ⚔️
 
-{{< affi name="【特典】GRANBLUE FANTASY: Relink - Endless Ragnarok　PS5版(【先着購入封入特典】GRANBLUE FANTASY: Relink - Endless Ragnarok　ガッツIII・自動復活IIIジーンセット)" image="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6499/4570142016499.jpg" amazon_url="https://www.amazon.co.jp/s?k=GRANBLUE FANTASY Relink" rakuten_url="https://item.rakuten.co.jp/book/18532574/" >}}
+{{< affi name="【特典】GRANBLUE FANTASY: Relink - Endless Ragnarok　PS5版(【先着購入封入特典】GRANBLUE FANTASY: Relink - Endless Ragnarok　ガッツIII・自動復活IIIジーンセット)" image="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6499/4570142016499.jpg" rakuten_url="https://item.rakuten.co.jp/book/18532574/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

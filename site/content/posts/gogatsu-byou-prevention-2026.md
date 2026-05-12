@@ -88,7 +88,7 @@ GW最終日に絶望しないために、今日から意識しとくといいこ
 
 「自律神経整える」系の本、女子のメンタル不調に効くやつ多いの。1冊あると不調期にめくれて安心。GW明けの守り神📖✨
 
-{{< affi name="オトナ女子の不調をなくす自律神経整え方BOOK ココロとカラダをお手入れする100のコツ [ 小林弘幸 ]" image="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0638/9784815630638_1_10.jpg" amazon_url="https://www.amazon.co.jp/s?k=自律神経 整え方 本" rakuten_url="https://item.rakuten.co.jp/book/18048498/" >}}
+{{< affi name="オトナ女子の不調をなくす自律神経整え方BOOK ココロとカラダをお手入れする100のコツ [ 小林弘幸 ]" image="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0638/9784815630638_1_10.jpg" rakuten_url="https://item.rakuten.co.jp/book/18048498/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

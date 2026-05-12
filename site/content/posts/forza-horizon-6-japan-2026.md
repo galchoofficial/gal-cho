@@ -52,7 +52,7 @@ tweet: |-
 
 Forza は最新世代機向けで、Series X は4K対応・SSD爆速で日本の街並みもサクサク表示。コントローラーも Elite シリーズ2 がセットになってるやつなら、レースゲームでの操作精度バツグン👇
 
-{{< affi name="【セット商品】Microsoft Xbox Series X 1TB ディスクモデル ブラック EP2-63835 ゲーム機本体 ＋ Xbox Elite ワイヤレス コントローラー シリーズ 2 【おひとり様1台限り】" image="https://thumbnail.image.rakuten.co.jp/@0_mall/superdeal/cabinet/deal_megadeal/imgrc0327800871.jpg" amazon_url="https://www.amazon.co.jp/s?k=Forza Horizon Xbox" rakuten_url="https://item.rakuten.co.jp/superdeal/16764xboxseriesxelite22602/" >}}
+{{< affi name="【セット商品】Microsoft Xbox Series X 1TB ディスクモデル ブラック EP2-63835 ゲーム機本体 ＋ Xbox Elite ワイヤレス コントローラー シリーズ 2 【おひとり様1台限り】" image="https://thumbnail.image.rakuten.co.jp/@0_mall/superdeal/cabinet/deal_megadeal/imgrc0327800871.jpg" rakuten_url="https://item.rakuten.co.jp/superdeal/16764xboxseriesxelite22602/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

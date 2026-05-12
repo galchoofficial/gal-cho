@@ -51,7 +51,7 @@ tweet: |-
 
 「とりあえず安全な新しいの欲しい」って人には、PSE技術基準適合の Anker PowerCore Slim 10000 が定番。10,000mAh あればスマホ2回フル充電できて、薄型で持ち運びラク🔋
 
-{{< affi name="Anker PowerCore Slim 10000（モバイルバッテリー 大容量 薄型 10000mAh）【USB-C入力ポート\/PSE技術基準適合\/PowerIQ ＆ VoltageBoost\/低電流モード搭載】iPhone ＆ Android 各種対応" image="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/images/anker_2/a1229_normal.jpg" amazon_url="https://www.amazon.co.jp/s?k=モバイルバッテリー PSE 大容量" rakuten_url="https://item.rakuten.co.jp/anker/a1229/" >}}
+{{< affi name="Anker PowerCore Slim 10000（モバイルバッテリー 大容量 薄型 10000mAh）【USB-C入力ポート\/PSE技術基準適合\/PowerIQ ＆ VoltageBoost\/低電流モード搭載】iPhone ＆ Android 各種対応" image="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/images/anker_2/a1229_normal.jpg" rakuten_url="https://item.rakuten.co.jp/anker/a1229/" >}}
 
 ## 飛行機はもう<span class="mk">規制強化</span>してる
 

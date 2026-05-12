@@ -92,7 +92,7 @@ GW後半に突入したけど、今年の新幹線の予約状況がなかなか
 
 新幹線も渋滞中の車も、長時間移動だとスマホの電池がガッと減る😇 大容量モバイルバッテリー1個カバンに入れとくだけで安心感が違うよ✨
 
-{{< affi name="Anker PowerCore Slim 10000（モバイルバッテリー 大容量 薄型 10000mAh）【USB-C入力ポート\/PSE技術基準適合\/PowerIQ ＆ VoltageBoost\/低電流モード搭載】iPhone ＆ Android 各種対応" image="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/images/anker_2/a1229_normal.jpg" amazon_url="https://www.amazon.co.jp/s?k=Anker PowerCore モバイルバッテリー" rakuten_url="https://item.rakuten.co.jp/anker/a1229/" >}}
+{{< affi name="Anker PowerCore Slim 10000（モバイルバッテリー 大容量 薄型 10000mAh）【USB-C入力ポート\/PSE技術基準適合\/PowerIQ ＆ VoltageBoost\/低電流モード搭載】iPhone ＆ Android 各種対応" image="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/images/anker_2/a1229_normal.jpg" rakuten_url="https://item.rakuten.co.jp/anker/a1229/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

@@ -62,7 +62,7 @@ tweet: |-
 
 くじ引いて外しても、定番のカービィぬいぐるみは普通に欲しくなるやつなのよ。日本中のカービィファンが持ってる「ALL STAR COLLECTION」シリーズの M サイズ（高さ23cm）はちょうど抱きしめサイズ✨
 
-{{< affi name="星のカービィ ALL STAR COLLECTION カービィ (M) スタンダード ぬいぐるみ 高さ23cm グッズ おもちゃ 新品 *" image="https://thumbnail.image.rakuten.co.jp/@0_mall/hobisuto/cabinet/sanei/4905330122872.jpg" amazon_url="https://www.amazon.co.jp/s?k=カービィ ぬいぐるみ" rakuten_url="https://item.rakuten.co.jp/hobisuto/sanei-4905330122872/" >}}
+{{< affi name="星のカービィ ALL STAR COLLECTION カービィ (M) スタンダード ぬいぐるみ 高さ23cm グッズ おもちゃ 新品 *" image="https://thumbnail.image.rakuten.co.jp/@0_mall/hobisuto/cabinet/sanei/4905330122872.jpg" rakuten_url="https://item.rakuten.co.jp/hobisuto/sanei-4905330122872/" >}}
 
 ## 一番くじ<span class="mk">初心者</span>へ🔰
 

@@ -117,4 +117,4 @@ tweet: |-
 
 ザバスは6〜28%アップって地味にデカい。筋トレ勢・推し活で体力使う勢は値上げ前に1袋買っておくのもアリ✨
 
-{{< affi name="ザバス ホエイプロテイン100 リッチショコラ味(980g)【sav03】【meijiAU04】【ザバス(SAVAS)】[インフォームドプロテイン認証]" image="https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/102/4902777302102.jpg" amazon_url="https://www.amazon.co.jp/s?k=ザバス ホエイプロテイン" rakuten_url="https://item.rakuten.co.jp/rakuten24/e535922h/" >}}
+{{< affi name="ザバス ホエイプロテイン100 リッチショコラ味(980g)【sav03】【meijiAU04】【ザバス(SAVAS)】[インフォームドプロテイン認証]" image="https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/102/4902777302102.jpg" rakuten_url="https://item.rakuten.co.jp/rakuten24/e535922h/" >}}
