@@ -67,6 +67,11 @@
 {{- /* ===== Google Analytics 4 (本番のみ) ===== */ -}}
 {{ partial "ga4.html" . }}
 
+{{- /* ===== Google AdSense (Publisher ID 設定時のみ出力) ===== */ -}}
+{{- with site.Params.googleAdsenseClient }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}" crossorigin="anonymous"></script>
+{{- end }}
+
 {{- /* ===== Favicon (Google検索結果・Apple端末・Android端末すべて対応) ===== */ -}}
 <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32.png" | relURL }}">

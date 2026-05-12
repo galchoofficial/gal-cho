@@ -41,6 +41,10 @@ summaryLength = 70
   # 本番ビルドかつIDが設定されているときのみ tag が出力される
   googleAnalyticsId = 'G-ZYSVDH6857'
 
+  # Google AdSense Publisher ID (ca-pub-XXXXXXXXXXXXXXXX 形式)
+  # AdSense承認後にここに入れる。空のときは <script> 出力なし
+  googleAdsenseClient = ''
+
   # カテゴリ表示メタデータ（テーマ側で利用）
   [params.categoryMeta]
     [params.categoryMeta.tame]
