@@ -112,6 +112,11 @@ tweet: |-
 
 「初めて時かけ見る」って人は、4K上映行く前に**通常版で1回見ておく**と、映像のすごさが2倍わかる🌸 中古DVDなら千円切るから手軽✨
 
+<div style="margin:1.5em 0;padding:1em 1.2em;background:#fff8e7;border:2px solid #ff9900;border-radius:8px;text-align:center;">
+  <strong>🛒 Amazonでも探す</strong><br>
+  <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%E6%99%82%E3%82%92%E3%81%8B%E3%81%91%E3%82%8B%E5%B0%91%E5%A5%B3+Blu-ray" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;margin-top:0.5em;padding:0.5em 2em;background:#ff9900;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">Amazonでチェック →</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy">
+</div>
+
 <!-- START MoshimoAffiliateEasyLink -->
 <script type="text/javascript">
 (function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;

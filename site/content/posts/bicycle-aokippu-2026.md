@@ -170,6 +170,11 @@ tweet: |-
 
 2023年4月から自転車のヘルメット着用は**努力義務**になってるの知ってた？青切符は対象外でも、転倒した時の頭部損傷リスクが**ヘルメット無しだと約2.6倍**って警察庁データある。SG認証の自転車用ヘルメット、3千円台で買えるから持っとこ✨
 
+<div style="margin:1.5em 0;padding:1em 1.2em;background:#fff8e7;border:2px solid #ff9900;border-radius:8px;text-align:center;">
+  <strong>🛒 Amazonでも探す</strong><br>
+  <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%83%98%E3%83%AB%E3%83%A1%E3%83%83%E3%83%88+SG%E8%AA%8D%E8%A8%BC" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;margin-top:0.5em;padding:0.5em 2em;background:#ff9900;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">Amazonでチェック →</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy">
+</div>
+
 <!-- START MoshimoAffiliateEasyLink -->
 <script type="text/javascript">
 (function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;

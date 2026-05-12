@@ -63,6 +63,11 @@ tweet: |-
 
 東の海編、原作だと1巻〜12巻くらい。全巻揃えたら1100話分が手元にくるから、配信待ちながら読み返すのアツくない？？✨
 
+<div style="margin:1.5em 0;padding:1em 1.2em;background:#fff8e7;border:2px solid #ff9900;border-radius:8px;text-align:center;">
+  <strong>🛒 Amazonでも探す</strong><br>
+  <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DONE+PIECE+%E6%BC%AB%E7%94%BB" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;margin-top:0.5em;padding:0.5em 2em;background:#ff9900;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">Amazonでチェック →</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy">
+</div>
+
 <!-- START MoshimoAffiliateEasyLink -->
 <script type="text/javascript">
 (function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;

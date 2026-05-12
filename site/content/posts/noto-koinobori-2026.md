@@ -47,6 +47,11 @@ tweet: |-
 
 能登まで行けない子も、自宅のベランダに小さい鯉のぼり飾るだけで気持ちが乗るのよ。50cmサイズなら集合住宅でも余裕、男の子の節句にも🌸
 
+<div style="margin:1.5em 0;padding:1em 1.2em;background:#fff8e7;border:2px solid #ff9900;border-radius:8px;text-align:center;">
+  <strong>🛒 Amazonでも探す</strong><br>
+  <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%E9%AF%89%E3%81%AE%E3%81%BC%E3%82%8A+%E3%83%99%E3%83%A9%E3%83%B3%E3%83%80%E7%94%A8" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;margin-top:0.5em;padding:0.5em 2em;background:#ff9900;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">Amazonでチェック →</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy">
+</div>
+
 <!-- START MoshimoAffiliateEasyLink -->
 <script type="text/javascript">
 (function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;

@@ -119,6 +119,11 @@ CloverWorksの作画で**鎌倉攻略の戦闘シーン**が見れるとか…�
 
 中先代の乱までの流れ、漫画で先取りしておけば、CloverWorksの作画で「ここがアニメで動く！！」って瞬間にガチで震えられる🥶 1期再放送で復習しつつ、原作で2期の展開もチラ見しておくのが最強プランかも✨
 
+<div style="margin:1.5em 0;padding:1em 1.2em;background:#fff8e7;border:2px solid #ff9900;border-radius:8px;text-align:center;">
+  <strong>🛒 Amazonでも探す</strong><br>
+  <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%E9%80%83%E3%81%92%E4%B8%8A%E6%89%8B%E3%81%AE%E8%8B%A5%E5%90%9B+%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc style="display:inline-block;margin-top:0.5em;padding:0.5em 2em;background:#ff9900;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">Amazonでチェック →</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy">
+</div>
+
 <!-- START MoshimoAffiliateEasyLink -->
 <script type="text/javascript">
 (function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
