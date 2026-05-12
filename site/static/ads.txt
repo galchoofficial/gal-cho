@@ -1,5 +1,1 @@
-# Google AdSense 認可宣言ファイル
-# AdSense承認後に Publisher ID（pub-XXXXXXXXXXXXXXXX）を取得して下記を有効化する。
-# 例: google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0
-#
-# 公式: https://support.google.com/adsense/answer/7532444
+google.com, pub-5194660404780679, DIRECT, f08c47fec0942fa0

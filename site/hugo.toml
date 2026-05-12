@@ -43,7 +43,7 @@ summaryLength = 70
 
   # Google AdSense Publisher ID (ca-pub-XXXXXXXXXXXXXXXX 形式)
   # AdSense承認後にここに入れる。空のときは <script> 出力なし
-  googleAdsenseClient = ''
+  googleAdsenseClient = 'ca-pub-5194660404780679'
 
   # カテゴリ表示メタデータ（テーマ側で利用）
   [params.categoryMeta]
