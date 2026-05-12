@@ -1,0 +1,20 @@
+{{- /*
+  AdSense 広告ユニット呼び出し partial
+  使い方: {{ partial "adsense-unit.html" (dict "slot" "1234567890" "format" "auto") }}
+
+  AdSense承認＆広告ユニット作成後に slot ID を指定して使う。
+  hugo.toml の googleAdsenseClient が空のときは何も出力しない（審査前の安全策）
+*/ -}}
+{{- with site.Params.googleAdsenseClient -}}
+{{- $slot := .slot | default "" -}}
+{{- $format := .format | default "auto" -}}
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="{{ . }}"
+     {{ with $slot }}data-ad-slot="{{ . }}"{{ end }}
+     data-ad-format="{{ $format }}"
+     data-full-width-responsive="true"></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+{{- end -}}
