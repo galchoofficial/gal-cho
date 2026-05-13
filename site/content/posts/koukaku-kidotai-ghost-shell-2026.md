@@ -1,7 +1,7 @@
 ---
 title: "アニメ『攻殻機動隊 THE GHOST IN THE SHELL』が7月7日から放送開始！！伝説が帰ってくる🤖🔥"
-date: 2026-05-18T09:00:00+09:00
-publishDate: 2026-05-18T09:00:00+09:00
+date: 2026-05-18T07:00:00+09:00
+publishDate: 2026-05-18T07:00:00+09:00
 draft: false
 categories:
   - anime
