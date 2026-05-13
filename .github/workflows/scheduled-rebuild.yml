@@ -1,13 +1,32 @@
 name: Scheduled rebuild (予約投稿用)
 
 # Hugo の publishDate が未来の記事を、その日が来たら公開するために
-# 毎日 JST 9:00 に空コミットを push して Cloudflare Pages に再ビルドを促す。
+# 予約時刻の少し前に空コミットを push して Cloudflare Pages に再ビルドを促す。
+#
+# 記事の予約時刻：JST 9:00 / 12:00 / 18:00 / 21:00
+# GitHub Actions の cron はしばしば数時間遅延するため、
+# 「予約時刻の50分前」＋「予約時刻ピッタリ」の2段構えで保険をかける。
 on:
   schedule:
-    # GitHub Actions の cron は UTC。JST 9:00 = UTC 0:00
+    # JST 8:50 / 9:00（9:00 予約用）
+    - cron: '50 23 * * *'
     - cron: '0 0 * * *'
+    # JST 11:50 / 12:00（12:00 予約用）
+    - cron: '50 2 * * *'
+    - cron: '0 3 * * *'
+    # JST 17:50 / 18:00（18:00 予約用）
+    - cron: '50 8 * * *'
+    - cron: '0 9 * * *'
+    # JST 20:50 / 21:00（21:00 予約用）
+    - cron: '50 11 * * *'
+    - cron: '0 12 * * *'
   # 手動実行も可能
   workflow_dispatch:
+
+# 同じスケジュール枠で複数走らないように直近の実行をキャンセル
+concurrency:
+  group: scheduled-rebuild
+  cancel-in-progress: false
 
 jobs:
   trigger:
@@ -26,5 +45,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           DATE_JST=$(TZ=Asia/Tokyo date +%Y-%m-%d)
-          git commit --allow-empty -m "chore: scheduled rebuild for ${DATE_JST}"
+          TIME_JST=$(TZ=Asia/Tokyo date +%H:%M)
+          # 直近のリビルドが10分以内なら skip（同時刻にcron 2本走ったときの保険）
+          LAST_COMMIT_MSG=$(git log -1 --pretty=%s)
+          LAST_COMMIT_TIME=$(git log -1 --pretty=%ct)
+          NOW=$(date +%s)
+          DIFF=$((NOW - LAST_COMMIT_TIME))
+          if [[ "$LAST_COMMIT_MSG" == chore:\ scheduled\ rebuild\ for\ * ]] && [ "$DIFF" -lt 600 ]; then
+            echo "Last rebuild was $DIFF seconds ago (<10min), skipping to avoid duplicate."
+            exit 0
+          fi
+          git commit --allow-empty -m "chore: scheduled rebuild for ${DATE_JST} ${TIME_JST} JST"
           git push
