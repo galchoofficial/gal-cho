@@ -36,6 +36,14 @@ tweet: |-
   オレオレ詐欺の74.3%がこの型🫠
 ---
 
+<div class="alert-banner">
+  <span class="alert-banner-icon">⚠️</span>
+  <div class="alert-banner-text">
+    <strong>この記事はSNS型投資詐欺の被害防止のための注意喚起です</strong>
+    投資勧誘や儲け話を取り上げる目的は「同じ手口の被害を防ぐ」ため。これは投資助言ではなく被害防止情報です。怪しい勧誘を受けたら、警察相談（<strong>#9110</strong>）or 消費者ホットライン（<strong>188</strong>）にすぐ相談してね🫡
+  </div>
+</div>
+
 ちょっとちょっと、これマジで聞いて？？😱
 
 警察庁が2026年2月に発表した**令和7年（2025年）の特殊詐欺＋SNS型詐欺の被害総額**、なんと…

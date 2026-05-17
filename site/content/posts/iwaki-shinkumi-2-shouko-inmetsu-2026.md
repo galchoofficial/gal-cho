@@ -34,6 +34,14 @@ tweet: |-
   小学生でももう少しマシなことするわ…
 ---
 
+<div class="alert-banner">
+  <span class="alert-banner-icon">⚠️</span>
+  <div class="alert-banner-text">
+    <strong>この記事は金融犯罪の注意喚起・解説です</strong>
+    信用組合での不正事件を取り上げる目的は「同じ手口を防ぐ・気付ける知識を共有する」ため。少しでも怪しいお金の動きを感じたら、警察相談（<strong>#9110</strong>）や金融庁（<strong>0570-016811</strong>）に相談してね🫡
+  </div>
+</div>
+
 <div class="gov-block">
   <h3>📖 前編まだ読んでない子はこっち👇</h3>
   <div class="gov-row">
