@@ -45,6 +45,12 @@ summaryLength = 70
   # AdSense承認後にここに入れる。空のときは <script> 出力なし
   googleAdsenseClient = 'ca-pub-5194660404780679'
 
+  # 楽天 Webservice アプリID
+  # 取得方法: https://webservice.rakuten.co.jp/ で「アプリID発行」（無料・5分）
+  # 設定するとアフィカードに楽天商品の価格が自動表示される（ビルド時にAPI取得）
+  # 空のときはAPI呼び出しスキップ（価格欄は手動指定のみ）
+  rakutenAppId = ''
+
   # カテゴリ表示メタデータ（テーマ側で利用）
   [params.categoryMeta]
     [params.categoryMeta.tame]
