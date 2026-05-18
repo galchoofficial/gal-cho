@@ -1,0 +1,16 @@
+name = "gal-cho-cron-trigger"
+main = "src/index.js"
+compatibility_date = "2026-05-18"
+
+# JST 7:00 / 11:00 / 17:00（予約投稿時刻）に発火
+# Cloudflare Workers の cron は UTC 指定
+[triggers]
+crons = [
+  "0 22 * * *",  # UTC 22:00 = JST 7:00
+  "0 2 * * *",   # UTC 02:00 = JST 11:00
+  "0 8 * * *"    # UTC 08:00 = JST 17:00
+]
+
+# Worker ログを保存（デバッグ用、無料tierでも可）
+[observability]
+enabled = true
