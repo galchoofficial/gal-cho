@@ -43,11 +43,13 @@ tweet: |-
 </div>
 
 <div class="series-nav">
-  <div class="series-nav-label">📚 いわしんシリーズ（全3回）</div>
+  <div class="series-nav-label">📚 いわしんシリーズ（全5回）</div>
   <ol class="series-nav-list">
     <li><a href="/posts/iwaki-shinkumi-280oku-2026/">① 280億円不正融資の全貌🏦</a></li>
     <li class="current">② ハンマーで壊した・ゴミに捨てた…証拠隠滅編（この記事）</li>
     <li><a href="/posts/iwaki-shinkumi-3-sekinin-2026/">③ で、誰が責任とるの？問題⚖️</a></li>
+    <li><a href="/posts/iwaki-shinkumi-4-houkokusho-1-2026/">④ 調査報告書を読んでみた①証拠隠滅の全容📋</a></li>
+    <li><a href="/posts/iwaki-shinkumi-5-houkokusho-2-2026/">⑤ 調査報告書を読んでみた②247億円どう数えた📊</a></li>
   </ol>
 </div>
 
