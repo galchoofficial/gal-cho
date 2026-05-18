@@ -31,7 +31,8 @@
 {{- /* ===== 楽天価格 自動取得（rakutenAppId 設定時のみ）=====
      手動指定（price="..."）が優先。空のときに楽天 Webservice API を叩く。
      URL パターン: https://item.rakuten.co.jp/{shop}/{code}/
-     ItemSearch API: applicationId + itemCode={shop}:{code} */ -}}
+     ItemSearch API: applicationId + itemCode={shop}:{code}
+     ※ Hugo 0.123 で getJSON は削除されたため resources.GetRemote 経由で取得。 */ -}}
 {{- if and (not $price) $rakuten_url site.Params.rakutenAppId -}}
   {{- $appId := site.Params.rakutenAppId -}}
   {{- $matches := findRESubmatch `item\.rakuten\.co\.jp/([^/]+)/([^/?]+)` $rakuten_url -}}
@@ -39,11 +40,13 @@
     {{- $shopCode := index . 1 -}}
     {{- $itemCode := index . 2 -}}
     {{- $apiUrl := printf "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?applicationId=%s&itemCode=%s:%s&format=json&elements=itemPrice" $appId $shopCode $itemCode -}}
-    {{- $data := getJSON $apiUrl -}}
-    {{- with $data -}}
-      {{- with .Items -}}
-        {{- with index . 0 -}}
-          {{- $price = .Item.itemPrice -}}
+    {{- with resources.GetRemote $apiUrl -}}
+      {{- if not .Err -}}
+        {{- $data := .Content | transform.Unmarshal -}}
+        {{- with $data.Items -}}
+          {{- with index . 0 -}}
+            {{- $price = .Item.itemPrice -}}
+          {{- end -}}
         {{- end -}}
       {{- end -}}
     {{- end -}}
