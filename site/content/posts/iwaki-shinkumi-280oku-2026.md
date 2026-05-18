@@ -30,6 +30,15 @@ tweet: |-
   個人より組織ガバナンスがヤバい話🚨
 ---
 
+<div class="series-nav">
+  <div class="series-nav-label">📚 いわしんシリーズ（全3回）</div>
+  <ol class="series-nav-list">
+    <li class="current">① 280億円不正融資の全貌（この記事）</li>
+    <li><a href="/posts/iwaki-shinkumi-2-shouko-inmetsu-2026/">② ハンマーで壊した・ゴミに捨てた…証拠隠滅編🔨</a></li>
+    <li><a href="/posts/iwaki-shinkumi-3-sekinin-2026/">③ で、誰が責任とるの？問題⚖️</a></li>
+  </ol>
+</div>
+
 え、この話知ってた？？福島の「**いわき信用組合**」で、**約280億円**の不正融資が20年以上続いてたっていう、地味だけどガチでヤバい事件🏦
 
 4月30日に新たな処分が出たので、一連の流れをまとめてみたよ💸
