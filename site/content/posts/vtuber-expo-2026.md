@@ -74,6 +74,10 @@ VTuberファンが「画面の中の推し」を**リアルで体験できる**�
 
 その他、各プロダクションから多数のVTuberが参加予定。タイムテーブルは公式で随時更新されてるので要チェック✨
 
+🎤 会場行けない子もホロライブグッズで気分上げよ👇 GAMERS fes コラボのキャンディセット🍬
+
+{{< affi name="hololive GAMERS fes. 超超超超ゲーマーズに行ってきました。トレカ付きキャンディセット" image="https://thumbnail.image.rakuten.co.jp/@0_mall/abemashopping/cabinet/holo/imgrc0184158187.jpg" rakuten_url="https://item.rakuten.co.jp/abemashopping/candyset/" >}}
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>VTuber文化って、もう「ニッチ」とか「サブカル」って枠を超えて、<em class="kw">完全にメインカルチャー</em>になりつつあるのよね。Kizuna AI が登場した2016年から約10年、リアルイベントが「最大級」って規模で開催される時代になった。</p>

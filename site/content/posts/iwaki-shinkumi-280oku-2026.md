@@ -100,6 +100,10 @@ tweet: |-
 
 って状況。
 
+📚 「企業ガバナンス」もっと深く知りたい子はこの本📖 國廣弁護士のロングセラー
+
+{{< affi name="なぜ企業不祥事は、なくならないのか / 國廣正・五味祐子 / 日本経済新聞出版" image="https://thumbnail.image.rakuten.co.jp/@0_mall/renet20/cabinet/item_photo/001116/0/0011160928.jpg" rakuten_url="https://item.rakuten.co.jp/renet20/r0011160928/" >}}
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>この話で一番ゾッとするのは、<em class="kw">「個人の悪意」じゃなくて「組織のガバナンス崩壊」</em>でこんな額になっちゃう、っていう構造の問題よね。25人の管理職が「断れなかった」ってのは、内部から告発できる仕組みがなかった証拠。</p>

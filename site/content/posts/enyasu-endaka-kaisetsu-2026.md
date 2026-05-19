@@ -133,6 +133,10 @@ tweet: |-
 
 円安って聞くと「日本がダメになってる」みたいに感じるかもしれないけど、一概にそうとも言えないのよ🤔
 
+📚 もっとガチで経済勉強したい子はこの本おすすめ👇 経済学者・野口悠紀雄の解説本📖
+
+{{< affi name="円安待望論の罠 / 野口悠紀雄 / 日本経済新聞出版" image="https://thumbnail.image.rakuten.co.jp/@0_mall/comicset/cabinet/10700678/bkdgrcfttdrckcwv.jpg" rakuten_url="https://item.rakuten.co.jp/comicset/429540781x/" >}}
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>円安で<em class="kw">得する人</em>もいれば<em class="kw">損する人</em>もいるの。得するのは海外に商品を売る企業（トヨタとか）🚗、外国人観光客向けのお店🏨、海外に資産を持ってる人💰。一方で損するのは、あーしたち一般の消費者（輸入品が高い）💸、海外旅行に行きたい人✈️、原材料を輸入してる中小企業🏭。同じ「円安」でも立場で全然違うのよ。</p>

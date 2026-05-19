@@ -124,6 +124,10 @@ tweet: |-
 
 それが**少子化で子どもの数が減ってる**から、皮肉なことにクラス数を減らしても教員総数があんまり増えなくて済む見通しが立った。これが追い風になって動いたわけ。少子化が改革を後押しするって、なんか複雑な気持ちじゃない？？🌀
 
+📚 学級経営をもっと知りたい人は教育論の名著チェック👇 見えない教育力＝ヒドゥンカリキュラム📖
+
+{{< affi name="ヒドゥンカリキュラム入門 学級崩壊を防ぐ見えない教育力 / 多賀一郎" image="https://thumbnail.image.rakuten.co.jp/@0_mall/comicset/cabinet/05180080/bkrpcb5dgvf0te3b.jpg" rakuten_url="https://item.rakuten.co.jp/comicset/4810003264/" >}}
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>あーしが一番モヤるのはさぁ、<em class="kw">OECD平均は1クラス23人</em>なのよ？？日本まだ35人にしただけだよ？？まだ12人多いのよ🤯</p>

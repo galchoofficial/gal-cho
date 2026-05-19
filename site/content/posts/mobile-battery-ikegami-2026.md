@@ -188,6 +188,10 @@ tweet: |-
 
 だから「法律変わったから安心〜」じゃなくて、**手元の古いやつは自力で処分**しないといけない。今日このタイミングでもう一回チェックして✨
 
+🔋 買い替えるならPSE認証済を選ぼ👇 Anker純正で長く使える、容量10000mAhで日常使い余裕📱
+
+{{< affi name="Anker PowerCore Slim 10000（モバイルバッテリー 大容量 薄型 10000mAh）【USB-C入力ポート/PSE技術基準適合/PowerIQ & VoltageBoost/低電流モード搭載】iPhone & Android 各種対応" image="https://thumbnail.image.rakuten.co.jp/@0_mall/lifestyle-007/cabinet/new_thumbnail/72607.jpg" rakuten_url="https://item.rakuten.co.jp/lifestyle-007/72607/" >}}
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>正直ね、<em class="kw">「またか…」って感覚になってきてるのが一番怖い</em>のよ😤 ニュースで「モバイルバッテリー発火」って出ても「あーまたね」ってスルーしちゃう人増えてると思う。麻痺してるんだよね、みんな。月イチで起きてるって異常事態なのに。</p>

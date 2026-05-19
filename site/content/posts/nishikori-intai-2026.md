@@ -183,6 +183,10 @@ tweet: |-
 
 ## あーし的<span class="mk">ぶっちゃけ</span>ポイント💎
 
+🎾 錦織くんの精神論ガチで読みたい子はこの本👇 マイケル・チャンに学んだ勝者の思考📖
+
+{{< affi name="錦織圭 マイケル・チャンに学んだ勝者の思考 / 児玉光雄" image="https://thumbnail.image.rakuten.co.jp/@0_mall/comicset/cabinet/05581789/bkplo4mkuvcefxub.jpg" rakuten_url="https://item.rakuten.co.jp/comicset/4058005637/" >}}
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>錦織くんの何がすごいって、<em class="kw">「アジア人男子はテニスで通用しない」っていう常識を一人でぶっ壊した</em>ところなのよ🌏 それまで「テニスは欧米のスポーツ」って空気あったじゃん？？ 錦織が4位まで行ったことで、日本の子どもたちが「テニスで世界目指す」って言える時代になったの。歴史を変えた選手って言って過言じゃない🎾</p>
