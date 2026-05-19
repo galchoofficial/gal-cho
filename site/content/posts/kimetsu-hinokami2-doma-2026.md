@@ -104,6 +104,10 @@ tweet: |-
 
 ヒノカミ血風譚シリーズって毎回**原作技の再現度がバケモン**なのよ🎮✨ 1作目から「炎の呼吸 壱ノ型 不知火」とかちゃんとアニメと同じカット入れてきたし、2作目はさらに進化してるから、童磨の蓮葉氷も**アニメの戦闘シーンそのまま**って感じになるはず✊
 
+🎮 まだ持ってない子はここからゲット👇 童磨DLC配信前に本体準備しとこ⚔️
+
+{{< affi name="【新品】Switch 鬼滅の刃 ヒノカミ血風譚2【メール便】" image="https://thumbnail.image.rakuten.co.jp/@0_mall/gamearc/cabinet/shohin16/4534530157089.jpg" rakuten_url="https://item.rakuten.co.jp/gamearc/4534530157089n/" >}}
+
 ## ぶっちゃけ<span class="mk">考察</span>ポイント🔥
 
 <div class="insight">

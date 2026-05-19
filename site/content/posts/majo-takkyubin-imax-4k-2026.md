@@ -116,6 +116,10 @@ IMAXって普通の映画館よりスクリーンがバカでかくて、音響�
 
 「久しぶりに見たい」「初めて魔女宅見る」って人は、IMAX上映行く前に**一度通常版で見ておく**と、映画館での4K体験のすごさが10倍わかるよ🌸 ジブリ作品って何回見ても新しい発見あるしね✨
 
+🧹 自宅で予習するならBlu-ray版があるよ👇 IMAX体験前のウォーミングアップに🎬
+
+{{< affi name="魔女の宅急便【Blu-ray】[ 宮崎駿 ]" image="https://thumbnail.image.rakuten.co.jp/@0_mall/acstore/cabinet/product1/import/jiburi/imgrc0069412424.jpg" rakuten_url="https://item.rakuten.co.jp/acstore/kikis/" >}}
+
 <p>📺 ジブリ作品は配信が限定的だけど、関連作品やアニメ映画は<strong>Amazonプライム・ビデオ</strong>でチェックできる📺 IMAX上映前にアニメ映画の世界観に浸るのもアリ✨<br>
 <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Famazonprime" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>▶ Amazonプライム30日無料体験はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy"></p>
 

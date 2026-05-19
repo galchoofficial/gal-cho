@@ -171,6 +171,10 @@ tweet: |-
 
 アプリ購入券は**先着**だから、配布開始と同時にアクセス殺到で繋がりにくくなる可能性大💦 通信環境のいい場所で構えてくのオススメ📱
 
+🧸 ハッピーセット買えなかった子も、ちいかわグッズは楽天でも揃うよ👇 ハチワレ・うさぎ・モモンガ全部いる✨
+
+{{< affi name="ちいかわ プレイチャーム PlayCharm バンダイナムコ ハチワレ うさぎ モモンガ くりまんじゅう ラッコ シーサー ナガノ" image="https://thumbnail.image.rakuten.co.jp/09411494/09785150/playch-main01.jpg" rakuten_url="https://item.rakuten.co.jp/onlineshop-a-style/chiikawa-playcharm/" >}}
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>ハッピーセットのコラボってさぁ、もはや<em class="kw">子ども向けじゃなくて大人が本気で集めにくる時代</em>になってるよね😂 ちいかわ・サンリオ・ポケモン…どのコラボもSNSで開店前から並ぶ大人がいっぱい。「ハッピーセット食べたいんじゃなくて、おもちゃが欲しいだけ」って正直に言う大人、あーしは好きよ😂💕</p>

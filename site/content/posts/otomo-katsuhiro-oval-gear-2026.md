@@ -134,6 +134,10 @@ tweet: |-
   <div class="quote-by">— 大友さん自身がスタジオ立ち上げるって、本気の本気じゃないとやらないこと。AKIRAを超える衝撃来るかも🎬🔥</div>
 </div>
 
+🎬 OVAL GEARの新作待つ間に、伝説の原点『AKIRA』を4Kで予習しとこ👇
+
+{{< affi name="AKIRA 4K REMASTER EDITION / ULTRA HD Blu-ray & Blu-ray【2枚組】" image="https://thumbnail.image.rakuten.co.jp/@0_mall/renet3/cabinet/ccc78/0011313879.jpg" rakuten_url="https://item.rakuten.co.jp/renet3/0011313879/" >}}
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>大友克洋さんが自分のスタジオを作るって、アニメ業界にとっては<em class="kw">宮崎駿さんがジブリを作ったレベル</em>の出来事と言っても過言じゃないのよ🤔 巨匠が「自分の作りたいものを自分の環境で作る」って決断した瞬間って、後から振り返って「あの時が転換点だった」って言われがちじゃん？？OVAL GEARもそうなる可能性大🔥</p>
