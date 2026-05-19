@@ -133,9 +133,9 @@ tweet: |-
 
 円安って聞くと「日本がダメになってる」みたいに感じるかもしれないけど、一概にそうとも言えないのよ🤔
 
-📚 もっとガチで経済勉強したい子はこの本おすすめ👇 経済学者・野口悠紀雄の解説本📖
+📚 経済の基本もっと知りたい子はこのマンガ本おすすめ👇 10歳からわかる入門編で、円安円高もスラスラ理解できる📖
 
-{{< affi name="円安待望論の罠 / 野口悠紀雄 / 日本経済新聞出版" image="https://thumbnail.image.rakuten.co.jp/@0_mall/comicset/cabinet/10700678/bkdgrcfttdrckcwv.jpg" rakuten_url="https://item.rakuten.co.jp/comicset/429540781x/" >}}
+{{< affi name="10歳からの まんがでわかる「経済」のしくみ 新装改訂版 /「子どもと経済」研究会" image="https://thumbnail.image.rakuten.co.jp/@0_mall/rakutenkobo-ebooks/cabinet/6696/2000012186696.jpg" rakuten_url="https://item.rakuten.co.jp/rakutenkobo-ebooks/76ffd0b6d94938a8b2295030a2ff12c1/" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
