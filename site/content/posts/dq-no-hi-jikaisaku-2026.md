@@ -111,6 +111,10 @@ tweet: |-
 
 1988年のドラクエ3で**学校サボる子が続出して社会問題になった**って、もう今だと考えられないレベルのバケモノ人気じゃん？？😂 40年経った今でも新作で国が動くって、これがドラクエの底力なのよね🐉
 
+🐉 次回作発表前に予習しとこ👇 大ヒットしたHD-2Dリメイク版「ドラクエ3」、あーしもこれから入ったの🎮
+
+{{< affi name="ドラゴンクエストIII そして伝説へ… Switch版" image="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1822/4988601011822.jpg" rakuten_url="https://item.rakuten.co.jp/book/17915656/" >}}
+
 ## ぶっちゃけポイント
 
 <div class="insight">
