@@ -1,35 +1,19 @@
-name: Scheduled rebuild (予約投稿用)
+name: Scheduled rebuild (予約投稿用・保険)
 
-# Hugo の publishDate が未来の記事を、その日が来たら公開するために
-# 予約時刻の少し前に空コミットを push して Cloudflare Pages に再ビルドを促す。
+# 【メインは Cloudflare Workers Cron Trigger】
+# 予約投稿のリビルドは Cloudflare Workers Cron（JST 7:00/11:00/17:00）が本番稼働中。
+# この GitHub Actions は「Workers が万一止まった時の保険」として 1日1回だけ走る。
 #
-# 記事の予約時刻：JST 7:00 / 11:00 / 17:00（朝・昼・夕の3枠運用）
-# GitHub Actions の cron はしばしば数時間遅延するため、
-# 「予約時刻の10分前」＋「予約時刻ピッタリ」の2段構えで保険をかける。
+# 以前は 15 個の cron を仕込んでいたが、複数 cron が同時発火して
+# git push が競合（non-fast-forward）→ 失敗通知メールが多発したため、
+# 1日1回（記事公開時刻とずらした深夜）に削減した。
 on:
   schedule:
-    # ===== JST 7:00 予約用（5段構え保険）=====
-    - cron: '40 21 * * *'  # JST 6:40
-    - cron: '50 21 * * *'  # JST 6:50
-    - cron: '0 22 * * *'   # JST 7:00
-    - cron: '15 22 * * *'  # JST 7:15
-    - cron: '30 22 * * *'  # JST 7:30
-    # ===== JST 11:00 予約用（5段構え保険）=====
-    - cron: '40 1 * * *'   # JST 10:40
-    - cron: '50 1 * * *'   # JST 10:50
-    - cron: '0 2 * * *'    # JST 11:00
-    - cron: '15 2 * * *'   # JST 11:15
-    - cron: '30 2 * * *'   # JST 11:30
-    # ===== JST 17:00 予約用（5段構え保険）=====
-    - cron: '40 7 * * *'   # JST 16:40
-    - cron: '50 7 * * *'   # JST 16:50
-    - cron: '0 8 * * *'    # JST 17:00
-    - cron: '15 8 * * *'   # JST 17:15
-    - cron: '30 8 * * *'   # JST 17:30
-  # 手動実行も可能
+    # JST 0:30（記事公開時刻 7/11/17 と被らない深夜帯。競合・空振り回避）
+    - cron: '30 15 * * *'
+  # 手動実行も可能（緊急リビルド用）
   workflow_dispatch:
 
-# 同じスケジュール枠で複数走らないように直近の実行をキャンセル
 concurrency:
   group: scheduled-rebuild
   cancel-in-progress: false
@@ -50,16 +34,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # 競合回避: push 直前に最新を取り込む（複数 run 同時発火対策）
+          git pull --rebase origin main || true
           DATE_JST=$(TZ=Asia/Tokyo date +%Y-%m-%d)
           TIME_JST=$(TZ=Asia/Tokyo date +%H:%M)
-          # 直近のリビルドが10分以内なら skip（同時刻にcron 2本走ったときの保険）
-          LAST_COMMIT_MSG=$(git log -1 --pretty=%s)
-          LAST_COMMIT_TIME=$(git log -1 --pretty=%ct)
-          NOW=$(date +%s)
-          DIFF=$((NOW - LAST_COMMIT_TIME))
-          if [[ "$LAST_COMMIT_MSG" == chore:\ scheduled\ rebuild\ for\ * ]] && [ "$DIFF" -lt 600 ]; then
-            echo "Last rebuild was $DIFF seconds ago (<10min), skipping to avoid duplicate."
-            exit 0
-          fi
           git commit --allow-empty -m "chore: scheduled rebuild for ${DATE_JST} ${TIME_JST} JST"
-          git push
+          # push が競合したら一度だけ pull --rebase してリトライ
+          git push || (git pull --rebase origin main && git push)
