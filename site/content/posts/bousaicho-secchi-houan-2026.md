@@ -139,7 +139,7 @@ tweet: |-
 
 🏛️ いざという時のために、防災セットは1家に1つ備えておきたいやつ👇 中身が揃ってるセットなら準備ラクよ✨
 
-<!-- AFFI_PLACEHOLDER: 防災セット/防災リュック -->
+{{< affi name="防災士監修 防災セット 1人用 47点セット（楽天1位・女性にも優しい）" image="https://thumbnail.image.rakuten.co.jp/@0_gold/relieved-life/bousai/s-set/01/S01TOP.jpg" price="17800" rakuten_url="https://item.rakuten.co.jp/relieved-life/re-l-bousai/" >}}
 
 ## ぶっちゃけ<span class="mk">ポイント</span>🤔
 

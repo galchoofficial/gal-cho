@@ -76,7 +76,7 @@ Disney+で配信されてた人気ドラマ『マンダロリアン』の**劇�
 
 🟢 グローグーのぬいぐるみ、お家にお迎えしたくなるやつ👇 あのとぼけた顔、置いてあるだけで癒されるのよ💕
 
-<!-- AFFI_PLACEHOLDER: グローグー ぬいぐるみ / ベビーヨーダ -->
+{{< affi name="スター・ウォーズ グローグー ぬいぐるみ 約28cm サウンド付き キャリアバッグ付き（Mattel）" image="https://thumbnail.image.rakuten.co.jp/@0_mall/palmsamerica/cabinet/12433945/ayhdvvrkst-1.jpg" price="15980" rakuten_url="https://item.rakuten.co.jp/palmsamerica/ayhdvvrkst/" >}}
 
 ## ぶっちゃけポイント
 

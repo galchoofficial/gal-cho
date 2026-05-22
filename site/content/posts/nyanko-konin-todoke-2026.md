@@ -78,7 +78,7 @@ tweet: |-
 
 🐱 婚姻届はさておき、にゃんこのぬいぐるみは普通に可愛いから要チェックよ👇 あのゆる顔に癒される〜😂
 
-<!-- AFFI_PLACEHOLDER: にゃんこ大戦争 ぬいぐるみ -->
+{{< affi name="にゃんこ大戦争 BIG ぬいぐるみ 暗黒ネコ 約30cm" image="https://thumbnail.image.rakuten.co.jp/@0_mall/rapites/cabinet/06912594/09664043/12706549/imgrc0109661462.jpg" price="2680" rakuten_url="https://item.rakuten.co.jp/rapites/p-3054456/" >}}
 
 ## ぶっちゃけポイント
 
