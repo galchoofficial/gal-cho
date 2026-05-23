@@ -150,7 +150,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
 
 {{- /* ===== CSS (with cache-bust query for instant deploy reflection) ===== */ -}}
-{{- $cssVersion := now.Format "20060102150405" -}}
+{{- $cssVersion := (os.Stat "themes/gal-cho/static/css/main.css").ModTime.Unix -}}
 <link rel="preload" href="{{ "css/main.css" | relURL }}?v={{ $cssVersion }}" as="style">
 <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?v={{ $cssVersion }}">
 

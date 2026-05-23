@@ -71,6 +71,24 @@
 
 <!-- Body -->
 <div class="wrap-narrow art-body">
+  {{- /* この記事のポイント (front matter: points: [...]) */ -}}
+  {{- with .Params.points }}
+  <div class="art-points">
+    <div class="art-points-tag">📝 ここだけ読めばOK</div>
+    <ul>
+      {{- range . }}<li>{{ . | safeHTML }}</li>{{- end }}
+    </ul>
+  </div>
+  {{- end }}
+
+  {{- /* 目次（中身がある時だけ自動表示） */ -}}
+  {{- if gt (len .TableOfContents) 60 }}
+  <div class="art-toc">
+    <div class="art-toc-head">📑 目次</div>
+    {{ .TableOfContents }}
+  </div>
+  {{- end }}
+
   {{- /* 1次ソースのツイート埋め込み (front matter: source_tweet) - 本文直上に配置 */ -}}
   {{ partial "source-tweet.html" . }}
 
@@ -106,6 +124,8 @@
 </div>
 {{- end }}
 
+</article>
+
 <!-- Bottom share -->
 <div class="wrap-narrow bottom-share">
   <h3>この記事おもろかった？シェアしてね🫶</h3>
@@ -114,7 +134,6 @@
     <a href="#" class="bs-btn purple">リンクをコピー</a>
   </div>
 </div>
-</article>
 
 <!-- Related -->
 {{- $related := first 3 (where (where site.RegularPages "Section" "posts") "Permalink" "!=" .Permalink).ByDate.Reverse -}}
@@ -126,12 +145,14 @@
   <div class="wrap">
     <div class="related-head">
       <h2><em>こっちも</em> 読んだら？</h2>
-      <a href="{{ "/posts/" | relURL }}" class="related-more">記事一覧 →</a>
     </div>
     <div class="related-grid">
       {{- range $i, $p := $related }}
         {{ partial "article-card.html" (dict "page" $p "index" (add $i 1)) }}
       {{- end }}
+    </div>
+    <div class="related-foot" style="text-align:right;margin-top:28px;">
+      <a href="{{ "/posts/" | relURL }}" class="related-more">記事一覧 →</a>
     </div>
   </div>
 </section>

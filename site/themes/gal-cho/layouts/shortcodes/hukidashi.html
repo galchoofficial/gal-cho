@@ -1,0 +1,22 @@
+{{- /*
+  吹き出し対話 shortcode（キャラ会話・左右対談形式・フキダシ風）
+  使い方: {{< hukidashi who="aashi" >}}セリフ{{< /hukidashi >}}
+    who = aashi（あーし・右）/ kasumi（霞ちゃん・お役所役・左）/ kouhai（後輩・左）
+    name="〇〇" で表示名を上書き可
+*/ -}}
+{{- $who := .Get "who" | default "aashi" -}}
+{{- $map := dict
+    "aashi"  (dict "icon" "あ" "name" "あーし" "cls" "aashi" "side" "right")
+    "kasumi" (dict "icon" "霞" "name" "<ruby>霞<rt>かすみ</rt></ruby>ちゃん" "cls" "kasumi" "side" "left")
+    "kouhai" (dict "icon" "後" "name" "後輩" "cls" "kouhai" "side" "left")
+-}}
+{{- $m := index $map $who -}}
+{{- if not $m -}}{{- $m = index $map "aashi" -}}{{- end -}}
+{{- $name := .Get "name" | default $m.name -}}
+<div class="hukidashi hukidashi-{{ $m.cls }} hukidashi-{{ $m.side }}">
+  <div class="hukidashi-avatar-col">
+    <div class="hukidashi-avatar">{{ $m.icon }}</div>
+    <div class="hukidashi-name">{{ $name | safeHTML }}</div>
+  </div>
+  <div class="hukidashi-bubble">{{ .Inner | markdownify }}</div>
+</div>
