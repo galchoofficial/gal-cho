@@ -67,6 +67,49 @@
   </div>
 </section>
 
+<!-- ===== Aashi's Recommendations ===== -->
+{{- $recSlugs := slice "kokka-jouhou-kaigi-2026" "mythos-ai-cyber-jouhou-2026" "umi-ga-hashiru-endroll-kyoani-2026" -}}
+{{- $recPages := slice -}}
+{{- range $recSlugs -}}
+  {{- with site.GetPage (printf "/posts/%s" .) -}}
+    {{- $recPages = $recPages | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- if gt (len $recPages) 0 }}
+<section class="wrap recommends">
+  <div class="sec-head">
+    <h2 class="sec-h2">💖 あーしの<em>オススメ</em>記事</h2>
+    <span class="sec-sub">何回読んでも好きなやつ集めた✨</span>
+  </div>
+  <div class="recommends-grid">
+    {{- range $i, $p := $recPages }}
+      {{- $rcat := "" -}}{{- with $p.Params.categories -}}{{- $rcat = index . 0 -}}{{- end -}}
+      {{- $rmeta := index site.Params.categoryMeta $rcat -}}
+      {{- if not $rmeta -}}{{- $rmeta = dict "label" $rcat "emoji" "📰" -}}{{- end -}}
+      {{- $rthumb := $p.Params.thumb_emoji | default $rmeta.emoji -}}
+      <a href="{{ $p.RelPermalink }}" class="rec-card{{ if eq $i 0 }} is-pick{{ end }} rec-thumb-{{ add 1 (mod $i 8) }}">
+        {{- if eq $i 0 }}<span class="rec-ribbon">💕 あーしのイチオシ</span>{{ end }}
+        <div class="rec-thumb">
+          <div class="rec-thumb-emoji">{{ $rthumb }}</div>
+        </div>
+        <div class="rec-body">
+          <div class="rec-meta">
+            {{- if $rcat }}<span class="pill pill-{{ $rcat }}">{{ $rmeta.label }}</span>{{ end }}
+            <span>{{ $p.Date.Format "1/2" }}</span>
+          </div>
+          <div class="rec-title">{{ $p.Title }}</div>
+          <p class="rec-excerpt">{{ $p.Summary | plainify | truncate 80 }}</p>
+          <div class="rec-foot">
+            <span>♡ {{ $p.Params.likes | default 0 }}</span>
+            <span class="rec-read">読む →</span>
+          </div>
+        </div>
+      </a>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
 <!-- ===== Latest grid ===== -->
 {{- if gt (len $latest) 3 }}
 {{- $rest := after 3 $latest }}
