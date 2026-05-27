@@ -207,3 +207,11 @@ SNSで「**簡単に稼げる**」「**日給5万**」「**即日現金**」「*
 </div>
 
 トクリュウ・闇バイトの話、自分には関係ないと思ってる子ほど読んでほしい記事だった。家族や友達にも回して〜🙏💜
+
+<div class="gov-block">
+  <h3>🚨 詐欺・防犯シリーズ</h3>
+  <div class="gov-row"><div class="gov-who">📱</div><div class="gov-text"><a href="/posts/sns-toushi-sagi-1414oku-2026/">SNS投資詐欺で1,414億円被害</a></div></div>
+  <div class="gov-row"><div class="gov-who">👥</div><div class="gov-text">📍この記事：トクリュウ・闇バイトの仕組み</div></div>
+  <div class="gov-row"><div class="gov-who">📊</div><div class="gov-text"><a href="/posts/keisatsucho-sagi-bunrui-2026/">警察庁の詐欺分類が変わった話</a></div></div>
+  <div class="gov-row"><div class="gov-who">🦀</div><div class="gov-text"><a href="/posts/kani-kagiya-sagi-2026/">カニ・鍵屋・修理屋系の身近な詐欺</a></div></div>
+</div>

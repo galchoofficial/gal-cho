@@ -205,4 +205,12 @@ SNS投資詐欺だけじゃなくて、もうひとつヤバいのが**「ニセ
 
 <p>🎧 <a href="//af.moshimo.com/af/c/click?a_id=5543703&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2FtryAB" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc>▶ Audible 30日無料体験はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=5543703&p_id=170&pc_id=185&pl_id=4062" width="1" height="1" style="border:none;" alt="" loading="lazy"></p>
 
-1,414億円って数字、ヤバすぎてもう感覚バグるけど、**裏には1人1人だまされた人がいる**のよね😢 あーしの周りも気をつけよ。この記事、家族とか友達にも回して〜🙏💜
+1,414億円って数字、ヤバすぎてもう感覚バグるけど、<strong>裏には1人1人だまされた人がいる</strong>のよね😢 あーしの周りも気をつけよ。この記事、家族とか友達にも回して〜🙏💜
+
+<div class="gov-block">
+  <h3>🚨 詐欺・防犯シリーズ</h3>
+  <div class="gov-row"><div class="gov-who">📱</div><div class="gov-text">📍この記事：SNS投資詐欺で1,414億円被害</div></div>
+  <div class="gov-row"><div class="gov-who">👥</div><div class="gov-text"><a href="/posts/tokuryu-yamibaito-2026/">トクリュウ・闇バイトの仕組み</a></div></div>
+  <div class="gov-row"><div class="gov-who">📊</div><div class="gov-text"><a href="/posts/keisatsucho-sagi-bunrui-2026/">警察庁の詐欺分類が変わった話</a></div></div>
+  <div class="gov-row"><div class="gov-who">🦀</div><div class="gov-text"><a href="/posts/kani-kagiya-sagi-2026/">カニ・鍵屋・修理屋系の身近な詐欺</a></div></div>
+</div>

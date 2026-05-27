@@ -155,3 +155,11 @@ tweet: |-
   <p>だから対策は超シンプルで、<em class="kw">「焦ってる時こそ一呼吸置く」</em>。これだけ。荷物が届いたら受け取り拒否、業者呼ぶ前に複数見積り、マンションなら管理会社優先、困ったら188。</p>
   <p>あーしの周りでも「自分は大丈夫」って言ってた友達がガッツリ引っかかってるからね？？マジで他人事じゃないよ。この記事、おじいちゃんおばあちゃんとか実家にも転送しといて〜📲✨</p>
 </div>
+
+<div class="gov-block">
+  <h3>🚨 詐欺・防犯シリーズ</h3>
+  <div class="gov-row"><div class="gov-who">📱</div><div class="gov-text"><a href="/posts/sns-toushi-sagi-1414oku-2026/">SNS投資詐欺で1,414億円被害</a></div></div>
+  <div class="gov-row"><div class="gov-who">👥</div><div class="gov-text"><a href="/posts/tokuryu-yamibaito-2026/">トクリュウ・闇バイトの仕組み</a></div></div>
+  <div class="gov-row"><div class="gov-who">📊</div><div class="gov-text"><a href="/posts/keisatsucho-sagi-bunrui-2026/">警察庁の詐欺分類が変わった話</a></div></div>
+  <div class="gov-row"><div class="gov-who">🦀</div><div class="gov-text">📍この記事：カニ・鍵屋・修理屋系の身近な詐欺</div></div>
+</div>

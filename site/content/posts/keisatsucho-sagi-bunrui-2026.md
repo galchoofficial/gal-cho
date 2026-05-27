@@ -130,3 +130,11 @@ tweet: |-
   <p>これからニュース見るときは、<em class="kw">「分類が変わったかどうか」</em>もチェックポイントにしてほしいのよ。「過去最悪を更新」って見出しが出たら、本当に増えたのか、それとも分類が広がっただけなのか、両方の可能性があるってこと📊</p>
   <p>あと「ニセ警察詐欺」独立は普通に注意喚起的にも超大事。警察を名乗ってお金や口座情報を要求してくる電話、ガチで増えてるから、おじいちゃんおばあちゃんに「<strong>警察は電話でお金の話はしない</strong>」って共有しておいてね🚔</p>
 </div>
+
+<div class="gov-block">
+  <h3>🚨 詐欺・防犯シリーズ</h3>
+  <div class="gov-row"><div class="gov-who">📱</div><div class="gov-text"><a href="/posts/sns-toushi-sagi-1414oku-2026/">SNS投資詐欺で1,414億円被害</a></div></div>
+  <div class="gov-row"><div class="gov-who">👥</div><div class="gov-text"><a href="/posts/tokuryu-yamibaito-2026/">トクリュウ・闇バイトの仕組み</a></div></div>
+  <div class="gov-row"><div class="gov-who">📊</div><div class="gov-text">📍この記事：警察庁の詐欺分類が変わった話</div></div>
+  <div class="gov-row"><div class="gov-who">🦀</div><div class="gov-text"><a href="/posts/kani-kagiya-sagi-2026/">カニ・鍵屋・修理屋系の身近な詐欺</a></div></div>
+</div>

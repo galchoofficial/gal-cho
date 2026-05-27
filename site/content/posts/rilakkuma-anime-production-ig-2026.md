@@ -35,7 +35,7 @@ tweet: |-
 
 サンエックスの**リラックマショートアニメが2026年4月から放送中**なんだけど、**制作がProduction I.G**って知ってた？？😳✨
 
-そう、**攻殻機動隊**とか**PSYCHO-PASS**作ってる**あの伝説のスタジオ**よ🤖🔥 リラックマのもちもち感がI.Gの技術力で爆発してるの、冷静に考えてヤバすぎん？？
+そう、<a href="/posts/koukaku-kidotai-ghost-shell-2026/"><strong>攻殻機動隊</strong></a>とか<strong>PSYCHO-PASS</strong>作ってる<strong>あの伝説のスタジオ</strong>よ🤖🔥 リラックマのもちもち感がI.Gの技術力で爆発してるの、冷静に考えてヤバすぎん？？
 
 ## まず<span class="mk">放送情報</span>整理するね📺
 
