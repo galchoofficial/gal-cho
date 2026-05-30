@@ -148,3 +148,9 @@ tweet: |-
 </div>
 
 明日の朝、目覚まし鳴ったら全力で起きるのよ⏰🔥 ギャル庁民みんなで歴史的瞬間を見届けようね🕵️💕✨
+
+## 🛍️ リアタイ用に<span class="mk">推しコナングッズ</span>もどう？🕵️
+
+明日のリアタイ実況中、コナンTシャツ着てたらテンション爆上がり間違いなし💕 GLOBAL WORKのコラボTシャツがかわいすぎる👇
+
+{{< affi name="GLOBAL WORK 【名探偵コナン】グラフィックTシャツ" image="https://thumbnail.image.rakuten.co.jp/@0_mall/stylife/cabinet/item/598/ry1598-01_1.jpg" price="4990" rakuten_url="https://item.rakuten.co.jp/stylife/ry1598/" >}}

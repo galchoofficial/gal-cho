@@ -133,3 +133,9 @@ tweet: |-
 </div>
 
 配信後の感想とか発表内容のまとめは、また明日以降ギャル庁で書くから楽しみにしててね🐉✨ みんなも観たら感想教えて〜！何が来てほしい？？💬
+
+## 🛍️ 40周年記念に<span class="mk">最新作</span>もチェック🎮
+
+DQ7のHD-2D系最新版、Switch版で出てるよ🐉 40周年イヤーに合わせて買うなら今👇
+
+{{< affi name="ドラゴンクエストVII Reimagined NintendoSwitch版" image="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2072/4988601012072.jpg" price="7900" rakuten_url="https://item.rakuten.co.jp/book/18378429/" >}}

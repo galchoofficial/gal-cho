@@ -170,3 +170,9 @@ tweet: |-
 </div>
 
 今日まさに鹿児島で避難指示出てる現実、他人事じゃないからね😨 みんなもキキクル今すぐブクマして、明日からのリニューアルに備えよ📱✨ 命を守る情報、ちゃんとアップデートしていこ🫶
+
+## 🛍️ 情報だけじゃなく<span class="mk">モノの備え</span>も🎒
+
+キキクルで危険察知できても、いざという時の**防災リュック**がないと意味なしよ。防災士監修47点セットなら一人暮らしでも安心👇
+
+{{< affi name="防災士監修 防災セット 1人用 47点セット シュラフ付き" image="https://thumbnail.image.rakuten.co.jp/@0_gold/relieved-life/bousai/s-set/01/S01TOP.jpg" price="15980" rakuten_url="https://item.rakuten.co.jp/relieved-life/re-l-bousai/" >}}
