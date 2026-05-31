@@ -49,6 +49,36 @@ tweet: |-
 
 {{< affi name="鯉のぼり べランダ用 室内用 ポール 矢車付き こいのぼり セット青鯉50cm 赤鯉50cm 吹き流し こいのぼりセット ポール付き 矢車付き こどもの日 お祝い 立身出世 端午の節句 日本土産 室内飾り 赤ちゃんアート インスタ 男の子 誕生祝 5月節句 手持ち鯉のぼり ベランダ" image="https://thumbnail.image.rakuten.co.jp/@0_mall/giftjapan/cabinet/toy/carpz1.jpg" rakuten_url="https://item.rakuten.co.jp/giftjapan/carp/" >}}
 
+## そもそも<span class="mk">鯉のぼり</span>ってなんで揚げるの？
+
+ここでちょっと豆知識タイム〜🐟 鯉のぼりって、もともと中国の「<strong>登竜門</strong>」っていう伝説が由来なんだって。激流の滝を登りきった鯉が龍になるって話で、「子どもがどんな困難も乗り越えて立派に育ちますように」って願いが込められてるの。
+
+江戸時代の中期、武家が「<strong>幟（のぼり）</strong>」を立ててたのを庶民が真似して、和紙で作った鯉を揚げ始めたのが原型って言われてる。だから能登の人たちが震災のあと「川に鯉のぼりを戻す」って動いてるの、文化的にもめちゃくちゃ意味があるのよ。<strong>「困難を乗り越えて立派に育つ」</strong>っていう願いそのものが、復興のシンボルになってるじゃん…🥹
+
+## 過去の<span class="mk">大震災の復興</span>と比べてみた
+
+能登半島地震は2024年1月1日発生だから、2026年5月時点でちょうど<strong>1年4ヶ月</strong>経過したとこ。他の大震災のこの時期って、どうだったんだろ？って気になって調べてみた👇
+
+<div class="gov-block">
+  <div class="gov-block-title">📊 過去の大震災と「1〜2年後」の復興状況</div>
+  <div class="gov-row"><span class="gov-key">阪神・淡路大震災（1995年1月）</span><span class="gov-val">発生1年半後の1996年夏に仮設住宅入居者がピーク約4.6万世帯。「神戸ルミナリエ」が震災後初の鎮魂イベントとして1995年12月に開催→今も続く</span></div>
+  <div class="gov-row"><span class="gov-key">東日本大震災（2011年3月）</span><span class="gov-val">発生1年後の2012年春、被災地各地で「花は咲く」が広まり、相馬野馬追・気仙沼みなとまつりなど祭りが順次復活。文化の力で地域がつながった</span></div>
+  <div class="gov-row"><span class="gov-key">熊本地震（2016年4月）</span><span class="gov-val">発生1年半後の2017年秋、熊本城の天守閣修復工事が本格化。「くまモン」が復興大使として全国に発信</span></div>
+  <div class="gov-row"><span class="gov-key">能登半島地震（2024年1月）</span><span class="gov-val">発生1年4ヶ月後の2026年5月、大谷鯉のぼりフェスティバルが川の上にも復活。地元若者×移住者の協働が特徴🎏</span></div>
+</div>
+
+こうやって並べてみると、どの被災地でも<strong>「文化・お祭り・シンボル」が戻ってくるタイミング</strong>が復興のひとつの節目になってるのわかる？地震で家や仕事の再建はもちろん最優先だけど、それと並行して「みんなで集まれる場所」が戻ることで、人の気持ちが前向きになるのよね。
+
+## 能登復興の<span class="mk">タイムライン</span>📅
+
+<div class="gov-block">
+  <div class="gov-block-title">🕒 能登半島地震・大谷鯉のぼりの歩み</div>
+  <div class="gov-row"><span class="gov-key">2024年1月1日</span><span class="gov-val">能登半島地震（M7.6）発生。珠洲市・輪島市などで大きな被害</span></div>
+  <div class="gov-row"><span class="gov-key">2024年5月</span><span class="gov-val">大谷鯉のぼりフェスティバル中止（震災後初・40年で初の中止）</span></div>
+  <div class="gov-row"><span class="gov-key">2025年5月</span><span class="gov-val">空き地に場所を移して規模縮小で復活。約100匹掲揚</span></div>
+  <div class="gov-row"><span class="gov-key">2026年5月</span><span class="gov-val">川の上にも3列のロープを渡し、約200匹に拡大🎏 実行委員長は24歳の漁師・酒谷空さん</span></div>
+</div>
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>震災ボランティアがきっかけで移住してきた若者たちと、昔からいる地元の人たちが一緒に鯉のぼり揚げてるのがアツいのよ。<em class="kw">新しい人と元からいる人がつながって地域が動いてる</em>の、まさに復興のリアルって感じ。</p>

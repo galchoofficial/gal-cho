@@ -59,6 +59,50 @@ tweet: |-
 
 結局、文科大臣が「暫定予算も含めて努力した」って答弁して、なんとか4月からスタートできたんだけどね。
 
+## 日本の<span class="mk">高校無償化</span>の歴史
+
+そもそも「高校無償化」って、いつから議論されてきたんだろ？って思って調べたら、けっこう紆余曲折あったのよ👇
+
+<div class="gov-block">
+  <div class="gov-block-title">📅 日本の高校無償化タイムライン</div>
+  <div class="gov-row"><span class="gov-key">2010年4月</span><span class="gov-val">民主党政権下で「高校無償化法」スタート。公立高校の授業料が初めて<strong>全世帯無料</strong>に。当時は所得制限なし</span></div>
+  <div class="gov-row"><span class="gov-key">2014年4月</span><span class="gov-val">自民党政権で見直し。年収910万円の<strong>所得制限が導入</strong>される。代わりに低所得世帯への給付額が増額された</span></div>
+  <div class="gov-row"><span class="gov-key">2020年4月</span><span class="gov-val">私立高校の支援上限が約40万円に拡充。年収590万円未満世帯は私立も実質無償化</span></div>
+  <div class="gov-row"><span class="gov-key">2024年</span><span class="gov-val">東京都が独自に都内私立高校の所得制限を撤廃。大阪府も同年から段階的に撤廃→自治体間格差が話題に</span></div>
+  <div class="gov-row"><span class="gov-key">2026年4月</span><span class="gov-val">国レベルでついに<strong>所得制限完全撤廃</strong>。全世帯対象に🏫</span></div>
+</div>
+
+ちなみに2014年に所得制限が入ったとき、結構議論があったのよ。「所得制限つけたほうが、本当に困ってる家庭に手厚くできる」っていう自民党側の意見と、「教育機会の平等は所得関係ないでしょ」っていう反対意見。<strong>「教育は権利か福祉か」</strong>って根本的な話で、この議論は今でも続いてるテーマなの。
+
+## 他の国の<span class="mk">高校無償化</span>事情
+
+世界の他の国はどうなってるの？って気になるじゃん？日本の制度と比較してみたよ👇
+
+<div class="gov-block">
+  <div class="gov-block-title">🌍 各国の高校（後期中等教育）無償化</div>
+  <div class="gov-row"><span class="gov-key">🇫🇮 フィンランド</span><span class="gov-val">2021年から後期中等教育（高校・職業学校）を<strong>完全無償化</strong>。授業料はもちろん、教科書・通学費・給食まで全部タダ。所得制限なし</span></div>
+  <div class="gov-row"><span class="gov-key">🇫🇷 フランス</span><span class="gov-val">公立リセ（高校）は元から無償。所得制限なしで全員対象。私立校への支援は契約校のみ</span></div>
+  <div class="gov-row"><span class="gov-key">🇩🇪 ドイツ</span><span class="gov-val">州ごとに違うけど、基本的に公立校は無償。教材費の補助も多くの州で実施</span></div>
+  <div class="gov-row"><span class="gov-key">🇸🇪 スウェーデン</span><span class="gov-val">高校無償＋通学費・給食も無料。さらに高校生に月約1万円の「学習手当」が支給される</span></div>
+  <div class="gov-row"><span class="gov-key">🇺🇸 米国</span><span class="gov-val">公立ハイスクールは元から無償（学区制）。ただし教材や活動費は家庭負担で、実質的に費用差がある</span></div>
+  <div class="gov-row"><span class="gov-key">🇰🇷 韓国</span><span class="gov-val">2021年から高校無償化完了。授業料・入学金・教科書代・授業諸経費まで含めて無償</span></div>
+  <div class="gov-row"><span class="gov-key">🇯🇵 日本</span><span class="gov-val">2026年4月から所得制限撤廃。ただし<strong>教材費・修学旅行費・部活費</strong>などは家庭負担のまま</span></div>
+</div>
+
+こうやって並べると、北欧（フィンランド・スウェーデン）が<strong>「授業料だけじゃなくて、関連費用も全部無償」</strong>でガチで進んでるのわかる？日本も授業料は無償になったけど、実際は教材費・修学旅行費・部活動費・制服代…って親の出費は結構残るのよね。「真の無償化」までは、まだ道のりがあるって感じ。
+
+## <span class="mk">所得制限</span>の議論ってなんで揉めるの？
+
+所得制限の議論、ぶっちゃけ世論も賛否が分かれるテーマなのよ。両方の言い分を整理してみた👇
+
+<div class="gov-block">
+  <div class="gov-block-title">💭 所得制限：賛成派 vs 反対派</div>
+  <div class="gov-row"><span class="gov-key">📛 所得制限あり派</span><span class="gov-val">「限られた財源は本当に必要な家庭に集中すべき」「年収910万超なら自力で払える」「税の再分配機能を活かすべき」という意見</span></div>
+  <div class="gov-row"><span class="gov-key">🆓 所得制限なし派</span><span class="gov-val">「教育は国民の権利で所得で差別すべきでない」「『扶養から外して所得を抑える』みたいな歪んだ働き方の調整が起きる」「子育て世代の負担減で出生率改善にも」という意見</span></div>
+</div>
+
+今回の所得制限撤廃で、「<strong>働き控え</strong>」がなくなる効果も期待されてるの。これまでは「910万を超えると就学支援金がもらえなくなるから、残業断ろう…」みたいな調整をしてた共働き世帯もいたらしい。それがなくなれば、純粋に稼ぎたいだけ稼げるようになるじゃん。経済全体にもプラスっていう見方ね。
+
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>この話のミソは「制度自体はいいことなのに、<em class="kw">国会のスケジュール管理がギリギリすぎて現場がヒヤヒヤした</em>」ってところなのよね。</p>
