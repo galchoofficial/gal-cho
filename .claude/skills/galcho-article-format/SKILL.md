@@ -1,0 +1,181 @@
+---
+name: galcho-article-format
+description: ギャル庁の記事(.md)をユーザー提供のネタから整形するときのフォーマット・HTML パーツ・front matter 構造・タイトル公式・太字バグ回避を集約。サブエージェントへの記事生成指示テンプレも含む
+---
+
+# ギャル庁 記事フォーマットスキル
+
+ユーザーが渡してきたネタを `site/content/posts/*.md` のギャル庁形式に整形するときに呼ぶ。
+
+## 📋 front matter フル構造
+
+```yaml
+---
+title: "ベネフィット型タイトル（絵文字込み）"
+date: 2026-MM-DDTHH:MM:00+09:00
+publishDate: 2026-MM-DDTHH:MM:00+09:00
+draft: false
+categories:
+  - tame      # 役立つ系（節税・節約・お得・税制度）
+  # - omo     # 面白い系（雑学・ライフハック・話題）
+  # - emo     # エモい・社会派系（事件・社会問題）
+  # - anime   # アニメ・ゲーム・推し活
+tags:
+  - キーワード1
+  - キーワード2
+thumb_emoji: "🏪"   # サムネ用1文字絵文字
+hero_emoji: "💰"    # ヒーロー領域の大絵文字
+hero_bg: "lime"     # ヒーロー背景（lime/blue/orange/pink/purple等）
+lead: "リード文（150字目安・記事の概要をギャル目線で）"
+source: "媒体名「記事タイトル」(YYYY-MM-DD) / 別媒体「タイトル」(日付)"
+source_url: "https://公式サイト等のURL"
+likes: 287       # 初期値（虚偽OKだけど現実的な範囲：100〜500目安）
+shares: 124
+points:          # 3行まとめ（目次の上に表示）
+  - ポイント1（〜50字）
+  - ポイント2
+  - ポイント3
+aashi: |         # ★ユーザー提供の語り手コメント
+  あーし的にはさぁ…（※エージェント勝手に作らない・改変しない）
+tweet: |-        # Xプロモ用ツイート文（140字以内）
+  ...本文...
+
+  詳しくはリプから👇
+  #ギャル庁 #ジャンル
+---
+```
+
+## 🚨 重要ルール
+
+### aashi は触らない
+- aashi は**ユーザーの人間味パート**。AI っぽさを消して人間味を出す部分
+- メインエージェントが**勝手に作り込まない・書き換えない**
+- ユーザー提供文を最大限尊重する
+- ユーザーが渡してこなかったら user に「aashi はどうする？」と確認
+
+### source は具体的に
+- AdSense E-E-A-T 対策で `報道各社` だけは NG
+- 形式: `媒体名「記事タイトル」(YYYY-MM-DD)` を複数並べる
+- 例: `日本経済新聞「ファミマがセブン銀ATM導入」(2026-05-31) / NHK NEWS WEB「業務提携 ATM全置き換え」(2026-05-31)`
+
+### タイトル公式（CTR UP）
+ベネフィット+具体型を意識:
+- 「【3分で】〇〇」 — 時短系
+- 「〇〇って結局なんなん？」 — 問いかけ系
+- 「〇〇ってまじ？」 — 驚き系
+- 数字 / 問いかけ / 驚きでクリック率を上げる
+
+### ⚠️太字バグ（最重要）
+- markdownの `**太字**` が**日本語の「」『』に隣接すると壊れて生の `**` が表示される**
+- 例: `**「セリフ」**って` → 閉じ `**` の直後が日本語の `って` のため CommonMark の right-flanking 判定で太字にならない
+- **対策**: セリフや語句を「」で囲んで強調するときは `**` じゃなく `<strong>「…」</strong>` を使う
+- gov-block 等の HTML 内は元々 `<strong>` なので問題なし
+- 既存記事は一括修正しない方針（新規記事だけ気をつける）
+
+## 🧩 HTML パーツ一覧
+
+### gov-block（情報整理ブロック・基本パーツ）
+```html
+<div class="gov-block">
+  <h3>📦 タイトル</h3>
+  <div class="gov-row">
+    <div class="gov-who"><small>絵文字</small>項目名</div>
+    <div class="gov-text">説明文（<strong>太字OK</strong>）</div>
+  </div>
+  <div class="gov-conclusion">→ <strong>結論</strong></div>
+</div>
+```
+
+### insight（ぶっちゃけポイント・記事の山場）
+```html
+<div class="insight">
+  <span class="insight-tag">💎 ぶっちゃけポイント</span>
+  <p>本文（<em class="kw">キーワード</em>や<strong>太字</strong>）</p>
+</div>
+```
+
+### mk（見出しの一部を蛍光ペン風に）
+```html
+## 何が<span class="mk">起きた</span>の？
+```
+
+### 吹き出し対話（キャラ会話）
+```
+{{< hukidashi who="aashi" >}}あーしのセリフ{{< /hukidashi >}}
+{{< hukidashi who="kasumi" >}}霞ちゃん（同級生・お役所原文役）のセリフ{{< /hukidashi >}}
+{{< hukidashi who="kouhai" >}}後輩（読者代弁・素朴な質問役）のセリフ{{< /hukidashi >}}
+```
+**キャラ設定**:
+- aashi = 解説の主役
+- kasumi（霞ちゃう）= あーしの**同級生・友達**（★後輩ではない）。国会答弁・法律・制度の難しい回で「お役所原文」役 → あーしがギャル訳
+- kouhai = かすみとは別キャラで素朴な質問で読者代弁
+
+### alert-banner（注意喚起・詐欺/医療系で必須）
+```html
+<div class="alert-banner">
+  <span class="alert-banner-icon">⚕️</span>
+  <div class="alert-banner-text">
+    <strong>この記事は一般的な解説です</strong>
+    医療・健康に関する最終判断は必ず医師・薬剤師にご相談ください。本記事の情報を利用したことによる損害について、当サイトは一切の責任を負いません🏥
+  </div>
+</div>
+```
+
+医療・健康・金融系記事は AdSense 対応で**必須**。
+
+### series-nav（シリーズもの相互リンク）
+```html
+<div class="series-nav">
+  <div class="series-nav-label">📚 ◯◯シリーズ（全N回）</div>
+  <ol class="series-nav-list">
+    <li><a href="/posts/article-1/">① タイトル要約</a></li>
+    <li class="current">② タイトル要約（この記事）</li>
+    <li><a href="/posts/article-3/">③ タイトル要約</a></li>
+  </ol>
+</div>
+```
+- 配置: front matter `---` の直後（alert-banner があるなら alert-banner → series-nav → 本文）
+- タイトル要約は 15〜30字目安
+- **新エピソード追加時は既存全エピソードの series-nav も更新**（相互リンク維持）
+
+### その他パーツ
+- `compare` — 比較表
+- `quote-card` — 引用カード
+- `fig-card` — SVG入り図表
+
+## 🤖 サブエージェント並列指示テンプレ
+
+複数記事を一気に作る時はサブエージェント並列で爆速化:
+
+```
+あなたはギャル庁の記事整形係です。以下のネタを `site/content/posts/{slug}.md` 形式に整形してください。
+
+【絶対ルール】
+- アフィリエイトスニペットは入れない（placeholder だけ置く: <!-- AFFI: 商品キーワード -->）
+- aashi フィールドはユーザー提供文がない場合は空欄のまま（勝手に書かない）
+- source は具体的な媒体名+日付（報道各社はNG）
+- 太字で「」を囲むときは `<strong>「…」</strong>` を使う（**太字** の隣接バグ回避）
+- ギャル口調（東京系・絵文字OK・関西弁NG）
+
+【ネタ】
+{ユーザー提供のネタ本文}
+
+【出力先】
+{ファイルパス}
+
+front matter フル + 本文（gov-block / insight / mk / 必要なら hukidashi）で 1500字以上。
+```
+
+メインエージェントが後でアフィスニペットを `<!-- AFFI: -->` プレースホルダに置換する。
+
+## 📂 ファイル命名規則
+
+- slug は英数ハイフン区切り（kebab-case）
+- 例: `famima-seven-atm-2026.md`, `tabemono-559hin-neage-6gatsu-2026.md`
+- 日本語スラッグNG（URL 化されない）
+
+## 🤝 関連スキル
+
+- [[galcho-moshimo-affi]] — アフィスニペット取得（記事完了後、必要なら）
+- [[galcho-daily-flow]] — 毎日の制作フロー全体
+- [[galcho-x-live-tree]] — 完成記事のXプロモ
