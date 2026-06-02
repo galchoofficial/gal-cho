@@ -47,11 +47,53 @@ description: ギャル庁の記事をX(@galcho_official)でライブツリー投
 
 ## ⚠️ ハマりポイントと回避策
 
-### X 予約UIが効かない（2026-05-31確認）
-- React の内部 state 問題で JS の `.value` セット + `dispatchEvent('change')` が反映しない
-- 日付/時刻のカスタムドロップダウンが特に壊滅
-- **対策**: 当日分はライブ投稿に切り替える。予約必要なら user に手動操作を依頼
-- ライブツリー投稿は予約不要（セッション中に直接投稿）なので影響なし
+### ✅ X 予約UI 突破方法（2026-06-03確立）— React state対策
+過去4回失敗してた予約UI、Reactのvalue setter経由で完全に突破した。日常ツイートも記事プロモも予約代行可能。
+
+**完全な予約フロー（コード付き）**:
+```js
+// 1. 本文 type 後、「ポストを予約」aria-labelボタン click でダイアログを開く
+const openBtn = [...document.querySelectorAll('button[aria-label]')]
+  .find(b => b.getAttribute('aria-label') === 'ポストを予約');
+openBtn.click();
+
+// 2. select 取得（重要：[role="dialog"]内ではなくdocument全体から最後の5つ）
+const sels = [...document.querySelectorAll('select')].slice(-5);
+// sels[0]=月 [1]=日 [2]=年 [3]=時 [4]=分
+
+// 3. React-friendly value setter で時/分変更
+const setter = Object.getOwnPropertyDescriptor(HTMLSelectElement.prototype, 'value').set;
+setter.call(sels[3], '17');                                    // 時
+sels[3].dispatchEvent(new Event('change', {bubbles: true}));
+setter.call(sels[4], '30');                                    // 分
+sels[4].dispatchEvent(new Event('change', {bubbles: true}));
+
+// 4. 確認テキスト読み取り（任意・デバッグ用）
+document.querySelector('[role="dialog"]')?.innerText?.split('\n').slice(0,3).join(' | ');
+// → "予約設定 | 確認する | 2026年6月3日(水)の午後5:30に送信されます"
+
+// 5. 「確認する」button click → ダイアログ閉じる
+[...document.querySelectorAll('button')]
+  .find(b => b.innerText.trim() === '確認する')?.click();
+
+// (wait 2s)
+
+// 6. 「予約設定」button click → 投稿確定
+[...document.querySelectorAll('button')]
+  .find(b => b.innerText.trim() === '予約設定')?.click();
+
+// 7. 下部に「ポストの送信日時: ...」トースト出れば成功
+```
+
+**なぜ React state 突破が必要だったか**:
+- `select.value = '30'` だと React 内部の `valueTracker` をバイパス → state 検知されず即ロールバックされる
+- `Object.getOwnPropertyDescriptor(HTMLSelectElement.prototype, 'value').set.call(select, '30')` だと valueTracker 経由で正しく state 更新される（React-friendly setter）
+
+**ハマリポイント**:
+- **SELECTOR_N の ID は毎回インクリメント**: `SELECTOR_1`→`SELECTOR_6`→`SELECTOR_11`... 予約ダイアログ開くたびに変わる。ID直接指定だと2本目以降で `Illegal invocation` エラー → `slice(-5)` で動的取得が安全
+- **`[role="dialog"] select` は空配列**: 予約ダイアログの select は dialog の DOM ツリー外（フロート構造）→ document 全体から `querySelectorAll('select')` で取る
+- **「確認する」と「予約設定」の2段階押下が必要**: 1回押しただけだと予約されてない。両方押す
+- **アカウント確認**: ブラウザ操作前に `document.querySelector('[data-testid="AppTabBar_Profile_Link"]')?.getAttribute('href')` で `/galcho_official` を確認
 
 ### ハッシュタグの autocomplete 誤選択
 - `#ギャル庁 #国会` と打つと自動補完で「国会情報局設置法案に反対します」など長文タグを選んでしまう
