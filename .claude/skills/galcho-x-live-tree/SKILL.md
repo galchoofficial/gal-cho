@@ -95,6 +95,66 @@ document.querySelector('[role="dialog"]')?.innerText?.split('\n').slice(0,3).joi
 - **「確認する」と「予約設定」の2段階押下が必要**: 1回押しただけだと予約されてない。両方押す
 - **アカウント確認**: ブラウザ操作前に `document.querySelector('[data-testid="AppTabBar_Profile_Link"]')?.getAttribute('href')` で `/galcho_official` を確認
 
+### ⚠️ batch 内のタイミング落とし穴（2026-06-04 確認）
+
+#### setter sels:0 エラー
+`[click 「ポストを予約」, wait 5s, JS setter]` を batch でまとめると、**setter 実行時に `select` がまだ DOM になく `sels:0`** で失敗することがある。特に `/compose/post/schedule` への navigation を伴うとき。
+
+**対策**:
+- setter は**単独 `javascript_tool` 呼び出し**で実行（batch から切り離す）
+- batch でやるなら try-catch + sels.length チェックで失敗検知 → 次の単独 call で再実行
+
+```js
+// 防御的な setter テンプレ
+try {
+  const setter = Object.getOwnPropertyDescriptor(HTMLSelectElement.prototype, 'value').set;
+  const sels = [...document.querySelectorAll('select')].slice(-5);
+  if (!sels[3] || !sels[4]) throw new Error('sels:' + sels.length);
+  setter.call(sels[3], '17'); sels[3].dispatchEvent(new Event('change',{bubbles:true}));
+  setter.call(sels[4], '30'); sels[4].dispatchEvent(new Event('change',{bubbles:true}));
+  document.querySelector('[role="dialog"]')?.innerText?.split('\n').slice(0,3).join(' | ');
+} catch(e) { 'ERROR:'+e.message; }
+```
+
+### ✏️ 本文入力の事故防止（2026-06-04 確認）
+
+#### Unicode escape sequence は使わない
+- type の text を `棅雨` と書くと「**棅雨**」（梅雨じゃない別字）になる事故あり
+- **直接日本語で書く**: `text: "梅雨"` ← これが正解、`text: "棅雨"` ← NG
+- 私（assistant）が unicode を書き間違える事故が複数回発生してるので、原則 unicode は使わない
+
+#### ZWJ シーケンス絵文字は壊れる
+- `💇‍♀️`（U+1F487+ZWJ+U+2640+VS = 女性が髪をブラシ）→ type 経由で `🙎`（口尖らせ女性）に化ける
+- 複合絵文字（ZWJ）は CDP の type で1つに統合されず別字になることがある
+- **対策**: 投稿前に**単一絵文字を選ぶ**。ZWJ 含む絵文字は避ける
+- 投稿後 screenshot で絵文字確認、化けてたら削除→再投稿
+
+#### 投稿ボックスの座標は動的取得
+- `(350, 76)` 固定だと**フォーカスが取れず type が空振り**することがある
+- **動的取得**:
+```js
+const ta = document.querySelector('[data-testid="tweetTextarea_0"]');
+const r = ta.getBoundingClientRect();
+const x = Math.round(r.x + r.width/2);
+const y = Math.round(r.y + r.height/2);
+```
+- 取得した (x, y) でクリック → type → 安定
+
+### ✅ 投稿成功判定（重要）
+
+「投稿ボックスがクリアされた」**だけでは判定不十分**（ライブ投稿失敗でもクリアされることがある）。
+
+**正しい判定方法**:
+1. screenshot 撮って下部の **「ポストを送信しました。 表示」トースト**が出てるか確認
+2. または、プロフィール開いて最新ツイートが投稿時刻と一致してるか確認:
+   ```js
+   const tweets = [...document.querySelectorAll('article[data-testid="tweet"]')].slice(0, 3);
+   tweets.map(t => ({
+     text: t.querySelector('[data-testid="tweetText"]')?.innerText?.slice(0, 60),
+     time: t.querySelector('time')?.getAttribute('datetime')
+   }));
+   ```
+
 ### ハッシュタグの autocomplete 誤選択
 - `#ギャル庁 #国会` と打つと自動補完で「国会情報局設置法案に反対します」など長文タグを選んでしまう
 - **対策**: ハッシュタグ入力後すぐに Escape キー、または Ctrl+A → 再入力
