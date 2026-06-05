@@ -146,4 +146,10 @@ tweet: |-
   <div class="gov-conclusion">→ <strong>アクション・演出・色使いで世界を魅せる</strong>スタジオ🎨</div>
 </div>
 
+## 🛍️ 原作漫画も<span class="mk">チェック</span>📖
+
+アニメで気になった人は<strong>原作漫画</strong>もガチでオススメ💕 1期は6巻までだから、2期の予習として7巻以降を読み始めるのもアリ📚 全14巻完結済みだから一気読みできる✨
+
+{{< affi name="【全巻】ダンジョン飯 1-14巻セット（ハルタコミックス） [ 九井　諒子 ]" image="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4014/2100013864014.jpg" rakuten_url="https://item.rakuten.co.jp/book/17762686/" >}}
+
 7/5の発表まで1ヶ月切ってる🍖✨ それまでに1期復習する人は <strong>Netflix で全話配信中</strong>📺 X（@galcho_official）で「2期どこまでやってほしい？」教えて〜🐉💕

@@ -146,4 +146,10 @@ tweet: |-
   <div class="gov-conclusion">→ コナンプリキュアシリーズで<strong>4本目</strong>の記事になったよ📚</div>
 </div>
 
+## 🛍️ コラボ<span class="mk">公式グッズ</span>もチェック📦
+
+放送記念に<strong>公式コラボグッズ</strong>もあるよ💕 ジグソーパズル300ピースは家族で楽しめるサイズで、コラボの記念にちょうど良い✨
+
+{{< affi name="300-3330 名探偵コナン＆名探偵プリキュア！ ジグソーパズル300ピース" image="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3519/4970381533519.jpg" rakuten_url="https://item.rakuten.co.jp/book/18664046/" >}}
+
 土曜18時、みんなで一緒に見ようね🕵️✨ 感想はX(@galcho_official)で投稿してくれたら #ギャル庁 でリアクションするよ💕 第2弾の感想記事も書く予定だから楽しみにしてて〜📝
