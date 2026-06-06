@@ -45,6 +45,112 @@ description: ギャル庁の記事をX(@galcho_official)でライブツリー投
 - 1記事ずつ「本文 → リプURL」を完了させてから次へ
 - 全部終わったらプロフィール一覧で件数を最終確認
 
+### 🌳 ライブツリー実装コード（2026-06-06実証・コピペで動く）
+
+過去セッションで「インライン投稿ボックスは type 空振り」「リプ確定ボタンの testid が見つからない」などハマったので、**実証済みパターン**を記録。
+
+#### 前提準備
+```js
+// 1. X.com に navigate（既にログイン済み前提）
+// navigate('https://x.com/home')
+
+// 2. アカウント確認（毎回必須）
+const acct = document.querySelector('[data-testid="AppTabBar_Profile_Link"]')?.getAttribute('href');
+// → '/galcho_official' であることを確認
+```
+
+#### ステップ1: 本文ツイート投稿（モーダル経由が確実）
+
+**重要**: インライン投稿ボックス `(505, 90)` は type が空振りしやすい。**左サイドバー ✏️ アイコン `(118, 638)` クリックでモーダル展開**するのが確実。
+
+```js
+// 1. ✏️アイコンクリックでモーダル展開（座標は実測値）
+// computer.left_click(118, 638)
+// wait 3s
+
+// 2. モーダル内テキストエリアをクリック (420, 130)
+// computer.left_click(420, 130)
+// wait 1s
+
+// 3. 本文を type（直接日本語で、unicode escape は使わない）
+// computer.type("学校終わり〜🎒\n\n金曜の夕方ってなんかテンション上がるよね✨\n...\n#ギャル庁")
+// wait 2s
+
+// 4. 「ポストする」ボタンクリック
+const btn = [...document.querySelectorAll('button')]
+  .find(b => b.innerText.trim() === 'ポストする' 
+         && b.offsetParent !== null 
+         && b.getAttribute('aria-disabled') !== 'true');
+btn?.click();
+// → 'posted' を返したら成功
+```
+
+**投稿成功の確認**: screenshot で下部「ポストを送信しました。 表示」トーストが出ているか確認。または プロフィールで最新ツイートが「現在」表示されているか確認。
+
+#### ステップ2: リプにURLを貼る
+
+```js
+// 1. 自分のプロフィールに navigate して最新ツイートの status URL を取得
+// navigate('https://x.com/galcho_official')
+// wait 3s
+
+// 2. JS で最新ツイートのstatus URL取得
+const a = document.querySelector('article[data-testid="tweet"]');
+const link = a?.querySelector('time')?.closest('a')?.getAttribute('href');
+// → '/galcho_official/status/2063111802834350137' のような URL
+
+// 3. その status URL に navigate
+// navigate('https://x.com' + link)
+// wait 4s
+
+// 4. 返信エリアをクリック (467, 470)
+// computer.left_click(467, 470)
+// wait 1s
+
+// 5. URL を type
+// computer.type('https://gal-cho.com/posts/{slug}/')
+// wait 2s
+
+// 6. ★リプ確定ボタンは `tweetButtonInline` testid（重要）
+const replyBtn = document.querySelector('[data-testid="tweetButtonInline"]');
+replyBtn?.click();
+// → 'reply-posted' を返したら成功
+```
+
+**重要**: リプ確定ボタンは `[data-testid="tweetButton"]` ではなく **`[data-testid="tweetButtonInline"]`**。本文投稿の検索（`innerText === 'ポストする'`）とは別。
+
+#### ステップ3: プレミアム勧誘ダイアログを閉じる
+
+リプ投稿成功後、X が「返信を多くのユーザーに見てもらいましょう」というプレミアム勧誘モーダルを出すことがある。
+
+```js
+// 「後で試す」ボタンクリック (560, 745) で閉じる
+// computer.left_click(560, 745)
+// wait 2s
+```
+
+#### 投稿の最終確認
+
+```js
+// プロフィールページで最新3件確認
+const tweets = [...document.querySelectorAll('article[data-testid="tweet"]')].slice(0, 3);
+tweets.map(t => ({
+  text: t.querySelector('[data-testid="tweetText"]')?.innerText?.slice(0, 60),
+  time: t.querySelector('time')?.getAttribute('datetime')
+}));
+```
+
+### 🚨 ライブツリーで遭遇したハマり集
+
+| 問題 | 原因 | 解決 |
+|---|---|---|
+| インライン投稿ボックスで type が空振り | textarea が focus取れていない | ✏️アイコンでモーダル展開する |
+| `aria-disabled: "true"` でボタン押せない | 本文が空（type 失敗） | モーダル展開してから type |
+| `tweetButton` testid が見つからない | リプ確定ボタンは別 testid | `tweetButtonInline` を使う |
+| 「返信」ボタンの座標 `(640, 558)` が外れる | UI 微妙にズレる | 座標じゃなく `tweetButtonInline` testid で取る |
+| トーストが見えない | タイミングずれ or 投稿失敗 | プロフィールで最新ツイート確認 |
+| プレミアム勧誘モーダルで遮られる | リプ成功後に X 自動表示 | 「後で試す」(560, 745) で閉じる |
+
 ## ⚠️ ハマりポイントと回避策
 
 ### ✅ X 予約UI 突破方法（2026-06-03確立）— React state対策
