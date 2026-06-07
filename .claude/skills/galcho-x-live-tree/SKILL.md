@@ -235,7 +235,7 @@ try {
 - **対策**: 投稿前に**単一絵文字を選ぶ**。ZWJ 含む絵文字は避ける
 - 投稿後 screenshot で絵文字確認、化けてたら削除→再投稿
 
-#### 投稿ボックスの座標は動的取得
+#### 投稿ボックスの座標は動的取得＋画面実測で再調整（2026-06-08 補強）
 - `(350, 76)` 固定だと**フォーカスが取れず type が空振り**することがある
 - **動的取得**:
 ```js
@@ -244,7 +244,15 @@ const r = ta.getBoundingClientRect();
 const x = Math.round(r.x + r.width/2);
 const y = Math.round(r.y + r.height/2);
 ```
-- 取得した (x, y) でクリック → type → 安定
+- ⚠️ **重要**：JS が返す座標が `(505, 90)` でも、**画面のモーダル内 textarea は (420, 130) や (560, 130) にある**ケースを確認（背景の隠れ textarea とモーダル内 textarea で querySelector が混乱する）
+- type 後に `btnDisabled: "true"` なら→**画面で実際の textarea 位置を screenshot 確認 → 座標を変えて再クリック**
+- 6/8 ミュトス事故では：JS座標 `(505, 90)`→失敗 / `(420, 130)`→失敗 / `(560, 130)`→成功
+- **3回失敗したら座標を変える**（505→420→560 の順で試す価値あり）
+
+#### Unicode escape 書き間違い問題（2026-06-08 確認）
+- type に `衰` を書くと「衰」、`衝` だと「衝」。**Unicode を書き間違えると別の漢字になる事故**あり（6/8 ミュトスツイート「衝撃→衰撃」事件）
+- **対策**: type の text フィールドは**直接日本語で書く**ことを徹底。Unicode escape は使わない
+- どうしても escape が必要な場合は、書く前に Unicode コードポイントを必ず確認
 
 ### ✅ 投稿成功判定（重要）
 
@@ -260,6 +268,38 @@ const y = Math.round(r.y + r.height/2);
      time: t.querySelector('time')?.getAttribute('datetime')
    }));
    ```
+
+### 🗑️ ツイート削除手順（2026-06-08 実証）
+
+投稿後に誤字発覚→無料アカは編集不可なので削除→再投稿しかない。手順：
+
+```js
+// 1. 削除したいツイートの詳細ページに navigate
+// navigate(`https://x.com/galcho_official/status/{tweet_id}`)
+// wait 4s
+
+// 2. caret(...) ボタンクリックでメニュー表示
+const caret = document.querySelector('article[data-testid="tweet"] [data-testid="caret"]');
+caret?.click();
+// wait 2s
+
+// 3. メニュー内の「削除」項目をクリック
+const item = [...document.querySelectorAll('[role="menuitem"]')]
+  .find(m => m.innerText.trim() === '削除');
+item?.click();
+// wait 2s
+
+// 4. 確認ダイアログで「削除」確定
+const confirmBtn = document.querySelector('[data-testid="confirmationSheetConfirm"]');
+confirmBtn?.click();
+// wait 4s
+// → 下部に「ポストを削除しました」トースト、ホームにリダイレクト
+```
+
+**重要ポイント**:
+- 親ツイート削除すると**リプ（ライブツリーのURL部分）も自動削除**される
+- 削除後に再投稿する場合は**新しい status_id** が発行されるので、リプ用の URL navigate でも新 id を使う
+- 削除トースト確認後すぐに `/compose/post` に navigate して再投稿フロー開始でOK
 
 ### ハッシュタグの autocomplete 誤選択
 - `#ギャル庁 #国会` と打つと自動補完で「国会情報局設置法案に反対します」など長文タグを選んでしまう
