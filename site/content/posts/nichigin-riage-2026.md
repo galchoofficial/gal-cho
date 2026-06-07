@@ -74,7 +74,7 @@ tweet: |-
 {{< /hukidashi >}}
 
 {{< hukidashi who="kasumi" >}}
-概ね正確なご理解です。これが現在の日銀の基本方針と申せます。
+概ねその通りでございます。これが現在の日銀の基本方針であります。
 {{< /hukidashi >}}
 
 ## そもそも<span class="mk">金利</span>って何？🤔
