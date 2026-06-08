@@ -143,4 +143,10 @@ tweet: |-
   <p>でも「取得のハードルを下げる」っていう意味では確実に前進。特に若い人が<strong>「パスポート高いからやめとこ」って諦めなくて済む</strong>ようになるのは大きいと思う✨</p>
 </div>
 
+## 🛍️ 海外旅行の<span class="mk">必需品</span>もチェック📱
+
+パスポート取ったら次に必要なのは<strong>WiFi問題</strong>📡 海外で「ネット繋がらない！」ってなると地図もSNSも詰むのよ💀 空港受取で1日1,040円のグローバルWiFiはアジア周遊なら韓国・台湾・タイ・ベトナム全部カバー、JKの推し活旅にちょうどいい💕
+
+{{< affi name="【送料無料・即日発送】アジア周遊 WiFi レンタル 1日600GB 4G LTE【グローバルWiFi】" image="https://thumbnail.image.rakuten.co.jp/@0_mall/globalwifi/cabinet/item/09721341/asia-600.jpg" rakuten_url="https://item.rakuten.co.jp/globalwifi/asia_600/" >}}
+
 夏休みに海外行く予定ある人、今すぐ申請して〜📕💨 X（@galcho_official）で「初海外どこ行く？」シェア募集中🌍💕 あーしも今年こそ取りたいわ💸✨
