@@ -1977,3 +1977,99 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 0.2em;
   font-size: 0.95em;
 }
+
+/* ====================================================
+   ホーム「カテゴリ別もっと見る」セクション（2026-06-12 追加）
+   - 4カテゴリ別にカード表示、各カードがそのカテゴリ一覧へ
+==================================================== */
+.cat-more-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 18px;
+}
+@media (max-width: 880px) {
+  .cat-more-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+}
+@media (max-width: 480px) {
+  .cat-more-grid { grid-template-columns: 1fr; }
+}
+
+.cat-more-card {
+  position: relative;
+  display: block;
+  padding: 24px 22px 20px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: var(--ink);
+  background: #fafafa;
+  border: 2px solid var(--line);
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  min-height: 200px;
+}
+.cat-more-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.cat-more-card.cat-tame   { background: linear-gradient(135deg, #ebe7ff 0%, #d4ceff 100%); border-color: rgba(107,91,255,0.25); }
+.cat-more-card.cat-omo    { background: linear-gradient(135deg, #fff3d9 0%, #ffe0a8 100%); border-color: rgba(255,140,66,0.25); }
+.cat-more-card.cat-emo    { background: linear-gradient(135deg, #ffe0e6 0%, #ffc8d2 100%); border-color: rgba(255,117,137,0.25); }
+.cat-more-card.cat-anime  { background: linear-gradient(135deg, #eafbcc 0%, #d2efaa 100%); border-color: rgba(92,198,61,0.25); }
+
+.cat-more-bg-emoji {
+  position: absolute;
+  right: -10px;
+  bottom: -20px;
+  font-size: 110px;
+  opacity: 0.18;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.cat-more-pill {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.08);
+  margin-bottom: 12px;
+}
+.cat-more-card.cat-tame  .cat-more-pill { background: var(--c-tame); color: #fff; }
+.cat-more-card.cat-omo   .cat-more-pill { background: var(--c-omo); color: #fff; }
+.cat-more-card.cat-emo   .cat-more-pill { background: var(--c-emo); color: #fff; }
+.cat-more-card.cat-anime .cat-more-pill { background: var(--c-anime); color: #fff; }
+
+.cat-more-label {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.cat-more-tagline {
+  font-size: 13px;
+  line-height: 1.5;
+  opacity: 0.75;
+  margin-bottom: 16px;
+}
+
+.cat-more-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 13px;
+  position: relative;
+  z-index: 1;
+}
+.cat-more-count {
+  font-weight: 900;
+  opacity: 0.7;
+}
+.cat-more-cta {
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}

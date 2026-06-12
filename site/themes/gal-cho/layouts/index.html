@@ -128,6 +128,29 @@
 </section>
 {{- end }}
 
+<!-- ===== Category more (タグごと・ジャンルごとに見る) ===== -->
+<section class="wrap section">
+  <div class="sec-head">
+    <h2 class="sec-h2">📚 <em>カテゴリ別</em>で深掘り</h2>
+    <span class="sec-sub">気分で選んでね、もっと見るからその系統の記事が全部読める🫶</span>
+  </div>
+  <div class="cat-more-grid">
+    {{- range $key, $meta := site.Params.categoryMeta }}
+    {{- $catCount := len (where (where site.RegularPages "Section" "posts") "Params.categories" "intersect" (slice $key)) }}
+    <a href="{{ printf "/categories/%s/" $key | relURL }}" class="cat-more-card cat-{{ $key }}">
+      <span class="cat-more-bg-emoji">{{ $meta.emoji }}</span>
+      <div class="cat-more-pill">{{ upper $key }}</div>
+      <div class="cat-more-label">{{ $meta.label }}</div>
+      <div class="cat-more-tagline">{{ $meta.tagline | safeHTML }}</div>
+      <div class="cat-more-foot">
+        <span class="cat-more-count">{{ $catCount }}記事</span>
+        <span class="cat-more-cta">もっと見る →</span>
+      </div>
+    </a>
+    {{- end }}
+  </div>
+</section>
+
 <!-- ===== Aashi ===== -->
 <section class="wrap">
   {{ partial "aashi-block.html" (dict "text" `最近のニュースさぁ、ちゃんと読むと意外と<mark>おもろい</mark>んだよね。あーし、推しのために勉強してたら止まんなくなっちゃって、気づいたらこのサイト作ってた🫶`) }}
