@@ -66,7 +66,7 @@ tweet: |-
 
 ## まだ決まってないもの①：<span class="mk">防災庁</span>設置法案🏛️🔥
 
-前に記事にした<a href="/posts/bousai-cho-secchi-houan-2026/">「ギャル庁の仲間が増えるやつ」</a>👇
+前に記事にした<a href="/posts/bousaicho-secchi-houan-2026/">「ギャル庁の仲間が増えるやつ」</a>👇
 
 <div class="gov-block">
   <h3>🏛️ 防災庁の現状</h3>
