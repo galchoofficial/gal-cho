@@ -1,7 +1,7 @@
 ---
 title: "食品消費税、ついに決着！！「1%にして給付で実質ゼロ」っていう折衷案が出たよ💸🍙✅"
-date: 2026-06-18T07:00:00+09:00
-publishDate: 2026-06-18T07:00:00+09:00
+date: 2026-06-19T17:00:00+09:00
+publishDate: 2026-06-19T17:00:00+09:00
 draft: false
 categories:
   - tame
@@ -191,8 +191,8 @@ tweet: |-
 <div class="gov-block">
   <h3>📚 通常国会・お金シリーズ</h3>
   <div class="gov-row">
-    <div class="gov-who"><small>🏛️</small>会期末4日前</div>
-    <div class="gov-text"><a href="/posts/tsujou-kokkai-4days-2026/">通常国会あと4日</a></div>
+    <div class="gov-who"><small>🏛️</small>会期末2日前</div>
+    <div class="gov-text"><a href="/posts/tsujou-kokkai-2days-2026/">通常国会あと2日</a></div>
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>💴</small>日銀利上げ</div>

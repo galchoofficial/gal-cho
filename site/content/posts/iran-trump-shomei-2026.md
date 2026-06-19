@@ -1,7 +1,7 @@
 ---
 title: "イラン合意の覚書にトランプが署名した！！ギャル庁イランシリーズ、ついに最終章🕊️🇮🇷🇺🇸✅"
-date: 2026-06-17T19:00:00+09:00
-publishDate: 2026-06-17T19:00:00+09:00
+date: 2026-06-18T17:00:00+09:00
+publishDate: 2026-06-18T17:00:00+09:00
 draft: false
 categories:
   - tame
@@ -83,7 +83,7 @@ tweet: |-
     <div class="gov-text"><a href="/posts/iran-gouri-19-swiss-2026/">19日スイス署名予告</a>🕊️</div>
   </div>
   <div class="gov-row">
-    <div class="gov-who"><small>⑧</small>6/17朝</div>
+    <div class="gov-who"><small>⑧</small>6/18朝</div>
     <div class="gov-text"><a href="/posts/nichigin-1pct-rishage-2026/">日銀利上げ決定1.0%</a>💴🔥</div>
   </div>
   <div class="gov-row">
