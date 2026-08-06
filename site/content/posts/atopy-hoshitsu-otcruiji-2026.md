@@ -121,4 +121,21 @@ tweet: |-
   <p>アトピーの保湿剤だけじゃなくて、<strong>花粉症の薬や持病の薬にも影響が出る可能性</strong>がある。あーしたちの「当たり前に薬が手に入る」っていう環境が、じわじわ変わろうとしてるのかもしれないわ💊💭</p>
 </div>
 
+## あーし的<span class="mk">おすすめ</span>ケア💕
+
+アトピーもニキビも同じ<strong>「肌ケア必需品」</strong>の話。あーしは<strong>メラノCCのプレミアム美容液</strong>愛用中💕　ニキビ跡・シミ・毛穴に効くって話題のやつ、1本1,628円で試しやすい✨
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"メラノCC 薬用 しみ集中対策 プレミアム美容液(20ml)【メラノCC】[美容液 美白 メラノCC ニキビ シミ 毛穴]","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/rakuten24\/cabinet\/583","p":["\/4987241168583.jpg","\/4987241168583-2.jpg","\/4987241168583-3.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/rakuten24\/4987241168583\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/rakuten24\/4987241168583\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"rGLwV","s":"s"});
+</script>
+<div id="msmaflink-rGLwV">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
 「治療に必要な薬」は守って💊✨ X（@galcho_official）で「医療費どう思う？」シェア募集中🏥 一緒に見届けよ💕
