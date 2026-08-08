@@ -17,6 +17,9 @@ buildDrafts = false
 buildFuture = false
 buildExpired = false
 
+# git最終コミット時刻を Lastmod に反映（AdSense/構造化データの信頼性向上）
+enableGitInfo = true
+
 # 概要文の自動生成（記事一覧で使用）
 summaryLength = 70
 
