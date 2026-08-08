@@ -126,4 +126,21 @@ tweet: |-
   <p>世界経済って、こういう<strong>予想外の繋がり方</strong>をするのよ🌍✨</p>
 </div>
 
+## あーし的<span class="mk">推しちいかわ</span>💕
+
+ガチャで思い出したけど、あーし今めっちゃハマってるのが<strong>ちいかわのもちっとぬいぐるみ</strong>💕　推しキャラの表情が絶妙で、机の上に置いてると勉強のやる気出るのよ🥹✨　2,200円で試しやすいから初ちいかわの子にもおすすめ💭
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"ちいかわ もちっとぬいぐるみS ちいかわ 【即納品・正規品】 ぬいぐるみ もち チイカワ 人形 ちいかわ 公式 グッズ グレイ・パーカー・サービス","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"\/@0_mall\/tenten-store\/cabinet\/img49","p":["\/ckw-mchi-ng1.jpg","\/ckw-mchi-ng1b.jpg","\/ckw-mchi-ng1c.jpg"],"u":{"u":"https:\/\/item.rakuten.co.jp\/tenten-store\/cikw-mngm-s-01\/","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/item.rakuten.co.jp\/tenten-store\/cikw-mngm-s-01\/","a_id":5543180,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"D90j9","s":"s"});
+</script>
+<div id="msmaflink-D90j9">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
+
 推し活の裏にグローバル経済🎰🌍 X（@galcho_official）で「最近のガチャ収穫」シェア募集中📸 一緒に語ろ💕
