@@ -62,8 +62,9 @@ tweet: |-
   <div class="gov-conclusion">→ でも今年は<strong>全地域で上げ幅が縮小</strong>したの📉</div>
 </div>
 
-{{< hukidashi who="kouhai" >}}え、去年まであんなに勢いよく上がってたのに、なんで急に縮小したんですか？{{< /hukidashi >}}
-{{< hukidashi who="aashi" >}}それがさぁ、理由が一個じゃなくて何個か重なってるのよ。順番に見てこ✨{{< /hukidashi >}}
+{{< hukidashi who="kasumi" >}}本年度の地域別最低賃金につきましては、全ての地域において前年度と比較し引上げ幅が縮小しております。{{< /hukidashi >}}
+{{< hukidashi who="aashi" >}}え〜去年まであんなに勢いよく上がってたのに、なんで急にブレーキかかったの？？🤔{{< /hukidashi >}}
+{{< hukidashi who="kasumi" >}}要因は複合的であるものと認識しております。順を追ってご説明いたします。{{< /hukidashi >}}
 
 ## なんで<span class="mk">一服</span>したの？🤔
 
@@ -111,8 +112,9 @@ tweet: |-
   <div class="gov-conclusion">→ <strong>「上げすぎて企業が倒れる」より「持続可能なペースで上げる」方が、長期的にはマシかも</strong>しれないのよ⚖️</div>
 </div>
 
-{{< hukidashi who="kouhai" >}}でも時給の上がり方がゆっくりになるのは、単純に損した気持ちになりませんか？{{< /hukidashi >}}
-{{< hukidashi who="aashi" >}}気持ちはわかるけど、バイト先が潰れて時給0円になるよりはマシじゃない？急ぎすぎて共倒れするより、長く働ける場所がある方があーしは安心なのよ🤔✨{{< /hukidashi >}}
+{{< hukidashi who="aashi" >}}でもさぁ、時給の上がり方がゆっくりになるのって、正直ちょっと損した気持ちになんない？？😤{{< /hukidashi >}}
+{{< hukidashi who="kasumi" >}}ご心情は理解いたします。もっとも、事業者の経営が立ち行かなくなれば、雇用の場そのものが失われる懸念もございます。持続可能な水準を探る局面にあるものと承知しております。{{< /hukidashi >}}
+{{< hukidashi who="aashi" >}}あ〜つまり「急ぎすぎて共倒れするより、長く働ける場所がある方がいい」ってこと？それなら分かる✨{{< /hukidashi >}}
 
 ## ぶっちゃけ<span class="mk">ポイント</span>💎
 

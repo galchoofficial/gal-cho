@@ -74,8 +74,9 @@ tweet: |-
   <div class="gov-conclusion">→ 解雇されても<strong>4年間戦い続けて、告発者が2連勝</strong>したの😭</div>
 </div>
 
-{{< hukidashi who="kouhai" >}}贈収賄に気づいて警察に情報提供しただけなのに、なんで4,700万円も請求されちゃうんですか？{{< /hukidashi >}}
-{{< hukidashi who="aashi" >}}会社側は「持ち出した記録が<strong>機密情報</strong>だった」って主張したのよ。でも裁判所は「その持ち出しには正当な目的があった」って判断したの。次で詳しく説明するね✨{{< /hukidashi >}}
+{{< hukidashi who="kasumi" >}}会社側は、元社員が持ち出した契約書および支払記録は機密情報に当たり、その持ち出しは就業規則に違反するものであると主張しております。{{< /hukidashi >}}
+{{< hukidashi who="aashi" >}}え〜でも警察に不正を知らせるために持ってっただけじゃん？？それで4,700万円請求は重すぎなくない？？😳{{< /hukidashi >}}
+{{< hukidashi who="kasumi" >}}ご明察です。裁判所も、当該持ち出しには正当な目的があったものと認定しております。{{< /hukidashi >}}
 
 ## 裁判所は<span class="mk">何て言った</span>の？⚖️
 
@@ -93,8 +94,11 @@ tweet: |-
   <div class="quote-by">— 東京高裁 判決（2026-09-03）</div>
 </div>
 
-{{< hukidashi who="kouhai" >}}「違法性が阻却される」って難しい言葉ですね…どういう意味なんですか？{{< /hukidashi >}}
-{{< hukidashi who="aashi" >}}ギャル語に翻訳すると「<strong>形式的にはルール違反だけど、目的が正当だから罪に問わない</strong>」ってこと✨ 記録の持ち出し自体はルール上NGでも、それが<strong>「公益通報」</strong>のためだったなら、責任は問われないってことなの{{< /hukidashi >}}
+{{< hukidashi who="kasumi" >}}判決は「公益通報の要件を満たし、違法性が阻却される」と判示しております。{{< /hukidashi >}}
+{{< hukidashi who="aashi" >}}え〜つまりどゆこと？？？🤔{{< /hukidashi >}}
+{{< hukidashi who="kasumi" >}}要約いたしますと、形式的には規則に反する行為であっても、その目的が正当である場合には責任を問わない、との趣旨と存じます。{{< /hukidashi >}}
+{{< hukidashi who="aashi" >}}あ〜つまり「ルール違反ではあるけど、不正を暴くためだったから許される」ってこと？✨{{< /hukidashi >}}
+{{< hukidashi who="kasumi" >}}概ねその通りでございます。{{< /hukidashi >}}
 
 さらに重要な判断がこれ👇
 
