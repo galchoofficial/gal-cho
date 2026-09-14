@@ -1,7 +1,7 @@
 ---
 title: "AIが電気を爆食いしてる件⚡APECで「電力どうする？」が議題になったの🌏"
-date: 2026-09-14T17:00:00+09:00
-publishDate: 2026-09-14T17:00:00+09:00
+date: 2026-09-15T17:00:00+09:00
+publishDate: 2026-09-15T17:00:00+09:00
 draft: false
 categories:
   - tame
@@ -167,6 +167,6 @@ AI需要は爆増するのに、エネルギー供給は不安定っていう最
   <p>AIの話って<strong>「すごい技術ができた！」</strong>で終わりがちだけど、その裏に膨大な電力と資源が必要なのよ🤔</p>
   <p>ギャル庁で書いてきた記事を繋げるとこうなる👇</p>
   <p><em class="kw">ミュトス</em>→<a href="/posts/ai-cyber-mythos-2026/">AIの脅威</a>🤖 / <em class="kw">キオクシア</em>→<a href="/posts/kioxia-toyota-jikasoutaka-2026/">AI半導体で株価爆上がり</a>💾 / <em class="kw">ソフトバンク</em>→フランスAIデータセンター🏭 / <em class="kw">レアメタル</em>→<a href="/posts/korea-rare-metal-32years-2026/">半導体に必要な資源</a>⛏️ / <em class="kw">今回</em>→AIを動かす電力⚡</p>
-  <p>AI＝半導体＋レアメタル＋電力＋データセンター。全部繋がってるの🔗✨ 同じ日には<a href="/posts/anthropic-claude-akuyou-kanshi-2026/">AIを悪用から守る仕組み</a>の話も書いたけど、それもAIを安全に動かし続けるための取り組みの1つなのよね🕵️</p>
+  <p>AI＝半導体＋レアメタル＋電力＋データセンター。全部繋がってるの🔗✨ 昨日は<a href="/posts/anthropic-claude-akuyou-kanshi-2026/">AIを悪用から守る仕組み</a>の話も書いたけど、それもAIを安全に動かし続けるための取り組みの1つなのよね🕵️</p>
   <p><em class="kw">「AIってすごい」だけじゃなくて、「AIを動かすために何が必要か」まで考えられる人が、これからの時代は強い</em>と思うわ🤔⚡✨</p>
 </div>
