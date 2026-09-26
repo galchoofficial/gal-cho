@@ -81,6 +81,28 @@ summaryLength = 70
 # Hugo のデフォルト挙動でファイル名 (e.g. seifuku-off-day.md → /posts/seifuku-off-day/)
 # を使うため、明示設定はしない
 
+# =====================================================
+# 関連記事（記事下「関連記事」セクション用 / Pages.Related）
+# categories 一致を最優先し、tags の一致数が多い順に並ぶ
+# includeNewer = true で新しい記事も候補に含める（双方向リンク化）
+# =====================================================
+[related]
+  threshold = 10
+  includeNewer = true
+  toLower = false
+
+  [[related.indices]]
+    name = 'categories'
+    weight = 120
+
+  [[related.indices]]
+    name = 'tags'
+    weight = 100
+
+  [[related.indices]]
+    name = 'date'
+    weight = 10
+
 # タクソノミー
 [taxonomies]
   category = 'categories'

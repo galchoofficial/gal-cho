@@ -39,6 +39,15 @@
 </section>
 {{- end }}
 
+{{- with .Content }}
+<!-- Category intro (content/categories/{term}/_index.md の本文) -->
+<section class="wrap">
+  <div class="cat-intro">
+    {{ . }}
+  </div>
+</section>
+{{- end }}
+
 <!-- Filter bar -->
 <section class="wrap">
   <div class="filter-bar">

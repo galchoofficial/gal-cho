@@ -1,0 +1,88 @@
+{{- /* ====================================================
+   related-posts.html
+   引数: 記事ページ（single.html から "." を渡す）
+
+   記事下の「関連記事」セクションを描画する。
+   ・Hugo の related 機能（hugo.toml の [related]）でスコア順に取得
+     → categories 一致を最優先、tags の一致数が多い順
+   ・足りない分は「同じカテゴリの新着」→「サイト全体の新着」で補完
+   ・自分自身は除外
+   ・publishDate / date が未来の記事は出さない（buildFuture 対策）
+   ・1本も無いときはセクションごと出力しない
+==================================================== */ -}}
+
+{{- $cur := . -}}
+{{- $limit := 6 -}}
+
+{{- /* 主カテゴリ */ -}}
+{{- $cat := "" -}}
+{{- with $cur.Params.categories -}}{{- $cat = index . 0 -}}{{- end -}}
+
+{{- /* 候補プール：posts セクション / 自分以外 / 未来日付は除外 */ -}}
+{{- $pool := where site.RegularPages "Section" "posts" -}}
+{{- $pool = where $pool "Permalink" "!=" $cur.Permalink -}}
+{{- $pool = where $pool "Date" "<=" now -}}
+{{- $pool = where $pool "PublishDate" "<=" now -}}
+
+{{- /* 1) related スコア順 */ -}}
+{{- $picked := $pool.Related $cur -}}
+
+{{- /* 2) 同カテゴリの新着で補完 */ -}}
+{{- if and $cat (lt (len $picked) $limit) -}}
+  {{- $catPosts := (where $pool "Params.categories" "intersect" (slice $cat)).ByDate.Reverse -}}
+  {{- if gt (len $catPosts) 0 -}}
+    {{- if gt (len $picked) 0 -}}
+      {{- $picked = union $picked $catPosts -}}
+    {{- else -}}
+      {{- $picked = $catPosts -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* 3) それでも足りなければサイト全体の新着で補完 */ -}}
+{{- if lt (len $picked) $limit -}}
+  {{- $allPosts := $pool.ByDate.Reverse -}}
+  {{- if gt (len $allPosts) 0 -}}
+    {{- if gt (len $picked) 0 -}}
+      {{- $picked = union $picked $allPosts -}}
+    {{- else -}}
+      {{- $picked = $allPosts -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* 念のため最終ガード（未来日付を再チェック）してから 6本に絞る */ -}}
+{{- if gt (len $picked) 0 -}}
+  {{- $picked = where $picked "Date" "<=" now -}}
+{{- end -}}
+{{- $picked = first $limit $picked -}}
+
+{{- if gt (len $picked) 0 }}
+<section class="related related-posts">
+  <div class="wrap">
+    <div class="related-head">
+      <h2><em>関連記事</em> こっちも読んだら？</h2>
+      <a href="{{ "/posts/" | relURL }}" class="related-more">記事一覧 →</a>
+    </div>
+    <div class="related-grid">
+      {{- range $i, $p := $picked }}
+        {{ partial "article-card.html" (dict "page" $p "index" (add $i 1)) }}
+      {{- end }}
+    </div>
+    <div class="related-foot">
+      {{- if $cat }}
+      {{- $catMeta := index site.Params.categoryMeta $cat -}}
+      {{- if not $catMeta }}{{ $catMeta = dict "label" $cat "emoji" "📰" }}{{ end }}
+      <a href="{{ printf "/categories/%s/" $cat | relURL }}" class="related-cat-link">{{ $catMeta.emoji }} {{ $catMeta.label }}の記事をもっと見る →</a>
+      {{- end }}
+      {{- with $cur.Params.tags }}
+      <div class="related-tags">
+        {{- range first 4 . }}
+        <a class="tag-chip" href="{{ printf "/tags/%s/" (urlize .) | relURL }}">#{{ . }}</a>
+        {{- end }}
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end -}}

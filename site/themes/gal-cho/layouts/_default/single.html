@@ -135,28 +135,8 @@
   </div>
 </div>
 
-<!-- Related -->
-{{- $related := first 3 (where (where site.RegularPages "Section" "posts") "Permalink" "!=" .Permalink).ByDate.Reverse -}}
-{{- if and $cat (gt (len $related) 0) }}
-{{- $catRelated := where $related "Params.categories" "intersect" (slice $cat) -}}
-{{- if gt (len $catRelated) 0 }}{{- $related = first 3 (union $catRelated $related) -}}{{- end -}}
-
-<section class="related">
-  <div class="wrap">
-    <div class="related-head">
-      <h2><em>こっちも</em> 読んだら？</h2>
-    </div>
-    <div class="related-grid">
-      {{- range $i, $p := $related }}
-        {{ partial "article-card.html" (dict "page" $p "index" (add $i 1)) }}
-      {{- end }}
-    </div>
-    <div class="related-foot" style="text-align:right;margin-top:28px;">
-      <a href="{{ "/posts/" | relURL }}" class="related-more">記事一覧 →</a>
-    </div>
-  </div>
-</section>
-{{- end }}
+<!-- Related（関連記事：同カテゴリ優先 + tags一致数順で最大6本 / 未来日付は除外） -->
+{{ partial "related-posts.html" . }}
 {{ end }}
 
 {{ define "scripts" }}
