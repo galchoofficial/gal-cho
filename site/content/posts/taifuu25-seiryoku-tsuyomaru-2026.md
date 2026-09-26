@@ -145,7 +145,6 @@ tweet: |-
     <div class="gov-who"><small>②</small>充電</div>
     <div class="gov-text">スマホとモバイルバッテリーを満充電に📱🔋 停電に備えて。<strong>膨らんでるバッテリーは使わず処分</strong>⚠️</div>
   </div>
-  <!-- AFFI: モバイルバッテリー -->
   <div class="gov-row">
     <div class="gov-who"><small>③</small>片付け</div>
     <div class="gov-text">ベランダ・庭を片付けて🪴💨 飛ばされそうなものは室内へ。植木鉢が凶器になることもあるよ💀</div>
@@ -164,6 +163,8 @@ tweet: |-
   </div>
   <div class="gov-conclusion">→ <strong>今日のうちに全部済ませておく</strong>のが一番安心💪</div>
 </div>
+
+{{< affi name="Anker PowerCore Fusion 10000（9700mAh 20W PD・コンセント一体型／PSE技術基準適合）" image="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/tmb/a1/a1623_normal.jpg" rakuten_url="https://item.rakuten.co.jp/anker/a1623/" desc="コンセント一体型だから、停電前は充電器・停電後はモバイルバッテリーとして使えるやつ🔋" >}}
 
 ## ぶっちゃけ<span class="mk">ポイント</span>💎
 

@@ -147,7 +147,6 @@ tweet: |-
     <div class="gov-who"><small>③</small>モバイルバッテリー</div>
     <div class="gov-text">満充電にしておいて📱🔋 <strong>膨らんでるバッテリーは発火の危険</strong>があるから使わないで⚠️ <a href="/posts/mobile-battery-fire-warning/">膨らみ・PSEマークのチェックの仕方</a>はこの記事にまとめてるよ。買い替えるなら停電が来る前の今🔋</div>
   </div>
-  <!-- AFFI: モバイルバッテリー -->
   <div class="gov-row">
     <div class="gov-who"><small>④</small>ハザードマップ</div>
     <div class="gov-text">自分の家が<strong>浸水想定区域</strong>に入ってないか確認🗺️ 市区町村のサイトで見られるよ</div>
@@ -158,6 +157,8 @@ tweet: |-
   </div>
   <div class="gov-conclusion">→ 何回目か数えるのはもうやめたわ😂 でも大事だから言い続ける💪</div>
 </div>
+
+{{< affi name="Anker PowerCore Fusion 10000（9700mAh 20W PD・コンセント一体型／PSE技術基準適合）" image="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/tmb/a1/a1623_normal.jpg" rakuten_url="https://item.rakuten.co.jp/anker/a1623/" desc="コンセント一体型だから、停電前は充電器・停電後はモバイルバッテリーとして使えるやつ🔋" >}}
 
 ## 「来る前」と「来てから」、こんなに違う⏰
 

@@ -91,13 +91,14 @@ tweet: |-
     <div class="gov-who"><small>④</small>停電への備え</div>
     <div class="gov-text">スマホと<a href="/posts/mobile-battery-fire-warning/">モバイルバッテリー</a>を充電しておこう🔋⚡ 懐中電灯もすぐ出せる場所に</div>
   </div>
-  <!-- AFFI: モバイルバッテリー -->
   <div class="gov-row">
     <div class="gov-who"><small>⑤</small><a href="/posts/bousai-kishou-jouhou-rinewal-2026/">キキクル</a>チェック</div>
     <div class="gov-text">危険度を📱🗺️ こまめに確認して、レベル4が出たら避難が鉄則だよ</div>
   </div>
   <div class="gov-conclusion">→ <strong>今夜のうちに全部済ませておく</strong>のが一番安心💪</div>
 </div>
+
+{{< affi name="Anker PowerCore Fusion 10000（9700mAh 20W PD・コンセント一体型／PSE技術基準適合）" image="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/tmb/a1/a1623_normal.jpg" rakuten_url="https://item.rakuten.co.jp/anker/a1623/" desc="コンセント一体型だから、停電前は充電器・停電後はモバイルバッテリーとして使えるやつ🔋" >}}
 
 ## 台風で一番危ないのは「油断」⚠️
 

@@ -172,7 +172,7 @@ tweet: |-
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>🔨</small>④脱出ハンマーを車に</div>
-    <div class="gov-text">緊急脱出用ハンマーを車に常備しておく<!-- AFFI: 緊急脱出ハンマー --></div>
+    <div class="gov-text">緊急脱出用ハンマーを車に常備しておく</div>
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>⛰️</small>⑤がけ近くは早めの避難</div>
@@ -180,6 +180,8 @@ tweet: |-
   </div>
   <div class="gov-conclusion">→ <strong>「キキクル確認」「レベル4で避難」「無理しない」</strong>の3つだけでも覚えて</div>
 </div>
+
+{{< affi name="車用 緊急脱出ハンマー レスキューハンマー 2WAY（シートベルトカッター付き）" image="https://thumbnail.image.rakuten.co.jp/@0_mall/laterukitchen/cabinet/13766475/imgrc0129859296.jpg" rakuten_url="https://item.rakuten.co.jp/laterukitchen/t1113/" desc="窓ガラスを割る＋シートベルトを切るが1本でできるタイプ。運転席から手が届く場所に置いといて🔨" >}}
 
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>

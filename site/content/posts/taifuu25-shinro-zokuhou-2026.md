@@ -149,9 +149,10 @@ tweet: |-
     <div class="gov-who"><small>🏠</small>家にいる人</div>
     <div class="gov-text">停電に備えてモバイルバッテリーを充電しておこう🔋（<a href="/posts/chiba-ooame-teiden-2026/">千葉の大雨で2万2千戸停電</a>したのは記憶に新しいよね）。水と食料の確保🍙💧、窓の補強・ベランダの片付け🪟も忘れずに</div>
   </div>
-  <!-- AFFI: モバイルバッテリー -->
   <div class="gov-conclusion">→ タイプ別に<strong>今すぐできる対策</strong>を進めておこう📱</div>
 </div>
+
+{{< affi name="Anker PowerCore Fusion 10000（9700mAh 20W PD・コンセント一体型／PSE技術基準適合）" image="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/tmb/a1/a1623_normal.jpg" rakuten_url="https://item.rakuten.co.jp/anker/a1623/" desc="コンセント一体型だから、停電前は充電器・停電後はモバイルバッテリーとして使えるやつ🔋" >}}
 
 危険度は<a href="/posts/bousai-kishou-jouhou-rinewal-2026/">キキクル</a>でこまめに確認してね。レベル4が出たら避難、が鉄則だよ📱🚨
 

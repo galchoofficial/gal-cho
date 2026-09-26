@@ -68,7 +68,6 @@ tweet: |-
   <div class="gov-conclusion">→ 海外からの注文が殺到して<strong>日本の茶葉が足りない</strong>🌍→🇯🇵💦</div>
 </div>
 
-<!-- AFFI: 抹茶 -->
 
 ## 茶葉が高くなると何が<span class="mk">困る</span>の？🍵💸
 
@@ -92,6 +91,8 @@ tweet: |-
   </div>
   <div class="gov-conclusion">→ 急須で淹れるお茶が<strong>高級品</strong>になっちゃう😱</div>
 </div>
+
+{{< affi name="宇治抹茶【100g 500g 1kg 5kg】" image="https://thumbnail.image.rakuten.co.jp/@0_mall/ocha-mizukami/cabinet/s_top/k0005.jpg" rakuten_url="https://item.rakuten.co.jp/ocha-mizukami/k0005/" desc="お店で飲むと高いけど、粉から点てれば1杯あたりはかなり安いのよ🍵" >}}
 
 つまり<strong>「日本人が普通のお茶を飲めなくなる」</strong>っていう、なかなかない皮肉が起きてるのよ😂🍵
 

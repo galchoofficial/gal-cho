@@ -118,7 +118,7 @@ tweet: |-
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>🔨</small>③ドアが開かなかったら窓を割る</div>
-    <div class="gov-text">緊急脱出用ハンマーを車に常備して。ヘッドレストの金属部分で割る方法もある<!-- AFFI: 緊急脱出ハンマー --></div>
+    <div class="gov-text">緊急脱出用ハンマーを車に常備して。ヘッドレストの金属部分で割る方法もある</div>
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>✂️</small>④シートベルトカッター</div>
@@ -130,6 +130,8 @@ tweet: |-
   </div>
   <div class="gov-conclusion">→ <strong>車は買い直せる。命は買い直せない</strong>💀✨</div>
 </div>
+
+{{< affi name="車用 緊急脱出ハンマー レスキューハンマー 2WAY（シートベルトカッター付き）" image="https://thumbnail.image.rakuten.co.jp/@0_mall/laterukitchen/cabinet/13766475/imgrc0129859296.jpg" rakuten_url="https://item.rakuten.co.jp/laterukitchen/t1113/" desc="窓ガラスを割る＋シートベルトを切るが1本でできるタイプ。運転席から手が届く場所に置いといて🔨" >}}
 
 今すぐできる備えはこれだけ📱💪
 
