@@ -73,6 +73,7 @@ Step8 (Agent)  tweets-schedule.md 更新
 - **同じフェーズで日常ツイート（リンクなし）も並列で作る**（記事URLに依存しないので待つ必要なし）
 - **同じフェーズで既存記事の加筆も1体ぶん走らせる**（→ 下の「加筆枠」）
 - 朝7:00 / 昼11:00 / 夕17:00 の publishDate で予約配置
+- **その場で今すぐ公開する記事だけは publishDate を「現在時刻マイナス5分」にする**（→ Step4 の「即時公開のときは publishDate を…」）
 
 ### 参照スキル
 - [[galcho-article-format]] — front matter + HTML パーツの整形
@@ -142,6 +143,30 @@ git push
 - **push 完了で記事 slug = URL が確定**する
 - これより前にツイート文（記事URL付き）を確定させると 404 リスク
 
+### ★即時公開のときは publishDate を「現在時刻マイナス5分」にする（2026-09-27の事故）
+
+定時枠（7:00/11:00/17:00）じゃなく**その場で今すぐ公開する記事**は、publishDate を
+**必ず現在時刻より5分前**にする。「ちょうど今」はダメ。
+
+- **事故内容（2026-09-27）**：publishDate を「ちょうど今」（23:25）にして push したら、Cloudflare のビルドが走り始めた時点ではまだ publishDate が数十秒**先**だったため、`buildFuture = false` の設定で**記事が丸ごとビルドから除外された**。ビルド自体は成功しているのにサイトに記事が出ない、という分かりにくい形で**15分ロス**
+- **原因**：push → Cloudflare Pages のビルド開始までに数十秒〜1分かかる。その間に publishDate を追い越していないと「未来の記事」と判定される
+- **対策**：現在の JST を **PowerShell の `Get-Date` で確認**してから、そこから5分引いた時刻を publishDate にする（**Bash の `date` は UTC なので使わない**）
+- **症状が出たときの直し方**：publishDate が既に過去になっていることを確認したうえで、空コミットを push して再ビルドをかける
+
+```powershell
+Get-Date                      # 現在のJSTを確認（Bashのdateは使わない）
+git commit --allow-empty -m "chore: rebuild"
+git push
+```
+
+- **確認方法**：200 が返るまで待つ。404 のままならビルドに入っていない
+
+```bash
+curl -s -o /dev/null -w '%{http_code}' https://gal-cho.com/posts/{slug}/
+```
+
+- なお**定時枠（朝7:00 / 昼11:00 / 夕17:00）の予約公開ではこの問題は起きない**（Workers Cron が時刻を過ぎた後にリビルドをかけるため、ビルド時点で publishDate は必ず過去）
+
 ## 📝 Step5｜プロモツイート文生成
 
 - **記事 push 完了後**に作る（URL確定済み）
@@ -160,6 +185,7 @@ git push
 - Cloudflare Pages リビルド1〜2分
 - リビルド完了後に URL がライブになる
 - **未公開記事をプロモするとリプの URL が 404** → 必ず公開後
+- 定時枠はこの流れなので publishDate の追い越し事故は起きない。**即時公開だけ別扱い**（→ Step4 の「即時公開のときは publishDate を…」）
 
 ### キャッチアップ方式（時短）
 - セッション時点で**既に公開済み**の記事を1パスでまとめて投稿
