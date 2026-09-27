@@ -129,11 +129,15 @@ summaryLength = 70
     codeFences = true
 
 # 出力フォーマット
+# term（個別タグ・個別カテゴリ）の RSS は出力しない。
+#   理由: タグが868本あり /tags/○○/index.xml が同数生成される。SEO価値ゼロで
+#   Search Console の「クロール済み - インデックス未登録」を515件発生させていた。
+#   サイト全体（/index.xml）と /posts/index.xml は従来どおり残す。
 [outputs]
   home = ['HTML', 'RSS']
   section = ['HTML', 'RSS']
   taxonomy = ['HTML', 'RSS']
-  term = ['HTML', 'RSS']
+  term = ['HTML']
 
 # メインメニュー
 [menu]

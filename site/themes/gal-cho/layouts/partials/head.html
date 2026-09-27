@@ -91,8 +91,16 @@
 {{ partial "ga4.html" . }}
 
 {{- /* ===== Google AdSense (Publisher ID 設定時のみ出力) ===== */ -}}
-{{- with site.Params.googleAdsenseClient }}
+{{- /* ポリシー系の固定ページ（運営者情報 / プライバシーポリシー / お問い合わせ / */ -}}
+{{- /* 編集方針 = layout: "static-page"）と 404 ページ、および robotsNoIndex: true の */ -}}
+{{- /* 内部用ページ（/tweets/ など）には広告タグを出さない。AdSense のポリシー上、 */ -}}
+{{- /* コンテンツの無いユーティリティページや検索に出ないページに広告を載せない */ -}}
+{{- /* ほうが審査に通りやすいため。同じ判定を adsense-unit.html 側にも持たせている。 */ -}}
+{{- $noAds := or (eq .Kind "404") (eq .Layout "static-page") (eq .Params.robotsNoIndex true) -}}
+{{- if not $noAds }}
+  {{- with site.Params.googleAdsenseClient }}
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}" crossorigin="anonymous"></script>
+  {{- end }}
 {{- end }}
 
 {{- /* ===== Favicon (Google検索結果・Apple端末・Android端末すべて対応) ===== */ -}}

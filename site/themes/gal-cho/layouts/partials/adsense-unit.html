@@ -4,10 +4,24 @@
 
   AdSense承認＆広告ユニット作成後に slot ID を指定して使う。
   hugo.toml の googleAdsenseClient が空のときは何も出力しない（審査前の安全策）
+
+  さらに、ポリシー系の固定ページ（layout: "static-page" = 運営者情報 / プライバシー
+  ポリシー / お問い合わせ / 編集方針）と 404 ページ、robotsNoIndex: true の内部用
+  ページ（/tweets/ など）では広告ユニットを出力しない。
+  head.html 側の AdSense スクリプト読み込み条件と揃えている。
+  判定対象のページはグローバルの `page` を使うが、dict に "page" を渡せば上書きできる。
 */ -}}
-{{- with site.Params.googleAdsenseClient -}}
 {{- $slot := .slot | default "" -}}
 {{- $format := .format | default "auto" -}}
+{{- $ctx := .page | default page -}}
+{{- $noAds := false -}}
+{{- with $ctx -}}
+  {{- if or (eq .Kind "404") (eq .Layout "static-page") (eq .Params.robotsNoIndex true) -}}
+    {{- $noAds = true -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $noAds -}}
+{{- with site.Params.googleAdsenseClient -}}
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="{{ . }}"
@@ -17,4 +31,5 @@
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+{{- end -}}
 {{- end -}}

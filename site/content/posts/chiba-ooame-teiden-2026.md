@@ -74,6 +74,35 @@ tweet: |-
   </div>
 </div>
 
+## 千葉の停電といえば<span class="mk">2019年</span>の記憶📜
+
+千葉で停電って聞くと、どうしても<strong>2019年9月の台風15号</strong>を思い出す人が多いと思うの😢
+
+あのとき東京電力の管内では<strong>最大で約93万戸</strong>が停電して、<strong>千葉県内だけで最大約64万戸</strong>が電気を失ったの⚡　しかも問題は規模だけじゃなくて<strong>復旧までの長さ</strong>だった。倒木や土砂崩れで電柱の現場にたどり着けず、停電が1万戸を下回ったのが発生から10日以上たった9月21日、大規模な障害の復旧完了が9月24日という記録が残ってる📋
+
+さらに停電の影響で<strong>約14万戸で断水</strong>も起きたの。水道のポンプって電気で動いてるから、<strong>停電はそのまま断水につながる</strong>のよ💧
+
+<div class="gov-block">
+  <h3>📜 2019年 台風15号の停電から学べること</h3>
+  <div class="gov-row">
+    <div class="gov-who"><small>⚡</small>規模</div>
+    <div class="gov-text">東電管内で最大約93万戸、千葉県内で<strong>最大約64万戸</strong></div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>⏳</small>長さ</div>
+    <div class="gov-text">1万戸未満になるまで<strong>10日以上</strong>。「1日待てば戻る」とは限らない</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>💧</small>連鎖</div>
+    <div class="gov-text">停電→水道ポンプ停止→<strong>約14万戸が断水</strong>。通信障害も広域で発生</div>
+  </div>
+  <div class="gov-conclusion">→ 今回の約2万2千戸と比べたら規模は違うけど、<strong>「停電は数日続くことがある」という前提で備える</strong>のが千葉で得た教訓なのよ😢</div>
+</div>
+
+{{< hukidashi who="kasumi" >}}2019年の台風第15号においては、倒木や土砂崩れにより復旧作業用の車両が現場に到達できない事例が多数生じ、結果として停電の長期化を招いたものと整理されております。{{< /hukidashi >}}
+
+{{< hukidashi who="aashi" >}}「直しに行けない」って発想がなかったのよあーし…。電気って直す人が現場に行けないと戻らないんだね⚡😨{{< /hukidashi >}}
+
 ## なんで停電するの？⚡💀
 
 <div class="gov-block">
@@ -118,6 +147,58 @@ tweet: |-
   </div>
 </div>
 
+## 停電が<span class="mk">直った後</span>にも危険がある🔥
+
+これ知らない人めっちゃ多いんだけど、<strong>停電が復旧する瞬間が危ない</strong>の。
+
+<strong>「通電火災」</strong>って言って、停電中に倒れたままの電気ストーブや、水に濡れたコンセントや家電に<strong>いきなり電気が流れて火が出る</strong>現象なのよ🔥　しかも家を空けて避難してる間に復旧すると、誰もいない家で火が出ることになる💀
+
+<div class="gov-block">
+  <h3>🔥 通電火災を防ぐ3つの手順</h3>
+  <div class="gov-row">
+    <div class="gov-who"><small>🔌</small>①プラグを抜く</div>
+    <div class="gov-text">停電に気づいたら<strong>使ってた家電のプラグを抜く</strong>。特に暖房器具・アイロン・ドライヤー</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>🎚️</small>②ブレーカーを落とす</div>
+    <div class="gov-text">家を離れて避難するときは<strong>分電盤のブレーカーをオフに</strong>。これが一番確実</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>👀</small>③戻ったら確認</div>
+    <div class="gov-text">復旧後にブレーカーを上げるときは<strong>浸水した家電・焦げた匂い・濡れたコンセントがないか見てから</strong></div>
+  </div>
+  <div class="gov-conclusion">→ 濡れた家電は<strong>乾いたように見えても中が濡れてる</strong>ことがある。不安なら使わずにメーカーか販売店に相談して🙏</div>
+</div>
+
+## 停電中は<span class="mk">情報</span>をどう取る？📻
+
+スマホの電池は有限。だからこそ「どこを見るか」を先に決めとくと電池を節約できるの🔋
+
+<div class="gov-block">
+  <h3>📻 停電中の情報源</h3>
+  <div class="gov-row">
+    <div class="gov-who"><small>⚡</small>電力会社の停電情報</div>
+    <div class="gov-text">電力会社が<strong>停電エリアと復旧見込み</strong>を公開してる。まずここ</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>🏛️</small>自治体の公式</div>
+    <div class="gov-text">避難所の開設状況・給水所の場所は<strong>市区町村の発表</strong>が一番正確</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>📻</small>ラジオ</div>
+    <div class="gov-text">電池式ラジオは<strong>スマホの電池を使わずに情報が入る</strong>唯一の手段。コミュニティFMは地元情報が濃い</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>🔋</small>省電力設定</div>
+    <div class="gov-text">画面の明るさを下げる・低電力モードにする。<strong>動画とSNSの無限スクロールが一番電池を食う</strong></div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>⚠️</small>デマに注意</div>
+    <div class="gov-text">災害時は不正確な情報が一気に広がる。<strong>公式が言ってるかを1回だけ確かめる</strong>癖をつけて</div>
+  </div>
+  <div class="gov-conclusion">→ 車がある人は<strong>車のシガーソケットで充電できる</strong>。ただし<strong>ガレージや水のあるところでエンジンをかけっぱなしにしない</strong>で（一酸化炭素中毒の危険）🚗💀</div>
+</div>
+
 ## 今すぐやること📱💪
 
 <div class="gov-block">
@@ -147,6 +228,35 @@ tweet: |-
     <div class="gov-text">冠水路は水圧でドアが開かなくなる、<strong>30cmの浸水でエンジン停止</strong></div>
   </div>
 </div>
+
+## 真夏の停電と<span class="mk">熱中症</span>のヤバい関係🌡️
+
+今回いちばん怖いのがここ。<strong>8月の停電＝エアコンが使えない</strong>ってことなのよ🌡️💀
+
+熱中症って「外で運動してる人がなるもの」ってイメージあるけど、実際は<strong>住宅の中で起きるケースがかなりの割合を占める</strong>とされてるの😨　特にお年寄りは暑さを感じにくくなってることがあって、<strong>本人が「暑くない」と思っているうちに危険な状態になる</strong>のが怖いところ。
+
+<div class="gov-block">
+  <h3>🌡️ エアコンが使えないときの暑さ対策</h3>
+  <div class="gov-row">
+    <div class="gov-who"><small>🏠</small>場所を変える</div>
+    <div class="gov-text">日が当たらない北側の部屋・1階へ移動。<strong>電気が生きてる公共施設や商業施設に「避暑」に行く</strong>のも立派な対策</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>💧</small>濡れタオル</div>
+    <div class="gov-text">首・脇の下・脚の付け根を冷やす。<strong>太い血管を冷やすと効率がいい</strong></div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>🥤</small>塩分も一緒に</div>
+    <div class="gov-text">水だけだと体の塩分が薄まる。<strong>経口補水液・スポーツドリンク・梅干し・味噌汁</strong></div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>📞</small>声をかけ合う</div>
+    <div class="gov-text">一人暮らしのお年寄りや小さい子のいる家に<strong>連絡を入れる</strong>。これがいちばん人の命を救う</div>
+  </div>
+  <div class="gov-conclusion">→ ちなみに国は夏の<a href="/posts/denkidai-shien-2026/">電気代の支援</a>もやってる。<strong>電気が戻ったら遠慮せずエアコンを使って</strong>ね💨</div>
+</div>
+
+そして避難のタイミングの話も何回でも言うわ。<strong>レベル3で高齢者等避難、レベル4で全員避難、レベル5はもう手遅れかもしれない段階</strong>🚨　<a href="/posts/typhoon6-level5-wakayama-2026/">6月に和歌山でレベル5が出たときの記事</a>でも書いたけど、レベル5は必ず出るとは限らないのよ。待っちゃダメ。
 
 ## ぶっちゃけ<span class="mk">ポイント</span>💎
 

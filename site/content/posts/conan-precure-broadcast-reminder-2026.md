@@ -56,6 +56,58 @@ tweet: |-
   <div class="gov-conclusion">→ <strong>2週連続で2作品をハシゴ</strong>できる神スケジュール🔥</div>
 </div>
 
+## 初めて見る人向け：<span class="mk">コナン</span>ってどんな作品？🕵️
+
+コラボ回って「片方しか知らない」人が一番多いのよね。だから両方ざっくり説明しとくね📋
+
+<div class="gov-block">
+  <h3>🕵️ 名探偵コナンの基礎情報</h3>
+  <div class="gov-row">
+    <div class="gov-who"><small>📖</small>原作</div>
+    <div class="gov-text">青山剛昌さんの漫画。<strong>1994年から小学館「週刊少年サンデー」で連載</strong></div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>📺</small>アニメ</div>
+    <div class="gov-text"><strong>1996年1月に放送開始</strong>。読売テレビ・日本テレビ系で、制作はトムス・エンタテインメント</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>🧒</small>あらすじ</div>
+    <div class="gov-text">高校生探偵の工藤新一が謎の組織に薬を飲まされて子どもの姿になり、<strong>「江戸川コナン」として事件を解きながら元の体を探す</strong>話</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>🎬</small>劇場版</div>
+    <div class="gov-text">毎年春公開が恒例。<a href="/posts/konan-100oku-2026/">4作連続で興行収入100億円を突破</a>してる、もはや国民的行事枠🍿</div>
+  </div>
+  <div class="gov-conclusion">→ <strong>連載30年以上、アニメも30年近く続いてる</strong>お化けコンテンツ。今回コラボするのはそのコナンなの😳</div>
+</div>
+
+## プリキュアの<span class="mk">基礎情報</span>もいくね✨
+
+<div class="gov-block">
+  <h3>✨ プリキュアシリーズの基礎情報</h3>
+  <div class="gov-row">
+    <div class="gov-who"><small>📺</small>スタート</div>
+    <div class="gov-text"><strong>2004年2月に『ふたりはプリキュア』が放送開始</strong>。ABC・テレビ朝日系の日曜あさ8時30分枠</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>🎬</small>制作</div>
+    <div class="gov-text">東映アニメーション。<strong>漫画原作ではなくアニメから生まれたシリーズ</strong>で、漫画版は講談社「なかよし」に掲載されてきた</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>🔄</small>シリーズの特徴</div>
+    <div class="gov-text"><strong>1年ごとに主人公もテーマもまるごと変わる</strong>。だから「今年のプリキュア」という言い方をするの</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>👊</small>作風</div>
+    <div class="gov-text">女の子が<strong>自分の手で戦う</strong>のが当時としては画期的だった。今は大人のファンもめちゃくちゃ多い</div>
+  </div>
+  <div class="gov-conclusion">→ 20年以上続いてるのに<strong>毎年リセットされる</strong>構造だからこそ、今年の「名探偵」テーマが生まれたのよ🔍</div>
+</div>
+
+{{< hukidashi who="kasumi" >}}プリキュアシリーズは2004年より朝日放送テレビおよび東映アニメーション等の制作により継続して放送されており、作品ごとに登場人物および世界観を刷新する形式が取られております。{{< /hukidashi >}}
+
+{{< hukidashi who="aashi" >}}毎年ゼロから作り直してるのに20年以上続いてるって、それだけでもう偉業じゃない？？✨　しかも今年が「名探偵」テーマって奇跡すぎる🔍{{< /hukidashi >}}
+
 ## 改めて<span class="mk">何がすごい</span>の？🤔
 
 前の記事でも書いたけど改めて👇
@@ -72,10 +124,37 @@ tweet: |-
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>📖</small>出版社</div>
-    <div class="gov-text">コナン＝小学館 vs プリキュア＝集英社</div>
+    <div class="gov-text">コナン＝小学館（週刊少年サンデー） vs プリキュア＝講談社（コミカライズは「なかよし」）</div>
   </div>
   <div class="gov-conclusion">→ この<strong>3つの壁を全部超えた</strong>歴史的コラボ。テレビ業界の常識をぶち壊した一回😳🔥</div>
 </div>
+
+### なんで局をまたぐコラボが<span class="mk">難しい</span>の？🚧
+
+「面白そうなんだからサクッとやればいいじゃん」って思うよね。でもアニメのコラボって<strong>お金と権利の話が絡む</strong>から、そんな簡単じゃないのよ💸
+
+<div class="gov-block">
+  <h3>🚧 コラボの壁になるもの</h3>
+  <div class="gov-row">
+    <div class="gov-who"><small>🏢</small>製作委員会</div>
+    <div class="gov-text">アニメは複数の会社がお金を出し合って作るのが一般的。<strong>キャラを他作品に出すには関係者全員の合意が必要</strong></div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>©️</small>版権管理</div>
+    <div class="gov-text">グッズや配信の権利がどう扱われるかまで整理しないと動けない</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>📺</small>放送枠と系列</div>
+    <div class="gov-text">系列が違うと<strong>宣伝の出し方や番組の並べ方まで調整が必要</strong>になる</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>📅</small>スケジュール</div>
+    <div class="gov-text">アニメは数か月前から作ってる。<strong>2作品の制作スケジュールを噛み合わせる</strong>のが物理的に大変</div>
+  </div>
+  <div class="gov-conclusion">→ だから「1年前から打診してた」っていうエピソードが効いてくるのよ。<strong>それくらい準備が必要</strong>ってこと😳</div>
+</div>
+
+企業コラボですら調整が大変なのに、それが作品同士だともっと重い。ちなみに<a href="/posts/collab-cafe-may-2026/">5月のコラボカフェが渋滞してる話</a>を書いたときも思ったけど、<strong>今って「コラボ」が推し活の中心にある時代</strong>なのよね☕✨
 
 ## 見逃さないために<span class="mk">準備</span>📱
 
@@ -100,6 +179,39 @@ tweet: |-
   <div class="gov-conclusion">→ 起きれるかが最大の敵🛌</div>
 </div>
 
+## コラボ回を<span class="mk">2倍</span>楽しむ見どころ👀
+
+ただ見るだけでも最高なんだけど、こういうところに注目するともっと面白いよ🔍
+
+<div class="gov-block">
+  <h3>👀 注目してほしいポイント</h3>
+  <div class="gov-row">
+    <div class="gov-who"><small>🎨</small>作画のなじませ方</div>
+    <div class="gov-text">キャラのデザインは<strong>お邪魔する側が相手の絵柄に寄せる</strong>のが定番。コナンがプリキュアの線で描かれるとどうなるか要チェック</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>🎵</small>音楽の使い方</div>
+    <div class="gov-text">相手作品のBGMやモチーフを1フレーズだけ混ぜてくることがある。<strong>耳でニヤッとできるポイント</strong></div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>🗣️</small>推理のしゃべり方</div>
+    <div class="gov-text">コナンの推理パートは独特のテンポがある。<strong>それをプリキュア側がどう受けるか</strong>が見どころ</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>🍿</small>小ネタ探し</div>
+    <div class="gov-text">背景の小物・セリフの引用・並び方に<strong>ファンだけ気づくネタ</strong>が仕込まれがち</div>
+  </div>
+  <div class="gov-conclusion">→ 2回目に見ると気づくやつが必ずあるから、<strong>録画は絶対して</strong>ね📺</div>
+</div>
+
+### 「片方しか知らない」人へ📢
+
+「プリキュアは見たことないけどコナンは好き」「その逆」って人、めっちゃいると思うの。でも<strong>コラボ回って一番の入口</strong>なのよ😊
+
+だって<strong>どっちの作品も「初めて見る人が置いていかれないように」作るのが前提</strong>だから。長く続いてるシリーズを新規で見始めるのは勇気がいるけど、コラボ回はその壁がいちばん低い日なの✨
+
+しかも2週にわたって<strong>お互いの世界にお邪魔する形</strong>だから、<strong>1回でどっちの空気も味わえる</strong>のよ。こんな都合のいい入口ある？？🕵️💕
+
 ## ぶっちゃけ<span class="mk">ポイント</span>💎
 
 <div class="insight">
@@ -108,5 +220,7 @@ tweet: |-
   <p>来年のプリキュアは別のテーマになるから、コナンとコラボできるのは<strong>今年だけ</strong>。本当の意味で<em class="kw">「今しか見れない」</em>エピソードよ✨</p>
   <p>前の記事で書いたけど、プリキュア側から1年前にコナン側にコラボを打診してたっていうエピソードがエモすぎるのよ😭　<strong>「ファンのために壁を越えよう」</strong>って判断してくれた全関係者に感謝💕</p>
 </div>
+
+みんなはコナン派？プリキュア派？それとも両方いける勢？教えて〜📱✨
 
 明後日の朝、ギャル庁民みんなで同時視聴しよ🕵️🤝💕 リアタイでXに感想呟くからフォローしてね〜📱✨
