@@ -1,14 +1,17 @@
 {{- /*
   吹き出し対話 shortcode（キャラ会話・左右対談形式・フキダシ風）
   使い方: {{< hukidashi who="aashi" >}}セリフ{{< /hukidashi >}}
-    who = aashi（あーし・右）/ kasumi（霞ちゃん・お役所役・左）/ kouhai（後輩・左）
+    who = aashi（あーし・右）/ kasumi（霞ちゃん・お役所役・左）
     name="〇〇" で表示名を上書き可
+  ★kouhai（後輩）は廃止（2026-09-12）。キャラは aashi / kasumi の2人だけ。
+  ★未定義の who を渡すと黙って aashi にフォールバックする実装なので、
+    誤って who="kouhai" と書いてもエラーにならず“あーし”として表示される。
+    表示が意図と違う（あーしのセリフが増えている）ときは who の綴りを疑うこと。
 */ -}}
 {{- $who := .Get "who" | default "aashi" -}}
 {{- $map := dict
     "aashi"  (dict "icon" "あ" "name" "あーし" "cls" "aashi" "side" "right")
     "kasumi" (dict "icon" "霞" "name" "<ruby>霞<rt>かすみ</rt></ruby>ちゃん" "cls" "kasumi" "side" "left")
-    "kouhai" (dict "icon" "後" "name" "後輩" "cls" "kouhai" "side" "left")
 -}}
 {{- $m := index $map $who -}}
 {{- if not $m -}}{{- $m = index $map "aashi" -}}{{- end -}}
