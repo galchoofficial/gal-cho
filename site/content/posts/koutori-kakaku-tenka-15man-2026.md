@@ -106,7 +106,7 @@ tweet: |-
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>🛢️</small>ナフサ不足</div>
-    <div class="gov-text">前に<a href="/posts/naphtha-fusoku-2026/">記事114</a>で「9月に3割不足」って書いたやつ😱</div>
+    <div class="gov-text">前に<a href="/posts/naphtha-fusoku-2026/">ナフサ不足の記事</a>で「9月に3割不足」って書いたやつ😱</div>
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>💀</small>中小企業直撃</div>

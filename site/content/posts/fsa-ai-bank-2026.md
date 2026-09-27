@@ -1,6 +1,7 @@
 ---
 title: "金融庁がAI作って銀行にタダで配るってよ🤖✨ お役所がまさかのAI開発デビュー！"
 date: 2026-05-07T12:00:00+09:00
+publishDate: 2026-05-07T12:00:00+09:00
 draft: false
 categories:
   - omo

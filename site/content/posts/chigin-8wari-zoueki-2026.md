@@ -89,7 +89,7 @@ tweet: |-
 
 特に貸出利息の伸びが大きくて、日銀の利上げ（政策金利1.0%）が直接効いてるの💴🔥
 
-前に<a href="/posts/nichigin-1pct-rishage-2026/">記事121</a>で書いた通り、政策金利が1.0%になったのは<strong>31年ぶり</strong>。長かった超低金利時代が終わって、<strong>銀行が「本業」で稼げる時代が戻ってきた</strong>のよ🏦✨
+前に<a href="/posts/nichigin-1pct-rishage-2026/">日銀の政策金利1.0%決定の記事</a>で書いた通り、政策金利が1.0%になったのは<strong>31年ぶり</strong>。長かった超低金利時代が終わって、<strong>銀行が「本業」で稼げる時代が戻ってきた</strong>のよ🏦✨
 
 ## でも喜べない面もある😥
 
@@ -99,7 +99,7 @@ tweet: |-
   <h3>😥 利上げの負の側面</h3>
   <div class="gov-row">
     <div class="gov-who"><small>🏠</small>住宅ローン変動金利</div>
-    <div class="gov-text">返済額が増える（<a href="/posts/nichigin-1pct-rishage-2026/">記事121参照</a>）</div>
+    <div class="gov-text">返済額が増える（<a href="/posts/nichigin-1pct-rishage-2026/">1.0%利上げの記事参照</a>）</div>
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>💼</small>企業の借入コスト</div>
@@ -129,7 +129,7 @@ tweet: |-
     <li>借りてる人の負担が増える💸</li>
     <li>銀行だけが儲かって、企業や個人は苦しい構図😤</li>
   </ul>
-  <p>前に<a href="/posts/yokin-kinri-04-2026/">記事122</a>で「銀行に預ける意味が戻ってきた」って書いたけど、<em class="kw">利上げは「誰かの得が誰かの損」になる</em>のよ⚖️</p>
+  <p>前に<a href="/posts/yokin-kinri-04-2026/">普通預金金利0.4%の記事</a>で「銀行に預ける意味が戻ってきた」って書いたけど、<em class="kw">利上げは「誰かの得が誰かの損」になる</em>のよ⚖️</p>
   <p>大事なのは<strong>「自分がどっち側にいるか」を知ること</strong>。ローンを借りてる人は返済額を確認、預金がある人は金利をチェック📋✨</p>
 </div>
 

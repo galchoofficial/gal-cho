@@ -1,6 +1,7 @@
 ---
 title: "高校の授業料タダになるやつ、ちゃんと4月から始まった？？問題🏫"
 date: 2026-05-03T11:30:00+09:00
+publishDate: 2026-05-03T11:30:00+09:00
 draft: false
 categories:
   - tame

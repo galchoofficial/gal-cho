@@ -1,6 +1,7 @@
 ---
 title: "制服ってオフの日も着なきゃダメなの？問題💅"
 date: 2026-05-03T09:00:00+09:00
+publishDate: 2026-05-03T09:00:00+09:00
 draft: false
 categories:
   - omo

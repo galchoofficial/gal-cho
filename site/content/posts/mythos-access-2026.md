@@ -74,23 +74,23 @@ tweet: |-
 <div class="gov-block">
   <h3>📚 ミュトスシリーズ全5本</h3>
   <div class="gov-row">
-    <div class="gov-who"><small>①</small>4月（記事⑯）</div>
+    <div class="gov-who"><small>①</small>4月</div>
     <div class="gov-text"><a href="/posts/mythos-ai-cyber-jouhou-2026/">「今そこにある危機」グラスウィング設立</a>🦋</div>
   </div>
   <div class="gov-row">
-    <div class="gov-who"><small>②</small>5月（記事㊺）</div>
+    <div class="gov-who"><small>②</small>5月</div>
     <div class="gov-text"><a href="/posts/fsa-ai-bank-2026/">セキュリティ会社問い合わせ殺到</a>📞</div>
   </div>
   <div class="gov-row">
-    <div class="gov-who"><small>③</small>6月（記事89）</div>
+    <div class="gov-who"><small>③</small>6月</div>
     <div class="gov-text"><a href="/posts/cyber-active-defense-law-2026/">サイバー対処能力強化法（殴り返せる法律）</a>⚔️</div>
   </div>
   <div class="gov-row">
-    <div class="gov-who"><small>④</small>6月（記事94）</div>
+    <div class="gov-who"><small>④</small>6月</div>
     <div class="gov-text"><a href="/posts/mythos-toha-2026/">時事通信「世界に衝撃」Q&A整理</a>📋</div>
   </div>
   <div class="gov-row">
-    <div class="gov-who"><small>🆕</small>今日（記事110）</div>
+    <div class="gov-who"><small>🆕</small>今日</div>
     <div class="gov-text"><strong>「日本政府や銀行にアクセス権がある」と判明</strong>💀</div>
   </div>
   <div class="gov-conclusion">→ <strong>回を追うごとに深刻化</strong>😱</div>
@@ -151,7 +151,7 @@ tweet: |-
 <div class="insight">
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>正直ね、ここまで来ると<strong>「ミュトスとの戦いは長期戦になる」</strong>って覚悟した方がいいと思うのよ🤔</p>
-  <p>記事⑯で片山大臣が<em class="kw">「今回ぐらいで驚いていたらダメという業界になるかもしれない」</em>って言ってたの。あの時は「まさか」って思ったけど、<strong>5回目の続報でその言葉が現実になってる</strong>の😨</p>
+  <p>4月の1本目の記事で片山大臣が<em class="kw">「今回ぐらいで驚いていたらダメという業界になるかもしれない」</em>って言ってたの。あの時は「まさか」って思ったけど、<strong>5回目の続報でその言葉が現実になってる</strong>の😨</p>
   <p><a href="/posts/cyber-active-defense-law-2026/">サイバー対処能力強化法（殴り返せる法律）</a>、<a href="/posts/kokka-jouhou-kyoku-houan-seiritsu-2026/">国家情報局（情報の司令塔）</a>、プロジェクト・グラスウィング（官民連携）…ギャル庁で追ってきた法案や制度が全部<strong>「ミュトス対策」として繋がってる</strong>のよ🤖🛡️</p>
 </div>
 

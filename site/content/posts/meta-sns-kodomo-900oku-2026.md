@@ -73,7 +73,7 @@ Metaが運営するInstagramなどで👇
 
 ## 日本のSNS規制と<span class="mk">繋がる</span>📱🇯🇵
 
-前に<a href="/posts/sns-age-verification-2026/">記事105</a>で書いた通り、日本でもSNSの年齢確認厳格化が議論されてるの👇
+前に<a href="/posts/sns-age-verification-2026/">SNSの年齢確認の記事</a>で書いた通り、日本でもSNSの年齢確認厳格化が議論されてるの👇
 
 <div class="gov-block">
   <h3>📱 各国のSNS規制動向</h3>

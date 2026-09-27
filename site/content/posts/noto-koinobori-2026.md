@@ -1,6 +1,7 @@
 ---
 title: "能登の鯉のぼり200匹が復活してる話🎏✨"
 date: 2026-05-03T07:30:00+09:00
+publishDate: 2026-05-03T07:30:00+09:00
 draft: false
 categories:
   - emo

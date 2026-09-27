@@ -1,6 +1,7 @@
 ---
 title: "こどもの日なのに…日本の子ども45年連続で減ってるってまじ？？👶📉"
 date: 2026-05-05T07:00:00+09:00
+publishDate: 2026-05-05T07:00:00+09:00
 draft: false
 categories:
   - tame

@@ -1,6 +1,7 @@
 ---
 title: "VTUBER EXPO 2026 が秋葉原で開催中🎤 GW後半は推しと触れ合える2日間✨"
 date: 2026-05-03T17:00:00+09:00
+publishDate: 2026-05-03T17:00:00+09:00
 draft: false
 categories:
   - anime

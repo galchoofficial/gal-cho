@@ -4,7 +4,22 @@
 <meta name="theme-color" content="#faf8f2">
 
 {{- /* ===== Title ===== */ -}}
+{{- /* 一覧系ページ（セクション/タクソノミー/404）は Hugo 既定の英語タイトルが */ -}}
+{{- /* 出てしまうので、ここで日本語に差し替える。記事ページは .Title のまま。 */ -}}
 {{- $title := .Title -}}
+{{- if eq .Kind "404" -}}
+  {{- $title = "ページが見つかりません" -}}
+{{- else if eq .Kind "section" -}}
+  {{- if eq .Section "posts" -}}
+    {{- $title = "記事一覧" -}}
+  {{- end -}}
+{{- else if eq .Kind "taxonomy" -}}
+  {{- if eq .Data.Plural "categories" -}}
+    {{- $title = "カテゴリ一覧" -}}
+  {{- else if eq .Data.Plural "tags" -}}
+    {{- $title = "タグ一覧" -}}
+  {{- end -}}
+{{- end -}}
 {{- if .IsHome -}}
   <title>{{ site.Title }} - {{ site.Params.tagline }}</title>
 {{- else -}}
@@ -49,9 +64,17 @@
 {{- /* ===== Canonical ===== */ -}}
 <link rel="canonical" href="{{ .Permalink }}">
 
-{{- /* ===== robots / noindex (per-page setting) ===== */ -}}
+{{- /* ===== robots / noindex ===== */ -}}
+{{- /* 1) per-page setting: front matter robotsNoIndex: true → 完全に除外 */ -}}
+{{- /* 2) 薄いタグページ対策: 紐づく記事が2本以下のタグのタームページは noindex,follow */ -}}
+{{- /* （インデックスさせないがリンクは辿ってほしい）。カテゴリのタームページ・ */ -}}
+{{- /* 記事ページ・一覧ページには絶対に付けない。 */ -}}
 {{- if .Params.robotsNoIndex }}
 <meta name="robots" content="noindex,nofollow">
+{{- else if eq .Kind "term" }}
+  {{- if and (eq .Data.Plural "tags") (lt (len .Pages) 3) }}
+<meta name="robots" content="noindex,follow">
+  {{- end }}
 {{- end }}
 
 {{- /* ===== Google Search Console verification ===== */ -}}
@@ -115,8 +138,10 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": {{ $title | jsonify }},
-  "description": {{ $desc | jsonify }},
+  {{- /* jsonify の結果は既に JSON 文字列リテラル（クォート込み）なので、 */ -}}
+  {{- /* safeJS を通さないと ld+json 文脈の JS エスケーパが二重にクォートを付ける */ -}}
+  "headline": {{ $title | jsonify | safeJS }},
+  "description": {{ $desc | jsonify | safeJS }},
   "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
   "author": {

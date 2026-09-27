@@ -1,4 +1,6 @@
 {{ define "head" }}
+{{- /* パンくずの構造化データ（表示している .crumb と同じ階層） */ -}}
+{{ partial "breadcrumb-jsonld.html" . }}
 <style>
   /* Hero background variants per article */
   .art-hero-visual.bg-blue   { background: linear-gradient(135deg, #d4f0ff 0%, #b6e3ff 100%); }
@@ -63,8 +65,8 @@
     <div class="share">
       <span class="share-count">♡ {{ .Params.likes | default 0 }} · 共有 {{ .Params.shares | default 0 }}</span>
       <a class="share-btn" href="https://x.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank" rel="noopener" title="X">𝕏</a>
-      <a class="share-btn" href="#" title="リンクコピー">🔗</a>
-      <a class="share-btn" href="#" title="ブクマ">☆</a>
+      <a class="share-btn" href="{{ .Permalink }}" data-copy-link title="リンクをコピー">🔗</a>
+      <a class="share-btn" href="https://social-plugins.line.me/lineit/share?url={{ .Permalink | urlquery }}" target="_blank" rel="noopener" title="LINEで送る">💬</a>
     </div>
   </div>
 </div>
@@ -131,7 +133,7 @@
   <h3>この記事おもろかった？シェアしてね🫶</h3>
   <div class="row">
     <a href="https://x.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank" rel="noopener" class="bs-btn">𝕏 でシェア</a>
-    <a href="#" class="bs-btn purple">リンクをコピー</a>
+    <a href="{{ .Permalink }}" data-copy-link class="bs-btn purple">リンクをコピー</a>
   </div>
 </div>
 
@@ -148,6 +150,37 @@
       const h = document.documentElement;
       const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
       bar.style.width = pct + '%';
+    });
+  })();
+
+  /* ===== リンクコピー（href="#" のダミーリンクを実際に動くボタンにした） ===== */
+  (function() {
+    const btns = document.querySelectorAll('[data-copy-link]');
+    if (!btns.length) return;
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const url = btn.getAttribute('href') || location.href;
+        const done = function() {
+          const old = btn.textContent;
+          /* 丸い小ボタン（36px）は文字が入らないのでチェックだけ出す */
+          btn.textContent = btn.classList.contains('bs-btn') ? 'コピーした🫶' : '✓';
+          setTimeout(function() { btn.textContent = old; }, 1600);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(url).then(done).catch(function() {});
+        } else {
+          const ta = document.createElement('textarea');
+          ta.value = url;
+          ta.setAttribute('readonly', '');
+          ta.style.position = 'absolute';
+          ta.style.left = '-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          try { document.execCommand('copy'); done(); } catch (err) {}
+          document.body.removeChild(ta);
+        }
+      });
     });
   })();
 

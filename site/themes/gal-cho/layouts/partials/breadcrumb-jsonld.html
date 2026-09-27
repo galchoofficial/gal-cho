@@ -1,0 +1,52 @@
+{{- /* ====================================================
+   breadcrumb-jsonld.html
+   パンくず（BreadcrumbList）の構造化データを出力する。
+   画面上のパンくず（.crumb）と同じ階層を JSON-LD で機械可読にする。
+
+   使い方（<head> 内から呼ぶ）:
+     {{ partial "breadcrumb-jsonld.html" . }}
+
+   階層：
+     記事ページ   ホーム › カテゴリ名 › 記事タイトル
+     固定ページ   ホーム › ページタイトル
+   ※ head.html は別管理のため、各レイアウトの {{ define "head" }} から呼び出す
+==================================================== */ -}}
+{{- $items := slice (dict "name" "ホーム" "item" site.BaseURL) -}}
+
+{{- /* 記事ページ: 主カテゴリを2段目に挟む */ -}}
+{{- if and .IsPage (eq .Section "posts") -}}
+  {{- $cat := "" -}}
+  {{- with .Params.categories -}}{{- $cat = index . 0 -}}{{- end -}}
+  {{- if $cat -}}
+    {{- $catMeta := index site.Params.categoryMeta $cat -}}
+    {{- $catLabel := $cat -}}
+    {{- if $catMeta -}}{{- $catLabel = $catMeta.label -}}{{- end -}}
+    {{- $items = $items | append (dict "name" $catLabel "item" (printf "/categories/%s/" $cat | absURL)) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* 自分自身。セクション一覧は英語の自動タイトル（Posts）になるので日本語に置換 */ -}}
+{{- $selfName := .Title | plainify -}}
+{{- if eq .Kind "section" -}}
+  {{- with index (dict "posts" "記事一覧") .Section -}}{{- $selfName = . -}}{{- end -}}
+{{- end -}}
+{{- $items = $items | append (dict "name" $selfName "item" .Permalink) -}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {{- range $i, $it := $items }}{{ if $i }},{{ end }}
+    {
+      "@type": "ListItem",
+      {{- /* ld+json 内では Go テンプレートの JS エスケーパが効くので、
+             クォートの中にそのまま置く（jsonify を通すと二重クォートになる） */ -}}
+      "position": {{ add $i 1 }},
+      "name": "{{ $it.name }}",
+      "item": "{{ $it.item }}"
+    }
+    {{- end }}
+  ]
+}
+</script>

@@ -1,6 +1,7 @@
 ---
 title: "日本が舞台のレースゲーム『Forza Horizon 6』が5月19日に出るよ！！東京の再現度ヤバすぎん？？🏎️🗼✨"
 date: 2026-05-08T11:00:00+09:00
+publishDate: 2026-05-08T11:00:00+09:00
 draft: false
 categories:
   - anime

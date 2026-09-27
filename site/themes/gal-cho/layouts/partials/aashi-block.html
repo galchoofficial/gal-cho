@@ -6,8 +6,22 @@
 {{- $text := .text -}}
 {{- $by := .by | default "あーし（JK・17 / 渋谷系）" -}}
 
+{{- /* front matter の aashi は手書きの markdown（**強調** 等）を含むので */ -}}
+{{- /* markdownify して描画する。goldmark unsafe=true なので <mark> 等の生HTMLもそのまま通る。 */ -}}
+{{- /* 単一段落のときは goldmark が付ける外側の <p> を剥がして、 */ -}}
+{{- /* 既存の <p class="aashi-text"> の見た目（余白・行間）を一切変えない。 */ -}}
+{{- /* ただし CommonMark は「。**強調**あーし」のように ** が日本語の約物に隣接すると */ -}}
+{{- /* right-flanking 判定に落ちて閉じられず、生の ** が残る。手書き原稿を書き換えずに */ -}}
+{{- /* 救うため、markdownify の前に対になった **…** だけ <strong> に置換しておく。 */ -}}
+{{- $src := replaceRE `\*\*([^*\n]+?)\*\*` "<strong>$1</strong>" $text -}}
+{{- $body := $src | markdownify | strings.TrimSpace -}}
+{{- $single := and (hasPrefix $body "<p>") (hasSuffix $body "</p>") -}}
+{{- if and $single (eq (strings.Count "<p>" $body) 1) -}}
+  {{- $body = $body | strings.TrimPrefix "<p>" | strings.TrimSuffix "</p>" -}}
+{{- end -}}
+
 <div class="aashi">
   <div class="aashi-tag">あーし的にはさぁ、</div>
-  <p class="aashi-text">{{ $text | safeHTML }}</p>
+  <p class="aashi-text">{{ $body | safeHTML }}</p>
   <div class="aashi-by">— {{ $by }}</div>
 </div>

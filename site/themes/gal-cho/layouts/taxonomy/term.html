@@ -15,7 +15,9 @@
 {{- if and $isCategory $catMeta }}
 <!-- Big Category Hero -->
 <section class="wrap cat-{{ $term }}">
-  <div class="cat-hero" style="margin-top: 24px; padding: 56px 56px 48px;">
+  {{- /* padding は main.css の .cat-hero（＋ max-width:900px のモバイル指定）に任せる。 */ -}}
+  {{- /* インラインで padding を書くとモバイル指定を上書きしてスマホで窮屈になる。 */ -}}
+  <div class="cat-hero" style="margin-top: 24px;">
     <div class="cat-pill">CATEGORY / {{ upper $term }}</div>
     <h1 class="cat-h2"><span class="em">{{ $catMeta.emoji }}</span>{{ $catMeta.label }}</h1>
     <p class="cat-tagline">{{ $catMeta.tagline | safeHTML }}</p>
@@ -51,14 +53,10 @@
 <!-- Filter bar -->
 <section class="wrap">
   <div class="filter-bar">
+    {{- /* 「人気」ソートは指標（PV等）を持っていないため実装できない。 */ -}}
+    {{- /* 無反応のボタンを置かない方針で、ソート切替UIごと撤去して現在の並び順を明記する。 */ -}}
     <div class="fb-left">
-      <strong>{{ len .Pages }}</strong> 件の記事 · 並び順
-    </div>
-    <div class="fb-right">
-      <div class="sort">
-        <button class="is-on">新着</button>
-        <button>人気</button>
-      </div>
+      <strong>{{ len .Pages }}</strong> 件の記事 · 新着順
     </div>
   </div>
 </section>
@@ -77,7 +75,7 @@
   {{- if gt $paginator.TotalPages 1 }}
   <nav class="pagi">
     {{- if $paginator.HasPrev }}
-    <a class="prev" href="{{ $paginator.Prev.URL }}">← 前へ</a>
+    <a class="prev" rel="prev" href="{{ $paginator.Prev.URL }}">← 前へ</a>
     {{- end }}
     {{- range $paginator.Pagers }}
       {{- if eq . $paginator }}
@@ -87,7 +85,7 @@
       {{- end }}
     {{- end }}
     {{- if $paginator.HasNext }}
-    <a class="next" href="{{ $paginator.Next.URL }}">次へ →</a>
+    <a class="next" rel="next" href="{{ $paginator.Next.URL }}">次へ →</a>
     {{- end }}
   </nav>
   {{- end }}

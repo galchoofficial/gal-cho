@@ -1,6 +1,7 @@
 ---
 title: "GW終わるの怖くない？？5月病にならないための準備、今からしとこ🥲✨"
 date: 2026-05-05T09:00:00+09:00
+publishDate: 2026-05-05T09:00:00+09:00
 draft: false
 categories:
   - tame

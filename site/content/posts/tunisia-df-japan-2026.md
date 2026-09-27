@@ -90,7 +90,7 @@ W杯のグループステージで敗退が決まったチュニジア代表のD
 
 ## 日本代表のW杯での<span class="mk">実績</span>⚽📊
 
-前に<a href="/posts/wcup-2026-japan-group-f/">記事78</a>で書いたけど、日本代表が世界から注目される理由👇
+前に<a href="/posts/wcup-2026-japan-group-f/">W杯の対戦相手と日程まとめ</a>で書いたけど、日本代表が世界から注目される理由👇
 
 <div class="gov-block">
   <h3>📊 日本代表が評価される理由</h3>

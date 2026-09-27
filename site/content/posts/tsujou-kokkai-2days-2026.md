@@ -74,7 +74,7 @@ tweet: |-
 
 あと2日で何かしらの方向性が示されるか？？
 
-前に<a href="/posts/shokuhin-shouhi-zei-9days-2026/">記事111</a>で書いた通り、選択肢は👇
+前に<a href="/posts/shokuhin-shouhi-zei-9days-2026/">食品の消費税議論の記事</a>で書いた通り、選択肢は👇
 
 <div class="gov-block">
   <h3>💸 食品消費税の4選択肢</h3>

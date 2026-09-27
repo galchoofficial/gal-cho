@@ -1,0 +1,59 @@
+{{- /* ====================================================
+   rss.xml（Hugo 内蔵テンプレートの差し替え）
+
+   内蔵版の問題点を修正：
+   ・channel description が "Recent content on ギャル庁" のままだった
+   ・全記事（245本）の本文フルHTMLを吐いて index.xml が 2.7MB になっていた
+   ・robotsNoIndex な管理ページ（/tweets/）まで載っていた
+
+   → 新着20本だけ / posts セクション優先 / noindex 除外 / description は要約
+     （フル本文は content:encoded に入れるのでリーダー側の表示は変わらない）
+==================================================== */ -}}
+{{- $limit := 20 -}}
+{{- $pages := .RegularPages -}}
+{{- if .IsHome -}}{{- $pages = where site.RegularPages "Section" "posts" -}}{{- end -}}
+{{- $pages = where $pages "Params.robotsNoIndex" "!=" true -}}
+{{- $pages = first $limit $pages.ByDate.Reverse -}}
+{{- /* セクション/タクソノミー一覧は Hugo の英語自動タイトルになるので日本語に置換 */ -}}
+{{- $jaTitles := dict "Posts" "記事一覧" "Categories" "カテゴリ" "Tags" "タグ" -}}
+{{- $selfTitle := .Title -}}
+{{- with index $jaTitles .Title -}}{{- $selfTitle = . -}}{{- end -}}
+{{- $title := site.Title -}}
+{{- if not .IsHome -}}{{- $title = printf "%s | %s" $selfTitle site.Title -}}{{- end -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ $title }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ site.Params.description }}</description>
+    <generator>Hugo</generator>
+    <language>{{ site.Language.Locale | default "ja" }}</language>
+    <copyright>© {{ now.Year }} {{ site.Title }}</copyright>
+    {{- with site.Params.author }}
+    <managingEditor>{{ . }}</managingEditor>
+    <webMaster>{{ . }}</webMaster>
+    {{- end }}
+    {{- with (index $pages 0) }}
+    <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+    {{- end }}
+    {{- with .OutputFormats.Get "RSS" }}
+    {{ printf `<atom:link href=%q rel="self" type=%q />` .Permalink .MediaType | safeHTML }}
+    {{- end }}
+    {{- range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      {{- with site.Params.author }}
+      <author>{{ . }}</author>
+      {{- end }}
+      <guid>{{ .Permalink }}</guid>
+      <description>{{ .Summary | plainify | truncate 300 }}</description>
+      <content:encoded>{{ printf "<![CDATA[%s]]>" .Content | safeHTML }}</content:encoded>
+      {{- range .Params.categories }}
+      <category>{{ . }}</category>
+      {{- end }}
+    </item>
+    {{- end }}
+  </channel>
+</rss>

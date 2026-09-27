@@ -1,6 +1,7 @@
 ---
 title: "GWの新幹線、予約が去年の114%でほぼ満席らしいけどみんなどこ行くの？🚄"
 date: 2026-05-03T16:00:00+09:00
+publishDate: 2026-05-03T16:00:00+09:00
 draft: false
 categories:
   - omo

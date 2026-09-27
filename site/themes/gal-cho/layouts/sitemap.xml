@@ -2,8 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {{- range .Data.Pages }}
-    {{- /* robotsNoIndex: true のページは sitemap から除外 */ -}}
-    {{- if not .Params.robotsNoIndex }}
+    {{- /* ===== sitemap から除外する条件 =====
+       1) robotsNoIndex: true のページ（管理ダッシュボード等）
+       2) 記事が2本以下のタグページ（薄いページを大量送信するのを防ぐ）
+          ※ カテゴリは4つだけなので常に含める
+    */ -}}
+    {{- $skip := .Params.robotsNoIndex -}}
+    {{- if and (eq .Kind "term") (eq .Type "tags") (lt (len .Pages) 3) -}}{{- $skip = true -}}{{- end -}}
+    {{- if not $skip }}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{- if not .Lastmod.IsZero }}

@@ -1,6 +1,7 @@
 ---
 title: "GW後半、3日〜4日は警報級の大雨くるってよ⚠️☔ お出かけ勢ガチで確認して"
 date: 2026-05-03T15:00:00+09:00
+publishDate: 2026-05-03T15:00:00+09:00
 draft: false
 categories:
   - tame

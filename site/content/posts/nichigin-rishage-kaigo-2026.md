@@ -101,7 +101,7 @@ tweet: |-
   <h3>🏥 ③植田総裁入院中も会合は予定通り</h3>
   <div class="gov-row">
     <div class="gov-who"><small>🏥</small>状況</div>
-    <div class="gov-text"><a href="/posts/ueda-soushi-nyuin-2026/">記事109</a>で書いた通り総裁入院中</div>
+    <div class="gov-text"><a href="/posts/ueda-soushi-nyuin-2026/">植田総裁の入院の記事</a>で書いた通り総裁入院中</div>
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>📋</small>政府コメント</div>

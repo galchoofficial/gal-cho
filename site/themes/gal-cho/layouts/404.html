@@ -1,10 +1,37 @@
 {{ define "main" }}
-<section class="wrap" style="padding: 100px 0; text-align: center;">
-  <h1 style="font-size: 96px; font-weight: 900; line-height: 1;">404</h1>
-  <p style="font-size: 22px; font-weight: 800; margin: 16px 0 8px;">ページないんだけど…？🥺</p>
-  <p class="meta-text">URLが間違ってるか、削除された記事かも。</p>
-  <p style="margin-top: 32px;">
+<section class="wrap" style="padding: 72px 0 40px; text-align: center;">
+  <div style="font-size: 96px; font-weight: 900; line-height: 1;" aria-hidden="true">404</div>
+  <h1 style="font-size: 22px; font-weight: 800; margin: 16px 0 8px;">ページないんだけど…？🥺</h1>
+  <p class="meta-text">URLが間違ってるか、削除された記事かも。下から探してみて🫶</p>
+  <p style="margin-top: 28px;">
     <a href="{{ "/" | relURL }}" class="bs-btn">← ホームに戻る</a>
+    <a href="{{ "/posts/" | relURL }}" class="bs-btn purple">記事一覧を見る</a>
   </p>
 </section>
+
+<!-- カテゴリから探す -->
+<section class="wrap chips" style="padding-bottom: 8px;">
+  <div class="chips-bar" style="justify-content: center; flex-wrap: wrap;">
+    <a href="{{ "/posts/" | relURL }}" class="chip"><span class="chip-emoji">🌟</span>すべて</a>
+    {{- range $key, $meta := site.Params.categoryMeta }}
+    <a href="{{ printf "/categories/%s/" $key | relURL }}" class="chip"><span class="chip-emoji">{{ $meta.emoji }}</span>{{ $meta.label }}</a>
+    {{- end }}
+  </div>
+</section>
+
+<!-- 新着記事 -->
+{{- $latest := first 6 (where (where site.RegularPages "Section" "posts") "Date" "<=" now).ByDate.Reverse }}
+{{- if gt (len $latest) 0 }}
+<section class="wrap section">
+  <div class="sec-head">
+    <h2 class="sec-h2"><em>新着</em> 記事</h2>
+    <span class="sec-sub">とりあえずこの辺どう？👀</span>
+  </div>
+  <div class="grid">
+    {{- range $i, $p := $latest }}
+      {{ partial "article-card.html" (dict "page" $p "index" (add $i 1)) }}
+    {{- end }}
+  </div>
+</section>
+{{- end }}
 {{ end }}

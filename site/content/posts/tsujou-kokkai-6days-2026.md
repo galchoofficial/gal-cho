@@ -56,7 +56,7 @@ tweet: |-
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>🤖</small>サイバー対処能力強化法</div>
-    <div class="gov-text">施行準備中、<a href="/posts/cyber-active-defense-law-2026/">記事</a></div>
+    <div class="gov-text">施行準備中、<a href="/posts/cyber-active-defense-law-2026/">殴り返せる法律</a></div>
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>🚌</small>改正地域交通法</div>
@@ -163,15 +163,15 @@ tweet: |-
 <div class="gov-block">
   <h3>📚 国会まとめシリーズ</h3>
   <div class="gov-row">
-    <div class="gov-who"><small>①</small>記事99</div>
+    <div class="gov-who"><small>①</small>1本目</div>
     <div class="gov-text"><a href="/posts/tsujou-kokkai-matome-2026/">通常国会で何が決まったかまとめ</a></div>
   </div>
   <div class="gov-row">
-    <div class="gov-who"><small>②</small>記事104</div>
+    <div class="gov-who"><small>②</small>2本目</div>
     <div class="gov-text"><a href="/posts/tsujou-kokkai-12days-2026/">残り12日</a>（霞ちゃん対談）</div>
   </div>
   <div class="gov-row">
-    <div class="gov-who"><small>③</small>記事117</div>
+    <div class="gov-who"><small>③</small>3本目</div>
     <div class="gov-text"><a href="/posts/tsujou-kokkai-7days-2026/">残り7日</a></div>
   </div>
   <div class="gov-row">

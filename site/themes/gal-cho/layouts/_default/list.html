@@ -1,13 +1,31 @@
+{{ define "head" }}
+{{- /* パンくずの構造化データ */ -}}
+{{ partial "breadcrumb-jsonld.html" . }}
+{{- /* ページ送りの rel=prev/next（下の .Paginate と同じ引数で呼ぶ＝同じ paginator が返る） */ -}}
+{{- $p := .Paginate .Pages.ByDate.Reverse -}}
+{{- if $p.HasPrev }}
+<link rel="prev" href="{{ $p.Prev.URL | absURL }}">
+{{- end }}
+{{- if $p.HasNext }}
+<link rel="next" href="{{ $p.Next.URL | absURL }}">
+{{- end }}
+{{ end }}
+
 {{ define "main" }}
+{{- /* セクション一覧は Hugo が英語の自動タイトル（Posts）を付けるので日本語に置換 */ -}}
+{{- $listTitle := .Title | default "記事一覧" -}}
+{{- if eq .Kind "section" -}}
+  {{- with index (dict "posts" "記事一覧") .Section -}}{{- $listTitle = . -}}{{- end -}}
+{{- end -}}
 <!-- Crumb -->
 <div class="wrap crumb">
   <a href="{{ "/" | relURL }}">ホーム</a>
   <span class="sep">›</span>
-  <strong>{{ .Title | default "記事一覧" }}</strong>
+  <strong>{{ $listTitle }}</strong>
 </div>
 
 <section class="wrap" style="padding: 24px 0 8px;">
-  <h1 class="sec-h2"><em>{{ .Title | default "記事一覧" }}</em></h1>
+  <h1 class="sec-h2"><em>{{ $listTitle }}</em></h1>
   <p class="meta-text" style="margin-top: 8px;">{{ len .Pages }} 件の記事</p>
 </section>
 

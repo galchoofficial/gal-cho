@@ -1,6 +1,7 @@
 ---
 title: "ABEMAでGW中、異世界アニメ11作品が無料一挙放送🎮 SAO・無職転生・このすば全部"
 date: 2026-05-03T16:30:00+09:00
+publishDate: 2026-05-03T16:30:00+09:00
 draft: false
 categories:
   - anime
