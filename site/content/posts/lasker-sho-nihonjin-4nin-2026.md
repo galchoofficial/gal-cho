@@ -169,6 +169,12 @@ tweet: |-
 
 スポーツでも、<a href="/posts/asian-games-sugihara-kin-2026/">先日書いたアジア大会の体操で杉原愛子選手が金メダルを取った話</a>があったばっかりだしね🥇
 
+### 睡眠のこと、<span class="mk">もっと知りたく</span>なったら💤
+
+受賞のニュースを読んで「そもそも睡眠って何なの？」って気になった人向けに、<strong>柳沢正史さん</strong>が手がけた一般向けの本も出てるのよ📕 オレキシンを見つけた研究者本人の解説だから、学校では習わない話がサクサク読めるわ✨
+
+{{< affi name="今さら聞けない 睡眠の超基本 [ 柳沢正史 ]" image="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4090/9784023334090_1_11.jpg" rakuten_url="https://item.rakuten.co.jp/book/17947566/" desc="ラスカー賞を受賞した柳沢正史さんの本。寝不足がなんでヤバいのか、図解で分かるやつ💤" >}}
+
 ## ぶっちゃけ<span class="mk">ポイント</span>💎
 
 <div class="insight">

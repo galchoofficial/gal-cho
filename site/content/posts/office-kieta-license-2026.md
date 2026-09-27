@@ -151,6 +151,12 @@ tweet: |-
   <div class="gov-conclusion">→ <strong>2021を使ってる人は来月が期限</strong>。今のうちに移行計画立てとこ📅</div>
 </div>
 
+### 買い直す前に<span class="mk">確認</span>してね🧾
+
+プロダクトキーが見つからない、そもそも古いバージョンでサポートも切れてる…っていう場合は、買い直しも選択肢になるのよ💸 <strong>Microsoft 365</strong>ならWord・Excel・PowerPointが常に最新版になって、クラウド保存も付いてくるから「ある日突然また消える」リスクは減るわ📋
+
+{{< affi name="マイクロソフト Microsoft 365 Personal（AI機能搭載）" image="https://thumbnail.image.rakuten.co.jp/@0_mall/superdeal/cabinet/10617969/11899090/imgrc0331731756.jpg" rakuten_url="https://item.rakuten.co.jp/superdeal/15216ms365personal2504/" desc="1年版のサブスク。常に最新版＋クラウド保存つきで、買い切り版のサポート切れに振り回されずに済むやつ💻" >}}
+
 ## ぶっちゃけ<span class="mk">ポイント</span>💎
 
 <div class="insight">

@@ -174,6 +174,12 @@ NHKが<strong>23日</strong>に報じたんだけど、<strong>都内のスタ�
   <div class="gov-conclusion">→ 「どこで落としたか」より<strong>「どこで見つかるか」</strong>で窓口が変わるのが厄介なのよ😤</div>
 </div>
 
+### シールを待たずに<span class="mk">できる対策</span>🏷️
+
+記事のシールはこれから広がる仕組みだけど、<strong>今すぐできる対策</strong>もあるのよ📱 財布・鍵・カバンに紛失防止タグを付けておくと、スマホの地図でだいたいの場所が分かるの。落とし物センターに届く前に自分で見つけられるのが一番ラクよね🗺️
+
+{{< affi name="Apple AirTag 国内正規品（スマートトラッカー）" image="https://thumbnail.image.rakuten.co.jp/@0_mall/sea-story-kagoshima/cabinet/imgrc0111277665.jpg" rakuten_url="https://item.rakuten.co.jp/sea-story-kagoshima/sea-story-4549995106589/" desc="鍵や財布に付けておくと、iPhoneの「探す」でおおよその場所が分かるやつ。ケース付きのセットもあるよ🔑" >}}
+
 ## ぶっちゃけ<span class="mk">ポイント</span>💎
 
 <div class="insight">
