@@ -2,6 +2,7 @@
 title: "スルメイカの漁獲上限超過しちゃった話、食卓に直結するやつ🦑📋"
 date: 2026-05-29T11:05:00+09:00
 publishDate: 2026-05-29T11:05:00+09:00
+lastmod: 2026-09-27T12:00:00+09:00
 draft: false
 categories:
   - tame

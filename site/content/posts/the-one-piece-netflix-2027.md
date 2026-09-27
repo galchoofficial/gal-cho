@@ -2,6 +2,7 @@
 title: "『ONE PIECE』が最初から再アニメ化するらしいんだけど！！🏴‍☠️✨"
 date: 2026-05-07T13:00:00+09:00
 publishDate: 2026-05-07T13:00:00+09:00
+lastmod: 2026-09-26T21:30:00+09:00
 draft: false
 categories:
   - anime

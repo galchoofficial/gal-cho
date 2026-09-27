@@ -2,6 +2,7 @@
 title: "自転車の子ども同乗、「小学生も」に広げるか警察庁が検討🚲👶✨"
 date: 2026-05-30T07:00:00+09:00
 publishDate: 2026-05-30T07:00:00+09:00
+lastmod: 2026-09-26T21:30:00+09:00
 draft: false
 categories:
   - tame

@@ -10,10 +10,29 @@
     {{- $skip := .Params.robotsNoIndex -}}
     {{- if and (eq .Kind "term") (eq .Type "tags") (lt (len .Pages) 3) -}}{{- $skip = true -}}{{- end -}}
     {{- if not $skip }}
+    {{- /* ===== lastmod の決定 =====
+       記事ページは front matter の lastmod（加筆日）を最優先、無ければ date。
+       ※ enableGitInfo = true のため .Lastmod は git コミット時刻で上書きされ、
+         front matter の lastmod が反映されない。加筆を正しく Google に伝える
+         ため、記事だけ front matter を直接読む。一覧・タームは .Lastmod のまま。
+    */ -}}
+    {{- $lastmod := .Lastmod -}}
+    {{- if .IsPage -}}
+      {{- $lastmod = .Date -}}
+      {{- $pg := . -}}
+      {{- with .File -}}
+        {{- $raw := readFile (path.Join "content" (replace .Path "\\" "/")) -}}
+        {{- with findRE `(?sm)\A---.*?^---` $raw 1 -}}
+          {{- if findRE `(?m)^lastmod:` (index . 0) 1 -}}
+            {{- $lastmod = time.AsTime $pg.Params.lastmod -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end }}
   <url>
     <loc>{{ .Permalink }}</loc>
-    {{- if not .Lastmod.IsZero }}
-    <lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>
+    {{- if not $lastmod.IsZero }}
+    <lastmod>{{ safeHTML ( $lastmod.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>
     {{- end }}
     {{- with .Sitemap.ChangeFreq }}
     <changefreq>{{ . }}</changefreq>

@@ -2,6 +2,7 @@
 title: "一番くじ「星のカービィ PUPUPU GOURMET」が5/9に出るよ！！ローソン走って🏃‍♀️🌟"
 date: 2026-05-07T13:30:00+09:00
 publishDate: 2026-05-07T13:30:00+09:00
+lastmod: 2026-09-26T21:30:00+09:00
 draft: false
 categories:
   - anime

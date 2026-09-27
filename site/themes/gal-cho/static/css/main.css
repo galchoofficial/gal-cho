@@ -2194,3 +2194,25 @@ a { color: inherit; text-decoration: none; }
   .cat-intro h2 { font-size: 17px; }
   .cat-intro h3 { font-size: 15px; }
 }
+
+/* ===== 記事の更新日（lastmod がある記事だけ .art-meta-top に出る） ===== */
+.meta-updated {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  padding: 2px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--line-soft);
+  white-space: nowrap;
+}
+.meta-updated time { color: inherit; }
+
+@media (max-width: 720px) {
+  .meta-updated {
+    font-size: 10px;
+    padding: 2px 7px;
+  }
+}

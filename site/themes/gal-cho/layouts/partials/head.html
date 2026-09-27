@@ -142,6 +142,21 @@
 }
 </script>
 {{- else if and .IsPage (eq .Section "posts") }}
+{{- /* ===== front matter に lastmod が書かれているか =====
+   hugo.toml が enableGitInfo = true のため .Lastmod / .Params.lastmod は
+   git のコミット時刻で常に埋まってしまい「加筆した記事かどうか」を判別できない。
+   そこで記事ファイルの front matter ブロックを直接読んで lastmod の有無を見る。
+*/ -}}
+{{- $hasLastmod := false -}}
+{{- with .File -}}
+  {{- $raw := readFile (path.Join "content" (replace .Path "\\" "/")) -}}
+  {{- with findRE `(?sm)\A---.*?^---` $raw 1 -}}
+    {{- if findRE `(?m)^lastmod:` (index . 0) 1 -}}{{- $hasLastmod = true -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- /* dateModified は front matter の lastmod（加筆日）。無ければ date（＝公開日）。 */ -}}
+{{- $dateModified := .Date -}}
+{{- if $hasLastmod }}{{ $dateModified = time.AsTime .Params.lastmod }}{{ end -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -151,7 +166,7 @@
   "headline": {{ $title | jsonify | safeJS }},
   "description": {{ $desc | jsonify | safeJS }},
   "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
-  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ $dateModified.Format "2006-01-02T15:04:05Z07:00" }}",
   "author": {
     "@type": "Person",
     "name": "{{ site.Params.author | default "あーし" }}"

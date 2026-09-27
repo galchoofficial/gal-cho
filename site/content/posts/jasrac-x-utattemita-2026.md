@@ -2,6 +2,7 @@
 title: "Xの「歌ってみた」「踊ってみた」が有料化？？JASRACの声明で推し活界隈が騒然🎵💸"
 date: 2026-05-04T18:00:00+09:00
 publishDate: 2026-05-04T18:00:00+09:00
+lastmod: 2026-09-26T21:30:00+09:00
 draft: false
 categories:
   - omo

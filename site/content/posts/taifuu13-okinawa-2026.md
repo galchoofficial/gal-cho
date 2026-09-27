@@ -2,6 +2,7 @@
 title: "台風13号が明日沖縄直撃！！しかも今「ダブル台風」状態で油断できないよ🌀🌀⚠️"
 date: 2026-08-06T18:30:00+09:00
 publishDate: 2026-08-06T18:30:00+09:00
+lastmod: 2026-09-27T12:00:00+09:00
 draft: false
 categories:
   - tame
@@ -274,7 +275,7 @@ tweet: |-
   <span class="insight-tag">💎 ぶっちゃけポイント</span>
   <p>今年は台風が本当に多いのよ🌀📈</p>
   <p>前に<a href="/posts/el-nino-2026-summer/">エルニーニョの記事</a>で「今年の夏はヤバくなるかも」って書いたけど、まさにその通りになってる😨</p>
-  <p>しかも今日は<a href="/posts/kumamoto-jishin-10days-danssui-2026/">熊本地震の被災地でもまだ断水が続いてる</a>の。<strong>被災地に台風が重なるのが一番怖い</strong>。複合災害への備えが本当に大事よ⚠️</p>
+  <p>しかも今は<strong>熊本地震の被災地でまだ断水が続いてる</strong>の。<strong>被災地に台風が重なるのが一番怖い</strong>。複合災害への備えが本当に大事よ⚠️</p>
 </div>
 
 ## 避難の<span class="mk">タイミング</span>を間違えないで🚨
