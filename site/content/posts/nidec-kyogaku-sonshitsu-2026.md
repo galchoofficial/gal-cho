@@ -186,7 +186,38 @@ tweet: |-
   <div class="gov-conclusion">→ 正式な数字は<strong>9月30日の決算説明会</strong>で示されることになっている📅</div>
 </div>
 
-<!-- 9/30の決算発表の結果をここに追記 -->
+## ※2026年9月30日追記：<span class="mk">社長が正式に交代</span>したのよ🔄
+
+この記事を書いたあとに動きがあったから足しとくね📋
+
+<div class="gov-block">
+  <h3>🔄 9月29日付で社長が交代</h3>
+  <div class="gov-row">
+    <div class="gov-who"><small>👤</small>辞任</div>
+    <div class="gov-text">岸田光哉社長が<strong>2026年9月29日付で辞任</strong>。報道段階の「辞任へ」から、正式に決まったの</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>🆕</small>後任</div>
+    <div class="gov-text">専務執行役員兼CTO（最高技術責任者）だった<strong>戒田理夫（かいだ・みちお）くん</strong>が、社長執行役員兼CEOに就任した</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>📋</small>会社の説明</div>
+    <div class="gov-text">2026年3月期と過年度の決算の訂正作業を進めるなかで、旧経営体制下の役職員の行為を改めて評価した結果、岸田前社長に<strong>「財務報告に関し必ずしも適切とは言いかねる言動」</strong>があったことが確認された、としている</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>📅</small>9月30日</div>
+    <div class="gov-text">この日が、延長されていた<strong>2026年3月期の有価証券報告書の提出期限</strong>。本来の法定期限は6月30日だったけど、会計不正などの影響を精査するために3カ月延ばす申請が認められていたの</div>
+  </div>
+  <div class="gov-conclusion">→ <strong>「辞任を検討」じゃなくて、もう交代が済んでる</strong>状態で10月を迎えたってこと🔄</div>
+</div>
+
+{{< hukidashi who="aashi" >}}「必ずしも適切とは言いかねる言動」って、めちゃくちゃ回りくどい言い方じゃない？😂{{< /hukidashi >}}
+
+{{< hukidashi who="kasumi" >}}企業の公表文はこうした表現を用いることが多うございます。具体的な行為を断定的に記載すると、係争や第三者の名誉に関わる可能性があるためです。ただし、この一文が辞任の理由として明記されている以上、会社として相応の評価を下したことを意味します。{{< /hukidashi >}}
+
+{{< hukidashi who="aashi" >}}なるほどね〜。言葉はやわらかいけど、中身は「責任アリ」って言ってるのと同じか🤔{{< /hukidashi >}}
+
+なお、この記事の時点では<strong>決算の正式な数字はまだ公表されていない</strong>の📊 1兆円規模とされる減損の確定額や、訂正後の過年度決算の中身は、提出された有価証券報告書と今後の説明で明らかになるはずよ📋 数字が出たらギャル庁でも追いかけるね👀
 
 あーし、日本の会社が世界トップなのってやっぱ誇らしいと思うのよ🇯🇵🔧　だからこそ「数字を盛る」で乗り切ろうとしたのが本当にもったいない😢
 
