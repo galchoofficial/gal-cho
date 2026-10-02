@@ -1,7 +1,7 @@
 ---
 title: "佐川急便に不正アクセス📦 送り主と届け先の情報が約100日分流出した可能性って、何がヤバいの？🚨"
-date: 2026-10-05T17:00:00+09:00
-publishDate: 2026-10-05T17:00:00+09:00
+date: 2026-10-02T11:15:00+09:00
+publishDate: 2026-10-02T11:15:00+09:00
 draft: false
 categories:
   - tame
@@ -219,7 +219,7 @@ tweet: |-
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>⚔️</small>10月1日</div>
-    <div class="gov-text"><a href="/posts/noudouteki-cyber-bougyo-shikou-2026/">能動的サイバー防御が始動</a>したばかり。国が攻撃元のサーバーに対処できるようにする制度🛡️</div>
+    <div class="gov-text"><strong>能動的サイバー防御</strong>が10月1日に始動したばかり。国が攻撃元のサーバーに対処できるようにする制度🛡️</div>
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>📦</small>9月30日〜10月1日</div>
