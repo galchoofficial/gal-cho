@@ -251,3 +251,11 @@ tweet: |-
 </div>
 
 来月以降も帝国データバンクの調査は出るから、ギャル庁でもX（@galcho_official）でも追いかけるね💕 気になる値上げがあったら教えて〜🍙✨
+
+## 「<span class="mk">冷凍する</span>」が値上げ対策でいちばん効く🧊
+
+さっき節約ポイントで冷凍保存の話をしたけど、これガチで効くのよ🧊 安いときにまとめて買って冷凍しておけば、<strong>値上げのタイミングをずらせる</strong>から💰
+
+とくにごはん。炊きたてを小分けで冷凍しておくと、コンビニのおにぎりを買う回数が減るのよね🍙 外で買うより圧倒的に安いし、食品ロスも減る♻️
+
+{{< affi name="マーナ 極 冷凍ごはん容器 4個入り（2個入り×2） K748" image="https://thumbnail.image.rakuten.co.jp/@0_mall/shimada-ya/cabinet/miraicode/14/4976404274810set_1b.jpg" rakuten_url="https://item.rakuten.co.jp/shimada-ya/4976404274810_set/" price="2,560" desc="炊きたてを小分けで冷凍して、レンジでそのまま温められるやつ。ごはんがベチャッとなりにくい🍚" >}}

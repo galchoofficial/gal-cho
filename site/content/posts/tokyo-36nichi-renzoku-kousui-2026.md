@@ -231,3 +231,11 @@ tweet: |-
 国に司令塔ができるのはめっちゃ大事。でも<strong>自分ちの備えは自分でやるしかない</strong>のも変わらないの😤 36日連続の雨でジメジメした部屋、台風が来るかもしれない週明け。どっちも「今のうち」にできることがあるからね☂️
 
 続報が出たらギャル庁でもX（@galcho_official）でも共有するから、一緒に乗り切ろ💕🌧️
+
+## 36日も降られて<span class="mk">いちばん困った</span>のは洗濯物👕💦
+
+記録がどうこうより、<strong>生活でいちばん効いたのは洗濯</strong>じゃない？😤 外に干せない日が1カ月以上続いたら、部屋の中が洗濯物だらけになるのよ💦
+
+秋雨前線の時期って毎年あるし、今年はこれから台風27号も控えてる🌀 室内で干す場所を1つ作っておくと、天気に振り回されなくて済むのよね☔
+
+{{< affi name="コンパクト3連物干し 折りたたみ 室内物干し 物干しスタンド ekans CM-30" image="https://thumbnail.image.rakuten.co.jp/@0_mall/sanesufitting/cabinet/web_item02/sssf0026/apl/imgrc0128759999.jpg" rakuten_url="https://item.rakuten.co.jp/sanesufitting/sssf-0026/" price="3,680" desc="3連で畳める室内物干し。使わない日はスリムに折りたためるから、部屋が狭くてもいける👕" >}}
