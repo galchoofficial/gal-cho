@@ -151,6 +151,81 @@ tweets.map(t => ({
 | トーストが見えない | タイミングずれ or 投稿失敗 | プロフィールで最新ツイート確認 |
 | プレミアム勧誘モーダルで遮られる | リプ成功後に X 自動表示 | 「後で試す」(560, 745) で閉じる |
 
+## ⚡ 2026-10-02 に確立した「壊れない手順」（★これが現行のやり方）
+
+X の投稿が壊れる事故を3回起こしたあと、原因が全部つぶれた手順。**この順番でやれば事故らない。**
+
+### ★Step 0：フォーカスを取る（これが全部の前提）
+ブラウザのウィンドウが背面（`document.hasFocus() === false`）だと、Xのエディタ（Draft.js）が壊れる。
+入力が2回反映される／ハッシュタグ補完が暴走して同じタグを15回以上複製する／投稿直前にJSで読んだ内容と実際に投稿される内容が食い違う／クリアしても残骸が復活する、といった事故が起きる。
+
+```js
+// まず確認
+({focus: document.hasFocus(), vis: document.visibilityState})
+```
+
+- `focus: false` だったら、**`computer` の `left_click` でページを1回クリックする**。これでウィンドウにフォーカスが入る
+- ⚠️ **JS の `window.focus()` は効かない**（効くのはOSレベルのクリックだけ）
+- ✅ **一度フォーカスを取れば、`navigate` してもタブ内で維持される**。だから**クリックは最初の1回だけ**でよく、8本連続で投稿してもクリック1回で足りた
+- ユーザーが他のアプリ（DAWなど）で作業中にクリックするとその作業を中断させるので、**毎回クリックせず、記事ごとに `hasFocus` を確認して false のときだけ**クリックする
+
+### ★Step 1：本文を入れる（`type` ではなく JS で）
+```js
+const ed = document.querySelector('[data-testid="tweetTextarea_0"]');
+ed.focus();
+document.execCommand('selectAll'); document.execCommand('delete');
+ed.focus();
+document.execCommand('insertText', false, 本文全文);
+```
+- **`computer` の `type` アクションは使わない**。日本語が化ける（「週」U+9031 が「遑」U+9051 になって誤字のまま投稿した事故あり）。しかも判定に使うJSの文字列リテラルも同じように化けるので自作チェックがすり抜ける
+- `insertText` なら**本文全文を1回で入れられる**ので、絵文字ごとに分割してクリックし直す手順が丸ごと不要になる
+- 化けやすい字を確実に入れたいときは `String.fromCodePoint(0x9031)` でコードポイント指定して組み立てる
+
+### ★Step 2：5秒待ってから検証する（投稿前）
+挿入直後は正しくても、**3〜5秒後にハッシュタグ補完が書き換えることがある**（フォーカスがないとき）。必ず待ってから読む。
+
+```js
+const v = document.querySelector('[data-testid="tweetTextarea_0"]').innerText;
+const b = document.querySelector('[data-testid="tweetButton"]');
+({v, len: [...v].length, hash: (v.match(/#/g)||[]).length, btn: b.getAttribute('aria-disabled')})
+```
+- **`btn` が `null` なら投稿可、`"true"` なら文字数オーバーか空**
+- **`len` が 140 を超えていたら投稿できない**。超えていたら短縮する（2026-10-02 にポケモンの記事の tweet が164字でオーバーした）
+- 返した `v` は**目で読んで元の文面と照合する**。`v.includes('週…')` のような自作の判定は、判定文字列ごと化けるので当てにならない
+
+### ★Step 3：投稿する
+```js
+// 条件を満たしたときだけクリックする、を1回のJSで完結させると安全
+const ok = (v.match(/#/g)||[]).length === 2 && v.includes('本文の特徴的な語') && b && b.getAttribute('aria-disabled') !== 'true';
+if (ok) b.click();
+```
+- **投稿ボタンの testid は場所で違う**：新規ポスト＝`tweetButton` ／ 返信＝`tweetButtonInline`
+- ⚠️ **`Escape` キーは押さない**。ハッシュタグ補完を閉じるつもりで押すと compose モーダルごと閉じて入力が全部消える
+
+### ★Step 4：status ID を取って、リプに記事URLをぶら下げる
+```js
+// プロフィールで最新ツイートのIDを取る
+[...document.querySelectorAll('article')].slice(0,1).map(a => ({
+  link: [...a.querySelectorAll('a')].map(x=>x.getAttribute('href')).find(h=>h&&/\/status\/\d+$/.test(h)),
+  txt: a.innerText.slice(0,40).replace(/\n/g,' ')
+}))
+```
+- **プロフィールへの反映は20〜30秒遅れることがある**。出てこないことを理由に**再投稿しない**（2026-09-28 に重複投稿を作った）
+- 取れた ID で `https://x.com/galcho_official/status/{id}` へ行き、リプ欄に `insertText` で記事URLだけを入れて `tweetButtonInline` をクリック
+- リプは URL 1本だけでいい（「記事はこちら👇」を付けると絵文字の分だけ事故のリスクが増える。URLだけでもリンクカードが展開される）
+
+### 1記事あたりのバッチ構成（実測で1本あたり3バッチ）
+1. `navigate(compose)` → 待つ → クリア＋`insertText` → 5秒待つ → 検証
+2. 投稿 → 10秒待つ → `navigate(プロフィール)` → 9秒待つ → status ID 取得
+3. `navigate(status)` → 待つ → リプに `insertText` → 検証して投稿
+
+※ 2と3の間、3と次の記事の1は**同じバッチにまとめられる**ので、慣れたら1本2バッチで回せる。
+
+### ⚠️ 記事側の tweet フィールドが140字を超えていることがある
+`galcho-article-format` の指示にも入れているが、生成時に超えることがある。**投稿時に `len` でチェックして、超えていたら短縮して投稿する**。ハッシュタグを `#ギャル庁` の1個だけにすると10字前後縮む。
+
+---
+
 ## ⚠️ ハマりポイントと回避策
 
 ### ✅ X 予約UI 突破方法（2026-06-03確立）— React state対策
