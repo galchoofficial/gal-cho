@@ -117,7 +117,7 @@ tweet: |-
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>🗾</small>総人口</div>
-    <div class="gov-text"><a href="/posts/nihon-jinkou-309man-deep-2026/">増えたのは5都県だけ、42道府県が減少</a>。そして今回、減少幅が過去最大に確定</div>
+    <div class="gov-text"><a href="/posts/nihon-jinkou-309man-deep-2026/">速報値で増えてたのは東京と沖縄の2都県だけ</a>。そして確定値では<strong>増えたのは東京都だけ</strong>になって、46道府県が減少</div>
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>👴</small>高齢化</div>
