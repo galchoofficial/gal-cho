@@ -9,7 +9,12 @@
 #   必須項目が揃っているか、内部リンクが切れていないか等をまとめてチェックする。
 #
 # 【使い方】
-#   bash scripts/check.sh          # リポジトリ全体を検証（引数なし）
+#   bash scripts/check.sh            # リポジトリ全体を検証（警告は件数サマリだけ）
+#   bash scripts/check.sh --verbose  # 警告の中身（ファイル名など）も全部出す
+#
+#   ※エラーは直すのに中身が必要なので、既定でも詳細を出す。
+#     警告（未来日付リンク等）は毎回同じものが20行以上出てトークンを食うので、
+#     既定では件数だけにした（2026-10-03・トークン最適化）
 #
 #   終了コード 0 … 問題なし（警告のみの場合も 0）
 #   終了コード 1 … エラーあり（1件以上）
@@ -41,6 +46,15 @@
 # =============================================================================
 
 set -uo pipefail
+
+VERBOSE=0
+for arg in "$@"; do
+  case "$arg" in
+    -v|--verbose) VERBOSE=1 ;;
+    -h|--help) sed -n '2,20p' "$0"; exit 0 ;;
+    *) echo "❌ 不明な引数: $arg （使えるのは --verbose だけ）" >&2; exit 2 ;;
+  esac
+done
 export PYTHONIOENCODING=utf-8
 export PYTHONUTF8=1
 
@@ -91,7 +105,7 @@ echo ""
 # ---------------------------------------------------------------------------
 # 2〜13. 内容チェック（python でまとめて実施）
 # ---------------------------------------------------------------------------
-POSTS_DIR="$POSTS_DIR" BUILD_DIR="$BUILD_DIR" REPO_ROOT="$REPO_ROOT" python - <<'PYEOF'
+VERBOSE="$VERBOSE" POSTS_DIR="$POSTS_DIR" BUILD_DIR="$BUILD_DIR" REPO_ROOT="$REPO_ROOT" python - <<'PYEOF'
 # -*- coding: utf-8 -*-
 import datetime
 import io
@@ -109,6 +123,7 @@ except Exception:
 POSTS_DIR = os.environ["POSTS_DIR"]
 BUILD_DIR = os.environ["BUILD_DIR"]
 REPO_ROOT = os.environ["REPO_ROOT"]
+VERBOSE = os.environ.get("VERBOSE") == "1"
 
 try:
     import yaml
@@ -468,9 +483,11 @@ err_count = sum(len(d) for _, d in errors)
 warn_count = sum(len(d) for _, d in warnings)
 
 
-def dump(bucket, mark):
+def dump(bucket, mark, detail=True):
     for name, details in bucket:
         print("  %s %s : %d件" % (mark, name, len(details)))
+        if not detail:
+            continue
         for d in details[:MAX_SHOW]:
             print("       - %s" % d)
         if len(details) > MAX_SHOW:
@@ -484,7 +501,9 @@ if errors:
 
 if warnings:
     print("--- ⚠️ 警告（エラーではない） ---")
-    dump(warnings, "⚠️")
+    dump(warnings, "⚠️", detail=VERBOSE)
+    if not VERBOSE:
+        print("  （中身を見るときは bash scripts/check.sh --verbose）")
     print("")
 
 print("==============================================")
