@@ -169,6 +169,33 @@ X の投稿が壊れる事故を3回起こしたあと、原因が全部つぶ�
 - ✅ **一度フォーカスを取れば、`navigate` してもタブ内で維持される**。だから**クリックは最初の1回だけ**でよく、8本連続で投稿してもクリック1回で足りた
 - ユーザーが他のアプリ（DAWなど）で作業中にクリックするとその作業を中断させるので、**毎回クリックせず、記事ごとに `hasFocus` を確認して false のときだけ**クリックする
 
+### ★Step 0-A：タブが背面（hidden）なら `window.open` で開き直す（2026-10-03 解決）
+
+`document.visibilityState` が `hidden` のタブでは、**何をしても入力が入らない**（`insertText` も `type` も無反応）。
+そして **Claude in Chrome の拡張機能には「タブを選択してアクティブにする」ツールが無い**。`tabs_create_mcp` で作った新規タブも背面で開くので解決しない。
+
+**解決策：すでにグループ内にあるタブで、JS の `window.open()` を実行する。**
+
+```js
+window.open('https://x.com/compose/post', '_blank')
+```
+
+- こうして開いたタブは **アクティブタブになり、`visibilityState: "visible"` ＋ `hasFocus: true`** になる
+- しかも**そのタブは Claude のタブグループに自動で入る**ので、そのまま `tabId` を指定して操作できる
+- 2026-10-03、Chromeのアクティブタブが「もしもアフィリエイト」で、こちらのタブが全部背面だった状況を、これ1つで解決した
+
+**手順**
+1. `tabs_context_mcp` でグループのタブを取得（無ければ `createIfEmpty: true`）
+2. そのタブで `visibilityState` を確認
+3. `hidden` だったら、そのタブで `window.open('<開きたいURL>', '_blank')` を実行
+4. 新しく出てきた `tabId` に対して `visibilityState` を確認 → `visible` になっているはず
+5. 以降はその tabId で作業する
+
+**それでもダメなときの手順**
+- Chromeのウィンドウ自体が別モニターにいたり背面だったりする場合がある。`mcp__computer-use__request_access` で Google Chrome を許可（ブラウザは read 権限しか降りないが、それで足りる）→ `open_application` で Chrome を前面に出す → 上の `window.open` をやる
+- `switch_display` ＋ `screenshot` で、どのモニターにいて何のタブが選ばれているかを目で確認できる
+- ⚠️ computer-use はブラウザに対して**クリックもキー入力もできない**（read 専用）。AutoHotkey や PowerShell でキーを送って迂回するのは**禁止**
+
 ### ★Step 1：本文を入れる（`type` ではなく JS で）
 ```js
 const ed = document.querySelector('[data-testid="tweetTextarea_0"]');
@@ -190,7 +217,8 @@ const b = document.querySelector('[data-testid="tweetButton"]');
 ({v, len: [...v].length, hash: (v.match(/#/g)||[]).length, btn: b.getAttribute('aria-disabled')})
 ```
 - **`btn` が `null` なら投稿可、`"true"` なら文字数オーバーか空**
-- **`len` が 140 を超えていたら投稿できない**。超えていたら短縮する（2026-10-02 にポケモンの記事の tweet が164字でオーバーした）
+- ★**字数の判定は `len` ではなく `btn`（`aria-disabled`）で行う**。X は半角文字を 0.5 と数えるので、数字や英字が多い文面は `len` が 155 でも投稿できる（2026-10-03 に実例あり）。逆に全部全角なら 141 で弾かれる。**`len` は目安、`btn` が正解**
+- `len` が 140 を超えていて `btn` も `"true"` なら短縮する。超えていたら短縮する（2026-10-02 にポケモンの記事の tweet が164字でオーバーした）
 - 返した `v` は**目で読んで元の文面と照合する**。`v.includes('週…')` のような自作の判定は、判定文字列ごと化けるので当てにならない
 
 ### ★Step 3：投稿する
