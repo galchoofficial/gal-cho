@@ -779,3 +779,33 @@ GW楽しかったの遠い記憶になってるし、気付いたら毎日違う
 **★プロフィールへの反映は最大20〜30秒遅れる。** 出てこないことを理由に再投稿しない（9/28に重複投稿を作った）。
 
 ※未プロモの積み残しは 9/23以前の記事。
+
+### 2026-10-02〜04 の対応
+ライブのツリー投稿（本文＋リプに記事URL）:
+| 日 | 記事 | slug |
+|---|---|---|
+| 10/02 | タイムズカーの情報漏えい | times-car-jouhou-rouei-2026 |
+| 10/02 | マンション修繕の談合 | mansion-shuzen-dango-2026 |
+| 10/02 | 防災庁が11月2日発足 | bousaicho-11gatsu2ka-hossoku-2026 |
+| 10/02 | 海底プラごみAI | deep-litter-ai-2026 |
+| 10/02 | ニデックの巨額損失 | nidec-kyogaku-sonshitsu-2026 |
+| 10/02 | Yahoo!きっず終了 | yahoo-kids-service-shuryo-2026 |
+| 10/02 | ポケモン×アードマン | pokemon-tales-aardman-2026 |
+| 10/02 | くら寿司の景品対策 | kurazushi-collab-taisaku-2026 |
+| 10/03 | 国勢調査の確定値 | kokusei-chousa-kakuteichi-2026 |
+| 10/03 | OECD教員調査 | oecd-kyouin-roudou-jikan-2026 |
+| 10/04 | 食品値上げ3,153品目 | 10gatsu-neage-3153hinmoku-2026 |
+| 10/04 | 臨時国会に21法案 | rinji-kokkai-21houan-2026 |
+
+★この期間に確立した手順は `.claude/skills/galcho-x-live-tree/SKILL.md` の Step0〜4 に全部書いた。
+特に重要なのは次の3つ:
+- **Step0-A**: タブが背面(hidden)で入力が通らないときは、グループ内の既存タブで
+  `window.open(url,'_blank')` を実行する。新タブがアクティブ(visible)で開き、
+  Claudeのタブグループにも自動で入る。tabs_create_mcp は背面で開くので解決しない
+- **Step1-A**: 「週」(U+9031)は type でも insertText でも化ける実績あり。
+  化けやすい字は `String.fromCodePoint(0x9031)` で組み立て、投稿前後に
+  コードポイントを16進で出して目視検証する
+- 文字数の判定は `len` ではなく投稿ボタンの `aria-disabled` を見る（半角は0.5カウント）
+
+※未プロモの積み残し: 10/04 17:00 公開の米長期金利5.3%の記事（beikoku-chouki-kinri-53-2026）。
+10/05以降に公開される記事も順次。
