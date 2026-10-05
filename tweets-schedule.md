@@ -809,3 +809,37 @@ GW楽しかったの遠い記憶になってるし、気付いたら毎日違う
 
 ※未プロモの積み残し: 10/04 17:00 公開の米長期金利5.3%の記事（beikoku-chouki-kinri-53-2026）。
 10/05以降に公開される記事も順次。
+
+### 2026-10-05 の対応
+ライブのツリー投稿（本文＋リプに記事URL）2本を消化✅
+| 記事 | slug | status ID |
+|---|---|---|
+| 米の長期金利が5.3%台（10/04 17:00公開の積み残し） | beikoku-chouki-kinri-53-2026 | 2106902964338364920 |
+| トヨタの祝日が出勤日だった話（10/05 07:00公開） | toyota-shukujitsu-kinmu-minaoshi-2026 | 2106903501507014675 |
+
+★**この日、本文の入れ方を全面的に変えた**（`.claude/skills/galcho-x-live-tree/SKILL.md` の Step 1 を更新）。
+
+**`document.execCommand('insertText', ...)` は使用禁止にした。**
+末尾がハッシュタグの本文を入れると、Xのハッシュタグ補完が暴走して
+**1行目を `#ハッシュタグ ` の繰り返しで丸ごと上書きする**。5回連続で同じ結果になった。
+- `document.hasFocus() === true` でも `visibilityState === 'visible'` でも起きる
+  → **2026-09-29 に「フォーカスが原因」と書いたのは誤りだった**
+- 末尾に半角スペースを足しても、ハッシュタグだけ別呼び出しに分けても防げない
+- ハッシュタグを含まない本文だけなら壊れない＝**トリガーは「末尾のハッシュタグ」**
+
+**代わりに合成 paste イベントを使う。** Draft.js が1回の貼り付けとして処理するので補完が発火しない。
+```js
+const dt = new DataTransfer();
+dt.setData('text/plain', 本文全文);
+ed.dispatchEvent(new ClipboardEvent('paste', {clipboardData: dt, bubbles: true, cancelable: true}));
+```
+これで本文2本・リプ2本すべて1発成功。投稿前の検証も `exact === true` で通った。
+
+**そのほかこの日わかったこと**
+- 一度暴走したエディタは `selectAll` + `delete` でも残骸が数十文字残る。**直さずに新しい compose タブを開き直す**
+- `window.open(url,'_blank')` は JS から直接呼ぶと**ポップアップブロックで無視されることがある**。
+  その場合は `<a target="_blank">` をページに注入して `computer` で実クリックする（→ Step 1-B）
+- **すでにアクティブなタブを `navigate` するだけなら focus も visible も保たれる**。
+  リプを書くときは注入不要で、そのまま status ページへ移動すればいい
+
+※未プロモの積み残し: なし（10/05 11:00・17:00 公開分は未公開のため次セッション送り）。

@@ -196,17 +196,47 @@ window.open('https://x.com/compose/post', '_blank')
 - `switch_display` ＋ `screenshot` で、どのモニターにいて何のタブが選ばれているかを目で確認できる
 - ⚠️ computer-use はブラウザに対して**クリックもキー入力もできない**（read 専用）。AutoHotkey や PowerShell でキーを送って迂回するのは**禁止**
 
-### ★Step 1：本文を入れる（`type` ではなく JS で）
+### ★Step 1：本文を入れる（`insertText` ではなく **合成 paste イベント**）（2026-10-05 全面更新）
+
 ```js
-const ed = document.querySelector('[data-testid="tweetTextarea_0"]');
+const ed = document.querySelector('div[data-testid="tweetTextarea_0"]');
 ed.focus();
-document.execCommand('selectAll'); document.execCommand('delete');
-ed.focus();
-document.execCommand('insertText', false, 本文全文);
+const dt = new DataTransfer();
+dt.setData('text/plain', 本文全文);
+ed.dispatchEvent(new ClipboardEvent('paste', {clipboardData: dt, bubbles: true, cancelable: true}));
 ```
-- **`computer` の `type` アクションは使わない**。日本語が化ける（「週」U+9031 が「遑」U+9051 になって誤字のまま投稿した事故あり）。しかも判定に使うJSの文字列リテラルも同じように化けるので自作チェックがすり抜ける
-- `insertText` なら**本文全文を1回で入れられる**ので、絵文字ごとに分割してクリックし直す手順が丸ごと不要になる
-- 化けやすい字を確実に入れたいときは `String.fromCodePoint(0x9031)` でコードポイント指定して組み立てる
+
+- **`document.execCommand('insertText', ...)` はもう使わない。** 末尾がハッシュタグの本文を入れると、X のハッシュタグ補完が暴走して **1行目を `#ハッシュタグ ` の繰り返しで丸ごと上書きする**。2026-10-05 に5回連続で再現した（毎回きっちり同じ結果になる＝確定的なバグ）
+  - `document.hasFocus() === true` でも `visibilityState === 'visible'` でも起きる。**フォーカスの問題ではない**（2026-09-29 の記録はここが誤り）
+  - 末尾に半角スペースを足しても、ハッシュタグだけ別 `insertText` に分けても防げなかった
+  - ハッシュタグを含まない本文だけなら `insertText` でも壊れない。**トリガーは「末尾のハッシュタグ」**
+- **合成 paste なら Draft.js が1回の貼り付けとして処理する**ので補完が発火しない。2026-10-05 は本文2本・リプ2本すべて1発で成功
+- **`computer` の `type` アクションも使わない**（日本語が化ける。「週」U+9031 →「遑」U+9051 の誤字投稿事故あり）。`ctrl+End` でカーソルを末尾に送ってから type する手も試したが、**1行目を置換してしまった**
+- **エディタは必ず「まっさら」な状態で使う。** 一度暴走したエディタは `selectAll` + `delete` をしても残骸（`#金利 ` など）が数十文字残り、次の貼り付けまで汚染される
+  - → **汚れたら新しい compose タブを開き直す**（→ Step 0-A）。同じタブで直そうとしない
+  - 貼り付け前に `ed.innerText.length` を見て、**1以下（空の `\n` だけ）であることを確認**する
+
+### ★Step 1-B：`window.open` が効かないときは「リンクを注入してクリック」（2026-10-05 追加）
+
+Step 0-A の `window.open(url,'_blank')` は、**JS から直接呼ぶとポップアップブロックで無視されることがある**（2026-10-05 に発生。新タブが作られず、タブは `hidden` のまま）。
+
+その場合は **ページに `<a target="_blank">` を注入して `computer` でクリックする**。実クリック＝ユーザージェスチャー扱いになるのでブロックされない。
+
+```js
+document.getElementById('__gal_open')?.remove();
+const a = document.createElement('a');
+a.id = '__gal_open'; a.href = 'https://x.com/compose/post'; a.target = '_blank';
+a.textContent = 'OPEN';
+a.style.cssText = 'position:fixed;left:40px;top:300px;width:220px;height:70px;z-index:2147483647;'
+  + 'background:#ff0066;color:#fff;font-size:28px;display:flex;align-items:center;'
+  + 'justify-content:center;border-radius:10px;';
+document.body.appendChild(a);
+```
+
+→ スクショを撮ってピンクの `OPEN` の座標を確認し、`computer` の `left_click` で踏む。新タブが **`focus: true` かつ `visibilityState: 'visible'`** で開く。
+
+- **注入したリンクは X の再描画で消えることがある。** クリックしたのに新タブが増えず、サイドバーの「チャット」を踏んで `/i/chat` に飛ぶ事故が2回起きた。**クリック後は必ずタブ一覧で新タブが増えたか確認する**
+- **すでにアクティブなタブを `navigate` するだけなら focus も visible も保たれる。** リプを書くときのように「今見ているタブで status ページへ移動する」場合は、この注入は不要（2026-10-05 確認）
 
 ### ★Step 1-A：化けやすい漢字は `String.fromCodePoint()` で組み立てる（2026-10-03 更新）
 
