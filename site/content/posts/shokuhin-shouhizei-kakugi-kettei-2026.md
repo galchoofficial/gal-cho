@@ -2,6 +2,7 @@
 title: "食品消費税1%、正式に閣議決定！財源は「赤字国債に頼らない」って明記されたよ💸🍙"
 date: 2026-09-16T07:00:00+09:00
 publishDate: 2026-09-16T07:00:00+09:00
+lastmod: 2026-10-05T09:30:00+09:00
 draft: false
 categories:
   - tame
@@ -55,7 +56,7 @@ tweet: |-
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>②</small>支援金制度</div>
-    <div class="gov-text">中・低所得者向けの支援金制度を<strong>2029年度</strong>に導入💰　減税が終わった後の受け皿になる制度</div>
+    <div class="gov-text">所得連動の新給付<strong>「就業者負担軽減支援金」</strong>を、減税と同じ<strong>2027年4月</strong>からスタート💰　1%相当分（年約6,000億円）の範囲内で中低所得の就業者に支給して、飲食料品の消費税を「実質ゼロ」に近づける仕組み。さらに<strong>2029年度からは恒常的な「給付付き税額控除」</strong>へ引き継ぐ方針📋</div>
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>③</small>財源の方針</div>
@@ -166,7 +167,7 @@ tweet: |-
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>②✅</small>農家への影響</div>
-    <div class="gov-text"><strong>解決</strong>。中・低所得者向け支援金制度で対応する方向が示された🌾💰</div>
+    <div class="gov-text"><strong>解決</strong>。簡易課税事業者・免税事業者に<strong>売上高を踏まえた金額を給付する</strong>仕組みで対応する方向が示された🌾💰</div>
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>③△</small>外食との格差</div>
@@ -205,7 +206,7 @@ tweet: |-
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>🗓️</small>2027年4月1日</div>
-    <div class="gov-text">食料品の消費税が1%に！！🍙✨</div>
+    <div class="gov-text">飲食料品の消費税が1%に！！🍙✨　同時に<strong>就業者負担軽減支援金</strong>もスタート💰</div>
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>🗓️</small>2029年3月31日</div>
@@ -213,9 +214,11 @@ tweet: |-
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>🗓️</small>2029年度</div>
-    <div class="gov-text">中・低所得者への支援金制度スタート💰</div>
+    <div class="gov-text">恒常的な<strong>「給付付き税額控除」</strong>を本格導入💰　中・低所得者に重点を置く仕組みに切り替わる</div>
   </div>
-  <div class="gov-conclusion">→ とりあえず来年4月から食費が月3,000円台安くなるのは確定✨　あーしのじゃがビー代が浮くわ🍟💰</div>
+  <div class="gov-conclusion">→ 法案が成立すれば、2027年4月から食費がだいぶ軽くなる計算✨　あーしのじゃがビー代が浮くわ🍟💰</div>
 </div>
 
 臨時国会での審議、財源の中身、ギャル庁は年末まで追いかけるわよ👀🏛️🍙
+
+<p class="correction-note"><strong>※2026年10月5日 訂正</strong>：公開時に「中・低所得者への支援金制度を<strong>2029年度</strong>に導入」と書いていましたが、これは2つの制度を混同した誤りでした🙇 正しくは、所得連動の給付<strong>「就業者負担軽減支援金」</strong>は減税と同じ<strong>2027年4月</strong>からスタートし、<strong>2029年度</strong>から本格導入されるのは恒常的な<strong>「給付付き税額控除」</strong>です。減税＋支援金は2029年度の本格導入までの「つなぎ」という位置づけになります。あわせて、農家（簡易課税事業者・免税事業者）への対応が「売上高を踏まえた金額の給付」であること、公開時に「確定」と書いた負担軽減が法案の成立を前提とすることを直しました🙏</p>

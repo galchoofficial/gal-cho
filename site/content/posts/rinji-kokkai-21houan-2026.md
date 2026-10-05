@@ -2,6 +2,7 @@
 title: "臨時国会に21法案！食品消費税1%の法案がついに国会へ、原油の調達多角化も出るよ🏛️💸"
 date: 2026-10-04T11:00:00+09:00
 publishDate: 2026-10-04T11:00:00+09:00
+lastmod: 2026-10-05T09:30:00+09:00
 draft: false
 categories:
   - tame
@@ -100,8 +101,8 @@ tweet: |-
     <div class="gov-text"><strong>2027年4月1日から2年間</strong>の時限措置⏰</div>
   </div>
   <div class="gov-row">
-    <div class="gov-who"><small>③</small>その後</div>
-    <div class="gov-text">中・低所得者への<strong>支援金制度を2029年度に導入</strong>。減税が終わった後の受け皿💰</div>
+    <div class="gov-who"><small>③</small>給付</div>
+    <div class="gov-text">所得連動の<strong>「就業者負担軽減支援金」</strong>を減税と同じ<strong>2027年4月</strong>から💰　1%相当分（年約6,000億円）の範囲内で中低所得の就業者へ。<strong>2029年度</strong>からは恒常的な<strong>「給付付き税額控除」</strong>に引き継ぐ方針📋</div>
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>④</small>財源</div>
@@ -109,7 +110,7 @@ tweet: |-
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>⑤</small>効果</div>
-    <div class="gov-text">食費が月5万円の世帯で、<strong>月3,000円台</strong>の負担軽減🍟</div>
+    <div class="gov-text">8%→1%は<strong>7ポイント分</strong>の引き下げ。食費が月5万円の世帯だと、単純計算で<strong>月3,000円くらい</strong>の負担軽減になる計算🍟（政府の公式試算ではなく、あーしのざっくり計算だよ）</div>
   </div>
   <div class="gov-conclusion">→ 1989年に消費税が始まって以来、<strong>初めての消費税減税</strong>になる法案なのよ✅</div>
 </div>
@@ -200,7 +201,7 @@ tweet: |-
   </div>
   <div class="gov-row">
     <div class="gov-who"><small>④</small>給付制度の中身</div>
-    <div class="gov-text">「中・低所得者への支援金」の具体的な設計は<strong>これから</strong>。対象・金額・やり方が全部空欄💰</div>
+    <div class="gov-text"><strong>「就業者負担軽減支援金」</strong>の具体的な設計は<strong>これから</strong>。対象の所得ライン・金額・渡し方がまだ詰まってない💰</div>
   </div>
   <div class="gov-conclusion">→ どれも<strong>生活に直結する論点</strong>。ニュースで見かけたら、この4つのどれの話か当てはめると分かりやすいよ👀</div>
 </div>
@@ -242,3 +243,5 @@ tweet: |-
 - そして<strong>提出＝成立じゃない</strong>。69日間、見張る価値ありよ👀✨
 
 5月からの7本目。ここまで来たら最後まで追うしかないじゃん？？また動いたら書くね🍙🏛️✨
+
+<p class="correction-note"><strong>※2026年10月5日 訂正</strong>：公開時に「中・低所得者への支援金制度を<strong>2029年度</strong>に導入」と書いていましたが、2つの制度を混同した誤りでした🙇 正しくは、所得連動の給付<strong>「就業者負担軽減支援金」</strong>は減税と同じ<strong>2027年4月</strong>から始まり、<strong>2029年度</strong>から本格導入されるのは恒常的な<strong>「給付付き税額控除」</strong>です。あわせて、負担軽減額が政府の公式試算ではなくギャル庁の単純計算であることを明記しました🙏</p>

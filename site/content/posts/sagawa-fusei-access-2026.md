@@ -2,6 +2,7 @@
 title: "佐川急便に不正アクセス📦 送り主と届け先の情報が約100日分流出した可能性って、何がヤバいの？🚨"
 date: 2026-10-02T11:15:00+09:00
 publishDate: 2026-10-02T11:15:00+09:00
+lastmod: 2026-10-05T09:30:00+09:00
 draft: false
 categories:
   - tame
@@ -41,8 +42,8 @@ tweet: |-
 <div class="alert-banner">
   <span class="alert-banner-icon">🚨</span>
   <div class="alert-banner-text">
-    <strong>佐川急便を装った偽メール・SMS・電話に注意して</strong>
-    佐川急便自身が「当社を装った不審なメール、SMS、電話などに十分ご注意ください」と呼びかけてるよ📱　不審な連絡が来たら、<strong>書かれてるURLを開かない・個人情報を入力しない・教えない</strong>。再配達は公式サイトか公式アプリから自分で手続きして。困ったら消費者ホットライン「188」や警察相談専用電話「#9110」へ📞
+    <strong>宅配を装った偽メール・SMS・電話に注意して</strong>
+    佐川急便自身が「当社を装った不審なメール、SMS、電話などに十分ご注意ください」と呼びかけてるよ📱　不審な連絡が来たら、<strong>書かれてるURLを開かない・個人情報を入力しない・教えない</strong>。再配達は公式サイトか公式アプリから自分で手続きして。<strong>ヤマト運輸の件を受けて、後払いの請求を装った連絡（「お支払いが確認できません」「請求金額のご確認を」系）にも同じく注意して</strong>💳　困ったら消費者ホットライン「188」や警察相談専用電話「#9110」へ📞
   </div>
 </div>
 
@@ -245,3 +246,153 @@ AIを使ったサイバー攻撃が現実になってきた話は<a href="/posts
 - やることは<strong>①URLを踏まない ②電話はかけ直す ③請求を確認 ④家族に共有</strong>📱
 
 荷物が届くのを楽しみに待つ気持ちまで奪われるのは、ほんとに腹立つのよ😤　でも「向こうから来た連絡で手続きしない」を家のルールにしとけば、だいぶ落ち着いて過ごせるから。公式の新しい発表が出たらまた書くね📦✨
+
+## 【続報】ヤマト運輸も<span class="mk">発表してた</span>の📦
+
+ここから先は<strong>2026年10月5日の追記</strong>よ📝
+
+この記事を出した<strong>2026年10月2日</strong>、実は同じ日に<strong>ヤマト運輸</strong>も不正アクセスによる個人情報流出の可能性を発表してたの📦😱 宅配の二大手が同じタイミングって、もう偶然で片付けられないのよ🫠
+
+でね、ここ超大事なんだけど。<strong>ヤマト運輸のほうは、漏れたかもしれないものの性質が佐川急便とぜんぜん違う</strong>の。だから<em class="kw">やるべき警戒も違う</em>のよ🚨
+
+### ヤマトのほうは「荷物」じゃなくて「決済」なの💳
+
+<div class="gov-block">
+  <h3>💳 ヤマト運輸の発表の中身</h3>
+  <div class="gov-row">
+    <div class="gov-who"><small>🎯</small>対象サービス</div>
+    <div class="gov-text"><strong>「クロネコ代金後払いサービス」</strong>。インターネット通販向けの<strong>決済サービス</strong>で、商品を受け取ってからコンビニなどで代金を払う仕組みのやつ🏪 <strong>荷物の送り主・届け先の情報ではない</strong>のがポイント</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>📅</small>いつ</div>
+    <div class="gov-text">不正アクセスを確認したのは<strong>2026年9月28日</strong>。<strong>28日以降このサービスを停止</strong>してる。発表は<strong>10月2日</strong>📢</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>💀</small>流出した可能性がある情報</div>
+    <div class="gov-text"><strong>氏名・住所・電話番号・メールアドレス・与信番号・請求金額・債権残高・商品明細</strong>。お金の話まで入ってるのがえぐいのよ💸</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>🚫</small>含まれていないもの</div>
+    <div class="gov-text"><strong>クレジットカード情報とパスワードは含まれない</strong>と発表されてる💳 ここは佐川急便と同じ</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>🔍</small>規模</div>
+    <div class="gov-text"><strong>調査中</strong>。これも佐川急便と同じで、件数はまだ出てない</div>
+  </div>
+  <div class="gov-conclusion">→ <strong>請求金額と商品明細まで知られた可能性がある</strong>のがヤマトの件のヤバさ。つまり<strong>「いくら払う予定だったか」「何を買ったか」</strong>が向こうの手元にあるかもってことなの😱</div>
+</div>
+
+### 2社を並べると<span class="mk">違い</span>がはっきりする📋
+
+<div class="compare">
+  <div class="compare-card left">
+    <div class="compare-emoji">📦</div>
+    <div class="compare-label">佐川急便</div>
+    <div class="compare-name">漏れたのは「荷物の情報」</div>
+    <div class="compare-rule">お荷物問い合わせサービスが対象。<strong>送り主・届け先の氏名／住所／電話番号</strong>が約100日分。つまり<strong>「誰が誰に、いつ荷物を送ったか」</strong>が知られうる📮</div>
+  </div>
+  <div class="compare-card right">
+    <div class="vs-mark">VS</div>
+    <div class="compare-emoji">💳</div>
+    <div class="compare-label">ヤマト運輸</div>
+    <div class="compare-name">漏れたのは「後払いの情報」</div>
+    <div class="compare-rule">クロネコ代金後払いサービスが対象。氏名・住所・電話番号に加えて<strong>メールアドレス／与信番号／請求金額／債権残高／商品明細</strong>。つまり<strong>「いくら払う予定で、何を買ったか」</strong>が知られうる💸</div>
+  </div>
+</div>
+
+### だから<span class="mk">来る詐欺の形</span>も違うのよ🚨
+
+ここが今回の追記でいちばん持ち帰ってほしいとこ。2社で<strong>想定されるニセ連絡の文面が違う</strong>の👇
+
+<div class="gov-block">
+  <h3>🚨 想定される詐欺の形（2パターン）</h3>
+  <div class="gov-row">
+    <div class="gov-who"><small>📦</small>佐川型（荷物情報）</div>
+    <div class="gov-text"><strong>再配達を装ったSMS・メール</strong>。「○月○日にお届けした荷物の件です。再配達の手続きはこちら」みたいな文面で偽サイトへ誘導するやつ📱</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>💳</small>ヤマト型（後払い決済情報）</div>
+    <div class="gov-text"><strong>後払いの請求を装った連絡</strong>。「お支払いが確認できません」「請求金額のご確認を」系で、支払いを急がせるタイプ💸</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>😱</small>ヤマト型が厄介な理由</div>
+    <div class="gov-text"><strong>請求金額や商品明細まで知られている可能性がある</strong>から、<strong>金額と商品名が合っていても信じてはいけない</strong>の。「え、この金額合ってるし本物じゃん」が通用しないのよ🚨</div>
+  </div>
+  <div class="gov-conclusion">→ 判断の軸は結局ひとつ。<strong>合ってるかどうかで判断しない</strong>。向こうから来た連絡で手続きしない。これだけ🛡️</div>
+</div>
+
+いつもの「心当たりある？」チェックが効かなくなるのがこの2件の共通点なの。<em class="kw">心当たりがあるように作れる材料</em>が外に出た可能性があるってことだから😤
+
+{{< hukidashi who="aashi" >}}荷物の情報と後払いの情報って、どっちのほうがヤバいの？🤔{{< /hukidashi >}}
+
+{{< hukidashi who="kasumi" >}}優劣で比較する性質のものではないと考えております。いずれもクレジットカード情報およびパスワードは含まれないと発表されておりますが、佐川急便の件は配送の事実に関する情報、ヤマト運輸の件は決済および請求に関する情報であり、悪用された場合に想定される手口が異なります。{{< /hukidashi >}}
+
+{{< hukidashi who="aashi" >}}あー、ヤバさの種類が違うってことか。じゃあ後払いのほうは何に気をつければいいの？{{< /hukidashi >}}
+
+{{< hukidashi who="kasumi" >}}請求金額や商品明細が流出した可能性があるとされているため、金額や商品名が実際の購入内容と一致していることを<strong>本物である根拠にしない</strong>対応が必要と考えております。支払いが必要な場合は、受信した連絡からではなく、ご自身で購入元または事業者の公式の窓口を確認いただく方法が確実であります。{{< /hukidashi >}}
+
+{{< hukidashi who="aashi" >}}結論、佐川でもヤマトでも<strong>「向こうから来た連絡で払わない・踏まない」</strong>でOKなんだ。覚えることが増えないのは助かる💪✨{{< /hukidashi >}}
+
+### 後払いを使ってる人が今日できること💳
+
+<div class="gov-block">
+  <h3>💳 後払い派の追加チェック</h3>
+  <div class="gov-row">
+    <div class="gov-who"><small>①</small>支払い期限を自分で確認</div>
+    <div class="gov-text">届いた請求の<strong>紙や購入先のマイページ</strong>で自分から確認する。メールやSMSのリンクからは入らない📄</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>②</small>急かす連絡は全部疑う</div>
+    <div class="gov-text">「本日中に」「法的手続きに移行します」系は<strong>急かして考えさせないのが目的</strong>。急かされた時点で一回止まるのが正解⏸️</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>③</small>払い先が変わってたら即アウト</div>
+    <div class="gov-text">いつもと違う振込先や、見慣れない決済ページに飛ばされたら<strong>そこで止める</strong>。正規の後払いは支払い方法が勝手に変わらないから🚫</div>
+  </div>
+  <div class="gov-conclusion">→ 本文で書いた<strong>4つのこと</strong>に、この「請求系も疑う」を足しとけば今回の2件はカバーできるよ🛡️</div>
+</div>
+
+### ここ数日で<span class="mk">4件</span>って多すぎない？🫠
+
+本文で「セキュリティのニュースが多すぎる週」って書いたけど、追記の時点でさらに増えてるのよ。ここ数日で立て続けに<strong>4件</strong>👇
+
+<div class="gov-block">
+  <h3>📰 ここ数日の情報漏えい</h3>
+  <div class="gov-row">
+    <div class="gov-who"><small>🚗</small>タイムズカー</div>
+    <div class="gov-text"><a href="/posts/times-car-jouhou-rouei-2026/">会員情報が最大約660万件、うち約160万件は運転免許証などの画像まで</a>漏えいの可能性🪪</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>📦</small>佐川急便</div>
+    <div class="gov-text">お荷物問い合わせサービスから<strong>送り主・届け先の情報が約100日分</strong>（この記事）📮</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>💳</small>ヤマト運輸</div>
+    <div class="gov-text">クロネコ代金後払いサービスから<strong>請求金額・商品明細まで</strong>（この追記）💸</div>
+  </div>
+  <div class="gov-row">
+    <div class="gov-who"><small>🏢</small>第一ライフグループ</div>
+    <div class="gov-text"><a href="/posts/daiichi-life-fusei-access-2026/">従業員12万人分が漏えいの可能性</a>。こっちは<strong>お客さんじゃなくて働いてる人の情報</strong>なのがポイント👔</div>
+  </div>
+  <div class="gov-conclusion">→ 乗り物・宅配・決済・勤務先。<strong>生活の違うレイヤーが全部突かれてる</strong>のよ。だから「このサービスだけ気をつける」じゃ追いつかないの😤</div>
+</div>
+
+国の側では<a href="/posts/noudouteki-cyber-bougyo-shikou-2026/">能動的サイバー防御が2026年10月1日に始動</a>してるし、端末の側でも<a href="/posts/apple-full-disk-access-ai-2026/">AppleがMacの全ディスクアクセス権限を厳格化</a>してる。守りは確実に厚くなってるの🛡️ でも<strong>今まさに漏れてる分には間に合わない</strong>のよね😮‍💨
+
+<div class="insight">
+  <span class="insight-tag">💎 ぶっちゃけポイント</span>
+  <p>この追記で一番言いたいのは、<strong>「同じ不正アクセス」で片付けると詐欺に負ける</strong>ってこと😤</p>
+  <p>佐川急便の件を知った人は<em class="kw">再配達のSMS</em>を警戒するでしょ。でもそれだけ構えてると、<strong>後払いの請求を装った連絡</strong>にはノーガードなの。しかも請求金額と商品明細まで知られてる可能性があるから、<strong>金額が合ってる</strong>という最強の説得力つきで来るのよ💀</p>
+  <p>だからチェックの仕方を「情報が合ってるか」から<strong>「どっちから来た連絡か」</strong>に切り替えるのが唯一の正解なの。向こうから来たら全部保留、自分から公式に行く。これなら手口が何パターン増えても対応が増えないでしょ🛡️</p>
+  <p>ヤマト運輸と佐川急便の件をまとめて整理した記事も書いたから、2社の違いをもっと細かく確認したい人はそっちも見て👉 <a href="/posts/yamato-sagawa-fusei-access-2026/">ヤマトと佐川の両方に不正アクセスだった回</a>📦</p>
+</div>
+
+<strong>この追記のまとめ</strong>はこれだけ📝
+
+- ヤマト運輸も<strong>2026年10月2日</strong>に発表。対象は<strong>クロネコ代金後払いサービス</strong>（ネット通販の決済）で、<strong>荷物の情報ではない</strong>💳
+- 不正アクセスの確認は<strong>9月28日</strong>、<strong>28日以降サービス停止</strong>。<strong>規模は調査中</strong>🔍
+- 流出した可能性があるのは氏名・住所・電話番号・メールアドレス・<strong>与信番号・請求金額・債権残高・商品明細</strong>。<strong>カード情報とパスワードは含まれない</strong>📋
+- 佐川型は<strong>再配達を装ったSMS・メール</strong>、ヤマト型は<strong>後払いの請求を装った連絡</strong>。<strong>金額と商品名が合っていても信じない</strong>🚨
+- 判断の軸は<strong>「合ってるかどうか」じゃなく「どっちから来た連絡か」</strong>🛡️
+
+<p class="correction-note"><strong>※2026年10月5日 追記</strong>：同じ2026年10月2日に<strong>ヤマト運輸</strong>も不正アクセスによる個人情報流出の可能性を発表していたので、続報として記事の最後に追記しました📦 ヤマト運輸のほうは<strong>「クロネコ代金後払いサービス」</strong>＝ネット通販の決済サービスが対象で、佐川急便とは漏れたものの性質が違います。<strong>想定される詐欺の形も違う</strong>ので、2社の違いを整理しています🙏</p>
