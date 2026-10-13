@@ -1,0 +1,89 @@
+{{ define "head" }}
+{{- /* 訂正・追記の一覧ページ。static-page と同じく広告は出さない方針。 */ -}}
+{{ partial "breadcrumb-jsonld.html" . }}
+{{ end }}
+
+{{ define "main" }}
+<!-- Crumb -->
+<div class="wrap-narrow crumb">
+  <a href="{{ "/" | relURL }}">ホーム</a>
+  <span class="sep">›</span>
+  <strong>{{ .Title }}</strong>
+</div>
+
+<!-- Page header -->
+<section class="wrap-narrow" style="padding: 32px 0 24px;">
+  <h1 class="art-title" style="font-size: 36px;">{{ .Title }}</h1>
+  {{- with .Params.lead }}
+  <p class="art-lead">{{ . | safeHTML }}</p>
+  {{- end }}
+</section>
+
+<!-- Intro content -->
+<article class="wrap-narrow art-body">
+  {{ .Content }}
+
+  {{- /* 本文中に <p class="correction-note"> を持つ記事を集める */ -}}
+  {{- $corrected := slice -}}
+  {{- range where site.RegularPages "Section" "posts" -}}
+    {{- if findRE `<p class="correction-note">` .RawContent 1 -}}
+      {{- $corrected = $corrected | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $sorted := sort $corrected "Lastmod" "desc" -}}
+
+  {{- $teisei := 0 -}}
+  {{- $tsuiki := 0 -}}
+  {{- range $sorted -}}
+    {{- range findRE `(?s)<p class="correction-note">.*?</p>` .RawContent -}}
+      {{- if in . "訂正" -}}{{- $teisei = add $teisei 1 -}}{{- else -}}{{- $tsuiki = add $tsuiki 1 -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  <div class="gov-block">
+    <h3>📊 これまでの件数</h3>
+    <div class="gov-row">
+      <div class="gov-who"><small>✏️</small>訂正</div>
+      <div class="gov-text">公開後に事実の誤りが分かって、本文を直したもの：<strong>{{ $teisei }}件</strong></div>
+    </div>
+    <div class="gov-row">
+      <div class="gov-who"><small>➕</small>追記</div>
+      <div class="gov-text">続報や新しい情報が出たので、内容を足したもの：<strong>{{ $tsuiki }}件</strong></div>
+    </div>
+    <div class="gov-row">
+      <div class="gov-who"><small>📄</small>対象記事</div>
+      <div class="gov-text">訂正または追記が入っている記事：<strong>{{ len $sorted }}本</strong></div>
+    </div>
+    <div class="gov-conclusion">→ 記事を消したり、こっそり書き換えたりはしません。直した内容はその記事の末尾に残しています📋</div>
+  </div>
+
+  <h2>訂正・追記の<span class="mk">一覧</span>📋</h2>
+
+  {{- if eq (len $sorted) 0 }}
+  <p>いまのところ訂正・追記はありません。</p>
+  {{- else }}
+  <div class="corrections-list">
+    {{- range $sorted }}
+    <div class="gov-block">
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <div class="gov-row">
+        <div class="gov-who"><small>🗓️</small>公開</div>
+        <div class="gov-text">{{ .Date.Format "2006年1月2日" }}{{ if ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02") }} ／ 最終更新 {{ .Lastmod.Format "2006年1月2日" }}{{ end }}</div>
+      </div>
+      {{- range findRE `(?s)<p class="correction-note">.*?</p>` .RawContent }}
+      {{ . | safeHTML }}
+      {{- end }}
+    </div>
+    {{- end }}
+  </div>
+  {{- end }}
+
+  <h2>誤りを<span class="mk">見つけたら</span>教えてください🙏</h2>
+
+  <p>「ここ事実と違うよ」「この数字おかしいよ」という指摘は本当にありがたいです。<a href="/contact/">お問い合わせページ</a>から遠慮なく送ってください。確認のうえで本文を直して、このページにも反映します📋</p>
+
+  <p>記事のつくり方や、どこまで裏を取っているかは <a href="/editorial-policy/">編集方針・ファクトチェック方針</a> にまとめています。</p>
+</article>
+
+<div style="height: 64px;"></div>
+{{ end }}

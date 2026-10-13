@@ -96,7 +96,7 @@
 {{- /* 内部用ページ（/tweets/ など）には広告タグを出さない。AdSense のポリシー上、 */ -}}
 {{- /* コンテンツの無いユーティリティページや検索に出ないページに広告を載せない */ -}}
 {{- /* ほうが審査に通りやすいため。同じ判定を adsense-unit.html 側にも持たせている。 */ -}}
-{{- $noAds := or (eq .Kind "404") (eq .Layout "static-page") (eq .Params.robotsNoIndex true) -}}
+{{- $noAds := or (eq .Kind "404") (eq .Layout "static-page") (eq .Layout "corrections") (eq .Params.robotsNoIndex true) -}}
 {{- if not $noAds }}
   {{- with site.Params.googleAdsenseClient }}
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}" crossorigin="anonymous"></script>
@@ -169,7 +169,8 @@
   "dateModified": "{{ $dateModified.Format "2006-01-02T15:04:05Z07:00" }}",
   "author": {
     "@type": "Person",
-    "name": "{{ site.Params.author | default "あーし" }}"
+    "name": "{{ site.Params.author | default "あーし" }}",
+    "url": "{{ "about/" | absURL }}"
   },
   "publisher": {
     "@type": "Organization",
