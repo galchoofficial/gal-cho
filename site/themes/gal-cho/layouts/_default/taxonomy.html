@@ -1,6 +1,17 @@
 {{ define "main" }}
 {{- $isCategory := eq .Data.Plural "categories" -}}
 
+{{- /* 記事が3本以上あるタグだけを「主要タグ」として扱う。 */ -}}
+{{- /* 1本だけのタグまで全部リンクすると、noindex の薄いタームページへのクロール経路が */ -}}
+{{- /* 1,000本以上できてしまい、Search Console の「クロール済み - インデックス未登録」 */ -}}
+{{- /* が積み上がる。閾値は partials/head.html の noindex ルールと必ず揃えること。 */ -}}
+{{- $mainTerms := slice -}}
+{{- if not $isCategory -}}
+  {{- range .Data.Terms.ByCount -}}
+    {{- if ge .Count 3 -}}{{- $mainTerms = $mainTerms | append . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+
 <div class="wrap crumb">
   <a href="{{ "/" | relURL }}">ホーム</a>
   <span class="sep">›</span>
@@ -9,7 +20,7 @@
 
 <section class="wrap" style="padding: 40px 0 24px;">
   <h1 class="hero-h1"><mark>{{ if $isCategory }}カテゴリ{{ else }}タグ{{ end }}</mark> から探す</h1>
-  <p class="hero-sub">{{ if $isCategory }}気分で選んでね🫶 4カテゴリ展開中{{ else }}{{ len .Pages }}個のタグから探せるよ{{ end }}</p>
+  <p class="hero-sub">{{ if $isCategory }}気分で選んでね🫶 4カテゴリ展開中{{ else }}よく出てくる{{ len $mainTerms }}個のタグから探せるよ🫶 記事が3本以上たまったタグだけ並べてる📋{{ end }}</p>
 
   {{- if $isCategory }}
   <div class="quick-nav" style="margin: 24px 0 0; display:flex; gap:10px; flex-wrap:wrap;">
@@ -64,7 +75,7 @@
 {{- /* Tags page: simple chip cloud */ -}}
 <section class="wrap section">
   <div class="chips-bar" style="flex-wrap: wrap; gap: 8px;">
-    {{- range .Data.Terms.Alphabetical }}
+    {{- range $mainTerms }}
     <a href="{{ .Page.RelPermalink }}" class="chip"><span class="chip-emoji">#</span>{{ .Name }} <small style="opacity:0.6">({{ .Count }})</small></a>
     {{- end }}
   </div>

@@ -1149,7 +1149,14 @@ a { color: inherit; text-decoration: none; }
   font-size: 12px;
   font-weight: 800;
 }
-.tag-chip:hover { background: var(--ink); color: var(--lime); }
+a.tag-chip:hover { background: var(--ink); color: var(--lime); }
+/* 記事が3本未満のタグ。リンクにせず、ただのラベルとして出す */
+.tag-chip-plain {
+  border-style: dashed;
+  border-color: var(--line);
+  color: var(--ink-soft);
+  cursor: default;
+}
 
 .source {
   background: var(--line-soft);

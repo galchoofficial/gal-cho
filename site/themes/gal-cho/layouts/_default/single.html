@@ -123,10 +123,17 @@
   {{ .Content }}
 
   <!-- Tags -->
-  {{- with .Params.tags }}
+  {{- /* 紐づく記事が3本未満のタグはリンクにしない（タームページが noindex なので */ -}}
+  {{- /* リンクするとクロールだけされて「クロール済み - インデックス未登録」が増える）。 */ -}}
+  {{- /* 判定の閾値は partials/head.html の noindex ルールと必ず揃えること。 */ -}}
+  {{- with .GetTerms "tags" }}
   <div class="art-tags">
     {{- range . }}
-    <a class="tag-chip" href="{{ printf "/tags/%s/" (urlize .) | relURL }}">#{{ . }}</a>
+    {{- if ge (len .Pages) 3 }}
+    <a class="tag-chip" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>
+    {{- else }}
+    <span class="tag-chip tag-chip-plain">#{{ .LinkTitle }}</span>
+    {{- end }}
     {{- end }}
   </div>
   {{- end }}

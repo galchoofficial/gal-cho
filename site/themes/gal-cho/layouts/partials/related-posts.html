@@ -75,10 +75,15 @@
       {{- if not $catMeta }}{{ $catMeta = dict "label" $cat "emoji" "📰" }}{{ end }}
       <a href="{{ printf "/categories/%s/" $cat | relURL }}" class="related-cat-link">{{ $catMeta.emoji }} {{ $catMeta.label }}の記事をもっと見る →</a>
       {{- end }}
-      {{- with $cur.Params.tags }}
+      {{- /* 3本未満のタグはリンクにしない（理由は _default/single.html のコメント参照） */ -}}
+      {{- with $cur.GetTerms "tags" }}
       <div class="related-tags">
         {{- range first 4 . }}
-        <a class="tag-chip" href="{{ printf "/tags/%s/" (urlize .) | relURL }}">#{{ . }}</a>
+        {{- if ge (len .Pages) 3 }}
+        <a class="tag-chip" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>
+        {{- else }}
+        <span class="tag-chip tag-chip-plain">#{{ .LinkTitle }}</span>
+        {{- end }}
         {{- end }}
       </div>
       {{- end }}
