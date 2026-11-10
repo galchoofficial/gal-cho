@@ -14,3 +14,9 @@ https://gal-cho.pages.dev/* https://gal-cho.com/:splat 301!
 # 2026-11-10: bousai-cho-... は bousaicho-... にリネーム済みだが、
 # Google が旧URLを覚えていて404を出し続けていたため301で受ける
 /posts/bousai-cho-secchi-houan-2026/ /posts/bousaicho-secchi-houan-2026/ 301
+
+# 旧タグRSS（/tags/○○/index.xml）→ タグページ本体
+# 2026-11-10: hugo.toml の [outputs] term = ['HTML'] でタグ個別RSSを止めたが、
+# Google が旧URLを覚えていて再クロールし続け、404が増えていた
+# （給料・経済政策・詐欺分類・保育 などを確認）。サイト内にリンクは一切ない。
+/tags/:tag/index.xml /tags/:tag/ 301
