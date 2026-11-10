@@ -9,3 +9,8 @@ https://www.gal-cho.com/* https://gal-cho.com/:splat 301!
 
 # 旧 .pages.dev URL を新ドメインへ（SEO評価引き継ぎ）
 https://gal-cho.pages.dev/* https://gal-cho.com/:splat 301!
+
+# 旧スラッグ → 現行スラッグ（Search Console で404として検出されたもの）
+# 2026-11-10: bousai-cho-... は bousaicho-... にリネーム済みだが、
+# Google が旧URLを覚えていて404を出し続けていたため301で受ける
+/posts/bousai-cho-secchi-houan-2026/ /posts/bousaicho-secchi-houan-2026/ 301
